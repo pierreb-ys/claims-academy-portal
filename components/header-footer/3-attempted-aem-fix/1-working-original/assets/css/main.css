@@ -1,0 +1,366 @@
+/* ------------ GENERAL STYLES ------------ */
+
+/* ------------ TYPOGRAPHY ------------ */
+
+@font-face {
+  font-family: 'MissionGothicRegular';
+  src: url('../fonts/Mission-Gothic-Regular.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicRegularItalic';
+  src: url('../fonts/Mission-Gothic-Regular-Italic.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicThin';
+  src: url('../fonts/Mission-Gothic-Thin.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicThinItalic';
+  src: url('../fonts/Mission-Gothic-Thin-Italic.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicLight';
+  src: url('../fonts/Mission-Gothic-Light.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicLightItalic';
+  src: url('../fonts/Mission-Gothic-Light-Italic.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicBold';
+  src: url('../fonts/Mission-Gothic-Bold.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicBoldItalic';
+  src: url('../fonts/Mission-Gothic-Bold-Italic.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicBlack';
+  src: url('../fonts/Mission-Gothic-Black.otf');
+}
+
+@font-face {
+  font-family: 'MissionGothicBlackItalic';
+  src: url('../fonts/Mission-Gothic-Black-Italic.otf');
+}
+
+/* ------ ------ */
+
+.body {
+  font-family: "MissionGothicRegular";
+}
+
+.mission-gothic-regular {
+  font-family: "MissionGothicRegular";
+}
+
+/* ------ Spacing ------ */
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* ------ Alignment ------ */
+
+.display-inline {
+  display: inline;
+}
+
+/* ------ Vertical Alignment ------ */
+
+.align-vertically {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-nav > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ------------ BRANDING ------------ */
+
+#bg-blue-dark-brand {
+  background-color: #003893;
+  color: #fff;
+}
+
+#bg-blue-light-brand {
+  background-color: #3399CA;
+  color: #fff;
+}
+
+#bg-white {
+  background-color: #fff;
+  color: black;
+}
+
+.bg-aaa-blue {
+  background: #003893;
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+/* ------ SECTIONS ------ */
+
+
+.content {
+    background: #a6c1da;
+    padding: 24px;
+}
+
+
+/* ------------ HEADER  ------------- */
+
+.header {
+  background: #5c9ad4;
+}
+
+.top-header {
+  max-height: 150px;
+}
+
+.max-height-controller {
+  max-height: 150px;
+}
+
+.logo {
+  height: auto;
+  padding: 2%;
+}
+
+.title-column {
+  min-width: 200px;
+}
+
+/* ------ ------ */
+
+.navbar-light .navbar-text {
+  color: #fff;
+  font-family: "MissionGothicRegular";
+}
+
+
+/* ------ Search Bar ------ */
+
+.stylish-input-group .input-group-addon {
+  background-color: #0F2E5B;
+}
+
+.stylish-input-group .form-control {
+  border-right: 0; 
+  box-shadow: 0 0 0; 
+  border-color: #ccc;
+  background-color: #0F2E5B;
+  font-family: "MissionGothicRegular";
+}
+
+.stylish-input-group button {
+  border: 0;
+  background: transparent;
+}
+
+.form-control {
+  border: 0;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.fa, .fas, .fa-search {
+  color: white;
+  margin-top: 10px;
+}
+
+/* ------ "Profile Picture" Section ------ */
+
+.profile-pic {
+  padding: 5px;
+}
+
+.text-username {
+  font-size: 1.75em;
+  color: orange;
+  font-family: "MissionGothicRegular";
+}
+
+
+/* ------------ NAVIGATION  ------------ */
+
+a:hover {
+  background-color: orange;
+  color: white;
+}
+
+a:active {
+  background-color: orange;
+  color: white;
+}
+
+a:selected {
+  background-color: orange;
+  color: white;
+}
+
+.navbar a {
+  font-size: .75em;
+  color: #fff;
+  text-align: center;
+  font-family: "MissionGothicRegular";
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-family: "MissionGothicRegular";
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #fff;
+  font-family: "MissionGothicRegular";
+}
+
+.navbar-text {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "MissionGothicRegular";
+}
+
+
+/* --- Footer  --- */
+
+.footer-header {
+  border-bottom: 2px solid #5c9ad4;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #003893;
+  color: #fff;
+}
+
+.footer-text {
+  font-size: 12px;
+  font-family: "MissionGothicRegular";
+}
+
+a .nav-item {
+  font-size: 0.75em;
+  color: #fff;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* VIEWPORTS */
+
+@media (max-width: 712px) {
+  .input-group, .stylish-input-group {
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 645px) {
+
+  .h2, .navbar-text {
+    font-size: 1.5em;
+    display: block;
+  }
+
+  .input-group .stylish-input-group {
+    margin-left: -36px;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  
+  .max-height-controller {
+    max-height: 350px;
+  }
+
+  .logo {
+    width: 40%;
+    height: 40%;
+  }
+
+  .h2, .navbar-text {
+    font-size: 1.25em;
+    text-align: center;
+    display: block;
+  }
+
+  .margin-auto {
+    margin: auto;
+  }
+
+  .profile-pic {
+    margin: 0;
+    width: 50%;
+    height: 50%;
+  }
+
+  .footer-header {
+    padding-top: 40px;
+  }
+
+  .profile-pic__xs-view__push-right {
+    margin-right: -44px;
+  }
+
+  .button__icon {
+      background: transparent;
+      border: 0;
+    }
+
+  .text-username {
+    font-size: 1.15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .stylish-input-group .input-group-addon {
+    background-color: transparent;
+    margin-left: 50px;
+  }
+
+  .fa, .fa-search {
+    font-size: 1.25em;
+    margin-left: 10px;
+  }
+
+  .navbar-text {
+    margin: 0;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+}
