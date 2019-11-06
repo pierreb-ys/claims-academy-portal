@@ -248,17 +248,17 @@
 
 /* ------------ ------------ ------------ ------------ NAVIGATION ------------ ------------ ------------ ------------ */
 
-a:hover {
+.navbar-nav.nav-pills a:hover {
   background-color: orange;
   color: white;
 }
 
-a:active {
+.navbar-nav.nav-pills a:active {
   background-color: orange;
   color: white;
 }
 
-a:selected {
+.navbar-nav.nav-pills a:selected {
   background-color: orange;
   color: white;
 }
@@ -296,7 +296,6 @@ span.navbar-text {
 /* ------------ ------------ ------------ ------------ CONTENT ------------ ------------ ------------ ------------ */
 
 .content {
-  background: #a6c1da;
   padding: 24px;
 }
 
