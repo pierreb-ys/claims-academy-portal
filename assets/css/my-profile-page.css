@@ -7,3 +7,7 @@ hr {
   border-style: inset;
   border-width: 1px;
 }
+
+div.align-right p {
+  text-align: right;
+}
