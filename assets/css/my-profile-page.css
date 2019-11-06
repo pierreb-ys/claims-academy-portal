@@ -7,10 +7,12 @@ div.icon img {
 }
 
 div.center-text p {
-  height: 50px;
-  line-height: 50px;
+  height: 45px;
+  line-height: 38px;
   white-space: nowrap;
   margin-bottom: 0px;
+  font-size: 24px;
+  margin-left: -48px;
 }
 
 .display-inline-flex {
@@ -19,4 +21,8 @@ div.center-text p {
 
 div.padding-left-24 img {
   padding-left: 24px;
+}
+
+div.title-fix p {
+  margin-
 }

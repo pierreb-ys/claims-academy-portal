@@ -348,6 +348,24 @@ p.margin-bottom-10 {
 
 /* ------------ ------------ ------------ ------------ VIEWPORTS ------------ ------------ ------------ ------------ */
 
+@media (max-width: 481px) {
+  .class {
+    
+  }
+}
+
+@media (max-width: 370px) {
+  .class {
+    
+  }
+}
+
+@media (max-width: 334px) {
+  .class {
+
+  }
+}
+
 @media (max-width: 712px) {
 
   .input-group, .stylish-input-group {
