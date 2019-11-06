@@ -23,6 +23,24 @@ div.padding-left-24 img {
   padding-left: 24px;
 }
 
-div.title-fix p {
-  margin-
+div.profile-image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 579px) {
+
+  div.align-right p {
+    text-align: left;
+  }
+
+  div.profile-image img {
+    padding-left: 0;
+    width: 50%;
+  }
+
+div.profile-image {
+  text-align: center;
+}
+
 }
