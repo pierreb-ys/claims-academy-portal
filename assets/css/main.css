@@ -1,4 +1,7 @@
-@import url("my-profile-page.css"); /* Using a url */
+@import url("header.css");
+@import url("navigation.css");
+@import url("my-profile-page.css");
+@import url("footer.css");
 
 /* ------------ ------------ ------------ ------------ GLOBAL ------------ ------------ ------------ ------------ */
 
@@ -25,14 +28,6 @@
 /* ------------ ------------ BRANDING ------------ ------------ */
 
 /* ------------ ------------ TYPOGRAPHY ------------ ------------ */
-
-/*
-@font-face {
-  font-family: 'mission-gothic-regular';
-  src: url('../fonts/mission-gothic-regular.otf');
-  src: url('../fonts/mission-gothic-regular.eot');
-}
-*/
 
 @font-face {
   font-family: 'mission-gothic-regular';
@@ -246,50 +241,7 @@
   margin-right: -60px;
 }
 
-/* ------------ ------------ ------------ ------------ NAVIGATION ------------ ------------ ------------ ------------ */
 
-.navbar-nav.nav-pills a:hover {
-  background-color: orange;
-  color: white;
-}
-
-.navbar-nav.nav-pills a:active {
-  background-color: orange;
-  color: white;
-}
-
-.navbar-nav.nav-pills a:selected {
-  background-color: orange;
-  color: white;
-}
-
-.navbar a {
-  font-size: .75em;
-  color: #fff;
-  text-align: center;
-  font-family: 'mission-gothic-regular';
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #fff;
-  font-family: 'mission-gothic-regular';
-}
-
-.navbar-light .navbar-nav .active > .nav-link {
-  color: #fff;
-  font-family: 'mission-gothic-regular';
-}
-
-.navbar-text p {
-  padding-top: 0;
-  padding-bottom: 0;
-  font-family: 'mission-gothic-regular';
-}
-
-span.navbar-text {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 
 
@@ -437,7 +389,6 @@ p.margin-bottom-10 {
   .profile-pic {
     margin: 0;
     width: 40%;
-   /* height: 50%; */
   }
 
 /* Header: Search Bar */
@@ -476,12 +427,6 @@ p.margin-bottom-10 {
 
   .navbar-text {
     margin: 0;
-  }
-
-/* NAVIGATION */
-
-  .navbar-toggler {
-    margin-right: 10px;
   }
 
 }

@@ -1,0 +1,55 @@
+/* ------------ ------------ ------------ ------------ NAVIGATION ------------ ------------ ------------ ------------ */
+
+.navbar-nav.nav-pills a:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  .navbar-nav.nav-pills a:active {
+    background-color: orange;
+    color: white;
+  }
+  
+  .navbar-nav.nav-pills a:selected {
+    background-color: orange;
+    color: white;
+  }
+  
+  .navbar a {
+    font-size: .75em;
+    color: #fff;
+    text-align: center;
+    font-family: 'mission-gothic-regular';
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'mission-gothic-regular';
+  }
+  
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: #fff;
+    font-family: 'mission-gothic-regular';
+  }
+  
+  .navbar-text p {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'mission-gothic-regular';
+  }
+  
+  span.navbar-text {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+  @media (max-width: 575.98px) {
+  
+  /* NAVIGATION */
+  
+    .navbar-toggler {
+      margin-right: 10px;
+    }
+  
+  }
