@@ -1,0 +1,144 @@
+/* ------------ ------------ ------------ ------------ VIEWPORTS ------------ ------------ ------------ ------------ */
+
+/* ------------ XS (MOBILE) < 768px ------------ */
+
+/*
+
+@media (max-width: 334px) {
+  .class {
+
+  }
+}
+
+@media (max-width: 370px) {
+  .class {
+    
+  }
+}
+
+@media (max-width: 481px) {
+  .class {
+    
+  }
+}
+
+  @media (max-width: 575.98px) {
+    
+    .margin-auto {
+      margin: auto;
+    }
+
+*/
+  
+  /* Header */
+  
+  .max-height-controller {
+    max-height: 350px;
+  }
+
+/* Logo */
+
+  .logo {
+    width: 40%;
+    height: 40%;
+  }
+
+/* Title */
+
+  .h2, .navbar-text {
+    font-size: 1.25em;
+    text-align: center;
+    display: block;
+  }
+
+  .profile-pic {
+    margin: 0;
+    width: 40%;
+  }
+
+/* Search Bar */
+
+/* Profile */
+
+  .margin-right-none {
+    margin-right: 0;
+  }
+
+  .footer-header {
+    padding-top: 40px;
+  }
+
+  .button__icon {
+      background: transparent;
+      border: 0;
+    }
+
+  .text-username {
+    font-size: 1.15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .stylish-input-group .input-group-addon {
+    background-color: transparent;
+    margin-left: 50px;
+  }
+
+  .fa, .fa-search {
+    font-size: 1.25em;
+    margin-left: 10px;
+  }
+
+  .navbar-text {
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 645px) {
+  
+    /* Header */
+    
+    /* Logo */
+    
+    /* Title */
+    
+      .h2, .navbar-text {
+        font-size: 1.5em;
+        display: block;
+      }
+    
+    /* Search Bar */
+    
+      .input-group .stylish-input-group {
+        margin-left: -36px;
+      }
+    
+    /* Profile */
+    
+  }
+
+@media (max-width: 654px) {
+    .title-column {
+      min-width: 0;
+    }
+  }
+
+@media (max-width: 712px) {
+
+    .input-group, .stylish-input-group {
+      margin-left: -50px;
+    }
+  
+    .text-username {
+      font-size: 1.25rem;
+    }
+  
+  }
+
+/* ------------ SM (TABLET) ------------ */
+
+/* ------------ DESKTOP ----------- */
+/* ------ MD ------ */
+/* ------ LG ------ */
