@@ -2,6 +2,12 @@
 
 /* ------------ XS (MOBILE) < 768px ------------ */
   
+@media (max-width: 575px) {
+
+.margin-auto {
+  margin: auto;
+}
+
   /* Header */
   
   .max-height-controller {
@@ -21,6 +27,10 @@
     font-size: 1.25em;
     text-align: center;
     display: block;
+  }
+
+  h2.navbar-text {
+    font-size: 1.25em;
   }
 
   .profile-pic {

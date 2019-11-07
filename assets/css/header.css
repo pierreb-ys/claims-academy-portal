@@ -1,0 +1,87 @@
+/* ------------ ------------ ------------ ------------ HEADER ------------ ------------ ------------ ------------ */
+
+.header {
+    background: #5c9ad4;
+  }
+  
+.max-height-controller {
+    max-height: 150px;
+  }
+  
+.top-header {
+    max-height: 150px;
+  }
+
+  /* ------------ ------------ LOGO ------------ ------------ */
+  
+.logo img {
+    height: auto;
+  }
+
+.cap-header div.img-fluid img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* ------------ ------------ TITLE ------------ ------------ */
+  
+  .cap-header p,
+  .footer p,
+  .navbar-text p {
+    margin: 0;
+    font-family: 'mission-gothic-regular';
+  }
+  
+  .navbar-light .navbar-text {
+    color: #fff;
+    font-family: 'mission-gothic-regular';
+  }
+  
+  
+  /* ------------ ------------ SEARCH BAR ------------ ------------ */
+  
+  .form-control {
+    border: 0;
+  }
+
+  .stylish-input-group .form-control {
+    border-right: 0; 
+    box-shadow: 0 0 0; 
+    border-color: #ccc;
+    background-color: #0F2E5B;
+    font-family: 'mission-gothic-regular';
+  }
+  
+  .stylish-input-group button {
+    border: 0;
+    background: transparent;
+  }
+  
+  .stylish-input-group .input-group-addon {
+    background-color: #0F2E5B;
+  }
+  
+  .form-control::placeholder {
+    color: white;
+  }
+  
+  .fa, .fas, .fa-search {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  /* ------------ ------------ PROFILE ------------ ------------ */
+
+  .text-username {
+    font-size: 1.75em;
+    color: orange;
+    font-family: 'mission-gothic-regular';
+  }
+
+  .profile-pic {
+    padding: 5px;
+  }
+
+  #margin-right-neg-60 {
+    margin-right: -60px;
+  }
