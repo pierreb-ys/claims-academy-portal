@@ -28,6 +28,14 @@ div.profile-image img {
   width: 100%;
 }
 
+.mobile-field-width {
+  width: 100%;
+}
+
+.mobile-value-width {
+  width: 100%;
+}
+
 @media (max-width: 579px) {
 
   div.align-right p {
@@ -41,6 +49,18 @@ div.profile-image img {
 
 div.profile-image {
   text-align: center;
+}
+
+.mobile-category-width {
+  width: 50%;
+}
+
+.mobile-field-width {
+  width: 50%;
+}
+
+.mobile-value-width {
+  width: 50%;
 }
 
 }
