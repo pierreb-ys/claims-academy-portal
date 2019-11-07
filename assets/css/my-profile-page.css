@@ -83,6 +83,10 @@ div.profile-image {
   text-align: center;
 }
 
+option.text-faded {
+  color: #A9A9A9;
+}
+
 .mobile-category-width {
   width: 50%;
 }
