@@ -2,6 +2,10 @@ div.align-right p {
   text-align: right;
 }
 
+div.align-right-category p {
+  text-align: right;
+}
+
 div.icon img {
   max-width: 50%;
 }
@@ -38,8 +42,17 @@ div.profile-image img {
 
 @media (max-width: 579px) {
 
+  /*
+
   div.align-right p {
+    text-align: right;
+  }
+
+  */
+
+  div.align-right-category p {
     text-align: left;
+    padding-left: 44px;
   }
 
   div.profile-image img {
@@ -56,11 +69,11 @@ div.profile-image {
 }
 
 .mobile-field-width {
-  width: 50%;
+  width: 35%;
 }
 
 .mobile-value-width {
-  width: 50%;
+  width: 65%;
 }
 
 }
