@@ -1,3 +1,7 @@
+.align-right {
+  text-align: right;
+}
+
 div.align-right p {
   text-align: right;
 }
@@ -44,6 +48,17 @@ div.profile-image img {
   margin-bottom: 10px;
 }
 
+.button-padding-right {
+  padding-right: 48px;
+}
+
+.btn-continue {
+  background-color: #F68C34;
+  color: black;
+  border-color: none;
+  font-family: "mission-gothic-regular";
+}
+
 @media (max-width: 579px) {
 
   /*
@@ -78,6 +93,10 @@ div.profile-image {
 
 .mobile-value-width {
   width: 65%;
+}
+
+div.align-right {
+  width: 100%;
 }
 
 }
