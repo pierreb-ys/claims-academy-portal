@@ -44,6 +44,14 @@ div.profile-image img {
   width: 100%;
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 60%;
+}
+
 .form-control {
   margin-bottom: 10px;
 }
