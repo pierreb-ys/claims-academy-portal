@@ -40,6 +40,10 @@ div.profile-image img {
   width: 100%;
 }
 
+.form-control {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 579px) {
 
   /*
