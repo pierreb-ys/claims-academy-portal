@@ -10,6 +10,10 @@ div.align-right-category p {
   text-align: right;
 }
 
+.upload-button {
+  text-align: center;
+}
+
 div.icon img {
   max-width: 50%;
 }
