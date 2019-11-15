@@ -253,7 +253,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link active" href="">
                     <span class="navbar-text">
                         <div>
                             <p>VIDEOS</p>
@@ -374,46 +374,71 @@
 
 </div>
 
-<div class="container-fluid content no-padding cap-content">
+<div class="container-fluid no-padding cap-content">
     <div class="row">
 
         <div class="col-sm-6 video-fluid">
             <iframe src="https://player.vimeo.com/video/278489279?color=ffffff&badge=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
         <div class="col-sm-6">
-            
+            <p>Test.</p>
         </div>
 
     </div>
 
     <div class="row">
 
+        <div class="col-sm-3">
 
-            <div class="col-sm-3">
+            <form action="">
 
-                <form action="">
-
-                    <div class="input-group mb-4 border rounded-pill">
-                        <input type="search" placeholder="Search?" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                        <div class="input-group-append border-0">
-                        <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
-                        </div>
+                <div class="input-group mb-4 border rounded-pill">
+                    <input type="search" placeholder="Search?" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                    <div class="input-group-append border-0">
+                    <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
                     </div>
+                </div>
 
-                    <button class="btn btn-continue" type="submit">Search</button>
+                <button class="btn btn-continue" type="submit">Search</button>
 
-                </form>
+            </form>
 
+        </div>
+
+        <div class="col-sm-1">
+            <button class="btn btn-continue" type="submit">Continue</button>
+        </div>
+
+        <div class="col-sm-2">
+            <div>
+                <select class="combobox form-control">
+                    <option> All Schools </option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
             </div>
+        </div>
 
-            <div class="col-sm-1">
-                <button class="btn btn-continue" type="submit">Continue</button>
+        <div class="col-sm-1">
+            <div>
+                <select class="combobox form-control">
+                    <option> Sub-School </option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
             </div>
+        </div>
 
-            <div class="col-sm-2">
+        <div class="col-sm-1">
                 <div>
                     <select class="combobox form-control">
-                        <option> All Schools </option>
+                        <option> Phase </option>
                         <option value="PA">Pennsylvania</option>
                         <option value="CT">Connecticut</option>
                         <option value="NY">New York</option>
@@ -421,60 +446,69 @@
                         <option value="VA">Virginia</option>
                     </select>
                 </div>
+        </div>
+    
+        <div class="col-sm-1">
+            <div>
+                <select class="combobox form-control">
+                    <option> - Any Level - </option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
             </div>
+        </div>
 
-            <div class="col-sm-1">
-                <div>
-                    <select class="combobox form-control">
-                        <option> Sub-School </option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select>
-                </div>
+        <div class="col-sm-2">
+            <div>
+                <select class="combobox form-control">
+                    <option> - Any Release Date - </option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
             </div>
+        </div>
 
-            <div class="col-sm-1">
-                    <div>
-                        <select class="combobox form-control">
-                            <option> Phase </option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="NY">New York</option>
-                            <option value="MD">Maryland</option>
-                            <option value="VA">Virginia</option>
-                        </select>
-                    </div>
-            </div>
+    </div>
+
+    <div class="row">
         
-            <div class="col-sm-1">
-                <div>
-                    <select class="combobox form-control">
-                        <option> - Any Level - </option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select>
-                </div>
-            </div>
+        <div class="col-sm-1">
+            Image
+        </div>
 
-            <div class="col-sm-2">
-                <div>
-                    <select class="combobox form-control">
-                        <option> - Any Release Date - </option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select>
-                </div>
-            </div>
+        <div class="col-sm-2">
+            Title
+        </div>
 
+        <div class="col-sm-1">
+            Version
+        </div>
+
+        <div class="col-sm-2">
+            Description
+        </div>
+
+        <div class="col-sm-2">
+            Heading
+        </div>
+
+        <div class="col-sm-1">
+            Heading
+        </div>
+
+        <div class="col-sm-1">
+            Release Date
+        </div>
+
+        <div class="col-sm-1">
+            Badges
+        </div>
 
     </div>
 
