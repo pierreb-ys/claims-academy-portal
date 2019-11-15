@@ -25,16 +25,40 @@
   *
   */
   
+  /*
   body {
     background: #ffd89b;
     background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
     background: linear-gradient(to right, #ffd89b, #19547b);
     min-height: 50vh;
   }
+  */
   
   .form-control::placeholder {
     font-size: 0.95rem;
-    color: black;
-    font-style: italic;
+    color: orange;
+  }
+
+  .vp-center {
+    align-items: normal;
   }
   
+  .carousel-item {
+    max-height: 200px;
+  }
+
+  .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 10px;
+  }
+
+  .brand-font {
+    font-family: 'mission-gothic-regular';
+  }
+
+  .align-center {
+    text-align: center;
+  }
