@@ -98,3 +98,8 @@ div p {
 div.orange-text p {
   color: #F68C34;
 }
+
+.video-fluid iframe {
+  max-width: 100%;
+  width: 100%;
+}
