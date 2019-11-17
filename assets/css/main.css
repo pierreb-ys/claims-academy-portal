@@ -103,3 +103,9 @@ div.orange-text p {
   max-width: 100%;
   width: 100%;
 }
+
+.margin-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 12px;
+}

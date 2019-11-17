@@ -66,3 +66,11 @@
   .combobax > {
     font-family: "mission-gothic-regular";
   }
+
+  div.icon img {
+    max-width: 30%;
+  }
+
+  div.heading-title p {
+    font-size: 18px;
+  }
