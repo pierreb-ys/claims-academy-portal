@@ -99,11 +99,6 @@ div.orange-text p {
   color: #F68C34;
 }
 
-.video-fluid iframe {
-  max-width: 100%;
-  width: 100%;
-}
-
 .margin-12 {
   margin-left: 12px;
   margin-right: 12px;
@@ -112,4 +107,8 @@ div.orange-text p {
 
 .padding-12 {
   padding: 12px;
+}
+
+.no-padding {
+  padding: 0px;
 }
