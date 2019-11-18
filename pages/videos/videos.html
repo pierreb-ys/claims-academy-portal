@@ -384,17 +384,19 @@
         <div class="col-sm-12">
 
             <div class="row">
+
                 <div class="col-sm-12 display-inline-flex bg-orange">
 <!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-                    <div class="img-fluid icon">
+                    <div class="img-fluid icon align-vertically">
                         <img src="../../assets/img/my-profile-icon.png" />
                     </div>
 
 <!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="center-text mission-gothic-regular heading-title">
-                        <p>VIDEO SHOWCASE</p>
+                        <p class="align-vertically">VIDEO SHOWCASE</p>
                     </div>
                 </div>
+                
             </div>
 
 <!-- VIDEO and TEXT -->
@@ -406,8 +408,8 @@
                 </div>
             
         <!-- Text Area -->
-                <div class="col-sm-6">
-                    <h2>Video Title</h2>
+                <div class="col-sm-6 padding-12">
+                    <h2 class="mission-gothic-regular">Video Title</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida massa a pulvinar cursus. In porta ex ornare blandit pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque libero justo, bibendum eu erat sit amet, faucibus dapibus neque. Praesent urna tortor, consequat vel volutpat eu, sollicitudin quis risus. Curabitur lacinia augue at varius sagittis. Integer vulputate, odio eget fermentum ornare, metus tortor varius urna, ac pellentesque neque diam ac ligula. Duis malesuada rhoncus consectetur.</p>
                 </div>
             
@@ -419,15 +421,16 @@
 
 <!-- CONTROLS -->
     <div class="row margin-12">
+
         <div class="col-sm-12 display-inline-flex bg-light-blue">
     <!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-            <div class="img-fluid icon">
+            <div class="img-fluid icon align-vertically">
                 <img src="../../assets/img/my-profile-icon.png" />
             </div>
 
     <!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-            <div class="center-text mission-gothic-regular">
-                <p>SEARCH VIDEO</p>
+            <div class="center-text mission-gothic-regular align-vertically heading-title">
+                <p class="align-vertically">SEARCH VIDEO</p>
             </div>
         </div>
     </div>
@@ -525,17 +528,18 @@
     <div class="row margin-12">
         <div class="col-sm-12 display-inline-flex bg-light-blue">
 <!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-            <div class="img-fluid icon">
+            <div class="img-fluid icon align-vertically">
                 <img src="../../assets/img/my-profile-icon.png" />
             </div>
 
 <!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-            <div class="center-text mission-gothic-regular">
-                <p>SCHOOL / SUB-SCHOOL</p>
+            <div class="center-text mission-gothic-regular heading-title">
+                <p class="align-vertically">SCHOOL / SUB-SCHOOL</p>
             </div>
         </div>
     </div>
-    
+
+    <!--
     <div class="row margin-12">
         <div class="col-sm-12">
             <div class="row ml-2">
@@ -792,6 +796,22 @@
 
         </div>
     </div>
+-->
+<div class="row margin-12 justify-content-end">
+        <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+</div>
 
 </div>
 
@@ -992,11 +1012,11 @@
         }
     </style>
 -->
-    <script>
-        $('.carousel').carousel({
-          interval: 2000
-        })
-    </script>
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
 
 </body>
 
