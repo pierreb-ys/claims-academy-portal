@@ -115,3 +115,13 @@
     margin-bottom: ;
   }
 }
+
+.video-thumbnail {
+  max-width: 90%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
