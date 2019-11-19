@@ -1,0 +1,68 @@
+<!-- Content -->
+<sly data-sly-use.multiItems="Acgdemo.core.models.CarouselMultifield"/>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+
+    <!-- Carousel Repeating List START - Needs to match count of items -->
+	<sly data-sly-list.head="${multiItems.products.listChildren}">
+		<sly data-sly-test="${headList.first}">
+			<li data-target="#carouselExampleIndicators" data-slide-to="${headList.index}" class="active"></li>
+		</sly>
+		<sly data-sly-test="${!headList.first}">
+			<li data-target="#carouselExampleIndicators" data-slide-to="${headList.index}"></li>
+		</sly>
+		
+	</sly>
+   
+    <!-- Carousel Repeating List END -->
+
+  </ol>
+  <div class="carousel-inner">
+    <!-- Carousel Repeating List START -->
+
+		<sly data-sly-list.head="${multiItems.products.listChildren}">
+			<sly data-sly-test="${headList.first}">
+				<div class="carousel-item active">
+				 <a  href="${head.link}" target="${head.linktarget}">
+                 <img class="d-block w-100" src="${head.paths}" alt="${head.alt @ context='html'}"></a>
+				</div>
+			</sly>
+			<sly data-sly-test="${!headList.first}">
+				<div class="carousel-item">
+                <a href="${head.link}" target="${head.linktarget}">
+				  <img class="d-block w-100" src="${head.paths}" alt="${head.alt @ context='html'}"></a>
+				</div>
+			</sly>
+		</sly>
+       
+        
+    <!-- Carousel Repeating List END -->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<style>
+    .carousel-item{
+        max-height: 200px;
+    }
+    .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        border-top: 0;
+        border-bottom: 0;
+        border-radius: 10px;
+    }
+</style>
+<script>
+    $('.carousel').carousel({
+      interval: 2000
+    })
+</script>
