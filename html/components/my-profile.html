@@ -3,28 +3,19 @@
 
 <head>
 
-<!-- Responsive Meta Tag -->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta charset="utf-8">
 
     <title>ACG</title>
 
-<!-- Links -->
+<!-- Bootstrap -->    
 
-<!-- Bootstrap CSS -->
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    
-
-<!-- Custom CSS Inserted Here-->
     <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
  
-<!-- font Awesome CSS -->
+<!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
  
 <!-- * Custom CSS Inserted Here -->
     <link rel="stylesheet" href="../assets/css/main.css">
-
-<!-- JavaScript -->
 
 <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -71,18 +62,19 @@
 <!-- Profile Image -->
             <div class="bg-aaa-blue mt-4 pl-4 img-fluid profile-image pb-4">
                 <div class="position-relative">
-                    <img src="../assets/img/profile-image.png" />
-                    <p class="image-name"><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p>
+                    <i class="camera-icon fa fa-camera fa-4x"></i>
+                    <img src="../assets/img/profile-image2.png" />
+                    <!-- <img src="../assets/img/profile-image.png" /> -->
+                  <!--  <p class="image-name"><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p> -->
+                    <button class="btn btn-continue upload-button" type="submit">Choose Profile Image</button>
+                    <div class="image-caption">
+                        <p class=""><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p>
+                    </div>
                 </div>
             </div>
  
 <!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
 <!-- Button -->
-            <div class="mt-4 pl-4 pb-4 upload-button">
-
-                <button class="btn btn-continue" type="submit">Upload</button>
-
-            </div>
 
         </div>
 
@@ -91,18 +83,8 @@
 
             <div class="row">
 
-<!--
-                <div class="col-xs-0 col-sm-3">
-
-                    <div class="align-right">
-                        <p></p>
-                    </div> -->
-<!--
-                </div>
--->
                 <div class="col-xs-1 col-sm-3 mobile-field-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="align-right">
                         <p>NAME</p>
                     </div>
@@ -111,7 +93,6 @@
 
                 <div class="col-xs-6 col-sm-6 pr-4 mobile-value-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="orange-text">
                         <p>* Peter Miller</p>
                     </div>
@@ -122,9 +103,14 @@
 
             <div class="row">
                 <div class="col-sm-3 align-right-category">
+                    <div class="orange-text align-right">
+                        <p>Assigned</p>
+                    </div>
+                </div>   
+            </div>
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-
+            <div class="row">
+                <div class="col-sm-3 align-right-category">
     
                 </div>
             </div>
@@ -132,8 +118,6 @@
     
                 <div class="col-sm-3 mobile-field-width">
 
-
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="align-right">
                         <p>LOB / SCHOOL</p>
                     </div>
@@ -142,7 +126,6 @@
     
                 <div class="col-sm-6 pr-5 mobile-value-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div>
                         <select class="combobox form-control">
                             <option class="text-faded"> - Select LOB / School - </option>
@@ -158,29 +141,9 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-3 align-right-category">
-                        <div class="orange-text align-right">
-                                <p>Assigned</p>
-                            </div>
-                </div>   
-            </div>
 
-            <div class="row">
-
-<!-- Might need to keep this for the Bootstrap alignment to work, but I'm not sure. -->
-<!-- Might just need to use an empty text component -->
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-                <div class="col-sm-3">
-
-                    <div>
-                        <p></p>
-                    </div>
-    
-                </div>
-    
                 <div class="col-sm-3 mobile-field-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="align-right">
                         <p>SUB-SCHOOL</p>
                     </div>
@@ -189,7 +152,6 @@
 
                 <div class="col-sm-6 pr-5 mobile-value-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                 <div>
                     <select class="combobox form-control">
                         <option> - Select Sub-School - </option>
@@ -207,12 +169,11 @@
 
 <!-- This is the White, Horizontal "Separator" Line -->
             <hr class="line">
-
+<!-- -->
             <div class="row">
 
                 <div class="col-sm-3 mobile-field-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="align-right">
                         <p>LOCATION</p>
                     </div>
@@ -221,7 +182,6 @@
 
                 <div class="col-sm-3 mobile-value-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="orange-text">
                         <p>
                             * Dearborn, MI
@@ -236,7 +196,6 @@
         
                 <div class="col-sm-3 mobile-field-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="align-right">
                         <p>JOB TITLE</p>
                     </div>
@@ -245,7 +204,6 @@
         
                 <div class="col-sm-3 mobile-value-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="orange-text">
                         <p>
                             * Claims Executive
@@ -259,7 +217,6 @@
         
                 <div class="col-sm-3 mobile-field-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="align-right">
                         <p>CLAIMS ACADEMY LEARNER ROLE</p>
                     </div>
@@ -268,7 +225,6 @@
         
                 <div class="col-sm-3 mobile-value-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="orange-text">
                         <p>
                             * Learner
@@ -283,7 +239,6 @@
 
                 <div class="col-sm-3 mobile-field-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="align-right">
                         <p>+ Required</p>
                     </div>
@@ -292,7 +247,6 @@
         
                 <div class="col-sm-6 mobile-value-width">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
                     <div class="orange-text">
                         <p>* Contact Human Resources for changes to these fields</p>
                     </div>
@@ -304,8 +258,7 @@
             <div class="row">
                 <div class="col-sm-12 mobile-value-width mb-4 button-padding-right align-right">
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-                    <button class="btn btn-continue" type="submit">Continue</button>
+                    <button class="btn btn-continue" type="submit">Submit</button>
                 </div>
             </div>
 

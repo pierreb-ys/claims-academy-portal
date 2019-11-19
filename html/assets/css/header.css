@@ -82,6 +82,12 @@
     padding: 5px;
   }
 
+  .profile-pic {
+    padding: 2px;
+    width: 50%;
+    height: 50%;
+  }
+
   #margin-right-neg-60 {
     margin-right: -60px;
   }

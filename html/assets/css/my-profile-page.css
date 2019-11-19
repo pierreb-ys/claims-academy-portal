@@ -51,7 +51,6 @@ div.profile-image img {
 hr {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  margin-right: 2rem;
   border-top: 2px solid rgb(235, 141, 20);
   width: 50%;
 }
@@ -69,6 +68,29 @@ hr {
   color: black;
   border-color: none;
   font-family: "mission-gothic-regular";
+}
+
+.image-name {
+  position: absolute;
+  bottom: 132px;
+  left: 60px;
+}
+
+.upload-button {
+  position: absolute;
+  top: 12px;
+  left: 36px;
+}
+
+.image-caption {
+  background-color: #F68C34;
+  padding: 12px;
+}
+
+.camera-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 @media (max-width: 579px) {
@@ -115,4 +137,13 @@ div.align-right {
   width: 100%;
 }
 
+.image-caption p {
+  padding: 12px;
+}
+
+@media (max-width: 579px) {
+  .image-caption {
+    margin-lefT: 114px;
+    margin-right: 114px
+  }
 }
