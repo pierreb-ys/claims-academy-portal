@@ -89,61 +89,99 @@ hr {
 
 .camera-icon {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 24px;
+  right: 48px;
+}
+
+.margin-fix p {
+  margin-left: 24px;
+}
+
+.orange-text span {
+  color: #F68C34;
+}
+
+.color-fix {
+  color: #F68C34;
+}
+
+.color-fix span {
+  color: #F68C34;
+}
+
+.span-width-12 {
+
+  padding-left: 24px;
+}
+
+.upload-caption {
+  font-size: 12px;
+  text-align: center;
 }
 
 @media (max-width: 579px) {
 
-  /*
+    /*
 
-  div.align-right p {
-    text-align: right;
+    div.align-right p {
+      text-align: right;
+    }
+
+    */
+
+    div.align-right-category p {
+      text-align: left;
+      padding-left: 44px;
+    }
+
+    div.profile-image img {
+      padding-left: 0;
+      width: 50%;
+    }
+
+  div.profile-image {
+    text-align: center;
   }
 
-  */
-
-  div.align-right-category p {
-    text-align: left;
-    padding-left: 44px;
+  option.text-faded {
+    color: #A9A9A9;
   }
 
-  div.profile-image img {
-    padding-left: 0;
+  .mobile-category-width {
     width: 50%;
   }
 
-div.profile-image {
-  text-align: center;
-}
+  .mobile-field-width {
+    width: 35%;
+  }
 
-option.text-faded {
-  color: #A9A9A9;
-}
+  .mobile-value-width {
+    width: 65%;
+  }
 
-.mobile-category-width {
-  width: 50%;
-}
+  div.align-right {
+    width: 100%;
+  }
 
-.mobile-field-width {
-  width: 35%;
-}
-
-.mobile-value-width {
-  width: 65%;
-}
-
-div.align-right {
-  width: 100%;
-}
-
-.image-caption p {
-  padding: 12px;
+  .image-caption p {
+    padding: 12px;
+  }
 }
 
 @media (max-width: 579px) {
   .image-caption {
-    margin-lefT: 114px;
+    margin-left: 114px;
     margin-right: 114px
   }
+
+  .camera-icon {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+  }
+
+  .upload-caption {
+
+  }
+
 }

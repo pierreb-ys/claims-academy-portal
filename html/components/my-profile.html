@@ -62,11 +62,13 @@
 <!-- Profile Image -->
             <div class="bg-aaa-blue mt-4 pl-4 img-fluid profile-image pb-4">
                 <div class="position-relative">
-                    <i class="camera-icon fa fa-camera fa-4x"></i>
+                        
+                    <a src=""><i class="camera-icon fa fa-camera fa-4x"><br /><p class="upload-caption">Choose<br /> Profile Image</p>
+                    </i></a>
                     <img src="../assets/img/profile-image2.png" />
                     <!-- <img src="../assets/img/profile-image.png" /> -->
                   <!--  <p class="image-name"><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p> -->
-                    <button class="btn btn-continue upload-button" type="submit">Choose Profile Image</button>
+                 <!--   <button class="btn btn-continue upload-button" type="submit">Choose Profile Image</button> -->
                     <div class="image-caption">
                         <p class=""><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p>
                     </div>
@@ -102,8 +104,8 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-3 align-right-category">
-                    <div class="orange-text align-right">
+                <div class="col-sm-3">
+                    <div class="orange-text margin-fix">
                         <p>Assigned</p>
                     </div>
                 </div>   
@@ -119,14 +121,15 @@
                 <div class="col-sm-3 mobile-field-width">
 
                     <div class="align-right">
-                        <p>LOB / SCHOOL</p>
+                        <p class="">LOB / SCHOOL</p>
                     </div>
     
                 </div>
     
                 <div class="col-sm-6 pr-5 mobile-value-width">
 
-                    <div>
+                    <div class="display-flex">
+                        <span class="color-fix" style="margin-right: 12px;"> + </span> 
                         <select class="combobox form-control">
                             <option class="text-faded"> - Select LOB / School - </option>
                             <option value="CBI">Casualty/BI (Bodily Injury)</option>
@@ -152,7 +155,8 @@
                 <div class="col-sm-6 pr-5 mobile-value-width">
 
                 <div>
-                    <select class="combobox form-control">
+                    <span class="span-width-12"></span> 
+                    <select class="combobox form-control span-width-12 sub-school-spacing-fix" style="margin-left: 22px; margin-right: 12px;">
                         <option> - Select Sub-School - </option>
                         <option value="PA"> - Sub-School list determined by LOB/School selected. See BRD for list. - </option>
                         <option value="CT"> - Sub-School A - </option>
@@ -213,7 +217,7 @@
 
             <div class="row">
         
-                <div class="col-sm-3 mobile-field-width">
+                <div class="col-xs-4 col-sm-3 mobile-field-width">
 
                     <div class="align-right">
                         <p>CLAIMS ACADEMY LEARNER ROLE</p>
@@ -235,18 +239,18 @@
 
             <div class="row">
 
-                <div class="col-sm-3 mobile-field-width">
+                <div class="col-xs-8 col-sm-8 mobile-field-width">
 
-                    <div class="align-right">
-                        <p>+ Required</p>
+                    <div class="align-right orange-text">
+                        <p>* Contact Human Resources for changes to these fields</p>
                     </div>
     
                 </div>
         
-                <div class="col-sm-6 mobile-value-width">
+                <div class="col-xs-4 col-sm-4 mobile-value-width">
 
                     <div class="orange-text">
-                        <p>* Contact Human Resources for changes to these fields</p>
+                        <p>+ Required</p>
                     </div>
     
                 </div>
@@ -256,7 +260,7 @@
             <div class="row">
                 <div class="col-sm-12 mobile-value-width mb-4 button-padding-right align-right">
 
-                    <button class="btn btn-continue" type="submit">Submit</button>
+                    <button class="btn btn-continue" type="submit">Continue</button>
                 </div>
             </div>
 

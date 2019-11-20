@@ -16,10 +16,12 @@
   }
   
   .navbar a {
-    font-size: .75em;
+    font-size: 1em;
     color: #fff;
     text-align: center;
     font-family: 'mission-gothic-regular';
+    padding-left: 3em;
+    padding-right: 3em;
   }
   
   .navbar-light .navbar-nav .nav-link {
@@ -36,6 +38,8 @@
     padding-top: 0;
     padding-bottom: 0;
     font-family: 'mission-gothic-regular';
+    padding-left: 1em;
+    padding-right: 0.5em;
   }
   
   span.navbar-text {
@@ -52,4 +56,19 @@
       margin-right: 10px;
     }
   
+.text-username {
+  padding-left: 144px;
+}
+
+  }
+
+  @media (max-width: 575.98px) {
+   div.img-fluid img {
+     width: 100%;
+   }
+  
+.profile-pic {
+  width: 40%;
+}
+
   }

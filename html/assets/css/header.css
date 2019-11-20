@@ -91,3 +91,16 @@
   #margin-right-neg-60 {
     margin-right: -60px;
   }
+
+
+  @media (max-width: 579px) {
+
+.logo {
+    width: 100%;
+  }
+
+  .profile-pic {
+    width: 40%;
+  }
+
+}
