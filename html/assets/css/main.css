@@ -134,3 +134,18 @@ div.orange-text p {
   margin-top: -20px;
   width: 95%;
 }
+
+/* Newsfeed */
+
+.height-36 {
+  height: 36px;
+}
+
+.color-gray {
+  color: #2B5F9E;
+}
+
+.fas {
+  margin-top: 6px;
+  margin-right: 6px;
+}
