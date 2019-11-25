@@ -330,7 +330,7 @@
 <!-- PAGE CONTENT -->
 <div class="container-fluid no-padding cap-content">
 
-<!-- Video Showcase -->
+    <!-- Video Showcase -->
     <div class="row margin-12">
 
         <div class="col-sm-12">
@@ -370,7 +370,7 @@
 
     </div>
 
-<!-- CONTROLS -->
+    <!-- CONTROLS -->
     <div class="row margin-12">
 
         <div class="col-sm-12 display-inline-flex bg-light-blue">
@@ -389,30 +389,50 @@
 
     <div class="row margin-12">
 
-            <div class="col-sm-4 display-flex">
+        <div class="col-sm-4 display-flex">
 
-                <form action="">
-
-                    <div class="input-group mb-1 border rounded-pill">
-                        <input type="search" placeholder="Search" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                        <div class="input-group-append border-0">
+            <form action="">
+                <div class="input-group mb-1 border rounded-pill">
+                    <input type="search" placeholder="Search" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                    <div class="input-group-append border-0">
                         <button id="button-addon3" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
                         <button class="btn btn-continue" type="submit">Continue</button>   
                     </div>
-                    </div>
+                </div>
+            </form>
 
+        </div>
 
-    <!--
-                    <button class="btn btn-continue" type="submit">Search</button>
-    -->
-                </form>
-
+        <div class="col-sm-2 brand-font">
+            <div>
+                <select class="combobox form-control">
+                    <option>School</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
             </div>
+        </div>
 
-            <div class="col-sm-2 brand-font">
+        <div class="col-sm-2 brand-font">
+            <div>
+                <select class="combobox form-control">
+                    <option>Sub-School</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-sm-1 brand-font">
                 <div>
                     <select class="combobox form-control">
-                        <option>School</option>
+                        <option>Phase</option>
                         <option value="PA">Pennsylvania</option>
                         <option value="CT">Connecticut</option>
                         <option value="NY">New York</option>
@@ -420,70 +440,45 @@
                         <option value="VA">Virginia</option>
                     </select>
                 </div>
+        </div>
+    
+        <div class="col-sm-1 brand-font">
+            <div>
+                <select class="combobox form-control">
+                    <option>Level</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
             </div>
+        </div>
 
-            <div class="col-sm-2 brand-font">
-                <div>
-                    <select class="combobox form-control">
-                        <option>Sub-School</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select>
-                </div>
+        <div class="col-sm-2 brand-font">
+            <div>
+                <select class="combobox form-control">
+                    <option>Release Date</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NY">New York</option>
+                    <option value="MD">Maryland</option>
+                    <option value="VA">Virginia</option>
+                </select>
             </div>
+        </div>
 
-            <div class="col-sm-1 brand-font">
-                    <div>
-                        <select class="combobox form-control">
-                            <option>Phase</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="NY">New York</option>
-                            <option value="MD">Maryland</option>
-                            <option value="VA">Virginia</option>
-                        </select>
-                    </div>
-            </div>
-        
-            <div class="col-sm-1 brand-font">
-                <div>
-                    <select class="combobox form-control">
-                        <option>Level</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="col-sm-2 brand-font">
-                <div>
-                    <select class="combobox form-control">
-                        <option>Release Date</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select>
-                </div>
-            </div>
     </div>
 
-<!-- SCHOOL / SUB-SCHOOL -->
+    <!-- SCHOOL / SUB-SCHOOL -->
     <div class="row margin-12">
+
         <div class="col-sm-12 display-inline-flex bg-light-blue">
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
+
             <div class="img-fluid icon align-vertically">
                 <img src="../../assets/img/my-profile-icon.png" />
             </div>
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
             <div class="center-text mission-gothic-regular heading-title">
                 <p class="align-vertically">SCHOOL / SUB-SCHOOL</p>
             </div>
@@ -491,41 +486,92 @@
     </div>
 
     <div class="row">
+
         <div class="col-sm-12 align-center margin-12">
 
-            <div class="row">
+            <div class="row mb-2">
 
-                <div class="col-sm-2">
-                        <div class="card" style="">
-                                <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                </div>
-
-                <div class="col-sm-2">
-                        <div class="card" style="">
-                                <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                </div>
-
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <div class="card" style="">
                         <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="display-flex">
+                                <p class="card-text">Flex Work Program</p>
+                                <p class="card-text">Duration: </p>
+                            </div>
+                            <p class="card-text">Released: </p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-sm-3">
+                        <div class="card" style="">
+                            <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
+                            <div class="card-body">
+                                <div class="display-flex">
+                                    <p class="card-text">Flex Work Program</p>
+                                    <p class="card-text">Duration: </p>
+                                </div>
+                                <p class="card-text">Released: </p>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                            <div class="card" style="">
+                                <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
+                                <div class="card-body">
+                                    <div class="display-flex">
+                                        <p class="card-text">Flex Work Program</p>
+                                        <p class="card-text">Duration: </p>
+                                    </div>
+                                    <p class="card-text">Released: </p>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
             </div>
 
+            <div class="row mb-2">
+
+                    <div class="col-sm-2">
+                        <div class="card" style="">
+                            <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-2">
+                        <div class="card" style="">
+                            <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-2">
+                        <div class="card" style="">
+                            <img src="../../assets/img/card-placeholder.png" class="card-img-top" alt=" ... ">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
 
 
+        </div>
+
+    </div>
+
+<!--
             <div class="row">
                 <div class="col-sm-3">
                     <img class="img-fluid video-thumbnail" src="../../assets/img/videos/video-thumbnail.png" />
@@ -583,7 +629,7 @@
 
         </div>
     </div>
-
+-->
 <!--
     <div class="row margin-12">
         <div class="col-sm-12">
