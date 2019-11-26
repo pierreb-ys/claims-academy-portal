@@ -16,10 +16,6 @@
 @import url("typography.css");
 @import url("viewports.css");
 
-@import url(".css");
-@import url(".css");
-@import url(".css");
-
 /* Nothing can be above @import statements in CSS, not even comments, or they won't work. */
 /* ============ IMPORTED CSS (END) ============ */
 

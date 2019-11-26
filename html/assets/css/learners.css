@@ -1,17 +1,14 @@
+/* ============ LEARNERS ============ */
 
-
-
-
-
-  
-/* Search section  */
+/* Search */
   section.search {
     margin-top: 20px;
     background:     #fff;
     padding-top: 10px;
 }
  
-  section.search h2.title { background-color:#3398cb; 
+  section.search h2.title { 
+    background-color:#3398cb; 
     background-image: url('../../assets/img/search-title-icon.png');
     background-position: 10px center;
     background-repeat: no-repeat;
@@ -23,14 +20,33 @@
     line-height: 40px;  
 
 }
-  section.search select  { width:auto;  display: inline-block;   } 
-  section.search input { width:auto;  display: inline-block; border:1px solid #ddd;  }
-  section.search button, section.search button:hover {     background: #f90;     color: #fff;}
 
-  section.search .search-box input { background-color: #e6e7e8; }
-  section.search .search-box input, section.search .search-box button {  width: 255px; 
-    float: none;
-    display: block;  }
+  section.search select  {
+      width: auto; 
+      display: inline-block;
+    }
+    
+    
+  section.search input {
+      width:auto;
+      display: inline-block;
+      border:1px solid #ddd;
+    }
+
+  section.search button, section.search button:hover {
+      background: #f90;
+      color: #fff;
+    }
+
+  section.search .search-box input {
+      background-color: #e6e7e8;
+    }
+
+  section.search .search-box input, section.search .search-box button {
+        width: 255px; 
+        float: none;
+        display: block;
+    }
 
     section.search input {
         background-image: url('../../assets/img/search-icon.png');
@@ -44,20 +60,23 @@
         padding: 20px;    
     }
 
-    @media (max-width:767px){
-        section.search  .search-box {
-            margin-bottom: 10px;
-        }
-        section.search .search-box input, section.search .search-box button,
-        section.search select {
-            width: 100%;
-            display: block;
-        } 
-      }
+@media (max-width: 767px) {
 
- /* -- Contentarea  section     */  
+    section.search  .search-box {
+        margin-bottom: 10px;
+    }
+
+    section.search .search-box input, section.search .search-box button,
+    section.search select {
+        width: 100%;
+        display: block;
+    } 
+
+}
+
+ /* Contentarea Section */  
  section.contentarea { 
-    background:     #fff;
+    background: #fff;
     padding-top: 10px;
     margin-bottom: 20px;
 }
@@ -76,7 +95,7 @@ section.contentarea .content-wrap {
     padding: 0 20px;    
 }
 
- /* -- buttons      */    
+ /* --- Buttons --- */    
 
 .btn.blue {
     background: #3098cc;
@@ -95,7 +114,6 @@ section.contentarea .content-wrap {
     width: 300px;    
 }
 
-
 button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
  
 .btn-grp {margin:10px 0;  text-align: right;  }
@@ -106,8 +124,7 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
     .btn-grp   { text-align: right;  } 
 }
 
-  /* -- learners   form   */   
-
+/* Learners Form */   
 .learner-form {
     background:  #9fc5f8;
     margin-bottom: 20px; 
@@ -115,7 +132,10 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
     padding-bottom: 10px;
     margin-bottom: 0;
 }
-.learner-form  .buttons { text-align: right; }
+
+.learner-form  .buttons {
+    text-align: right;
+}
 
 
 @media (min-width:767px){ 
@@ -140,21 +160,19 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
     } 
 }
 
-  /* -- learners   Datatable  */      
+  /* Learners Datatable */      
   
   table#learners {
       margin-top: 0 !important;
       margin-bottom: 0 !important;
   }
  
-  
   #learners_wrapper { margin-bottom: 10px; }
   #learners th .count span {    font-size: 10px; }
   #learners .fa { color:#333 ; margin: 0;}
   #learners th {
       font-weight: normal;
   }
-  
   
   #learners th  {
      color:#666; 
@@ -198,7 +216,7 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
   #learners th:first-child , #learners td:first-child { background: #9fc5f8; }
  
   
-  @media (min-width:767px){  
+@media (min-width:767px) {  
     #learners_filter ,
     #learners_paginate {
         float: right;
@@ -216,7 +234,7 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
 }
 
 
-/* -- calendar input start */    
+/* Calendar Input */    
   .calendar-input {
       position: relative;
       display: inline-block;
@@ -238,12 +256,13 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
   }
     
 
-  /* --responsive datatable     */ 
+  /* Responsive Datatable */ 
   .responsive-table {
     border: 1px solid #9fc5f8;
     margin-bottom: 20px;
   }
- /* -- datatable  auto scrollbar  */ 
+
+ /* Datatable auto scrollbar  */ 
   @media (max-width:1024px){ 
     .responsive-table { overflow: auto; } 
 }
