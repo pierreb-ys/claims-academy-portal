@@ -1,0 +1,89 @@
+
+ /* Select Dropdown */
+
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid #3398cb;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+
+  margin-bottom: 10px;
+}
+
+
+/* Arrows */
+
+select {
+  border: 1px solid #3398cb;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #333 50%),
+    linear-gradient(135deg, #333 50%, transparent 50%),
+    linear-gradient(to right, #3398cb, #3398cb);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+
+/* Input Placeholder */    
+.form-control::placeholder {
+    color: #666666;
+    opacity: 1; /* Firefox */
+  }
+  .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #666666;
+  }
+  .form-control::-ms-input-placeholder { /* Microsoft Edge */
+      color: #666666;
+  }
+
+  /* Page Background */   
+
+  body { background: #c4e2f0; }
+
+  /* Header Background  */   
+ .cap-header {    background:   #fff; }
+
+  /*  Navigation (Active) */
+  .navbar-nav.nav-pills a.active {
+    background-color:   orange;
+    color: white;
+}

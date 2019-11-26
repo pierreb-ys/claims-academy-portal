@@ -1,6 +1,4 @@
-/* ------------ ------------ ------------ ------------ VIDEO ------------ ------------ ------------ ------------ */
-
-/* TEXT */
+/* ============ VIDEO PAGE ============ */
 
 .brand-font {
   font-family: 'mission-gothic-regular';
@@ -18,7 +16,7 @@ div.heading-title p {
   font-family: "mission-gothic-regular";
 }
 
-/* VIDEO */
+/* ------------ VIDEO ------------ */
 
 .video-thumbnail {
   max-width: 90%;
@@ -32,12 +30,13 @@ div.heading-title p {
 
 }
 
+/* DONE: The video needs to be responsive. */
 .video-fluid iframe {
   max-width: 100%;
   width: 100%;
 }
 
-/* */
+/* ------------ - ------------ */
 .form-control:focus {
   box-shadow: none;
 }
@@ -54,13 +53,12 @@ div.heading-title p {
   color: orange;
 }
 
-/* IMG */
-
+/* ------------ IMAGES ------------ */
 div.icon img {
   max-width: 30%;
 }
 
-/* VIEWPORTS */
+/* ------------ VIEWPORTS ------------ */
 @media (min-width: 1329px) {
   .margin-top-fix {
     margin-top: 36px;
@@ -99,4 +97,12 @@ div.icon img {
 
 }
 
-/* ------------ ------------ VIDEO DETAILS ------------ ------------ */
+/* ====== ADD ====== */
+
+/* ====== ADMIN ====== */
+
+/*  ====== EDIT ====== */
+
+/* ====== LEARNER VIEW ====== */
+
+/* ====== LEARNER VIEW: ASSIGN ====== */

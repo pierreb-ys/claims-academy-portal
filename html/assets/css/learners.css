@@ -1,1 +1,252 @@
-/* ------------ ------------ ------------ ------------ LEARNERS ------------ ------------ ------------ ------------ */
+
+
+
+
+
+  
+/* Search section  */
+  section.search {
+    margin-top: 20px;
+    background:     #fff;
+    padding-top: 10px;
+}
+ 
+  section.search h2.title { background-color:#3398cb; 
+    background-image: url('../../assets/img/search-title-icon.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-size: 30px; 
+    font-size:18px;
+    color:#fff;
+    text-transform: uppercase;
+    line-height: 40px;  
+
+}
+  section.search select  { width:auto;  display: inline-block;   } 
+  section.search input { width:auto;  display: inline-block; border:1px solid #ddd;  }
+  section.search button, section.search button:hover {     background: #f90;     color: #fff;}
+
+  section.search .search-box input { background-color: #e6e7e8; }
+  section.search .search-box input, section.search .search-box button {  width: 255px; 
+    float: none;
+    display: block;  }
+
+    section.search input {
+        background-image: url('../../assets/img/search-icon.png');
+        background-position: 5px center;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        background-size: 30px;
+    }
+
+    section.search .search-content {
+        padding: 20px;    
+    }
+
+    @media (max-width:767px){
+        section.search  .search-box {
+            margin-bottom: 10px;
+        }
+        section.search .search-box input, section.search .search-box button,
+        section.search select {
+            width: 100%;
+            display: block;
+        } 
+      }
+
+ /* -- Contentarea  section     */  
+ section.contentarea { 
+    background:     #fff;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+ 
+ section.contentarea h2.title { background-color:#3398cb;  
+    padding-left: 20px;
+    background-size: 30px; 
+    font-size:18px;
+    color:#fff;
+    text-transform: uppercase;
+    line-height: 40px;  
+
+}
+
+section.contentarea .content-wrap {
+    padding: 0 20px;    
+}
+
+ /* -- buttons      */    
+
+.btn.blue {
+    background: #3098cc;
+    color:#fff;
+}
+.btn.darkBlue {
+    background: #275f92;
+    color:#fff;
+}
+.btn.lightBlue {
+    background: #6fa8dc;
+    color:#fff;
+}
+ 
+.btn.assign-task-btn {
+    width: 300px;    
+}
+
+
+button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
+ 
+.btn-grp {margin:10px 0;  text-align: right;  }
+.btn-grp button{   border:none; color: #fff;     text-align: left;  vertical-align: middle; text-transform: uppercase;    font-size: 18px;  }
+.btn-grp button img { height: 20px;   }   
+
+@media (min-width:767px){   
+    .btn-grp   { text-align: right;  } 
+}
+
+  /* -- learners   form   */   
+
+.learner-form {
+    background:  #9fc5f8;
+    margin-bottom: 20px; 
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.learner-form  .buttons { text-align: right; }
+
+
+@media (min-width:767px){ 
+    .learner-form .buttons button:last-child {
+     margin-right: 20px;}
+    .learner-form label:first-child {
+        margin-left: 20px;
+    }  
+}
+
+@media (max-width:1024px){  
+    .learner-form label, .learner-form .calendar-input {
+        margin-left: 30px;
+    }
+}
+@media (max-width:767px){  
+    .learner-form  .buttons { text-align: center; }
+    .learner-form  .buttons  button {  width: 100%; margin:3px;}  
+    .learner-form {
+        text-align: center;
+        padding: 10px;
+    } 
+}
+
+  /* -- learners   Datatable  */      
+  
+  table#learners {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+ 
+  
+  #learners_wrapper { margin-bottom: 10px; }
+  #learners th .count span {    font-size: 10px; }
+  #learners .fa { color:#333 ; margin: 0;}
+  #learners th {
+      font-weight: normal;
+  }
+  
+  
+  #learners th  {
+     color:#666; 
+     text-align: center;
+  }
+  #learners  .count {
+      width: 100px;
+      text-align: center;
+  }
+  #learners .count i {
+      float: left;
+      width: 50%;
+      text-align: center;
+  }
+  #learners .count span {
+      width: 49%;
+      float: left;
+  }
+ 
+  #learners, #learners th, #learners td {
+      border: none;
+  }
+  #learners td:nth-child(3) {
+      line-height: 50px;
+  }
+  
+  #learners_length select {
+      display: inline-block;
+      width: auto;
+  }
+  #learners_filter .form-control {
+      display: inline-block;
+      width: auto;
+      border: 1px solid  #ddd;
+      margin-left: 10px;
+  }
+  table#learners.table-striped tbody tr:nth-of-type(2n+1) {
+      background-color: rgba(0,0,0,.03);
+  } 
+
+  #learners th:first-child , #learners td:first-child { background: #9fc5f8; }
+ 
+  
+  @media (min-width:767px){  
+    #learners_filter ,
+    #learners_paginate {
+        float: right;
+    }
+}
+ 
+@media (max-width:767px){ 
+   #learners .btn, #learners img {
+          margin-bottom: 10px;
+      } 
+    #learners td:nth-child(3) {
+        line-height: normal;
+    }
+ 
+}
+
+
+/* -- calendar input start */    
+  .calendar-input {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+  }  
+  .calendar-input input {
+      width: auto;
+      border: 1px solid #ddd;
+      position: relative;
+      padding-left: 30px;
+  }
+  .calendar-input i {
+      color: #333;
+      margin-left: -10px;
+      position: absolute;
+      left: 20px;
+      top: 0;
+      z-index: 0;
+  }
+    
+
+  /* --responsive datatable     */ 
+  .responsive-table {
+    border: 1px solid #9fc5f8;
+    margin-bottom: 20px;
+  }
+ /* -- datatable  auto scrollbar  */ 
+  @media (max-width:1024px){ 
+    .responsive-table { overflow: auto; } 
+}
+    
+
+ 
