@@ -1,9 +1,14 @@
+/* ------------ ------------ ------------ ------------ IMPORTED CSS ------------ ------------ ------------ ------------ */
+
 @import url("typography.css");
 
 @import url("header.css");
 @import url("navigation.css");
 
 @import url("my-profile-page.css");
+@import url(".css");
+@import url(".css");
+@import url(".css");
 
 @import url("footer.css");
 
@@ -27,14 +32,6 @@ div p {
   font-family: "mission-gothic-regular";
 }
 
-.no-margin {
-  margin: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
 .justify-content-center {
   justify-content: center;
 }
@@ -43,10 +40,23 @@ div p {
   width: 100%;
 }
 
+.font-size-24 {
+  font-size: 24px;
+}
+
 /* ------------ COLOR ------------ */
 
+.bg-white {
+  background-color: #fff;
+}
+
+.color-gray {
+  color: #2B5F9E;
+}
+
+/* BLUE */
 .bg-aaa-blue {
-  background: #003893;
+  background: #003893; /* This is AAA's "main" blue color. */
   color: #fff;
 }
 
@@ -55,12 +65,17 @@ div p {
   color: #fff;
 }
 
-.bg-white {
-  background-color: #fff;
+/* ORANGE */
+.bg-orange {
+  background-color: #F68C34;
 }
 
-.bg-orange {
-  background-color: orange;
+div.orange-text p {
+  color: #F68C34;
+}
+
+.bg-orange div {
+  background-color: #F68C34;
 }
 
 #bg-blue-dark-brand {
@@ -68,7 +83,7 @@ div p {
   color: #fff;
 }
 
-/* ------------ ------------ ALIGNMENT ------------ ------------ */
+/* ------------ ------------ LAYOUT ------------ ------------ */
 
 .display-flex {
   display: flex;
@@ -76,6 +91,10 @@ div p {
 
 .display-inline {
   display: inline;
+}
+
+.position-relative {
+  position: relative;
 }
 
 /* ------ Alignment: Vertical ------ */
@@ -92,15 +111,26 @@ div p {
   justify-content: center;
 }
 
+/* ------------ ------------ SPACING ------------ ------------ */
 
-/* ------------ ------------ ------------ ------------ CONTENT ------------ ------------ ------------ ------------ */
+/* ------------ PADDING ------------ */
+
+.no-padding {
+  padding: 0;
+}
+
+.padding-12 {
+  padding: 12px;
+}
 
 .content {
   padding: 24px;
 }
 
-div.orange-text p {
-  color: #F68C34;
+/* ------------ MARGIN ------------ */
+
+.no-margin {
+  margin: 0;
 }
 
 .margin-12 {
@@ -109,43 +139,24 @@ div.orange-text p {
   margin-top: 12px;
 }
 
-.padding-12 {
-  padding: 12px;
-}
+/* ------------ ------------ ------------ ------------ TO CLEAN-UP ------------ ------------ ------------ ------------ */
 
-.position-relative {
-  position: relative;
-}
-
-.font-size-24 {
-  font-size: 24px;
-}
-
-.bg-orange {
-  background-color: #F68C34;
-}
-
-.bg-orange div {
-  background-color: #F68C34;
-}
-
-.sub-school-spacing-fix {
-  margin-right: 20px;
-  margin-top: -20px;
-  width: 95%;
-}
-
-/* Newsfeed */
+/* NEWSFEED */
 
 .height-36 {
   height: 36px;
 }
 
-.color-gray {
-  color: #2B5F9E;
-}
-
+/* ICON */
 .fas {
   margin-top: 6px;
   margin-right: 6px;
+}
+
+/* ------------ ------------ CONTENT ------------ ------------ */
+
+.sub-school-spacing-fix {
+  margin-right: 20px;
+  margin-top: -20px;
+  width: 95%;
 }
