@@ -1,74 +1,74 @@
 /* ------------ ------------ ------------ ------------ NAVIGATION ------------ ------------ ------------ ------------ */
 
 .navbar-nav.nav-pills a:hover {
-    background-color: orange;
-    color: white;
-  }
+  background-color: orange;
+  color: white;
+}
   
-  .navbar-nav.nav-pills a:active {
-    background-color: orange;
-    color: white;
-  }
+.navbar-nav.nav-pills a:active {
+  background-color: orange;
+  color: white;
+}
   
-  .navbar-nav.nav-pills a:selected {
-    background-color: orange;
-    color: white;
-  }
+.navbar-nav.nav-pills a:selected {
+  background-color: orange;
+  color: white;
+}
   
-  .navbar a {
-    font-size: 1em;
-    color: #fff;
-    text-align: center;
-    font-family: 'mission-gothic-regular';
-    padding-left: 3em;
-    padding-right: 3em;
-  }
+.navbar a {
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  font-family: 'mission-gothic-regular';
+  padding-left: 3em;
+  padding-right: 3em;
+}
   
-  .navbar-light .navbar-nav .nav-link {
-    color: #fff;
-    font-family: 'mission-gothic-regular';
-  }
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-family: 'mission-gothic-regular';
+}
   
-  .navbar-light .navbar-nav .active > .nav-link {
-    color: #fff;
-    font-family: 'mission-gothic-regular';
-  }
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #fff;
+  font-family: 'mission-gothic-regular';
+}
   
-  .navbar-text p {
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: 'mission-gothic-regular';
-    padding-left: 1em;
-    padding-right: 0.5em;
-  }
+.navbar-text p {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'mission-gothic-regular';
+  padding-left: 1em;
+  padding-right: 0.5em;
+}
   
-  span.navbar-text {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+span.navbar-text {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 
-  @media (max-width: 575.98px) {
-  
-  /* NAVIGATION */
-  
-    .navbar-toggler {
+/* VIEWPORTS */
+@media (max-width: 575.98px) {
+
+  .navbar-toggler {
       margin-right: 10px;
-    }
+  }
   
-.text-username {
-  padding-left: 144px;
-}
-
+  .text-username {
+    padding-left: 144px;
   }
 
-  @media (max-width: 575.98px) {
-   div.img-fluid img {
-     width: 100%;
-   }
-  
-.profile-pic {
-  width: 40%;
 }
 
+@media (max-width: 575.98px) {
+
+  div.img-fluid img {
+    width: 100%;
   }
+
+  .profile-pic {
+    width: 40%;
+  }
+
+}

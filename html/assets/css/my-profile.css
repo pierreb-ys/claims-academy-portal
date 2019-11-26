@@ -1,3 +1,5 @@
+/* ALIGNMENT */
+
 .align-right {
   text-align: right;
 }
@@ -10,9 +12,52 @@ div.align-right-category p {
   text-align: right;
 }
 
+/* COMPONENTS */
+
+.btn-continue {
+  background-color: #F68C34;
+  color: black;
+  border-color: none;
+  font-family: "mission-gothic-regular";
+}
+
 .upload-button {
   text-align: center;
 }
+
+.upload-caption {
+  font-size: 12px;
+  text-align: center;
+}
+
+.button-padding-right {
+  padding-right: 48px;
+}
+
+.image-name {
+  position: absolute;
+  bottom: 132px;
+  left: 60px;
+}
+
+.upload-button {
+  position: absolute;
+  top: 12px;
+  left: 36px;
+}
+
+.image-caption {
+  background-color: #F68C34;
+  padding: 12px;
+}
+
+.camera-icon {
+  position: absolute;
+  top: 24px;
+  right: 48px;
+}
+
+
 
 div.icon img {
   max-width: 50%;
@@ -25,10 +70,6 @@ div.center-text p {
   margin-bottom: 0px;
   font-size: 24px;
   margin-left: -48px;
-}
-
-.display-inline-flex {
-  display: inline-flex;
 }
 
 div.padding-left-24 img {
@@ -59,44 +100,11 @@ hr {
   margin-bottom: 10px;
 }
 
-.button-padding-right {
-  padding-right: 48px;
-}
-
-.btn-continue {
-  background-color: #F68C34;
-  color: black;
-  border-color: none;
-  font-family: "mission-gothic-regular";
-}
-
-.image-name {
-  position: absolute;
-  bottom: 132px;
-  left: 60px;
-}
-
-.upload-button {
-  position: absolute;
-  top: 12px;
-  left: 36px;
-}
-
-.image-caption {
-  background-color: #F68C34;
-  padding: 12px;
-}
-
-.camera-icon {
-  position: absolute;
-  top: 24px;
-  right: 48px;
-}
-
 .margin-fix p {
   margin-left: 24px;
 }
 
+/* COLOR */
 .orange-text span {
   color: #F68C34;
 }
@@ -110,34 +118,22 @@ hr {
 }
 
 .span-width-12 {
-
   padding-left: 24px;
 }
 
-.upload-caption {
-  font-size: 12px;
-  text-align: center;
-}
 
+/* VIEWPORTS */
 @media (max-width: 579px) {
 
-    /*
+  div.align-right-category p {
+    text-align: left;
+    padding-left: 44px;
+  }
 
-    div.align-right p {
-      text-align: right;
-    }
-
-    */
-
-    div.align-right-category p {
-      text-align: left;
-      padding-left: 44px;
-    }
-
-    div.profile-image img {
-      padding-left: 0;
-      width: 50%;
-    }
+  div.profile-image img {
+    padding-left: 0;
+    width: 50%;
+  }
 
   div.profile-image {
     text-align: center;
@@ -166,9 +162,7 @@ hr {
   .image-caption p {
     padding: 12px;
   }
-}
 
-@media (max-width: 579px) {
   .image-caption {
     margin-left: 114px;
     margin-right: 114px
@@ -178,10 +172,6 @@ hr {
     position: absolute;
     top: 20px;
     left: 160px;
-  }
-
-  .upload-caption {
-
   }
 
 }

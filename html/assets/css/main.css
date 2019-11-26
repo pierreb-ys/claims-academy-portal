@@ -5,10 +5,10 @@
 @import url("header.css");
 @import url("navigation.css");
 
-@import url("my-profile-page.css");
-@import url(".css");
-@import url(".css");
-@import url(".css");
+@import url("my-profile.css");
+@import url("newsfeed.css");
+@import url("video.css");
+@import url("badges.css");
 
 @import url("footer.css");
 
@@ -97,7 +97,17 @@ div.orange-text p {
   position: relative;
 }
 
-/* ------ Alignment: Vertical ------ */
+/* ------ ALIGNMENT: Horizontal ------ */
+
+.vp-center {
+  align-items: normal;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/* ------ ALIGNMENT: Vertical ------ */
 
 .align-vertically {
   display: flex;
@@ -159,4 +169,18 @@ div.orange-text p {
   margin-right: 20px;
   margin-top: -20px;
   width: 95%;
+}
+
+/* ------------ ------------ CAROUSEL ------------ ------------ */
+
+.carousel-item {
+  max-height: 200px;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 10px;
 }
