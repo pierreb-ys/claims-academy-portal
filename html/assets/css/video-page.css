@@ -17,23 +17,6 @@
     padding-left: 0;
   }
   
-  /*
-  *
-  * ==========================================
-  * FOR DEMO PURPOSE
-  * ==========================================
-  *
-  */
-  
-  /*
-  body {
-    background: #ffd89b;
-    background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
-    background: linear-gradient(to right, #ffd89b, #19547b);
-    min-height: 50vh;
-  }
-  */
-  
   .form-control::placeholder {
     font-size: 0.95rem;
     color: orange;
@@ -102,8 +85,8 @@
   @media (max-width: 575px) {
     .margin-neg-48 {
       margin-top: -48px;
+    }
   }
-}
 
 .margin-bottom-36 {
   margin-bottom: 36px;
