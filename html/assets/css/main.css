@@ -1,22 +1,33 @@
-/* ------------ ------------ ------------ ------------ IMPORTED CSS ------------ ------------ ------------ ------------ */
-
-@import url("typography.css");
-
 @import url("header.css");
 @import url("navigation.css");
+@import url("ui.css");
+@import url("carousel.css");
+@import url("footer.css");
+@import url("alerts.css");
 
+@import url("dashboard.css");
 @import url("my-profile.css");
 @import url("newsfeed.css");
 @import url("video.css");
 @import url("badges.css");
+@import url("catalog.css");
+@import url("learners.css");
 
-@import url("footer.css");
-
+@import url("typography.css");
 @import url("viewports.css");
 
-/* ------------ ------------ ------------ ------------ GLOBAL ------------ ------------ ------------ ------------ */
+@import url(".css");
+@import url(".css");
+@import url(".css");
 
-/* ------------ ------------ BRANDING ------------ ------------ */
+/*
+============ IMPORTED CSS (END) ============
+*/
+
+
+/*
+============ GLOBAL STYLES ============
+*/
 
 /* ------------ TYPOGRAPHY ------------ */
 
@@ -98,7 +109,6 @@ div.orange-text p {
 }
 
 /* ------ ALIGNMENT: Horizontal ------ */
-
 .vp-center {
   align-items: normal;
 }
@@ -108,7 +118,6 @@ div.orange-text p {
 }
 
 /* ------ ALIGNMENT: Vertical ------ */
-
 .align-vertically {
   display: flex;
   flex-direction: column;
@@ -149,21 +158,23 @@ div.orange-text p {
   margin-top: 12px;
 }
 
-/* ------------ ------------ ------------ ------------ TO CLEAN-UP ------------ ------------ ------------ ------------ */
+/*
+============ CLEAN-UP ============
+*/
 
-/* NEWSFEED */
+/* ------------ NEWSFEED ------------ */
 
 .height-36 {
   height: 36px;
 }
 
-/* ICON */
+/* ------------ ICON ------------ */
 .fas {
   margin-top: 6px;
   margin-right: 6px;
 }
 
-/* ------------ ------------ CONTENT ------------ ------------ */
+/* ------------ CONTENT ------------ */
 
 .sub-school-spacing-fix {
   margin-right: 20px;
@@ -171,7 +182,7 @@ div.orange-text p {
   width: 95%;
 }
 
-/* ------------ ------------ CAROUSEL ------------ ------------ */
+/* ------------ CAROUSEL ------------ */
 
 .carousel-item {
   max-height: 200px;
