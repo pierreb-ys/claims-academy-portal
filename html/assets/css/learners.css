@@ -18,6 +18,8 @@
     color:#fff;
     text-transform: uppercase;
     line-height: 40px;  
+    padding-top: 0;
+    padding-bottom: 0;
 
 }
 
@@ -46,6 +48,7 @@
         width: 255px; 
         float: none;
         display: block;
+        max-width: 100%;
     }
 
     section.search input {
@@ -88,7 +91,8 @@
     color:#fff;
     text-transform: uppercase;
     line-height: 40px;  
-
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 section.contentarea .content-wrap {

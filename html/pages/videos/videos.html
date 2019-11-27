@@ -3,7 +3,9 @@
 
 <head>
 
-    <meta charset="utf-8">
+<!-- Responsive Meta Tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<meta charset="utf-8">
 
     <title>ACG</title>
 
@@ -11,30 +13,32 @@
     <!-- (CDN) -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+   
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="../../assets/css/video-page.css">
+    <link rel="stylesheet" href="../../assets/css/main.css"> 
 
 
     <!-- JavaScript -->
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
     <!-- Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom JS -->
-    <script src="../../assets/js/main.js"></script>
+        <script src="../../assets/js/main.js"></script>
 
 </head>
 
 <body>
-
+ 
 <!-- CAROUSEL -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -88,274 +92,438 @@
     </a>
 
 </div>
+ 
+ 
 
-<!-- VIDEO SHOWCASE (BANNER/HEADLINE) -->
-<div class="container-fluid no-padding cap-content">
-    <div class="row margin-12">
-
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-12 display-inline-flex bg-orange">
-                    <!-- ICON -->
-                    <div class="img-fluid icon align-vertically">
-                        <img src="../../assets/img/my-profile-icon.png" />
-                    </div>
-                    <!-- TITLE -->
-                    <div class="center-text mission-gothic-regular heading-title">
-                        <p class="align-vertically">VIDEO SHOWCASE</p>
-                    </div>
-                </div>
-            
-            </div>
-
-            <!-- VIDEO and TEXT -->
-            <div class="row">
-
-                <!-- VIDEO -->
-                <div class="col-sm-6 video-fluid margin-top-fix">
-                    <iframe src="https://player.vimeo.com/video/372959015?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                </div>
-
-                <!-- Text -->
-                <div class="col-sm-6 padding-12 margin-neg-48">
-                    <h2>Video Title</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida massa a pulvinar cursus. In porta ex ornare blandit pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque libero justo, bibendum eu erat sit amet, faucibus dapibus neque. Praesent urna tortor, consequat vel volutpat eu, sollicitudin quis risus. Curabitur lacinia augue at varius sagittis. Integer vulputate, odio eget fermentum ornare, metus tortor varius urna, ac pellentesque neque diam ac ligula. Duis malesuada rhoncus consectetur.</p>
-                </div>
-            
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<!-- USER INPUT COMPONENTS -->
-<div class="container-fluid no-padding cap-content">
-
-</div>
-
-<!-- TABLE CONTROLS -->
+<!-- --- VIDEO SHOWCASE --- -->
 <div class="container-fluid">
-
-    <!-- SEARCH VIDEO -->
-    <div class="row margin-12">
-        <div class="col-sm-12 display-inline-flex bg-light-blue">
-            <div class="img-fluid icon align-vertically">
-                <img src="../../assets/img/my-profile-icon.png" />
-            </div>
-
-            <div class="center-text mission-gothic-regular align-vertically heading-title">
-                <p class="align-vertically">SEARCH VIDEO</p>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- USER INPUT COMPONENTS -->
-    <div class="catalog-search"> 
-            <div class="row box"> 
     
-                <div class="col-md-12 brand-font"> 
+        <section class="videoShowcase"> 
+            
+            <h2 class="title">Video Showcase</h2>
     
-                    <i class="fa fa-search"></i>
-                    <input class="form-control search-input" type="search" placeholder="Search Course & Curriculum" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                
-                    <select class="combobox form-control">
-                        <option>Courses & Curricula</option>
-                        <option value="PA">Courses</option>
-                        <option value="CT">Curricula</option> 
-                    </select> 
+            <div class="videoShowcase-content">
+                <div class="row"> 
     
-                    <select class="combobox form-control">
-                        <option>Any Course Format</option>
-                        <option value="PA">Online</option>
-                        <option value="CT">ILT - Instructor Led Training</option>
-                        <option value="NY">Virtual Classroom </option> 
-                    </select> 
+                    <div class="col-md-6  ">   
+                        <div class="video-frame"><img class="" src="../../assets/img/video-placeholder.png"  ></div>
+                    </div>
     
-                    <select class="combobox form-control">
-                        <option>School</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select> 
+                    <div class="col-md-6 ">  
+                    <div class="showcase-content"> 
+                        <h3>Right to Object</h3>
+                       <p>ACG  is always looking ahead and striving to deliver new and innovative programs to position ourselves as a workplace of choice. Providing out dedicated employees with a flexible work/life balance is key so we are please to bring you the latest information on the pilot Flex Work Program!</p>
     
-                    <select class="combobox form-control">
-                        <option>Sub-School</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select> 
-    
-                    <select class="combobox form-control">
-                        <option>Phase</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="NY">New York</option>
-                        <option value="MD">Maryland</option>
-                        <option value="VA">Virginia</option>
-                    </select> 
-    
-                    <select class="combobox form-control">
-                        <option>Any Release Date</option>
-                        <option value="PA">Future Release</option>
-                        <option value="CT">Recently Added</option>
-                        <option value="NY">Available Now</option> 
-                    </select> 
-    
-                    <button class="btn search-btn">Search</button>
-    
+                         </div>
+                        </div>  
                 </div>
+            </div>  
+             
+        </section>
+        
+    </div>
     
-            </div>
-    </div>
-
-</div>
-
-<!-- COURSE LIST (CARDS/TILES) -->
-<div class="container-fluid">
-
-    <!-- BANNER -->
-    <div class="row margin-12">
-        <div class="col-sm-12 display-inline-flex bg-light-blue">
-
-            <div class="img-fluid icon align-vertically">
-                <img src="../../assets/img/my-profile-icon.png" />
-            </div>
-
-            <div class="center-text mission-gothic-regular heading-title">
-                <p class="align-vertically">SCHOOL / SUB-SCHOOL</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- TILES -->
-    <div class="row">
-        <div class="col-sm-12 align-center margin-12">
-
-                <div class="badges-list">  
+    
+    <!-- --- SEARCH VIDEO --- -->
+    <div class="container-fluid">
+        
+        <section class="search"> 
             
-                    <div class="row"> 
-            
-                    <!-- Dynamic data   --> 
-                    <div class="col-md-4 brand-font">   
-                        <div class="card-box" >
-                            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png"   >
-                            <div class="dsc">
-                                <h3>Badge Name</h3>
-                                <p>Badge Description</p>
-                            </div>  
-                        </div>         
+            <h2 class="title">Search Video</h2>
+    
+            <div class="search-content">
+                <div class="row"> 
+    
+                    <div class="col-md-3 search-box ">   
+                        <input class="form-control search-input" type="search" placeholder="Search Video Catalog" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                        <button class="btn search-btn">Search</button>
                     </div>
-                    <!-- badge box dynamic data END --> 
-            
-                    <!-- badge box dynamic data --> 
-                    <div class="col-md-4 brand-font">   
-                        <div class="badge-box" >
-                            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png"   >
-                            <div class="dsc">
-                                <h3>Badge Name</h3>
-                                <p>Badge Description</p>
-                            </div>  
-                        </div>         
-                    </div>
-                    <!--  badge box dynamic data  END--> 
-            
-                    <!--  badge box dynamic data   --> 
-                    <div class="col-md-4 brand-font">   
-                        <div class="badge-box" >
-                            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png"   >
-                            <div class="dsc">
-                                <p>Badge Name</p>
-                                <p>Badge Description</p>
-                            </div>  
-                        </div>         
-                    </div>
-                    <!--  badge box dynamic data  END--> 
-            
-                    <!--  badge box dynamic data   --> 
-                    <div class="col-md-4 brand-font">   
-                        <div class="badge-box" >
-                            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png"   >
-                            <div class="dsc">
-                                <h3>Badge Name</h3>
-                                <p>Badge Description</p>
-                            </div>  
-                        </div>         
-                    </div>
-                    <!--  badge box dynamic data  END--> 
-            
-                    <!--  badge box dynamic data   --> 
-                    <div class="col-md-4 brand-font">   
-                        <div class="badge-box" >
-                            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png" >
-                            <div class="dsc">
-                                <h3>Badge Name</h3>
-                                <p>Badge Description</p>
-                            </div>  
-                        </div>         
-                    </div>
-                    <!--  badge box dynamic data  END--> 
-            
-                    <!--  badge box dynamic data   --> 
-                    <div class="col-md-4 brand-font">   
-                    <div class="" >
-                            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png"  >
-                            <div class="dsc">
-                                    <h3>Badge Name</h3>
-                                    <p>Badge Description</p>
-                            </div>  
-                    </div>         
-                    </div>
-                    <!--  badge box dynamic data  END--> 
-            
-                    <!--  badge box dynamic data   --> 
-                    <div class="col-md-4 brand-font">   
-                        <div class="badge-box" >
-                                <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png" style="width: 80%;">
-                                <div class="dsc">
-                                    <h3>Badge Name</h3>
-                                    <p>Badge Description</p>
-                                </div>  
-                        </div>         
-                    </div>
-                    <!--  badge box dynamic data  END--> 
-            
-                    <!--  badge box dynamic data   --> 
-                    <div class="col-md-4 brand-font">   
-                        <div class="badge-box" >
-                            <img class="card-img" src="../../assets/img/card-placeholder.png" >
-                            <div class="dsc">
-                                <h3>Badge Name</h3>
-                                <p>Badge Description</p>
-                            </div>  
-                        </div>         
-                    </div>      
-                    <!--  badge box dynamic data  END-->  
-            
-                    </div>
+    
+                    <div class="col-md-9 ">  
+                        <select>
+                            <option>All School</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="NY">New York</option>
+                            <option value="MD">Maryland</option>
+                            <option value="VA">Virginia</option>
+                        </select>
+    
+                      
+    
+                        <select>
+                            <option>All Sub-School</option>
+                            <option value="PL">Pre Litigation</option>
+                            <option value="LC">Litigation (Casualty/BI)</option>
+                        </select> 
+                        <select>
+                            <option>Phase</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="NY">New York</option>
+                            <option value="MD">Maryland</option>
+                            <option value="VA">Virginia</option>
+                        </select>
+                        <select>
+                            <option>Any Level</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="NY">New York</option>
+                            <option value="MD">Maryland</option>
+                            <option value="VA">Virginia</option>
+                        </select>
+                        <select>
+                            <option>Any Release Date</option>
+                            <option value="PA">Future Release</option>
+                            <option value="CT">Recently Added</option>
+                            <option value="NY">Available Now</option> 
+                        </select>
+    
+                              </div>
+                    
                 </div>
-
-
-
-
-
-
-
-        </div>
-
+            </div>  
+             
+        </section>
+        
     </div>
+    
+    
+    
+    <!-- --- VIDEOS ADMIN --- -->
+    
+     
+    <div class="container-fluid"> 
+        <!-- --- School / Sub-School  start --- -->
+        <section class="contentarea    ">  
+            <h2 class="title">School / Sub-School</h2>  
+            <div class="content-wrap scroller two"> 
+                <div class="row">
+                    <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">   
+                        <aside class="video-thumb-frame" >                      
+                            <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                            <div class="video-thumb-content"> 
+                                    <div class="row">
+                                            <div class="col-sm-6">  
+                                                    <h3>Flex Work Program</h3>   
+                                                    <p>Released:06/30/2018</p>
+                                            </div>
+                                            <div class="col-sm-6">  
+                                                    <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                    <h4>Duration:6:03</h4>
+                                                   
+                                                </div>
+                                        </div>  
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Video Thumb Frame end --- -->
+    
+                    <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame" >                      
+                                    <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+    
+                        <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame" >                      
+                                    <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+    
+                         <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame" >                      
+                                    <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+        
+                        <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame" >                      
+                                        <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- -->
+        
+                            <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame" >                      
+                                        <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- --> 
+    
 
-</div>
+             <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">   
+                        <aside class="video-thumb-frame" >                      
+                            <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                            <div class="video-thumb-content"> 
+                                    <div class="row">
+                                            <div class="col-sm-6">  
+                                                    <h3>Flex Work Program</h3>   
+                                                    <p>Released:06/30/2018</p>
+                                            </div>
+                                            <div class="col-sm-6">  
+                                                    <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                    <h4>Duration:6:03</h4>
+                                                   
+                                                </div>
+                                        </div>  
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Video Thumb Frame end --- -->
+    
+                    <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame" >                      
+                                    <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+    
+                        <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame" >                      
+                                    <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+    
+                         <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame" >                      
+                                    <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+        
+                        <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame" >                      
+                                        <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- -->
+        
+                            <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame" >                      
+                                        <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- --> 
 
-<style> 
+                               <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame" >                      
+                                        <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- --> 
 
-
-</style>
+                               <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame" >                      
+                                        <div class="video-thumb">  <img  src="../../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- --> 
+                            
+                </div>
+            </div>
+    
+              <!-- --- pagination start --- -->
+              <div class="pagination-section" >
+                    <div class="row"><div class="col-sm-12 col-md-5">
+                        <div class="dataTables_info" id="school_info" role="status" aria-live="polite">Showing 1 to 4 of 4 entries</div></div><div class="col-sm-12 col-md-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="school_paginate">
+                                <ul class="pagination">
+                                    <li class="paginate_button page-item previous disabled" id="school_previous">
+                                    <a href="#" aria-controls="school" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                                </li>
+                                <li class="paginate_button page-item active">
+                                    <a href="#" aria-controls="school" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                </li>
+                                <li class="paginate_button page-item next disabled" id="schoolnext">
+                                    <a href="#" aria-controls="school" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+                                </li>
+                            </ul></div></div></div>
+            </div>
+            <!-- --- pagination end --- -->
+            
+        </section>
+        <!-- --- School / Sub-School  end --- -->
+     
+        
+    </div>
+     
+ 
+  
 
 <script>
     $('.carousel').carousel({

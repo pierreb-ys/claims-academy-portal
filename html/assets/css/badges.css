@@ -21,10 +21,10 @@ margin: auto;  }
 
 .badges .badge-box .dsc p { font-size: 10px; margin:0; } 
 .badges-list { padding: 0px 20px; height:  220px; overflow-y: auto;  overflow-x: hidden; }
-.btn-grp { text-align: right; margin: 10px 0; }
-.btn-grp button { margin:10px 0;  border:none; color: #fff;  width:195px;  height:50px ; text-align: left;  vertical-align: middle; text-transform: uppercase;  line-height: 44px; font-size: 18px;  }
-.btn-grp button:first-child { margin-right:20px; }
-.btn-grp button img { margin-left:15px; margin-right:15px; }    
+.badges .btn-grp { text-align: right; margin: 10px 0; }
+.badges  .btn-grp button { margin:10px 0;  border:none; color: #fff;  width:195px;  height:50px ; text-align: left;  vertical-align: middle; text-transform: uppercase;  line-height: 44px; font-size: 18px;  }
+.badges  .btn-grp button:first-child { margin-right:20px; }
+.badges  .btn-grp button img { margin-left:15px; margin-right:15px; }    
 .badges-btn { background: #f68d36; }
 .print-btn { background: #3098cc; }
 
