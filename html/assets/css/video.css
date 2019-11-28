@@ -267,8 +267,8 @@ div.detail-view-icon img {
   min-width: 30%;
 }
 
-.bg-orange {
-  background-color: var(--orange);
+.orange-bar {
+
 }
 
 @media (max-width: 575.98px) {
@@ -276,3 +276,46 @@ div.detail-view-icon img {
     width: 2%;
   }
 }
+
+.detail-btn {
+  color: white;
+  background-color: #65b1d8;
+  margin-top: 4px;
+  width: 100%;
+}
+
+.center-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-vertically {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video-detail-title-text {
+  font-size: 36px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.video-detail-badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  }
+
+  .video-detail-text {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .video-thumbnail-description {
+    background-color: #65b1d8;
+  }
