@@ -262,6 +262,17 @@ ul.pagination li {
 
 /* ====== VIDEO DETAIL PAGE ====== */
 
+div.detail-view-icon img {
+  max-width: 80%;
+  min-width: 30%;
+}
+
 .bg-orange {
   background-color: var(--orange);
+}
+
+@media (max-width: 575.98px) {
+  div.img-fluid img {
+    width: 2%;
+  }
 }
