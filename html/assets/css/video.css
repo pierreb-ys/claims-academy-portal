@@ -259,3 +259,9 @@ ul.pagination li {
 /* ====== LEARNER VIEW ====== */
 
 /* ====== LEARNER VIEW: ASSIGN ====== */
+
+/* ====== VIDEO DETAIL PAGE ====== */
+
+.bg-orange {
+  background-color: var(--orange);
+}
