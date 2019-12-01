@@ -245,7 +245,8 @@ section.contentarea {
   margin-bottom: 20px;
 }
 
-section.contentarea h2.title { background-color:#3398cb;  
+section.contentarea h2.title { 
+  background-color:#3398cb;  
   padding-left: 20px;
   background-size: 30px; 
   font-size:18px;
@@ -365,3 +366,40 @@ ul.pagination li {
 /* ====== LEARNER VIEW ====== */
 
 /* ====== LEARNER VIEW: ASSIGN ====== */
+
+
+
+/* ====== VIDEO DETAIL PAGE ====== */
+
+.orange-bar-left {
+  background-color: #f68d35;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  font-size: 18px;
+}
+
+.orange-bar-right {
+  background-color: #f68d35;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.video-detail-title {
+  font-size: 36px;
+}
+
+.video-thumbnail {
+  padding-left: 0px;
+}
+
+.video-detail-title {
+
+}
+
+.btn.detail-btn {
+  background-color: #65b1d8;
+  color: white;
+  align: center
+}
+
+
