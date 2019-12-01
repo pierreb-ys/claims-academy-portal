@@ -1,3 +1,74 @@
 /* ------------ ------------ ------------ ------------ NEWSFEED ------------ ------------ ------------ ------------ */
 
+
+section.newsfeed { 
+    margin-top: 20px;;
+}  
+
+section.newsfeed .content-wrap.scroller {
+    overflow: auto;
+    height: 500px;
+    overflow-x: hidden;
+}  
+section.contentarea.newsfeed h2.title { 
+    background-color:#3868aa;   
+    background-image: url('../../assets/img/newsfeed-icon.png');
+      background-position: 15px center;
+      background-repeat: no-repeat;
+      padding-left: 50px;
+      position: relative;
+} 
+section.newsfeed article {
+    background: #d6eaf5;
+    border-radius: 20px;
+    margin:  40px 20px;
+    padding: 20px 35px 20px 75px;
+    position: relative;
+}
+section.newsfeed article aside {
+    font-size: 14px;
+    text-align: center;
+    background-color: #0c3859;
+    border-radius: 50%;
+    line-height: 18px;  
+    color: #d5e9f3;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 5px; 
+}
+section.newsfeed article h3 {
+    color: #3868aa;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+section.newsfeed article p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+  
+/* close  button */
+
+section.contentarea.newsfeed h2.title .close {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+section.contentarea.newsfeed article .close {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+@media (max-width:767px){
+    section.newsfeed article { 
+        margin: 20px 0px; 
+    }
+}
+
+
 /* ------------ ------------ ------------ ------------ ADD/EDIT POST ------------ ------------ ------------ ------------ */

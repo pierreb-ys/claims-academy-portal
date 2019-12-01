@@ -54,64 +54,65 @@
 
 </head>
 
-<style>
-    .bg-orange {
-        background-color: var(--orange);
-    }
-</style>
-
 <body>
 
 <!-- TITLE BAR -->
-<div class="container-fluid no-padding cap-content">
+<div class="container-fluid">
 
     <!-- Top Bar -->
-    <div class="row bg-light-blue">
-        <!-- ICON -->
-        <div class="col-sm-2 display-inline-flex pt-2">
-            <div class="img-fluid icon padding-left-24">
+    <div class="row bg-light-blue pt-2 pb-2">
+
+        <div class="col-sm-1">
+
+            <div class="img-fluid detail-view-icon">
                 <img src="../../assets/img/my-profile-icon.png" />
             </div>
         </div>
-        <!-- TEXT -->
-        <div class="col-sm-1 display-inline-flex pt-2">
-            <div class="center-text mission-gothic-regular">
-                <p>Video Details</p>
-            </div>
+<!--
+        <div class="col-sm-2 flex-center-vertically">
+            <p>Video Details</p>
+        </div>
+        <div class="col-sm-1 flex-center-vertically">
+            <p>[DYNAMIC]</p>
         </div>
 
-        <div class="col-sm-1 display-inline-flex pt-2">
-            <div class="mission-gothic-regular">
-                <p>Video ID: </p>
-            </div>
+        <div class="col-sm-1">
+            <p>ID: </p>
         </div>
-
-        <div class="col-sm-2 display-inline-flex pt-2">
-            <div class="mission-gothic-regular">
-                <p>Version No.: </p>
-            </div>
+        <div class="col-sm-2">
+            <p>[DYNAMIC]</p>
         </div>
-
-        <div class="col-sm-2 display-inline-flex pt-2">
-            <div class="mission-gothic-regular">
-                <p>Active:  </p>
-            </div>
+        <div class="col-sm-1">
+            <p>Version: </p>
         </div>
-
+        <div class="col-sm-1">
+            <p>[DYNAMIC]</p>
+        </div>
+        <div class="col-sm-1">
+            <p>Active:  </p>
+        </div>
+        <div class="col-sm-1">
+            <p>[DYNAMIC]</p>
+        </div>
+    -->
     </div>
 
 </div>
 
-<!-- ROW 1: ORANGE BAR (W/ TEXT), VIDEO THUMBNAIL, ORANGE BAR -->
-<div class="container-fluid no-padding cap-content">
+<!-- ROW 1 -->
+<div class="container-fluid no-padding">
     <div class="row pt-4 bg-aaa-blue">
         
-        <div class="col-sm-6 orange-bar-left">
-            <p class="video-detail-title">Flex Work Program</p>
+        <div class="col-sm-6 bg-orange flex-center-vertically">
+            <p class="video-detail-title-text">Flex Work Program</p>
         </div>
 
-        <div class="col-sm-4 video-thumbnail">
-            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png"   >
+        <div class="col-sm-4">
+            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png">
+            <div class="display-flex video-thumbnail-description">
+                <p>Version No.: </p>
+                <p>Duration: </p>
+            </div>
         </div>
 
         <div class="col-sm-2 orange-bar-right">
@@ -126,23 +127,23 @@
     <div class="row pl-4 pb-4 pt-4 bg-aaa-blue">
 
         <div class="col-sm-6">
-            <p>ACG is always looking ahead and striving to deliver new and innovative programs to position ourselves as a workplace
+            <p class="video-detail-text">ACG is always looking ahead and striving to deliver new and innovative programs to position ourselves as a workplace
                 of choice. Providing out dedicated employees with a flexible worklife balance is key so we are pleased to bring you
                 the latest information on the pilot Flex Work Program!
             </p>
         </div>
 
         <div class="col-sm-4 btn-grp">
-            <button class="btn detail-btn"><i class="fa fa-plus"></i> Launch Video</button><br />
-            <button class="btn detail-btn"><i class="fa fa-plus"></i> Add to Diary</button><br />
+            <button class="btn detail-btn"><i class="fa fa-plus"></i> Launch Video</button>
+            <button class="btn detail-btn"><i class="fa fa-plus"></i> Add to Diary</button>
             <button class="btn detail-btn"><i class="fa fa-plus"></i> Add to Syllabus</button>
         </div>
 
         <div class="col-sm-2">
-                <img class="" src="../../assets/img/badge6.png" width="50"  >
-                <p>Learning Task Badges</p>
-                <img class="" src="../../assets/img/badge-medal.png" width="50"  >
-                <p>Task Completion Points: </p>
+                <img class="video-detail-badge" src="../../assets/img/badge8.png" width="50">
+                <p class="align-center">Learning Task Badges</p>
+                <img class="video-detail-badge" src="../../assets/img/badge8.png" width="50">
+                <p class="align-center">Task Completion Points: </p>
 
         </div>
     </div>
