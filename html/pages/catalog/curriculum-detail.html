@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
  
 <!-- font Awesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
 <!-- * Custom CSS Inserted Here -->
     <link rel="stylesheet" href="../../assets/css/main.css">
@@ -41,429 +41,229 @@
 </head>
 
 <body>
+  
+<!-- Curriculum   -->
+<section class="window curriculum-details">
+        <h2><i class="fa fa-list" aria-hidden="true"></i> Curriculum <div class="window-close"></div></h2>
+    
+        <div class="container-fluid ">    
 
-<!-- HEADER -->
-
-<div class="container-fluid cap-header">
-
-    <div class="row align-items-center">
-
-<!-- LOGO SECTION: LARGE SIZES ONLY; ONLY SHOWN BEFORE NAVIGATION COLLAPSES -->
-
-        <div class="col-sm-3 d-sm-flex d-none flex-center bg-white" id="acg-logo"> 
-
-
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-
-<!-- * This is the Result in the Browser that the CSS is Targeting  --- -->
-            <div class="img-fluid logo">
-                <img class="" src="../../assets/img/ca-logo.png">
-            </div>
-<!-- * ------------ ------------ ------------ ------------ ------------ -->
-
-        </div>
-
-<!-- LOGO SECTION: SMALL SIZES ONLY, AFTER NAVIGATION HAS COLLAPSED -->
-
-        <div class="col-xs-6 d-sm-none d-flex bg-white" id="acg-logo">
-
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-
-<!-- * This is the Result in the Browser that the CSS is Targeting  --- -->
-            <div class="img-fluid logo">
-                <img class="" src="../../assets/img/ca-logo.png">
-            </div>
-<!-- * ------------ ------------ ------------ ------------ ------------ -->
-
-<!-- PROFILE PICTURE SECTION: SMALL SIZES ONLY, AFTER NAVIGATION HAS COLLAPSED -->
-
-            <div class="col-xs-6 margin-auto d-flex d-sm-none" id="margin-right-neg-60">            
-
-<!-- FIRST AND LAST NAME -->
-
-
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-
-<!-- * This is the Result in the Browser that the CSS is Targeting  --- -->
-                <span class="text-username">
-                    <div>
-                        <p>
-                            First<br/> Last
-                        <p>
+            <!-- Select Course Code start -->
+            <section class="row select-course">
+                <div class="col-md-2">
+                    <div class="edit-use">
+                        <button class="btn purple">Edit</button>
+                        <button class="btn white">Use</button>
                     </div>
-                </span>
-<!-- * ------------ ------------ ------------ ------------ ------------ -->
-
-
-<!-- PROFILE PICTURE -->
-
-
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-
-<!-- * This is the Result in the Browser that the CSS is Targeting  --- -->
-                <div class="img-fluid profile-pic navbar-brand">
-                    <img class="" src="../../assets/img/prof-pic.png">
                 </div>
-<!-- * ------------ ------------ ------------ ------------ ------------ -->
-
-            </div>
-
-        </div>
-
-<!-- HEADER SECTION: BLUE BACKGROUND: LARGER SIZES ONLY, SHOWN BEFORE THE NAVIGATION COLLAPSES -->
-
-        <div class="col-sm-9 bg-aaa-blue max-height-controller d-none d-sm-flex">
-            <div class="row align-items-center max-height-controller width-100">
-
-                <div class="col-xs-12 col-sm-5 title-column"> 
-
-                    <h2 class="navbar-text">
-
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-
-<!-- * This is the Result in the Browser that the CSS is Targeting  --- -->
-                        <div class="">
-                            <p class="">Welcome to the Claims Academy!</p>
-                        </div>
-<!-- * ------------ ------------ ------------ ------------ ------------ -->
-
-                    </h2>
-
+                <div class="col-md-3  ">
+                    <label>Curriculum ID </label>
+                    <input type="text" value="PRP-CAT-001">
                 </div>
-
-                <div class="col-sm-3 d-none d-sm-flex flex-center">
-
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-                    <div class="input-group stylish-input-group">
-                        
-                        <div class="input-group stylish-input-group">
-                            <input type="text" class="form-control"  placeholder="Search" >
-                            <span class="input-group-addon">
-                                <button type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>  
-                            </span>
-                        </div>
+                <div class="col-md-4">
+                    <label>Version No: </label>
+                    <input type="text" value="1" size="3">
+                </div>
+                <div class="col-md-3">
+                    <label>Date Active
+                        <div class="calendar-input">
+                            <input type="date" class="form-control"><i class="fa fa-calendar"></i></div>
+                    </label>
+                </div>
+            </section>
+            <!-- Select Course Code End -->
+    
+            <!-- yellow ribbon Code start -->
+            <section class="yellow-ribbon">
+                <div class="strip"></div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <textarea class="form-control"> Auto Insurance Basics </textarea>
                     </div>
-                    
-                </div>
-
-                <div class="col-sm-4">
-
-                    <div class="row">
-
-                        <div class="d-none d-sm-flex col-sm-12 flex-center">
-
-                            <div class="text-username display-inline ml-auto align-vertically">
-                                <p class="">First<br/> Last</p>
-                            </div>
-
-                            <div class="img-fluid profile-pic navbar-brand display-inline ml-auto">
-                                <img class="" src="../../assets/img/prof-pic.png">
-                            </div>
+                    <div class="col-md-4">
+                        <div class="video-frame"><img class="" src="../../assets/img/video-thumbnail.png">
+                            <button class="btn purple">Edit</button>
                         </div>
-
+    
                     </div>
-
+                    <div class="col-md-3">
+    
+                    </div>
                 </div>
-
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- NAVIGATION -->
-
-<nav class="navbar navbar-expand-md navbar-light no-padding justify-content-center bg-light-blue cap-nav" id="bg-blue-light-brand">
-
-    <div class="row d-flex align-items-center">
-
-        <div class="col-xs-1"> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class="col-xs-10"> 
-            <h2 class="navbar-text d-sm-none mission-gothic-regular">
-
-                <div>
-                    <p>Welcome to the Claims Academy!</p>
-                </div>
-
-            </h2>
-        </div>
-
-        <div class="col-xs-1"> 
-
-            <div class="input-group stylish-input-group">
-                <span class="input-group-addon">
-                    <button type="submit" class="button__icon d-xl-none d-lg-none d-md-none d-sm-none d-xs-block">
-                        <span class="fa fa-search"></span>
-                    </button>  
-                </span>
-            </div>
-            
-        </div>
-
-    </div>
-
-    <div class="collapse navbar-collapse justify-content-center centering2" id="navbarNav">
-        <ul class="navbar-nav nav nav-pills nav-fill">
-            <li class="nav-item active">
-                <a class="nav-link" href="">
-                    <span class="navbar-text">
-                        <div>
-                            <p>DASHBOARD</p>
-                        </div>
-                    </span><!-- <span class="sr-only">(current)</span> -->
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <span class="navbar-text">
-                        <div>
-                            <p>MY SYLLABUS /<br /> BADGES / TRANSCRIPTS</p>
-                        </div>
-                    </span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <span class="navbar-text">
-                        <div>
-                            <p>CATALOG</p>
-                        </div>
-                    </span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <span class="navbar-text">
-                        <div>
-                            <p>CHALLENGE CENTER</p>
-                        </div>
-                    </span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <span class="navbar-text">
-                        <div>
-                            <p>LEADERBOARDS</p>
-                        </div>
-                    </span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
-                    <span class="navbar-text">
-                        <div>
-                            <p>MY LEARNING DIARY</p>
-                        </div>
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-</nav>
-
-<!-- Content -->
-
-<div class="container-fluid content no-padding cap-content">
-    <div class="row">
-        <div class="col-sm-12">
-            <div style="width: 200; height: 600px; background-color: ">
-                <p class=" mission-gothic-regular">This is Mission Gothic Regular</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-
-<div class="container-fluid pb-4 pt-4 footer cap-footer">
-
-    <div class="row">
-
-        <div class="col-sm-3">
-            <div class="img-fluid">
-                <img class="" src="../../assets/img/acg-logo.png" height="91" width="200">
-            </div>
-        </div>
-
-        <div class="col-sm-9 footer-text">
-
+            </section>
+            <!-- yellow ribbon Code End -->
+    
             <div class="row">
-                <div class="col-sm-3">
-                    <p class="footer-header margin-bottom-10">Quick Links</p>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Manager View              
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                FAQ
-                                <div>
-                                    <p>
-                                        
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Badge Legend
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Challenge Coin Winners
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-md-5">
+                    <textarea class="form-control" rows="6"> THe Course is on introduction to Auto Insurance. We will cover the Cycle of Continuous Improvement, classroom vs eLearning an the structure of our team. We are excited to partnr with ACG to created and deliver effective training Audience ACG Claims Staff.
+                    </textarea>
+                    <!-- Schools List start -->
+                    <section class="row update-schools-list">
+                        <div class="col-lg-4">
+                            <select>
+                                <option>School(s) </option>
+                            </select>
+                            <label>Cosualty/BI <span class="delete"></span></label>
+                            <label>PIP <span class="delete"></span></label>
+                            <label>APD <span class="delete"></span></label>
+                            <label>Property <span class="delete"></span></label>
+                        </div>
+                        <div class="col-lg-4">
+                            <select>
+                                <option>Sub-School(s) </option>
+                            </select>
+                            <label>Quick Claim <span class="delete"></span></label>
+                            <label> CAT <span class="delete"></span></label>
+                            <label> Desk <span class="delete"></span></label>
+                            <label> Field <span class="delete"></span></label>
+                            <label> Commerical <span class="delete"></span></label>
+                        </div>
+                        <div class="col-lg-4">
+                            <select>
+                                <option>Phase(s) </option>
+                            </select>
+                            <label>Customer Service <span class="delete"></span> </label>
+                            <label> Coverage <span class="delete"></span> </label>
+                            <label>Investigation <span class="delete"></span></label>
+                            <label> Evaluation <span class="delete"></span></label>
+                            <label>Settlement /Negotiation <span class="delete"></span></label>
+                        </div>
+                    </section>
+                    <!-- Schools List end -->
                 </div>
-
-                <div class="col-sm-3">
-                    <p class="footer-header margin-bottom-10">Learning</p>
-                    <ul class="navbar-nav">
-                        <li class="nav-item footer-text">
-                            <a>
-                                <div>
-                                    <p>
-                                        American Educational Institute
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Claims Law
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Institutes for Associate in Claims (AIC)
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        National Alliance for Insurance
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-md-4">
+                     <!-- buttons List start -->
+                    <div class="button-list">
+                        <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add Diary Entry</button>
+                        <button class="btn blue full"><i class="fa fa-bookmark" aria-hidden="true"></i>Add My Syllabus</button>
+                        <button class="btn lgreen half"><i class="fa fa-commenting-o"></i> Assign to Learners</button>
+                        <button class="btn red half"><i class="fa fa-close"></i> Cancel Assignment</button>
+                    </div>
+                     <!-- buttons List end -->
                 </div>
+                <div class="col-md-3">
+                     <!-- Select Badges   Start -->
+                    <aside class="row select-badge">
+                        <div class="col-sm-6">Learning Task Completion Badge </div>
+                        <div class="col-sm-6"><img class="" src="../../assets/img/badge6.png">
+                            <div>
+                                <button class="btn purple">Edit</button>
+                            </div>
+                        </div>
+                    </aside>
+                     <!-- Select Badges   End -->
 
-                <div class="col-sm-3">
-                    <p class="footer-header margin-bottom-10">Resources</p>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Workday 
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Life & Retirement 
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        General Insurance
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Claims First
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                      <!-- Select Points   Start -->
+                    <aside class="row select-points">
+                        <div class="col-sm-6">Points for Contained Courses and Videos</div>
+                        <div class="col-sm-6">
+                            <div class="points">
+                                45
+                            </div>
+    
+                        </div>
+                    </aside>
+                     <!-- Select Points   End -->
+                     
+                      <!-- Select Points   Start -->
+                    <aside class="row select-points">
+                        <div class="col-sm-6">Additional COmpletion Points</div>
+                        <div class="col-sm-6">
+                            <div class="points">
+                                <input type="number" value="20">
+                            </div>
+    
+                        </div>
+                    </aside>
+                    <!-- Select Points   End -->
 
-                <div class="col-sm-3">
-                    <p class="footer-header margin-bottom-10">General</p>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a>
-
-                                <div>
-                                    <p>
-                                        About  
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        Contact
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <div>
-                                    <p>
-                                        My Profile 
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                     <!-- Select Points   Start -->
+                    <aside class="row select-points">
+                        <div class="col-sm-6">Total COmpletion Points</div>
+                        <div class="col-sm-6">
+                            <div class="points">
+                                65
+                            </div>
+    
+                        </div>
+                    </aside>
+                    <!-- Select Points   End -->
+    
                 </div>
             </div>
+    
+            <div class="row">
+                <div class="col-sm-12">
+                     <!-- Task List  Start -->
+                    <section class="task-list">
 
+                        <!-- Task Heading  Start -->
+                        <h3>    Thw specified tasks...  <span> <label> <input type="radio" name="task">MUST be</label>  <br>
+                                                    <label> <input type="radio" name="task">need NOT be</label> 
+                                                </span>    ...completed in order.  </h3>
+                         <!-- Task Heading  End -->                  
+
+                        <ul>
+                            <!-- Task Start -->
+                            <li>
+                                <div class="delete"></div>
+                                <input type="checkbox"> 1. Course: "How to evaluate Frame Damage in Minivans"
+                                <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
+    
+                            </li>
+                             <!-- Task End -->
+                             <!-- Task Start -->
+                            <li>
+    
+                                <div class="delete"></div>
+                                <input type="checkbox"> 2. Video: "How to estimate repair costs: Minivan Frame Damage"
+                                <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
+                            </li>
+                            <!-- Task End -->
+                             <!-- Task Start -->
+                            <li>
+                                <div class="delete"></div>
+                                <input type="checkbox"> 3. Course: "Common Pitfalls in Estimating Frame Damage:
+                                <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
+    
+                            </li>
+                            <!-- Task End -->
+                             <!-- Task Start -->
+                            <li>
+                                <div class="delete"></div>
+                                <input type="checkbox"> 4. Course: "Managing member privacy during the Claims process"
+                                <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
+    
+                            </li>
+                            <!-- Task End -->
+                             <!-- Task Start -->
+                            <li>
+                                <div class="delete"></div>
+                                <input type="checkbox"> 5. Course: "Putting it all Together: Minivan Frame damage claims"
+                                <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
+    
+                            </li>
+                            <!-- Task End -->
+                             <!-- Task Start -->
+                            <li>
+                                <select>
+                                    <option> Select Task Type </option>
+                                </select>
+                                <select>
+                                    <option> Select Learning Task </option>
+                                </select> 
+                            </li>
+                            <!-- Task End --> 
+                        </ul> 
+                        <!-- Task Button Start --> 
+                        <button class="btn purple  "> Update Catalog Entry</button>
+                        <!-- Task Button End --> 
+                    </section>
+                    <!-- Task List  End -->
+                </div>
+            </div>
         </div>
-
-    </div>
-</div>
+    </section>
 
 </body>
 

@@ -1,0 +1,241 @@
+/* windows popup */
+
+.window {
+    background: #073763; 
+    color: #fff;
+}
+
+/* title */
+
+.window  h2 { background:#6fa8dc; color:#fff; font-size: 18px; line-height: 40px; padding-left: 10px; }
+.window  h2 i.fa { margin-right: 10px;; }
+.window  .btn.blue .fa { color:#fff}  
+
+
+.window  h2 .close {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+} 
+
+
+.window   .delete { position: absolute; top:0;  right: 0; 
+  border: 2px solid #9900ff;    background: #9900ff;    color: #ffffff;}
+
+
+/*  select course */
+.window .select-course .course-type label { display: block; }
+.window .select-course .edit-use button { margin-bottom: 10px; }
+.window .select-course  input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: bottom;
+}  
+
+
+
+  /* yellow ribbon */
+
+  .window  .yellow-ribbon { position: relative;}
+
+  .window  .strip {  
+      background: #fbcc3e;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      bottom: 10%;
+      top: 25%;
+  }
+  .window section.yellow-ribbon textarea {
+    margin-top: 18%;
+    margin-left: 5%;
+    width: 96%;
+    text-align: left;
+}
+
+/* video frame */
+
+.window .video-frame {
+    text-align: left;
+    position: relative;
+}
+
+.window .video-frame button {  
+    position: absolute;
+    border: 1px solid #fff; 
+    max-width: 90%;
+    right: 5%;
+    top: 5%;
+}
+
+.window .video-frame { border:5px solid #073763;  margin-bottom: 20px; }
+.window .video-frame img { 
+    width: 100%;
+}
+ 
+
+ /* schools list */ 
+ .window  .update-schools-list  select { width:100%}
+ .window  .update-schools-list   label { color:#fff; display: block; position: relative; padding-right: 50px; }      
+
+ /* resource links list */ 
+ .window  .resource-links-list  li { color:#fff; display: block; position: relative; padding-left: 25px; margin-bottom: 15px; }
+ .window  .resource-links-list .delete { left:0; right: inherit; }
+ .window  .resource-links-list button { width: 300px; }
+ 
+ 
+ @media (min-width: 800px) {
+    .window  .resource-links-list li { width:50%; float: left; }    
+}
+
+ /* task list */
+
+ 
+.window  section.task-list h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.window  section.task-list h3 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.window  section.task-list h3 span * {
+  margin-bottom: 0;
+}
+.window  section.task-list  a { color:#00f5ce; text-decoration: underline; font-weight: bold; }
+.window  section.task-list   input, .window  section.task-list   input:checked  { 
+  vertical-align: middle;
+  display: inline-block;
+}
+.window  section.task-list .detail, .window  section.task-list .points { padding: 2px 5px;} 
+.window  section.task-list .detail a { color:#fff; text-decoration: none; }
+.window  section.task-list ul, .window  section.task-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-indent: -25px;
+}
+.window  section.task-list li {
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.window  section.task-list .delete {
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.window  section.task-list .delete { left:0;  }
+.window  section.task-list .delete:before {
+  margin-left: 26px;
+  top: 0;
+}
+.window  section.task-list h3 input:after, .window  section.task-list h3 input:checked:after  {
+  color: #fff;
+  vertical-align: middle;
+}
+
+.window  section.task-list input[type="checkbox"]:after , .window  section.task-list input[type="checkbox"]:checked:after { display: none;}
+.window  section.task-list input[type="checkbox"]:before {    
+position:absolute; 
+    content: "\f096";
+    color:#fff; 
+    border:  none;
+    width: 22px;
+    height: 21px;
+    border-radius: 3px;
+
+}
+
+.window  section.task-list input[type="checkbox"]:checked:before { 
+  border:none; color:#0c3859;  position:absolute;  z-index: 1; content: "\f14a"; color:#fff; }
+
+@media (min-width: 768px) {
+  .window  section.task-list li { width: 48%;  float: left;}
+}
+
+.window  section.task-list button {
+  float: right;
+  margin: 10px;
+}
+  
+/* window buttons list */
+
+.window .full { width:100%; }
+.window .half { width:48%; }
+.window .button-list button {
+    position: relative; margin-bottom: 10px; }
+    .window .button-list .fa {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.window .button-list button.half  +  button.half  { margin-left: 2%;} 
+
+ 
+/* select badge */
+
+.window  .select-badge img ,
+.window  .select-badge button{   display: block;
+    width: 80px;
+    margin: 10px auto;
+} 
+.window  .select-badge button { line-height: 30px ; padding: 0px;  }
+.window  .select-badge img  { width:60px } 
+  
+.window .select-badge div:last-child {
+    text-align: center;
+}
+
+.window  aside.select-badge  {
+    color: #fff;
+}
+
+/* select points */
+
+
+aside.select-points .points{
+    background: #009e0f;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60px;
+}   
+aside.select-points .points input {
+    width: 40px;
+    margin: auto;
+    display: inline-block;
+    margin-top: 10px;
+    line-height: normal;
+} 
+.window  aside.select-points {
+    color: #fff;
+}
+.window aside.select-points {
+    margin-bottom: 10px;
+} 
+
+/* select schedules */ 
+
+.window .select-schedules { background-color: #fff ; border:5px solid #9900ff; padding:10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.window section.select-schedules {
+    font-size: 13px;
+    color:#000;
+}
+.window .select-schedules button {
+    margin-top: 10px;
+}
+.window .select-schedules .scroller { height: 90px ; overflow-x:  hidden; overflow-y:  auto;}
+.window .select-schedules input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+   

@@ -1,38 +1,5 @@
 /* ============ LEARNERS ============ */
  
- /* --- Buttons --- */    
-
-.btn.blue {
-    background: #3098cc;
-    color:#fff;
-}
-.btn.darkBlue {
-    background: #0c3859;
-    color:#fff;
-}
-.btn.lightBlue {
-    background: #6fa8dc;
-    color:#fff;
-}
-.btn.orange {
-    background: #f90;
-    color:#fff;
-}
-.btn.assign-task-btn {
-    width: 300px;  
-    max-width: 100%;  
-}
-
-button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
- 
-.btn-grp {margin:10px 0;  text-align: right;  }
-.btn-grp button{   border:none; color: #fff;     text-align: left;  vertical-align: middle; text-transform: uppercase;    font-size: 18px;  }
-.btn-grp button img { height: 20px;   }   
-
-@media (min-width:767px){   
-    .btn-grp   { text-align: right;  } 
-}
-
 /* Learners Form */   
 .learner-form {
     background:  #b0cde6;
@@ -162,28 +129,6 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
 }
 
 
-/* Calendar Input */    
-  .calendar-input {
-      position: relative;
-      display: inline-block;
-      vertical-align: middle;
-  }  
-  .calendar-input input {
-      width: auto;
-      border: 1px solid #0c3859;
-      position: relative;
-      padding-left: 30px;
-      width: 190px;
-  }
-  .calendar-input i {
-      color: #0c3859;
-      margin-left: -10px;
-      position: absolute;
-      left: 20px;
-      top: 0;
-      z-index: 0;
-  }
-    
 
   /* Responsive Datatable */ 
   .responsive-table {

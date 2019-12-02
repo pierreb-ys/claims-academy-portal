@@ -13,6 +13,7 @@
 @import url("catalog.css");
 @import url("learners.css");
 @import url("videos-admin.css");  
+@import url("windows.css");  
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -167,6 +168,38 @@ div.orange-text p {
 .fas {
   margin-top: 6px;
   margin-right: 6px;
+} 
+ .online-icon, .ilt-icon, .vrcr-icon {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.online-icon .fa-list-ul {
+  position: absolute;
+  font-size: 52%;
+  left: 25%;
+  top: 13%;
+} 
+.ilt-icon .fa-list-ul {
+  position: absolute;
+  font-size: 57%;
+  right: 0;
+  top: 2%;
+}
+.vrcr-icon .fa-user {
+  position: absolute;
+  font-size: 59%;
+  left: 11%;
+  top: 10%;
+} 
+.vrcr-icon .fa-list-ul {
+  position: absolute;
+  font-size: 35%;
+  right: 22%;
+  top: 10%;
 }
 
 /* ------------ CONTENT ------------ */
@@ -253,6 +286,42 @@ input[type="checkbox"]:after {
 
  input[type="checkbox"]:checked:before { border:none; color:#0c3859;  position:absolute;  z-index: 1; content: "\f00c"; }
 
+ 
+/* radiobutton */
+ 
+input[type="radio"] { 
+  background-color:transparent;
+      display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     color: #3398cb;
+     font-size:20px;
+     -webkit-appearance: none;
+     -moz-appearance: none;  
+     width: 22px;
+     height: 21px;
+     border-radius: 3px;
+     position: relative;
+}
+input[type="radio"]:checked {
+   background-color:transparent;
+}
+
+input[type="radio"]:checked:after ,
+input[type="radio"]:after {    
+  position:absolute; 
+      content: "\f10c";
+      color:#3398cb;  
+      width: 22px;
+      height: 21px;
+      border-radius: 3px;
+
+}
+
+ input[type="radio"]:checked:after {  color:#3398cb;  position:absolute;  z-index: 1; content: "\f192"; }
 /* Arrows */
 select {
   border: 1px solid #3398cb;
@@ -318,10 +387,11 @@ select:focus {
     color: white;
 }
 
+/*   button */ 
 
-/* close  button */ 
+/* close/remove/ window close   button */ 
 
-.close { font-family: "Font Awesome 5 Free";
+.close , .delete, .window-close { font-family: "FontAwesome";
 -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -339,6 +409,24 @@ select:focus {
 .close:before{
   content: "\f057";
 }  
+
+  .delete:before{
+    content: "\f057";
+  }  
+  .window-close {
+    color:#fff;
+    background:transparent;
+    border:none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 24px;
+   }
+  .window-close:before {
+    
+    content: "\f00d";
+  }
+  
 
 
 
@@ -450,3 +538,78 @@ section.contentarea .content-wrap {
   height: 690px;
 }
 
+
+
+ /* --- Buttons --- */    
+
+ .btn.blue {
+  background: #3098cc;
+  color:#fff;
+}
+.btn.purple {
+  background: #9900ff;
+  color:#fff;
+} 
+.btn.white {
+  background: #fff;
+  color:#000;
+} 
+.btn.lgreen {
+  background: #8bc53f;
+  color:#fff;
+}
+.btn.red {
+  background: red;
+  color:#fff;
+}
+.btn.darkBlue {
+  background: #0c3859;
+  color:#fff;
+}
+.btn.lightBlue {
+  background: #6fa8dc;
+  color:#fff;
+}
+.btn.orange {
+  background: #f90;
+  color:#fff;
+}
+.btn.assign-task-btn {
+  width: 300px;  
+  max-width: 100%;  
+}
+
+button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
+
+.btn-grp {margin:10px 0;  text-align: right;  }
+.btn-grp button{   border:none; color: #fff;     text-align: left;  vertical-align: middle; text-transform: uppercase;    font-size: 18px;  }
+.btn-grp button img { height: 20px;   }   
+
+@media (min-width:767px){   
+  .btn-grp   { text-align: right;  } 
+}
+
+
+/* Calendar Input */    
+.calendar-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}  
+.calendar-input input {
+  width: auto;
+  border: 1px solid #0c3859;
+  position: relative;
+  padding-left: 30px;
+  width: 190px;
+}
+.calendar-input i {
+  color: #0c3859;
+  margin-left: -10px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  z-index: 0;
+}
+
+ 
