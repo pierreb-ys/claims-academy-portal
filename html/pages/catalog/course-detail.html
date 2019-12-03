@@ -47,9 +47,9 @@
 <!-- Course  -->
 <section class="window course-details">
         <h2><i class="fa fa-list-alt" aria-hidden="true"></i> Course <div class="window-close"></div></h2>
-    
+     <form> 
         <div class="container-fluid ">
-            
+           
              <!-- Select Course Code start -->
             <section class="row select-course">
                 <div class="col-md-2">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 course-type">
-                    <select>
+                    <select id="CourseType" name="CourseType">
                         <option>Select Course Type </option>
                     </select>
     
@@ -115,7 +115,7 @@
                     <!-- Schools List start -->
                     <section class="row update-schools-list">
                         <div class="col-lg-4">
-                            <select>
+                                <select id="School" name="School">
                                 <option>School(s) </option>
                             </select>
                             <label>Cosualty/BI <span class="delete"></span></label>
@@ -124,7 +124,7 @@
                             <label>Property <span class="delete"></span></label>
                         </div>
                         <div class="col-lg-4">
-                            <select>
+                            <select id="Sub-School" name="Sub-School">
                                 <option>Sub-School(s) </option>
                             </select>
                             <label>Quick Claim <span class="delete"></span></label>
@@ -134,7 +134,7 @@
                             <label> Commerical <span class="delete"></span></label>
                         </div>
                         <div class="col-lg-4">
-                            <select>
+                                <select id="Phase" name="Phase">
                                 <option>Phase(s) </option>
                             </select>
                             <label>Customer Service <span class="delete"></span> </label>
@@ -313,7 +313,7 @@
                              <!--   Resource link   End -->     
                            
                         </ul> 
-                        
+
                               <!--   Add Resource Button  Start -->
                         <button class="btn purple">Add Resource Link</button>
                           <!--   Add Resource Button  End -->
@@ -321,8 +321,8 @@
                      <!--   Resource links List  End -->
                 </div>
             </div>
-        </div>
-    </section>
+        </div></form>
+    </section> 
 </body>
 
 </html>

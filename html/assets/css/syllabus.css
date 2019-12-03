@@ -1,0 +1,216 @@
+/* ============ SYLLABUS  ============ */
+ 
+/* Syllabus Form */   
+.syllabus-form {
+    background:  #b0cde6;
+    margin-bottom: 20px; 
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.syllabus-form  .buttons {
+    text-align: right;
+}
+
+
+@media (min-width:767px){ 
+    .syllabus-form .buttons button:last-child {
+     margin-right: 20px;}
+    .syllabus-form label:first-child {
+        margin-left: 20px;
+    }  
+}
+
+@media (max-width:1024px){  
+    .syllabus-form label, .syllabus-form .calendar-input {
+        margin-left: 30px;
+    }
+}
+@media (max-width:767px){  
+    .syllabus-form  .buttons { text-align: center; }
+    .syllabus-form  .buttons  button {   font-size: 14px; width: 100%; margin:3px;}  
+    .syllabus-form {
+        text-align: center;
+        padding: 10px;
+    } 
+    .btn.assign-task-btn { 
+        font-size: 14px;
+    }
+}
+
+  /* Learners Datatable */      
+  
+  table#syllabus {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+ 
+  #syllabus_wrapper { margin-bottom: 10px; }
+  #syllabus th .count span {    font-size: 10px; }
+  #syllabus .fa { color:#333 ; margin: 0;}
+  #syllabus th {
+      font-weight: normal;
+      background: #b0cde6;
+  } 
+  #syllabus th  {
+     color:#000; 
+     text-align: center;
+     position: relative;
+  }
+  table#syllabus input[type="checkbox"] {
+    margin-top: 15px;
+}
+  #syllabus th:nth-child(2) small {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+}
+#syllabus td:last-child button {
+    display: block;
+    width: 100px;
+    margin: 2px; 
+    padding: 2px;
+    font-size: 12px;
+}
+  #syllabus  .count {
+      width: 100px;
+      text-align: center;
+  }
+  #syllabus .count i {
+      float: left;
+      width: 50%;
+      text-align: center;
+  }
+  #syllabus .count span {
+      width: 49%;
+      float: left;
+  }
+ 
+  #syllabus, #syllabus th, #syllabus td {
+      border: none;
+  }
+  #syllabus td:nth-child(3) {
+      line-height: 50px;
+  }
+  
+  #syllabus_length select {
+      display: inline-block;
+      width: auto;
+  }
+  #syllabus_filter .form-control {
+      display: inline-block;
+      width: auto;
+      border: 1px solid  #ddd;
+      margin-left: 10px;
+  }
+  table#syllabus.table-striped tbody tr:nth-of-type(2n+1) {
+      background-color: rgba(0,0,0,.03);
+  } 
+
+  /* #syllabus th:first-child , #syllabus td:first-child { background: #9fc5f8; } */
+ 
+  .responsive-table { 
+    width: 100%;
+    border:none !important;
+}
+  
+@media (min-width:767px) {  
+    #syllabus_filter ,
+    #syllabus_paginate {
+        float: right;
+    }
+}
+ 
+@media (max-width:767px){ 
+   #syllabus .btn, #syllabus img {
+          margin-bottom: 10px;
+      } 
+    #syllabus td:nth-child(3) {
+        line-height: normal;
+    }
+ 
+}
+
+/* progress */
+.progress { position: relative; overflow: visible;}
+.progress div { background: #b0cde6;}
+.progress span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    line-height: normal;
+}
+
+.progress i.fa {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    color: #3398cb !important;
+    font-size: 18px;
+}
+
+  /* Responsive Datatable */ 
+  .responsive-table {
+    border: 1px solid #9fc5f8;
+    margin-bottom: 20px;
+  }
+
+ /* Datatable auto scrollbar  */ 
+  @media (max-width:1024px){ 
+    .responsive-table { overflow: auto; } 
+}
+    
+
+.button-grp { text-align: right; margin: 10px 0; }
+.button-grp button { margin:10px 0;  border:none; color: #fff;    height:50px ; text-align: left;  vertical-align: middle;   line-height: normal;
+    font-size: 16px;
+    padding: 10px 20px;   } 
+.button-grp button img { margin-left: 0;
+    margin-right: 15px;
+    margin-top: -4px; }    
+.button-grp .fill-btn {  background: #3098cc; }
+.button-grp .outline-btn {  border:1px solid #3098cc;  background: #fff; color: #3098cc}
+.button-grp .outline-btn i.fa { color:#3098cc }
+.button-grp .outline-btn.right {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 4px;
+    position: relative;
+    padding-left: 45px;
+}
+.button-grp .outline-btn.right .fa {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+} 
+.button-grp button .fa {
+    margin-right: 10px;
+}
+
+/*   Manage */
+.manage-box{
+    border: 1px solid #9900ff;
+    padding:10px; 
+    width: 200px;
+    color:#9900ff ;
+    background: #fff;
+    text-align: center;
+    margin: 10px;
+}
+
+.manage-box img {
+    display: inline-block;
+}
+.manage-box span {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.manage-box button {
+    margin: auto;
+    line-height: 15px;
+    font-size: 14px;
+    padding: 5px 10px;
+}

@@ -13,7 +13,8 @@
 @import url("catalog.css");
 @import url("learners.css");
 @import url("videos-admin.css");  
-@import url("windows.css");  
+@import url("windows.css"); 
+@import url("syllabus.css"); 
 
 @import url("typography.css");
 @import url("viewports.css");
