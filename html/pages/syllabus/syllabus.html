@@ -65,7 +65,7 @@
 
 <body>
     
-<!-- --- SEARCH LEARNERS --- -->
+
 <div class="container-fluid">
         <div class="row">
                 <div class="col-sm-3">   
@@ -74,6 +74,7 @@
     </div>
     </div>
     <div class="col-sm-9">   
+    <!-- ---  BUTTONS  START--- -->
         <div class="button-grp">
                 <button class="badges-btn"><img class="" src="../../assets/img/badge-icon.png">BADGES</button>
                 <button class="outline-btn right">  <i class="fa fa-check-square-o"></i> COMPLETED <br>ONLY  (Transcript)</button>
@@ -82,6 +83,7 @@
                 <button class="fill-btn"> <i class="fa fa-check-square-o"></i> COMPLETED</button>
                 <button class="print-btn"><img class="" src="../../assets/img/print-icon.png">Print</button>
             </div> 
+     <!-- ---  BUTTONS END --- -->       
     </div>
     </div>
 </div>
@@ -122,11 +124,11 @@
                                                         <tr>
                                                             <th>Task Type</th>
                                                             <th>Task Title</th>
-                                                            <th><select>
+                                                            <th><select id="curricullumFilter" name="curricullumFilter" >
                                                                 <option>Assigned</option>
                                                                 <option>Self-Selected </option> 
                                                             </select> Curricullum Percent Completed</th>
-                                                            <th> <select>
+                                                            <th> <select id="dueDateFilter" name="dueDateFilter" >
                                                                 <option>Due Date </option>
                                                                 <option>Next 2 Days </option>
                                                                 <option>This Week </option>
@@ -134,7 +136,7 @@
                                                                 <option>All </option>
                                                             </select>
                                                             </th>
-                                                            <th> <select>
+                                                            <th> <select id="taskFilter" name="taskFilter" >
                                                                 <option>Assigned </option>
                                                                 <option>In Progress </option>
                                                                 <option>Completed </option>
