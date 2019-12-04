@@ -16,6 +16,7 @@
 @import url("windows.css"); 
 @import url("syllabus.css"); 
 @import url("challenge.css"); 
+@import url("learning-diary.css"); 
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -614,4 +615,15 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
   z-index: 0;
 }
 
- 
+   /* Responsive Datatable */ 
+  .responsive-table {
+    border: 1px solid #9fc5f8;
+    margin-bottom: 20px;
+    margin-top:20px;
+  }
+
+ /* Datatable auto scrollbar  */ 
+  @media (max-width:1024px){ 
+    .responsive-table { overflow: auto; } 
+}
+    

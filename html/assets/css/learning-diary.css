@@ -1,0 +1,152 @@
+/* ============ MY LEARNING DIARY  ============ */
+   
+
+  /*  Datatable */      
+  
+  table#learningDiary {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+ 
+  #learningDiary_wrapper { margin-bottom: 10px; }
+  #learningDiary th .count span {    font-size: 10px; }
+  #learningDiary .fa { color:#333 ; margin: 0;}
+  #learningDiary th {
+      font-weight: normal;
+      background: #b0cde6;
+  } 
+  #learningDiary th  {
+     color:#000; 
+     text-align: center;
+     position: relative;
+  }
+  table#learningDiary input[type="checkbox"] {
+    margin-top: 15px;
+}
+  #learningDiary th:nth-child(2) small {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+}
+#learningDiary td:last-child button {
+    display: block;
+    width: 100px;
+    margin: 2px; 
+    padding: 2px;
+    font-size: 12px;
+}
+  #learningDiary  .count {
+      width: 100px;
+      text-align: center;
+  }
+  #learningDiary .count i {
+      float: left;
+      width: 50%;
+      text-align: center;
+  }
+  #learningDiary .count span {
+      width: 49%;
+      float: left;
+  }
+ 
+  #learningDiary, #learningDiary th, #learningDiary td {
+      border: none;
+  }
+  #learningDiary td:nth-child(3) {
+      line-height: 50px;
+  }
+  
+  #learningDiary_length select {
+      display: inline-block;
+      width: auto;
+  }
+  #learningDiary_filter .form-control {
+      display: inline-block;
+      width: auto;
+      border: 1px solid  #ddd;
+      margin-left: 10px;
+  }
+  table#learningDiary.table-striped tbody tr:nth-of-type(2n+1) {
+      background-color: rgba(0,0,0,.03);
+  } 
+ 
+ 
+  .responsive-table { 
+    width: 100%;
+    border:none !important;
+}
+  
+@media (min-width:767px) {  
+    #learningDiary_filter ,
+    #learningDiary_paginate {
+        float: right;
+    }
+}
+ 
+@media (max-width:767px){ 
+   #learningDiary .btn, #learningDiary img {
+          margin-bottom: 10px;
+      } 
+    #learningDiary td:nth-child(3) {
+        line-height: normal;
+    }
+ 
+}
+
+/* progress */
+.progress { position: relative; overflow: visible;}
+.progress div { background: #b0cde6;}
+.progress span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    line-height: normal;
+}
+
+.progress i.fa {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    color: #3398cb !important;
+    font-size: 18px;
+}
+
+  /* Responsive Datatable */ 
+  .responsive-table {
+    border: 1px solid #9fc5f8;
+    margin-bottom: 20px;
+  }
+
+ /* Datatable auto scrollbar  */ 
+  @media (max-width:1024px){ 
+    .responsive-table { overflow: auto; } 
+}
+    
+
+.button-grp { text-align: right; margin: 10px 0; }
+.button-grp button { margin:10px 0;  border:none; color: #fff;    height:50px ; text-align: left;  vertical-align: middle;   line-height: normal;
+    font-size: 16px;
+    padding: 10px 20px;   } 
+.button-grp button img { margin-left: 0;
+    margin-right: 15px;
+    margin-top: -4px; }    
+.button-grp .fill-btn {  background: #3098cc; }
+.button-grp .outline-btn {  border:1px solid #3098cc;  background: #fff; color: #3098cc}
+.button-grp .outline-btn i.fa { color:#3098cc }
+.button-grp .outline-btn.right {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 4px;
+    position: relative;
+    padding-left: 45px;
+}
+.button-grp .outline-btn.right .fa {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+} 
+.button-grp button .fa {
+    margin-right: 10px;
+}
+ 

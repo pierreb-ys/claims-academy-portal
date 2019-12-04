@@ -130,16 +130,5 @@
 
 
 
-  /* Responsive Datatable */ 
-  .responsive-table {
-    border: 1px solid #9fc5f8;
-    margin-bottom: 20px;
-  }
-
- /* Datatable auto scrollbar  */ 
-  @media (max-width:1024px){ 
-    .responsive-table { overflow: auto; } 
-}
-    
 
  
