@@ -5,9 +5,13 @@
     color: #fff;
 }
 
+.window  img  {
+  max-width: 100%;
+}
+
 /* title */
 
-.window  h2 { background:#6fa8dc; color:#fff; font-size: 18px; line-height: 40px; padding-left: 10px; margin:0;  }
+.window  h2 { background:#6fa8dc; color:#fff; font-size: 18px; line-height: 40px; padding-left: 10px; margin:0; position:relative  }
 .window  h2 i.fa { margin-right: 10px;; }
 .window  .btn.blue .fa { color:#fff}  
 
@@ -40,7 +44,7 @@
   .window  .yellow-ribbon { position: relative;}
 
   .window  .strip {  
-      background: #fbcc3e;
+      background: #ffa500;
       height: 50%;
       width: 100%;
       position: absolute;
@@ -165,7 +169,14 @@ position:absolute;
 /* window buttons list */
 
 .window .full { width:100%; }
-.window .half { width:48%; }
+@media (min-width:600px){
+  .window .button-list button.half  +  button.half  { margin-left: 2%;} 
+  .window .half { width:48%; }
+}
+@media (max-width:600px){
+  .window .half { width:100%; }
+}
+
 .window .button-list button {
     position: relative; margin-bottom: 10px; }
     .window .button-list .fa {
@@ -173,7 +184,7 @@ position:absolute;
     left: 10px;
     top: 10px;
 }
-.window .button-list button.half  +  button.half  { margin-left: 2%;} 
+
 
  
 /* select badge */
@@ -241,3 +252,40 @@ aside.select-points .points input {
     vertical-align: middle;
 }
    
+/* FORM */
+
+.window  section.form {
+  padding: 10px ; 
+}
+
+@media (min-width:767px){
+  .window  section.form {
+      margin: 20px;
+      padding: 20px;
+  }
+
+}
+
+
+.window section.form input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+.window  .ques {   }
+.window  .ques h3 { font-size: 16px; margin-bottom: 20px;  }
+.window  .ques h3 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin: 0 10px;
+}
+.window .ques label  {
+  margin-bottom: 0;
+}
+.window .ques input, .window .ques input:checked {
+  vertical-align: middle;
+  display: inline-block; 
+}
+.window .ques input:after, .window .ques input:checked:after { 
+  color:#fff
+}
+.window  .button-list.mb { margin-bottom: 20px;   }

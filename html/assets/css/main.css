@@ -581,6 +581,10 @@ section.contentarea .content-wrap {
   width: 300px;  
   max-width: 100%;  
 }
+.btn.lightGray {
+  background: #87919a;
+  color:#fff;
+}
 
 button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
 
