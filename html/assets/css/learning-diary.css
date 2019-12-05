@@ -93,24 +93,6 @@
  
 }
 
-/* progress */
-.progress { position: relative; overflow: visible;}
-.progress div { background: #b0cde6;}
-.progress span {
-    display: block;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    line-height: normal;
-}
-
-.progress i.fa {
-    position: absolute;
-    left: -20px;
-    top: 0px;
-    color: #3398cb !important;
-    font-size: 18px;
-}
 
   /* Responsive Datatable */ 
   .responsive-table {

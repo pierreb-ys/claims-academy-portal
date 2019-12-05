@@ -214,3 +214,22 @@
     font-size: 14px;
     padding: 5px 10px;
 }
+
+/* progress */
+.progress , .empty-progress{ position: relative; overflow: visible;} 
+.progress div { background: #b0cde6;}
+.progress span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    line-height: normal;
+}
+
+.progress i.fa , .empty-progress i.fa {
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    color: #3398cb !important;
+    font-size: 18px;
+}
