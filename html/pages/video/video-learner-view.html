@@ -3,46 +3,40 @@
 
 <head>
 
-<!-- Responsive Meta Tag -->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta charset="utf-8">
 
     <title>ACG</title>
 
-
-<!-- Custom CSS Inserted Here-->
+    <!-- Bootstrap -->    
     <link rel="stylesheet" href="../../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
- 
-<!-- font Awesome CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
- 
-<!-- * Custom CSS Inserted Here -->
-    <link rel="stylesheet" href="../../assets/css/main.css">
-
-<!-- JavaScript -->
-
-<!-- jQuery 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
--->
-<!-- Popper.js 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
--->
-<!-- Bootstrap JS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
 
-<!-- Custom JS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
     <script src="../../assets/js/main.js"></script>
 
 </head>
 
 <body>
- 
+
+
+
 <!-- Detail View  -->
 <section class="window course-details">
 
     <!-- Top Blue Bar -->
-    <h2><i class="fa fa-list-alt" aria-hidden="true"></i> Course <div class="window-close"></div></h2>
+    <h2><i class="fa fa-list-alt" aria-hidden="true"></i> Video <div class="window-close"></div></h2>
 
     <!-- Page Content -->
     <form> 
@@ -60,27 +54,14 @@
                     </div>
                 </div>
 
-                <!-- Drop-Down Menu ("Select Course Type") -->
-                <div class="col-md-3 course-type">
-
-                    <select id="CourseType" name="CourseType">
-                        <option>Select Course Type </option>
-                    </select>
-    
-                    <label><span class="online-icon"><i class="fa fa-desktop" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i></span> Online </label>
-                    <label><span class="ilt-icon"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i></span> ILT </label>
-                    <label><span class="vrcr-icon"><i class="fa fa-desktop" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i><i class="fa fa-user" aria-hidden="true"></i></span> Virtual Classroom</label>
-                
-                </div>
-
                 <!-- Course ID and Version Number -->
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="row">
-                        <div class="  col-lg-7">
+                        <div class="col-lg-7 display-flex">
                             <label>Course ID </label>
                             <input type="text" value="Course 1">
                         </div>
-                        <div class="  col-lg-5">
+                        <div class="col-lg-5">
                             <label>Version No: </label>
                             <input type="text" value="1" size="3">
                         </div>
@@ -89,7 +70,7 @@
 
                 <!-- Checkbox ("Active") -->
                 <div class="col-md-3">
-                    <label>Active<input type="checkbox"></label>
+                    <label>Active: <input type="checkbox"></label>
                 </div>
 
             </section>
@@ -102,7 +83,7 @@
                 <div class="row">
 
                     <div class="col-md-5">
-                        <textarea class="form-control">ACG Introduction to the Claims Academy Team</textarea>
+                        <textarea class="form-control">Title Goes Here</textarea>
                     </div>
 
                     <div class="col-md-4">
@@ -122,7 +103,7 @@
             <div class="row">
 
                 <div class="col-md-5">
-                    <textarea class="form-control" rows="6"> This presentation is an introduction to the Claims Academy Team. We will cover the Cycle of Continuous Improvement, classroom vs. eLearning and the structure of our team. We are excited to partner with ACG to create and deliver effective training. Audience: ACG Claims Staff
+                    <textarea class="form-control" rows="6">Desciption Goes Here
                     </textarea>
                     <!-- Schools List start -->
                     <section class="row update-schools-list">
@@ -163,12 +144,12 @@
                 <div class="col-md-4">
                      <!-- buttons List start -->
                     <div class="button-list">
-                        <button class="btn blue full"><i class="fa fa-rocket" aria-hidden="true"></i> Launch</button>
-                        <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add Diary Entry</button>
-                        <button class="btn blue full"><i class="fa fa-bookmark" aria-hidden="true"></i>Add My Syllabus</button>
+                        <button class="btn blue full"><i class="fa fa-rocket" aria-hidden="true"></i> Launch Video</button>
+                        <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add to Diary</button>
+                        <button class="btn blue full"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Syllabus</button>
                         <button class="btn lgreen half"><i class="fa fa-commenting-o"></i> Assign to Learners</button>
                         <button class="btn red half"><i class="fa fa-close"></i> Cancel Assignment</button>
-                        <button class="btn purple full"> Update Catalog Entry</button>
+
                     </div>
                       <!-- buttons List end -->
                 </div>
@@ -205,86 +186,6 @@
             <!-- Bottom Section -->
             <div class="row">
 
-                <!-- Box, with Purple Outline -->
-                <div class="col-sm-6">
-                     <!-- Sekect Schedules   Start -->
-                    <section class="select-schedules"> 
-
-                        <div class="row">
-                            <div class="col-12">
-                                {for ILT and possibly Virtual Classroom courses; anything with scheduled sessions...}
-                            </div> 
-                        </div>
-
-                         <!-- Sekect Schedules List Head  Start -->
-                        <div class="row">
-                            <div class="col-2">
-                                <strong>  Select a Section </strong>
-                            </div>
-                            <div class="col-10">
-                                <strong>   Session Schedule   including physical meeting location (for face-to-face ILT)</strong>
-                            </div>
-                        </div>
-                        <!-- Sekect Schedules List Head  End -->
-
-                         <!-- Sekect Schedules List Scrollbar  Start -->
-                        <div class="scroller">
-
-                             <!-- Sekect Schedules List  Start -->
-                            <div class="row">
-                                <div class="col-2">
-                                    <label>
-                                        <input type="radio" name="schedules"> 1</label>
-                                </div>
-                                <div class="col-10">
-                                    Starts December 2, 2019; Daily for 5 consecutive days from 9 to 11am in Room 301
-                                </div>
-                            </div>
-                              <!-- Sekect Schedules List  End -->
-                             <!-- Sekect Schedules List  Start -->
-                            <div class="row">
-                                <div class="col-2">
-                                    <label>
-                                        <input type="radio" name="schedules"> 2</label>
-                                </div>
-                                <div class="col-10">
-                                    Starts December 2, 2019; Daily for 5 consecutive days from 1 to 3pm in Room 301
-    
-                                </div>
-                            </div>
-                               <!-- Sekect Schedules List  End -->
-                             <!-- Sekect Schedules List  Start -->
-                            <div class="row">
-                                <div class="col-2">
-                                    <label>
-                                        <input type="radio" name="schedules"> 3</label>
-                                </div>
-                                <div class="col-10">
-                                    Starts December 2, 2019; Daily for 5 consecutive days from 9 to 11am in Room 301
-                                </div>
-                            </div>
-                               <!-- Sekect Schedules List  End -->
-                             <!-- Sekect Schedules List  Start -->
-                            <div class="row">
-                                <div class="col-2">
-                                    <label>
-                                        <input type="radio" name="schedules">4</label>
-                                </div>
-                                <div class="col-10">
-                                    Starts December 2, 2019; Daily for 5 consecutive days from 1 to 3pm in Room 301
-    
-                                </div>
-                            </div>
-                               <!-- Sekect Schedules List  End --> 
-                        </div>
-                         <!-- Sekect Schedules List Scrollbar  End -->
-
-                        <button class="btn blue"><i class="fa fa-calendar" aria-hidden="true"></i> Add to My Calendar</button>
-                        <button class="btn purple">Add/Edit Section information</button>
-                    </section>
-                       <!-- Sekect Schedules   End -->
-                </div>
-
                 <!-- Resource Titles -->
                 <div class="col-sm-6">
                     
@@ -302,28 +203,28 @@
                               <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
-                                < Resource Title 2>
+                                Resource Title 2
                             </li>
                              <!--   Resource link   End -->
 
                               <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
-                                < Resource Title 3>
+                                Resource Title 3
                             </li>
                              <!--   Resource link   End -->
 
                               <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
-                                < Resource Title 4>
+                                Resource Title 4
                             </li>
                              <!--   Resource link   End -->
 
                               <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
-                                < Resource Title 5>
+                                Resource Title 5
                             </li>
                              <!--   Resource link   End -->
 
@@ -338,6 +239,8 @@
 
                               <!--   Add Resource Button  Start -->
                         <button class="btn purple">Add Resource Link</button>
+                        <button class="btn purple full"> Update Catalog Entry</button>
+                        <button class="btn purple">Update Catalog Entry</button>
                           <!--   Add Resource Button  End -->
                     </section>
                      <!--   Resource links List  End -->
@@ -351,6 +254,162 @@
 
 </section> 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TITLE BAR -->
+<div class="container-fluid">
+
+    <!-- Top Bar -->
+    <div class="row bg-light-blue pt-2 pb-2">
+
+        <div class="col-sm-1">
+
+            <div class="img-fluid detail-view-icon">
+                <img src="../../assets/img/my-profile-icon.png" />
+            </div>
+        </div>
+<!--
+        <div class="col-sm-2 flex-center-vertically">
+            <p>Video Details</p>
+        </div>
+        <div class="col-sm-1 flex-center-vertically">
+            <p>[DYNAMIC]</p>
+        </div>
+
+        <div class="col-sm-1">
+            <p>ID: </p>
+        </div>
+        <div class="col-sm-2">
+            <p>[DYNAMIC]</p>
+        </div>
+        <div class="col-sm-1">
+            <p>Version: </p>
+        </div>
+        <div class="col-sm-1">
+            <p>[DYNAMIC]</p>
+        </div>
+        <div class="col-sm-1">
+            <p>Active:  </p>
+        </div>
+        <div class="col-sm-1">
+            <p>[DYNAMIC]</p>
+        </div>
+    -->
+    </div>
+
+</div>
+
+<!-- ROW 1 -->
+<div class="container-fluid no-padding">
+    <div class="row pt-4 bg-aaa-blue">
+        
+        <div class="col-sm-6 bg-orange flex-center-vertically">
+            <p class="video-detail-title-text">Flex Work Program</p>
+        </div>
+
+        <div class="col-sm-4">
+            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png">
+            <div class="display-flex video-thumbnail-description">
+                <p>Version No.: </p>
+                <p>Duration: </p>
+            </div>
+        </div>
+
+        <div class="col-sm-2 orange-bar-right">
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ROW 2 -->
+<div class="container-fluid no-padding cap-content">
+    <div class="row pl-4 pb-4 pt-4 bg-aaa-blue">
+
+        <div class="col-sm-6">
+            <p class="video-detail-text">ACG is always looking ahead and striving to deliver new and innovative programs to position ourselves as a workplace
+                of choice. Providing out dedicated employees with a flexible worklife balance is key so we are pleased to bring you
+                the latest information on the pilot Flex Work Program!
+            </p>
+        </div>
+
+        <div class="col-sm-4 btn-grp">
+            <button class="btn detail-btn"><i class="fa fa-plus"></i> Launch Video</button>
+            <button class="btn detail-btn"><i class="fa fa-plus"></i> Add to Diary</button>
+            <button class="btn detail-btn"><i class="fa fa-plus"></i> Add to Syllabus</button>
+        </div>
+
+        <div class="col-sm-2">
+                <img class="video-detail-badge" src="../../assets/img/badge8.png" width="50">
+                <p class="align-center">Learning Task Badges</p>
+                <img class="video-detail-badge" src="../../assets/img/badge8.png" width="50">
+                <p class="align-center">Task Completion Points: </p>
+
+        </div>
+    </div>
+</div>
+
+<!-- ROW 3 -->
+<div class="container-fluid no-padding cap-content">
+    <div class="row pl-4 pb-4 pt-4 bg-aaa-blue">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>School(s): </p>
+                    <p>Casualty/BI</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Sub-School(s): </p>
+                    <p>Quick Claim</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Phase(s): </p>
+                    <p>Customer Service</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <p>Resource links to be added to Dashboard [ICON] "Tools" widget on learning task completion: </p>
+            <p>No resources linked</p>
+        </div>
+
+        <div class="col-sm-2">
+        </div>
+
+
+    </div>
+</div>
+
 </body>
+
+<!--
+<script>
+    $(function () {
+        // init
+        $('#datetimepicker1').datetimepicker({useCurrent:false})
+        
+        //detect change
+        $("#datetimepicker1").on("change.datetimepicker", function (e) {
+            if (e.oldDate !== e.date) {
+                alert('You picked: ' + new Date(e.date).toLocaleDateString('en-US'))
+            }
+        })
+    })
+</script>
+-->
 
 </html>
