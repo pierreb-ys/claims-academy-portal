@@ -94,7 +94,7 @@
     /* Search Bar */
     
       .input-group .stylish-input-group {
-        margin-left: -36px;
+        /* margin-left: -36px; */
       }
     
     /* Profile */
@@ -107,17 +107,7 @@
     }
   }
 
-@media (max-width: 712px) {
 
-    .input-group, .stylish-input-group {
-      margin-left: -50px;
-    }
-  
-    .text-username {
-      font-size: 1.25rem;
-    }
-  
-  }
 
 /* ------------ SM (TABLET) ------------ */
 
@@ -125,11 +115,37 @@
 /* ------ MD ------ */
 /* ------ LG ------ */
 
-@media (min-width: 1024px) {
 
-  .profile-pic {
-    width: 40%;
-    padding: 10px;
-  }
 
-}
+
+
+/* ============ ============ MEDIA QUERIES ============ ============ */
+
+
+/* ============ MOBILE SIZES ============ */
+
+/* Extra-Small (Phone: Portrait)
+/* < 576px */
+/* No media query since this is the default in Bootstrap */
+
+/* Small (Phone: Landscape)
+/* 576px - 767px */
+/* @media (min-width: 576px) {} */
+
+
+/* ============ TABLET SIZE ============ */
+
+/* Medium (Tablets) */
+/* 768px - 991px */
+/* @media (min-width: 768px) {} */
+
+
+/* ============ DESKTOP SIZES ============ */
+
+/* Large (Desktops) */
+/* 992px - 1199px */
+/* @media (min-width: 992px) {} */
+
+/* Extra Large (Desktops) */
+/* 1200+px */
+/* @media (min-width: 1200px) {} */
