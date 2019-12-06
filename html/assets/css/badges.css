@@ -31,3 +31,7 @@ section.badges .content-wrap.scroller {
     height: 220px;
     overflow-x: hidden;
 }  
+
+section.badges.contentarea .content-wrap {
+    padding: 5px 20px 0 !important;
+}
