@@ -85,6 +85,7 @@
 
 .profile-pic {
   padding: 2px;
+  margin-left: 5px;
   width: 50%;
   height: 50%;
 }
@@ -92,6 +93,17 @@
 #margin-right-neg-60 {
   margin-right: -60px;
 }
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+
+.col, .col-sm-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 
 /* ------------ ------------ VIEWPORTS ------------ ------------ */
 
@@ -105,7 +117,80 @@
 
   /* DONE: The Profile Picture was too large at sizes below 579px. */
   .profile-pic {
-    width: 40%;
+   /* width: 40%; */
   }
 
 }
+
+
+
+body {
+  background-color: white;
+}
+
+
+/* ============ ============ MEDIA QUERIES ============ ============ */
+
+
+/* ============ MOBILE SIZES ============ */
+
+/* Extra-Small (Phone: Portrait)
+/* < 576px */
+/* No media query since this is the default in Bootstrap */
+
+/* Small (Phone: Landscape)
+/* 576px - 767px */
+/* @media (min-width: 576px) {} */
+
+/*
+@media (min-width: 576px) {
+
+  .input-group, .stylish-input-group {
+      margin-left: -1px;
+  }
+
+  .text-username {
+      font-size: 1.25rem;
+  }
+
+}
+*/
+
+@media (max-width: 712px) {
+
+  .input-group, .stylish-input-group {
+     /* margin-left: 12px; */
+  }
+
+  .text-username {
+    font-size: 1.25rem;
+  }
+
+}
+
+
+/* ============ TABLET SIZE ============ */
+
+/* Medium (Tablets) */
+/* 768px - 991px */
+/* @media (min-width: 768px) {} */
+
+
+/* ============ DESKTOP SIZES ============ */
+
+/* Large (Desktops) */
+/* 992px - 1199px */
+/* @media (min-width: 992px) {} */
+
+@media (min-width: 1024px) {
+
+  .profile-pic {
+   /* width: 40%; */
+    padding: 10px;
+  }
+
+}
+
+/* Extra Large (Desktops) */
+/* 1200+px */
+/* @media (min-width: 1200px) {} */

@@ -147,6 +147,14 @@ div.orange-text p {
   padding: 12px;
 }
 
+.padding-left-zero {
+  padding-left: 0px;
+}
+
+.padding-right-zero {
+  padding-right: 0px;
+}
+
 .content {
   padding: 24px;
 }
