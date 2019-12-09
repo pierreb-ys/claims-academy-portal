@@ -83,6 +83,14 @@
  .window  .update-schools-list  select { width:100%}
  .window  .update-schools-list   label { color:#fff; display: block; position: relative; padding-right: 50px; }      
 
+ .window  section.update-schools-list  label {
+  color: #d6ecff;
+}
+.window  section.update-schools-list strong {
+  color: #81bff5;
+}
+
+
  /* resource links list */ 
  .window  .resource-links-list  li { color:#fff; display: block; position: relative; padding-left: 25px; margin-bottom: 15px; }
  .window  .resource-links-list .delete { left:0; right: inherit; }
@@ -96,6 +104,10 @@
  /* task list */
 
  
+ .window section.task-list {
+  margin: 20px;
+}
+
 .window  section.task-list h3 {
   font-size: 18px;
   color: #fff;
@@ -122,6 +134,20 @@
   margin: 0;
   text-indent: -25px;
 }
+.window  section.task-list.view li {
+  padding-left: 65px;
+  position: relative;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.window  section.task-list.view input[type="checkbox"] {
+  left: 15px;
+  margin-top: 5px;;
+  width: 20px;
+  height: 20px;  
+  position: absolute;
+}
 .window  section.task-list li {
   padding-left: 55px;
   position: relative;
@@ -132,16 +158,22 @@
   width: 20px;
   height: 20px;
 }
-.window  section.task-list .delete { left:0;  }
+.window  section.task-list .delete { left:0;  margin-top: 5px;}
 .window  section.task-list .delete:before {
   margin-left: 26px;
   top: 0;
 }
+.window section.task-list li .dsc {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 25px;
+}
+
 .window  section.task-list h3 input:after, .window  section.task-list h3 input:checked:after  {
   color: #fff;
   vertical-align: middle;
 }
-
+.window  section.task-list input[class="number"] { width:30px; margin-right: 5px;}
 .window  section.task-list input[type="checkbox"]:after , .window  section.task-list input[type="checkbox"]:checked:after { display: none;}
 .window  section.task-list input[type="checkbox"]:before {    
 position:absolute; 
@@ -152,6 +184,11 @@ position:absolute;
     height: 21px;
     border-radius: 3px;
 
+}
+.window section.task-list li .dsc {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px;
 }
 
 .window  section.task-list input[type="checkbox"]:checked:before { 
@@ -165,7 +202,9 @@ position:absolute;
   float: right;
   margin: 10px;
 }
-  
+ 
+.window .add-task-form { margin-bottom: 10px; padding: 10px ;}
+
 /* window buttons list */
 
 .window .full { width:100%; }
@@ -290,5 +329,9 @@ aside.select-points .points input {
 }
 .window  .button-list.mb { margin-bottom: 20px;   }
 
+/* calendar */
 
- 
+.window .calendar-input input,
+ .window .calendar-input:after { 
+  border: 1px solid;
+}
