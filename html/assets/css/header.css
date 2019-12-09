@@ -99,7 +99,7 @@
 }
 
 
-.col, .col-sm-12 {
+.cap-header .col, .cap-header .col-sm-12 {
   padding-left: 0px;
   padding-right: 0px;
 }
