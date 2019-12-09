@@ -1,6 +1,0 @@
-#base=js
-jquery-3.2.1.min.js
-#jquery-3.2.1.slim.min.js
-popper.min.js
-bootstrap.min.js
-picturefill.min.js
