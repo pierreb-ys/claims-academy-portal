@@ -267,6 +267,10 @@ div.orange-text p {
   margin-bottom: 10px;
 }
 
+select.form-control[multiple] { 
+  background-image: none;
+}
+
 /* checkbox */
  
 input[type="checkbox"] { 
