@@ -1,6 +1,5 @@
 @import url("header.css");
 @import url("navigation.css");
-@import url("ui.css");
 @import url("carousel.css");
 @import url("footer.css");
 @import url("alerts.css");
@@ -12,7 +11,6 @@
 @import url("badges.css");
 @import url("catalog.css");
 @import url("learners.css");
-@import url("videos-admin.css");  
 @import url("windows.css"); 
 @import url("syllabus.css"); 
 @import url("challenge.css"); 

@@ -9,9 +9,8 @@
 
     <!-- Bootstrap -->    
     <link rel="stylesheet" href="../../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -39,8 +38,6 @@
 
 <body>
 
-
-
 <!-- Detail View  -->
 <section class="window course-details">
 
@@ -67,7 +64,7 @@
                 <div class="col-md-5">
                     <div class="row">
                         <div class="col-lg-7 display-flex">
-                            <label>Course ID </label>
+                            <label>Video ID: </label>
                             <input type="text" value="Course 1">
                         </div>
                         <div class="col-lg-5">
@@ -108,17 +105,66 @@
 
             </section>
    
-            <!-- Drop-Down Menus Underneath Text Area -->
+            <!-- Row: Text Area, with Buttons Under Video, with Badges Area -->
             <div class="row">
 
+                <!-- Text Area -->
                 <div class="col-md-5">
                     <textarea class="form-control" rows="6">Desciption Goes Here
                     </textarea>
-                    <!-- Schools List start -->
+                </div>
+
+                <!-- Buttons Underneath Thumbnail Image -->
+                <div class="col-md-4">
+                     <!-- buttons List start -->
+                    <div class="button-list">
+                        <button class="btn blue full"><i class="fa fa-rocket" aria-hidden="true"></i> Launch Video</button>
+                        <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add to Diary</button>
+                        <button class="btn blue full"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Syllabus</button>
+                        <button class="btn lgreen half"><i class="fa fa-commenting-o"></i> Assign to Learners</button>
+                        <button class="btn red half"><i class="fa fa-close"></i> Cancel Assignment</button>
+
+                    </div>
+                      <!-- buttons List end -->
+                </div>
+
+                <!-- Badges Section -->
+                <div class="col-md-3">
+                     <!-- Select Badges -->
+                    <aside class="row select-badge">
+                        <div class="col-sm-6">Learning Task Badge </div>
+                        <div class="col-sm-6"><img class="" src="../../assets/img/badge6.png">
+                            <div>
+                                <button class="btn orange">select</button>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Select Points   Start -->
+                    <aside class="row select-points">
+                        <div class="col-sm-6">Task Completion Points</div>
+                        <div class="col-sm-6">
+                            <div class="points">
+                                <input type="number" value="10">
+                            </div>
+    
+                        </div>
+                    </aside>
+    
+                </div>
+
+            </div>
+    
+            <!-- Bottom Section -->
+            <div class="row">
+
+                <!-- Drop-Down Menus Underneath Text Area -->
+                <div class="col-md-5"> 
+                    <!-- Schools List -->
                     <section class="row update-schools-list">
                         <div class="col-lg-4">
-                                <select id="School" name="School">
-                                <option>School(s) </option>
+                            <select id="School" name="School">
+                            <option>School(s) </option>
                             </select>
                             <label>Cosualty/BI <span class="delete"></span></label>
                             <label>PIP <span class="delete"></span></label>
@@ -146,115 +192,46 @@
                             <label>Settlement /Negotiation <span class="delete"></span></label>
                         </div>
                     </section>
-                    <!-- Schools List end -->
                 </div>
-
-                <!-- Buttons Underneath Thumnail Image -->
-                <div class="col-md-4">
-                     <!-- buttons List start -->
-                    <div class="button-list">
-                        <button class="btn blue full"><i class="fa fa-rocket" aria-hidden="true"></i> Launch Video</button>
-                        <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add to Diary</button>
-                        <button class="btn blue full"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to Syllabus</button>
-                        <button class="btn lgreen half"><i class="fa fa-commenting-o"></i> Assign to Learners</button>
-                        <button class="btn red half"><i class="fa fa-close"></i> Cancel Assignment</button>
-
-                    </div>
-                      <!-- buttons List end -->
-                </div>
-
-                <!-- Badges Section -->
-                <div class="col-md-3">
-                     <!-- Sekect Badges   Start -->
-                    <aside class="row select-badge">
-                        <div class="col-sm-6">Learning Task Badge </div>
-                        <div class="col-sm-6"><img class="" src="../../assets/img/badge6.png">
-                            <div>
-                                <button class="btn orange">select</button>
-                            </div>
-                        </div>
-                    </aside>
-                     <!-- Sekect Badges   End -->
-
-                      <!-- Sekect Points   Start -->
-                    <aside class="row select-points">
-                        <div class="col-sm-6">Task Completion Points</div>
-                        <div class="col-sm-6">
-                            <div class="points">
-                                <input type="number" value="10">
-                            </div>
-    
-                        </div>
-                    </aside>
-                     <!-- Select Points   End -->
-    
-                </div>
-
-            </div>
-    
-            <!-- Bottom Section -->
-            <div class="row">
 
                 <!-- Resource Titles -->
-                <div class="col-sm-6">
-                    
-                      <!--   Resource links List  Start -->
+                <div class="col-md-7">
+                    <p>Resource links to be added to Dashboard "Tools" widget on learning task completion: </p>
+                    <!-- Resource Links List -->
                     <section class="row resource-links-list">
                         <ul>
-
-                              <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
-                                < Resource Title 1>
+                                Resource Title 1
                             </li>
-                              <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
                                 Resource Title 2
                             </li>
-                             <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
                                 Resource Title 3
                             </li>
-                             <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
                                 Resource Title 4
                             </li>
-                             <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
                                 Resource Title 5
                             </li>
-                             <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
                             <li>
                                 <span class="delete"></span>
-                                < Resource Title 6>
-                            </li>
-                             <!--   Resource link   End -->     
-                           
+                                Resource Title 6=
+                            </li>  
                         </ul> 
-
-                              <!--   Add Resource Button  Start -->
+                        <!-- Add Resource Button -->
                         <button class="btn purple">Add Resource Link</button>
-                        <button class="btn purple full"> Update Catalog Entry</button>
+                        <!-- <button class="btn purple full"> Update Catalog Entry</button> -->
                         <button class="btn purple">Update Catalog Entry</button>
-                          <!--   Add Resource Button  End -->
                     </section>
-                     <!--   Resource links List  End -->
-                </div>
 
+                </div>
             </div>
 
         </div>
@@ -278,147 +255,8 @@
 
 
 
-<!-- TITLE BAR -->
-<div class="container-fluid">
 
-    <!-- Top Bar -->
-    <div class="row bg-light-blue pt-2 pb-2">
-
-        <div class="col-sm-1">
-
-            <div class="img-fluid detail-view-icon">
-                <img src="../../assets/img/my-profile-icon.png" />
-            </div>
-        </div>
-<!--
-        <div class="col-sm-2 flex-center-vertically">
-            <p>Video Details</p>
-        </div>
-        <div class="col-sm-1 flex-center-vertically">
-            <p>[DYNAMIC]</p>
-        </div>
-
-        <div class="col-sm-1">
-            <p>ID: </p>
-        </div>
-        <div class="col-sm-2">
-            <p>[DYNAMIC]</p>
-        </div>
-        <div class="col-sm-1">
-            <p>Version: </p>
-        </div>
-        <div class="col-sm-1">
-            <p>[DYNAMIC]</p>
-        </div>
-        <div class="col-sm-1">
-            <p>Active:  </p>
-        </div>
-        <div class="col-sm-1">
-            <p>[DYNAMIC]</p>
-        </div>
-    -->
-    </div>
-
-</div>
-
-<!-- ROW 1 -->
-<div class="container-fluid no-padding">
-    <div class="row pt-4 bg-aaa-blue">
-        
-        <div class="col-sm-6 bg-orange flex-center-vertically">
-            <p class="video-detail-title-text">Flex Work Program</p>
-        </div>
-
-        <div class="col-sm-4">
-            <img class="img-fluid card-img" src="../../assets/img/card-placeholder.png">
-            <div class="display-flex video-thumbnail-description">
-                <p>Version No.: </p>
-                <p>Duration: </p>
-            </div>
-        </div>
-
-        <div class="col-sm-2 orange-bar-right">
-
-        </div>
-
-    </div>
-</div>
-
-<!-- ROW 2 -->
-<div class="container-fluid no-padding cap-content">
-    <div class="row pl-4 pb-4 pt-4 bg-aaa-blue">
-
-        <div class="col-sm-6">
-            <p class="video-detail-text">ACG is always looking ahead and striving to deliver new and innovative programs to position ourselves as a workplace
-                of choice. Providing out dedicated employees with a flexible worklife balance is key so we are pleased to bring you
-                the latest information on the pilot Flex Work Program!
-            </p>
-        </div>
-
-        <div class="col-sm-4 btn-grp">
-            <button class="btn detail-btn"><i class="fa fa-plus"></i> Launch Video</button>
-            <button class="btn detail-btn"><i class="fa fa-plus"></i> Add to Diary</button>
-            <button class="btn detail-btn"><i class="fa fa-plus"></i> Add to Syllabus</button>
-        </div>
-
-        <div class="col-sm-2">
-                <img class="video-detail-badge" src="../../assets/img/badge8.png" width="50">
-                <p class="align-center">Learning Task Badges</p>
-                <img class="video-detail-badge" src="../../assets/img/badge8.png" width="50">
-                <p class="align-center">Task Completion Points: </p>
-
-        </div>
-    </div>
-</div>
-
-<!-- ROW 3 -->
-<div class="container-fluid no-padding cap-content">
-    <div class="row pl-4 pb-4 pt-4 bg-aaa-blue">
-        <div class="col-sm-6">
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>School(s): </p>
-                    <p>Casualty/BI</p>
-                </div>
-                <div class="col-sm-4">
-                    <p>Sub-School(s): </p>
-                    <p>Quick Claim</p>
-                </div>
-                <div class="col-sm-4">
-                    <p>Phase(s): </p>
-                    <p>Customer Service</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-4">
-            <p>Resource links to be added to Dashboard [ICON] "Tools" widget on learning task completion: </p>
-            <p>No resources linked</p>
-        </div>
-
-        <div class="col-sm-2">
-        </div>
-
-
-    </div>
-</div>
 
 </body>
-
-<!--
-<script>
-    $(function () {
-        // init
-        $('#datetimepicker1').datetimepicker({useCurrent:false})
-        
-        //detect change
-        $("#datetimepicker1").on("change.datetimepicker", function (e) {
-            if (e.oldDate !== e.date) {
-                alert('You picked: ' + new Date(e.date).toLocaleDateString('en-US'))
-            }
-        })
-    })
-</script>
--->
 
 </html>
