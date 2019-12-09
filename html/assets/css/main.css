@@ -17,6 +17,7 @@
 @import url("syllabus.css"); 
 @import url("challenge.css"); 
 @import url("learning-diary.css"); 
+@import url("clubs.css"); 
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -89,6 +90,12 @@ div.orange-text p {
 #bg-blue-dark-brand {
   background-color: #003893;
   color: #fff;
+}
+
+/* GREEN */
+
+.green { 
+  background-color:#93c47d;
 }
 
 /* ------------ ------------ LAYOUT ------------ ------------ */
