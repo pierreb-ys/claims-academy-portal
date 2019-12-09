@@ -5,9 +5,13 @@
     color: #fff;
 }
 
+.window  img  {
+  max-width: 100%;
+}
+
 /* title */
 
-.window  h2 { background:#6fa8dc; color:#fff; font-size: 18px; line-height: 40px; padding-left: 10px; margin:0;  }
+.window  h2 { background:#6fa8dc; color:#fff; font-size: 18px; line-height: 40px; padding-left: 10px; margin:0; position:relative  }
 .window  h2 i.fa { margin-right: 10px;; }
 .window  .btn.blue .fa { color:#fff}  
 
@@ -40,7 +44,7 @@
   .window  .yellow-ribbon { position: relative;}
 
   .window  .strip {  
-      background: #fbcc3e;
+      background: #f68d35;
       height: 50%;
       width: 100%;
       position: absolute;
@@ -53,6 +57,17 @@
     width: 96%;
     text-align: left;
 }
+.window section.yellow-ribbon h3.title {
+  margin-top: 24%;
+  margin-left: 5%;
+  width: 96%;
+  text-align: left;
+  font-size: 24px;
+}
+.window .description {
+  font-size: 18px;
+}
+
 
 /* video frame */
 
@@ -79,11 +94,31 @@
  .window  .update-schools-list  select { width:100%}
  .window  .update-schools-list   label { color:#fff; display: block; position: relative; padding-right: 50px; }      
 
+ .window  section.update-schools-list  label {
+  color: #d6ecff;
+}
+.window  section.update-schools-list strong {
+  color: #81bff5;
+}
+
+
  /* resource links list */ 
+ .window  .resource-links-list  { margin-top: 20px; margin-left: 10px;}
  .window  .resource-links-list  li { color:#fff; display: block; position: relative; padding-left: 25px; margin-bottom: 15px; }
  .window  .resource-links-list .delete { left:0; right: inherit; }
  .window  .resource-links-list button { width: 300px; }
+ .window  .resource-links-list ul {
+  margin: 0;
+  padding: 0;
+}
  
+.window  .resource-links-list h4 {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.window .resource-links-list   p {
+  margin: 5px 0 15px 0; 
+}
  
  @media (min-width: 800px) {
     .window  .resource-links-list li { width:50%; float: left; }    
@@ -92,6 +127,10 @@
  /* task list */
 
  
+ .window section.task-list {
+  margin: 20px;
+}
+
 .window  section.task-list h3 {
   font-size: 18px;
   color: #fff;
@@ -118,6 +157,20 @@
   margin: 0;
   text-indent: -25px;
 }
+.window  section.task-list.view li {
+  padding-left: 65px;
+  position: relative;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.window  section.task-list.view input[type="checkbox"] {
+  left: 15px;
+  margin-top: 5px;;
+  width: 20px;
+  height: 20px;  
+  position: absolute;
+}
 .window  section.task-list li {
   padding-left: 55px;
   position: relative;
@@ -128,16 +181,22 @@
   width: 20px;
   height: 20px;
 }
-.window  section.task-list .delete { left:0;  }
+.window  section.task-list .delete { left:0;  margin-top: 5px;}
 .window  section.task-list .delete:before {
   margin-left: 26px;
   top: 0;
 }
+.window section.task-list li .dsc {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 25px;
+}
+
 .window  section.task-list h3 input:after, .window  section.task-list h3 input:checked:after  {
   color: #fff;
   vertical-align: middle;
 }
-
+.window  section.task-list input[class="number"] { width:30px; margin-right: 5px;}
 .window  section.task-list input[type="checkbox"]:after , .window  section.task-list input[type="checkbox"]:checked:after { display: none;}
 .window  section.task-list input[type="checkbox"]:before {    
 position:absolute; 
@@ -148,6 +207,23 @@ position:absolute;
     height: 21px;
     border-radius: 3px;
 
+}
+.window input[type="checkbox"]:checked:after,
+ .window input[type="checkbox"]:after {
+  position: absolute;
+  content: "\f096";
+  color: #fff;
+  border: 1px solid #0c3859;
+  width: 22px;
+  height: 21px;
+  border-radius: 3px;
+}
+.window input[type="checkbox"]:checked:before { display: none;} 
+.window input[type="checkbox"]:checked:after  { content: "\f046"; color:white;}
+.window section.task-list li .dsc {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px;
 }
 
 .window  section.task-list input[type="checkbox"]:checked:before { 
@@ -161,11 +237,20 @@ position:absolute;
   float: right;
   margin: 10px;
 }
-  
+ 
+.window .add-task-form { margin-bottom: 10px; padding: 10px ;}
+
 /* window buttons list */
 
 .window .full { width:100%; }
-.window .half { width:48%; }
+@media (min-width:600px){
+  .window .button-list button.half  +  button.half  { margin-left: 2%;} 
+  .window .half { width:48%; }
+}
+@media (max-width:600px){
+  .window .half { width:100%; }
+}
+
 .window .button-list button {
     position: relative; margin-bottom: 10px; }
     .window .button-list .fa {
@@ -173,7 +258,7 @@ position:absolute;
     left: 10px;
     top: 10px;
 }
-.window .button-list button.half  +  button.half  { margin-left: 2%;} 
+
 
  
 /* select badge */
@@ -241,3 +326,47 @@ aside.select-points .points input {
     vertical-align: middle;
 }
    
+/* FORM */
+
+.window  section.form {
+  padding: 10px ; 
+}
+
+@media (min-width:767px){
+  .window  section.form {
+      margin: 20px;
+      padding: 20px;
+  }
+
+}
+
+
+.window section.form input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+.window  .ques {   }
+.window  .ques h3 { font-size: 16px; margin-bottom: 20px;  }
+.window  .ques h3 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin: 0 10px;
+}
+.window .ques label  {
+  margin-bottom: 0;
+}
+.window .ques input, .window .ques input:checked {
+  vertical-align: middle;
+  display: inline-block; 
+}
+.window .ques input:after, .window .ques input:checked:after { 
+  color:#fff
+}
+.window  .button-list.mb { margin-bottom: 20px;   }
+
+/* calendar */
+
+.window .calendar-input input,
+ .window .calendar-input:after { 
+  border: 1px solid;
+}

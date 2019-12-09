@@ -93,24 +93,6 @@
  
 }
 
-/* progress */
-.progress { position: relative; overflow: visible;}
-.progress div { background: #b0cde6;}
-.progress span {
-    display: block;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    line-height: normal;
-}
-
-.progress i.fa {
-    position: absolute;
-    left: -20px;
-    top: 0px;
-    color: #3398cb !important;
-    font-size: 18px;
-}
 
   /* Responsive Datatable */ 
   .responsive-table {
@@ -124,29 +106,3 @@
 }
     
 
-.button-grp { text-align: right; margin: 10px 0; }
-.button-grp button { margin:10px 0;  border:none; color: #fff;    height:50px ; text-align: left;  vertical-align: middle;   line-height: normal;
-    font-size: 16px;
-    padding: 10px 20px;   } 
-.button-grp button img { margin-left: 0;
-    margin-right: 15px;
-    margin-top: -4px; }    
-.button-grp .fill-btn {  background: #3098cc; }
-.button-grp .outline-btn {  border:1px solid #3098cc;  background: #fff; color: #3098cc}
-.button-grp .outline-btn i.fa { color:#3098cc }
-.button-grp .outline-btn.right {
-    text-align: right;
-    padding-right: 20px;
-    padding-top: 4px;
-    position: relative;
-    padding-left: 45px;
-}
-.button-grp .outline-btn.right .fa {
-    position: absolute;
-    left: 20px;
-    top: 14px;
-} 
-.button-grp button .fa {
-    margin-right: 10px;
-}
- 

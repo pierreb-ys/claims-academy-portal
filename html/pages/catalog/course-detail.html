@@ -9,12 +9,6 @@
 
     <title>ACG</title>
 
-<!-- Links -->
-
-<!-- Bootstrap CSS -->
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    
-
 
 <!-- Custom CSS Inserted Here-->
     <link rel="stylesheet" href="../../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
@@ -28,12 +22,12 @@
 
 <!-- JavaScript -->
 
-<!-- jQuery -->
+<!-- jQuery 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-<!-- Popper.js -->
+-->
+<!-- Popper.js 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
+-->
 <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -44,31 +38,42 @@
 
 <body>
  
-<!-- Course  -->
+<!-- Detail View  -->
 <section class="window course-details">
-        <h2><i class="fa fa-list-alt" aria-hidden="true"></i> Course <div class="window-close"></div></h2>
-     <form> 
+
+    <!-- Top Blue Bar -->
+    <h2><i class="fa fa-list-alt" aria-hidden="true"></i> Course <div class="window-close"></div></h2>
+
+    <!-- Page Content -->
+    <form> 
+
         <div class="container-fluid ">
            
-             <!-- Select Course Code start -->
+            <!-- Select Course -->
             <section class="row select-course">
+
+                <!-- Edit/Use Buttons -->
                 <div class="col-md-2">
                     <div class="edit-use">
                         <button class="btn purple">Edit</button>
                         <button class="btn white">Use</button>
                     </div>
                 </div>
+
+                <!-- Drop-Down Menu ("Select Course Type") -->
                 <div class="col-md-3 course-type">
+
                     <select id="CourseType" name="CourseType">
                         <option>Select Course Type </option>
                     </select>
     
-                    <label> <span class="online-icon"><i class="fa fa-desktop" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i></span> Online </label>
-                    <label> <span class="ilt-icon"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i></span> ILT </label>
-                    <label> <span class="vrcr-icon">    <i class="fa fa-desktop" aria-hidden="true"></i>
-                            <i class="fa fa-list-ul" aria-hidden="true"></i>
-                         <i class="fa fa-user" aria-hidden="true"></i></span> Virtual Classroom</label>
+                    <label><span class="online-icon"><i class="fa fa-desktop" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i></span> Online </label>
+                    <label><span class="ilt-icon"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i></span> ILT </label>
+                    <label><span class="vrcr-icon"><i class="fa fa-desktop" aria-hidden="true"></i><i class="fa fa-list-ul" aria-hidden="true"></i><i class="fa fa-user" aria-hidden="true"></i></span> Virtual Classroom</label>
+                
                 </div>
+
+                <!-- Course ID and Version Number -->
                 <div class="col-md-4">
                     <div class="row">
                         <div class="  col-lg-7">
@@ -81,34 +86,41 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Checkbox ("Active") -->
                 <div class="col-md-3">
-                    <label>Active
-                        <input type="checkbox"> </label>
+                    <label>Active<input type="checkbox"></label>
                 </div>
+
             </section>
-             <!-- Select Course Code End -->
     
-              <!-- yellow ribbon Code start -->
+            <!-- Orange Ribbon -->
             <section class="yellow-ribbon">
+
                 <div class="strip"></div>
+
                 <div class="row">
+
                     <div class="col-md-5">
                         <textarea class="form-control">ACG Introduction to the Claims Academy Team</textarea>
                     </div>
+
                     <div class="col-md-4">
                         <div class="video-frame"><img class="" src="../../assets/img/video-thumbnail.png">
                             <button class="btn purple">Add / Change Thumbnail Image</button>
                         </div>
-    
                     </div>
+
                     <div class="col-md-3">
-    
                     </div>
+
                 </div>
+
             </section>
-             <!-- yellow ribbon Code end -->
-    
+   
+            <!-- Drop-Down Menus Underneath Text Area -->
             <div class="row">
+
                 <div class="col-md-5">
                     <textarea class="form-control" rows="6"> This presentation is an introduction to the Claims Academy Team. We will cover the Cycle of Continuous Improvement, classroom vs. eLearning and the structure of our team. We are excited to partner with ACG to create and deliver effective training. Audience: ACG Claims Staff
                     </textarea>
@@ -146,6 +158,8 @@
                     </section>
                     <!-- Schools List end -->
                 </div>
+
+                <!-- Buttons Underneath Thumnail Image -->
                 <div class="col-md-4">
                      <!-- buttons List start -->
                     <div class="button-list">
@@ -158,6 +172,8 @@
                     </div>
                       <!-- buttons List end -->
                 </div>
+
+                <!-- Badges Section -->
                 <div class="col-md-3">
                      <!-- Sekect Badges   Start -->
                     <aside class="row select-badge">
@@ -183,9 +199,13 @@
                      <!-- Select Points   End -->
     
                 </div>
+
             </div>
     
+            <!-- Bottom Section -->
             <div class="row">
+
+                <!-- Box, with Purple Outline -->
                 <div class="col-sm-6">
                      <!-- Sekect Schedules   Start -->
                     <section class="select-schedules"> 
@@ -264,6 +284,8 @@
                     </section>
                        <!-- Sekect Schedules   End -->
                 </div>
+
+                <!-- Resource Titles -->
                 <div class="col-sm-6">
                     
                       <!--   Resource links List  Start -->
@@ -320,9 +342,15 @@
                     </section>
                      <!--   Resource links List  End -->
                 </div>
+
             </div>
-        </div></form>
-    </section> 
+
+        </div>
+
+    </form>
+
+</section> 
+
 </body>
 
 </html>

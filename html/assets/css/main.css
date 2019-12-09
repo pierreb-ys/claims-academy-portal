@@ -1,6 +1,5 @@
 @import url("header.css");
 @import url("navigation.css");
-@import url("ui.css");
 @import url("carousel.css");
 @import url("footer.css");
 @import url("alerts.css");
@@ -12,11 +11,11 @@
 @import url("badges.css");
 @import url("catalog.css");
 @import url("learners.css");
-@import url("videos-admin.css");  
 @import url("windows.css"); 
 @import url("syllabus.css"); 
 @import url("challenge.css"); 
 @import url("learning-diary.css"); 
+@import url("clubs.css"); 
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -91,6 +90,12 @@ div.orange-text p {
   color: #fff;
 }
 
+/* GREEN */
+
+.green { 
+  background-color:#93c47d;
+}
+
 /* ------------ ------------ LAYOUT ------------ ------------ */
 
 .display-flex {
@@ -147,6 +152,14 @@ div.orange-text p {
   padding: 12px;
 }
 
+.padding-left-zero {
+  padding-left: 0px;
+}
+
+.padding-right-zero {
+  padding-right: 0px;
+}
+
 .content {
   padding: 24px;
 }
@@ -180,12 +193,14 @@ div.orange-text p {
   margin-right: 10px;
 }
 
+.task-type-icon.online-icon .fa-list-ul,
 .online-icon .fa-list-ul {
   position: absolute;
   font-size: 52%;
   left: 25%;
   top: 13%;
 } 
+.task-type-icon.online-icon .fa-list-ul {  left: 35%; top:35%}
 .ilt-icon .fa-list-ul {
   position: absolute;
   font-size: 57%;
@@ -250,6 +265,10 @@ div.orange-text p {
   -moz-appearance: none; 
 
   margin-bottom: 10px;
+}
+
+select.form-control[multiple] { 
+  background-image: none;
 }
 
 /* checkbox */
@@ -462,29 +481,30 @@ section.search select  {
   }
   
   
-section.search input {
-    width:auto;
+  .search-box input { 
     display: inline-block;
-    border:1px solid #ddd;
+    border:1px solid #3398cb;
   }
 
-section.search button, section.search button:hover {
+  .search-box button, .search-box button:hover {
     background: #f90;
     color: #fff;
   }
 
-section.search .search-box input {
-    background-color: #e6e7e8;
+ .search-box input {
+    background-color: #fff;
   }
 
-section.search .search-box input, section.search .search-box button {
+.search-box input,  .search-box button {
       width: 255px; 
       float: none;
       display: block;
       max-width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
   }
 
-  section.search input {
+  .search-box input {
       background-image: url('../../assets/img/search-icon.png');
       background-position: 5px center;
       background-repeat: no-repeat;
@@ -495,7 +515,20 @@ section.search .search-box input, section.search .search-box button {
   section.search .search-content {
       padding: 20px;    
   }
+  section.search .search-box input { margin:0; }
 
+  .search-box.inline input , .search-box.inline button { width:auto; display: inline-block; vertical-align: middle;}
+
+ 
+  .search-box.inline   button {
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+@media (min-width: 767px) {
+  .search-box.right {
+    float: right;
+  }
+}
 @media (max-width: 767px) {
 
   section.search  .search-box {
@@ -510,10 +543,22 @@ section.search .search-box input, section.search .search-box button {
 
 }
 
+/* filter Box */
+
+.filter-box {
+  padding: 10px;    
+}
+
+.filter-box select { 
+  display: inline-block;   
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+
 /* Contentarea Section */  
 section.contentarea { 
-  background: #fff;
-  padding-top: 10px;
+  background: #fff; 
   margin-bottom: 20px;
 }
 
@@ -529,7 +574,7 @@ section.contentarea h2.title { background-color:#3398cb;
 }
 
 section.contentarea .content-wrap {
-  padding: 0 20px;    
+  padding: 20px;    
 }
 
 .content-wrap.scroller {
@@ -546,40 +591,44 @@ section.contentarea .content-wrap {
  /* --- Buttons --- */    
 
  .btn.blue {
-  background: #3098cc;
+  background: #3098cc !important;
   color:#fff;
 }
 .btn.purple {
-  background: #9900ff;
+  background: #9900ff !important;
   color:#fff;
 } 
 .btn.white {
-  background: #fff;
+  background: #fff !important;
   color:#000;
 } 
 .btn.lgreen {
-  background: #8bc53f;
+  background: #8bc53f !important;
   color:#fff;
 }
 .btn.red {
-  background: red;
+  background: red !important;
   color:#fff;
 }
 .btn.darkBlue {
-  background: #0c3859;
+  background: #0c3859 !important;
   color:#fff;
 }
 .btn.lightBlue {
-  background: #6fa8dc;
+  background: #6fa8dc !important;
   color:#fff;
 }
 .btn.orange {
-  background: #f90;
+  background: #f90 !important;
   color:#fff;
 }
 .btn.assign-task-btn {
   width: 300px;  
   max-width: 100%;  
+}
+.btn.lightGray {
+  background: #87919a !important;
+  color:#fff;
 }
 
 button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
@@ -593,6 +642,34 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
 }
 
 
+.button-grp { text-align: right; margin: 10px 0; }
+.button-grp button { margin: 0;  border:none; color: #fff;    height:50px ; text-align: left;  vertical-align: middle;   line-height: normal;
+    font-size: 16px;
+    padding: 10px 20px;   } 
+.button-grp button img { margin-left: 0;
+    margin-right: 15px;
+    margin-top: -4px; }    
+.button-grp .fill-btn {  background: #3098cc; }
+.button-grp .outline-btn {  border:1px solid #3098cc;  background: #fff; color: #3098cc}
+.button-grp .outline-btn i.fa { color:#3098cc }
+.button-grp .outline-btn.right {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 4px;
+    position: relative;
+    padding-left: 45px;
+}
+.button-grp .outline-btn.right .fa {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+} 
+.button-grp button .fa {
+    margin-right: 10px;
+}
+
+        
+
 /* Calendar Input */    
 .calendar-input {
   position: relative;
@@ -603,23 +680,65 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
   width: auto;
   border: 1px solid #0c3859;
   position: relative;
-  padding-left: 30px;
-  width: 190px;
+  padding-right: 30px;
+  width: 150px;
+  padding: 5px;
 }
 .calendar-input i {
-  color: #0c3859;
+  color: #fff;
   margin-left: -10px;
   position: absolute;
-  left: 20px;
+  right: 10px;
   top: 0;
+  z-index: 1;
+}
+.calendar-input:after {
+  background: #0c3859;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 10px;
+  width: 35px;
+  content: "";
   z-index: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+/* Date Range */
+
+.dateRange .calendar-input input {font-size: 12px;  width: 100px;  }
+
+.dateRange {
+  min-width: 130px;
+}
+.dateRange label {
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 30px;
+    width:30px;
+    padding-right: 5px;
+}
+.dateRange .calendar-input i.fa {
+  color: #fff;
+  margin-left: -10px;
+  position: absolute;  
+  font-size: 12px;
+}
+
+.dateRange .calendar-input:after { 
+  width: 25px; 
+}
+.dateRange  .calendar-input i { 
+  right: 7px; 
 }
 
    /* Responsive Datatable */ 
   .responsive-table {
     border: 1px solid #9fc5f8;
-    margin-bottom: 20px;
-    margin-top:20px;
+    margin-bottom: 20px; 
   }
 
  /* Datatable auto scrollbar  */ 
@@ -627,3 +746,19 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
     .responsive-table { overflow: auto; } 
 }
     
+
+/* Task type icon */
+
+.task-type-icon i.fa { font-size: 30px; display: inline-block; vertical-align: middle; margin-right: 5px; }
+
+/* thumbnail */
+
+.thumbnail { border:1px solid #333; width:80px; height: 80px; text-align: center; font-size: 12px;}
+
+
+/* title */
+h3.title { font-size: 20px ;}
+h3.title.inline {
+  display: inline-block;
+  margin-left: 10px;
+}

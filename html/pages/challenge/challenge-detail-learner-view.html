@@ -39,36 +39,14 @@
 
 <body>
   
-<!-- Challenge Details Add/Edit  start  -->
+<!-- Challenge Details Learner View  start  -->
 <section class="window challenge-details">
     
         <h2><i class="fa fa-map-o" aria-hidden="true"></i> Challenge <div class="window-close"></div></h2>
-   
-        <div class="flash">   <div class="edit-use">
-                <button class="btn purple">Edit</button> 
-            </div> <img class="" src="../../assets/img/flash.png"></div>
+        <div class="flash"><img class="" src="../../assets/img/flash.png"></div>
         <div class="container-fluid ">    
 
-            <!-- Select Course Code start -->
-            <section class="row select-course">
-                <div class="col-md-5">
-                    <div class="edit-use">
-                        <button class="btn purple">Edit</button>
-                        <button class="btn white">Use</button>
-                    </div>
-                </div> 
-                <div class="col-md-4 text-right">
-                    <label>Active     <input type="checkbox" disabled   > </label>
-                 
-                </div>
-                <div class="col-md-3">
-                    <label>Date Active </label><br>
-                        <div class="calendar-input">
-                            <input type="text" class="form-control"><i class="fa fa-calendar"></i></div>
-                   
-                </div>
-            </section>
-            <!-- Select Course Code End -->
+         
     
             <!-- yellow ribbon Code start -->
             <section class="yellow-ribbon">
@@ -78,8 +56,7 @@
                         <textarea class="form-control"> Auto Insurance Basics </textarea>
                     </div>
                     <div class="col-md-4">
-                        <div class="video-frame"><img class="" src="../../assets/img/video-thumbnail.png">
-                            <button class="btn purple">Edit</button>
+                        <div class="video-frame"><img class="" src="../../assets/img/video-thumbnail.png"> 
                         </div>
     
                     </div>
@@ -97,33 +74,28 @@
                     <!-- Schools List start -->
                     <section class="row update-schools-list">
                         <div class="col-lg-4">
-                            <select>
-                                <option>School(s) </option>
-                            </select>
-                            <label>Cosualty/BI <span class="delete"></span></label>
-                            <label>PIP <span class="delete"></span></label>
-                            <label>APD <span class="delete"></span></label>
-                            <label>Property <span class="delete"></span></label>
+                                <strong>School(s)  </strong>
+                         
+                            <label>Cosualty/BI </label>
+                            <label>PIP </label>
+                            <label>APD </label>
+                            <label>Property </label>
                         </div>
                         <div class="col-lg-4">
-                            <select>
-                                <option>Sub-School(s) </option>
-                            </select>
-                            <label>Quick Claim <span class="delete"></span></label>
-                            <label> CAT <span class="delete"></span></label>
-                            <label> Desk <span class="delete"></span></label>
-                            <label> Field <span class="delete"></span></label>
-                            <label> Commerical <span class="delete"></span></label>
+                             <strong>Sub-School(s)  </strong>
+                            <label>Quick Claim </label>
+                            <label> CAT </label>
+                            <label> Desk </label>
+                            <label> Field </label>
+                            <label> Commerical </label>
                         </div>
                         <div class="col-lg-4">
-                            <select>
-                                <option>Phase(s) </option>
-                            </select>
-                            <label>Customer Service <span class="delete"></span> </label>
-                            <label> Coverage <span class="delete"></span> </label>
-                            <label>Investigation <span class="delete"></span></label>
-                            <label> Evaluation <span class="delete"></span></label>
-                            <label>Settlement /Negotiation <span class="delete"></span></label>
+                                <strong>Phase(s)  </strong> 
+                            <label>Customer Service   </label>
+                            <label> Coverage  </label>
+                            <label>Investigation </label>
+                            <label> Evaluation </label>
+                            <label>Settlement /Negotiation </label>
                         </div>
                     </section>
                     <!-- Schools List end -->
@@ -134,9 +106,7 @@
                         <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add Diary Entry</button>
                         <button class="btn blue full"><i class="fa fa-bookmark" aria-hidden="true"></i>Add to My Syllabus</button>
                         <button class="btn blue full"><i class="fa fa-bookmark-o" aria-hidden="true"></i>Cancel Syllabus Self-Assignment</button>
-                        <button class="btn lgreen half"><i class="fa fa-commenting-o"></i> Assign to Learners</button>
-                        <button class="btn red half"><i class="fa fa-close"></i> Cancel Assignment</button>
-                    </div>
+                      </div>
                      <!-- buttons List end -->
                 </div>
                 <div class="col-md-3">
@@ -144,9 +114,7 @@
                     <aside class="row select-badge">
                         <div class="col-sm-6">Learning Task Completion Badge </div>
                         <div class="col-sm-6"><img class="" src="../../assets/img/badge6.png">
-                            <div>
-                                <button class="btn purple">Edit</button>
-                            </div>
+                          
                         </div>
                     </aside>
                      <!-- Select Badges   End -->
@@ -168,7 +136,7 @@
                         <div class="col-sm-6">Additional COmpletion Points</div>
                         <div class="col-sm-6">
                             <div class="points">
-                                <input type="number" value="20">
+                                20
                             </div>
     
                         </div>
@@ -193,96 +161,59 @@
             <div class="row">
                 <div class="col-sm-12">
                      <!-- Task List  Start -->
-                    <section class="task-list">
+                    <section class="task-list view">
 
                         <!-- Task Heading  Start -->
-                        <h3>    The specified tasks...    must be   ...completed in order.  </h3>
+                        <h3>    The specified tasks...   &nbsp;  need NOT be &nbsp;    ...completed in order.  </h3>
                          <!-- Task Heading  End -->                  
 
                         <ul>
                             <!-- Task Start -->
-                            <li>
-                                <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber1" name="taskNumber1" class="number" value="1">
-                                <div class="dsc">
-                                        Course: "How to evaluate Frame Damage in Minivans"
-                                        <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
-                                </div> 
+                            <li> 
+                                <input type="checkbox">Course: "How to evaluate Frame Damage in Minivans"
+                                <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
+    
                             </li>
                              <!-- Task End -->
                              <!-- Task Start -->
                             <li>
-    
-                                <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber2" name="taskNumber2"  class="number" value="2"> 
-                                <div class="dsc"> Video: "How to estimate repair costs: Minivan Frame Damage"
+     
+                                <input type="checkbox"> Video: "How to estimate repair costs: Minivan Frame Damage"
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
-                                </div>
                             </li>
                             <!-- Task End -->
                              <!-- Task Start -->
-                            <li>
-                                <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber3" name="taskNumber3"  class="number" value="3"> 
-                                <div class="dsc">
-                                     Course: "Common Pitfalls in Estimating Frame Damage:
+                            <li> 
+                                <input type="checkbox"> Course: "Common Pitfalls in Estimating Frame Damage:
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
-                                </div>
     
                             </li>
                             <!-- Task End -->
                              <!-- Task Start -->
-                            <li>
-                                <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber4" name="taskNumber4"  class="number" value="4"> 
-                                <div class="dsc"> Course: "Managing member privacy during the Claims process"
+                            <li> 
+                                <input type="checkbox"> Course: "Managing member privacy during the Claims process"
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
-                                </div>
     
                             </li>
                             <!-- Task End -->
                              <!-- Task Start -->
-                            <li>
-                                <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber5" name="taskNumber5"  class="number"  value="5"> 
-                                <div class="dsc">
-                                    Course: "Putting it all Together: Minivan Frame damage claims"
+                            <li> 
+                                <input type="checkbox"> Course: "Putting it all Together: Minivan Frame damage claims"
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
-                                </div>
     
                             </li>
-                            <!-- Task End --> 
+                            <!-- Task End -->
+                         
                         </ul> 
-                        
+                    
                     </section>
                     <!-- Task List  End -->
-
-
-                 
                 </div>
-               
             </div>
-            <div class="row">
-                    <div class="col-md-6"> 
-                    </div>
-                    <div class="col-md-5">
-                        <section class="add-task-form">
-                            <select class="form-control" id="taskType" name="taskType">
-                                    <option> Select Task Type </option>
-                                </select>
-                                <select class="form-control" id="learningTask" name="learningTask">
-                                    <option> Select Learning Task </option>
-                                </select> 
-                           <!-- Task Button Start --> 
-                          <button class="btn purple  "> Add Text Task</button>   <button class="btn purple  "> Update Catalog Entry</button> 
-                            <!-- Task Button End --> 
-                        </section>        
-                    </div> 
-                </div>
         </div>
 
 </section>
-<!-- Challenge Details Add/Edit start  -->
+<!-- Challenge Details Learner View start  -->
 </body>
 
 </html>

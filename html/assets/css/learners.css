@@ -12,6 +12,11 @@
 .learner-form  .buttons {
     text-align: right;
 }
+.learner-form  button {
+     margin-left:30px ;
+}
+
+
 
 
 @media (min-width:767px){ 
@@ -48,7 +53,7 @@
  
   #learners_wrapper { margin-bottom: 10px; }
   #learners th .count span {    font-size: 10px; }
-  #learners .fa { color:#333 ; margin: 0;}
+  #learners .fa { color:#0c3859 ; margin: 0;}
   #learners th {
       font-weight: normal;
       background: #b0cde6;
@@ -73,7 +78,7 @@
     padding: 2px;
     font-size: 12px;
 }
-  #learners  .count {
+  #learners  .count ,  #learners .dates  {
       width: 100px;
       text-align: center;
   }
@@ -82,11 +87,13 @@
       width: 50%;
       text-align: center;
   }
-  #learners .count span {
-      width: 49%;
-      float: left;
+  #learners .count span, #learners .dates span {
+      width: 46%; display: inline-block;
   }
- 
+  #learners .dates span {
+    font-size: 9px;
+}
+
   #learners, #learners th, #learners td {
       border: none;
   }

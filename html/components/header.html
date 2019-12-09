@@ -1,7 +1,10 @@
-<!-- HEADER -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
 
 <!-- Responsive Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta charset="utf-8">
 
     <title>ACG</title>
@@ -13,13 +16,13 @@
     
 
 <!-- Custom CSS Inserted Here-->
-    <link rel="stylesheet" href="assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
  
 <!-- font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
  
 <!-- * Custom CSS Inserted Here -->
-    <link rel="stylesheet" href="assets/css/main.css"></link>
+    <link rel="stylesheet" href="../assets/css/main.css">
 
 <!-- JavaScript -->
 
@@ -33,111 +36,114 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!-- Custom JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
-<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all@categories='Acgdemo.site'}"/>
+</head>
 
+<body>
 
 <!-- HEADER -->
-
 <div class="container-fluid cap-header">
     <div class="row align-items-center">
 
-<!-- LOGO SECTION: LARGE SIZES ONLY; ONLY SHOWN BEFORE NAVIGATION COLLAPSES -->
+        <!-- SMALL SIZES, AFTER NAVIGATION HAS COLLAPSES -->
+        <div class="col-xs-6 d-sm-none d-flex bg-white" id="acg-logo">
 
-        <div class="col-sm-3 d-sm-flex d-none flex-center bg-white" id="acg-logo"> 
+            <div class="img-fluid logo">
+                <img class="" src="../assets/img/ca-logo.png">
+            </div>
 
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-            <div class="img-fluid logo" data-sly-resource="${'logo' @ resourceType='/libs/wcm/foundation/components/image'}"></div>
-<!-- ------------ ------------ ------------ ------------ ------------  -->
-
-        </div>
-
-<!-- LOGO SECTION: SMALL SIZES ONLY, AFTER NAVIGATION HAS COLLAPSED -->
-
-        <div class="col-xs-6 d-sm-none d-flex bg-white" id="cap-logo">
-
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-			<div class="img-fluid logo" data-sly-resource="${'logo1' @ resourceType='/libs/wcm/foundation/components/image'}"></div>
-<!-- ------------ ------------ ------------ ------------ ------------  -->
-
-<!-- PROFILE PICTURE SECTION: SMALL SIZES ONLY, AFTER NAVIGATION HAS COLLAPSED -->
-
+            <!-- PROFILE PICTURE SECTION: SMALL SIZES ONLY, AFTER NAVIGATION HAS COLLAPSED -->
             <div class="col-xs-6 margin-auto d-flex d-sm-none" id="margin-right-neg-60">            
 
 <!-- FIRST AND LAST NAME -->
 
-                <span class="text-username">
 
 <!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
 
 <!-- * This is the Result in the Browser that the CSS is Targeting  --- -->
+                <span class="text-username">
                     <div>
                         <p>
                             First<br/> Last
                         <p>
                     </div>
-<!-- * ------------ ------------ ------------ ------------ ------------ -->
-
                 </span>
+<!-- * ------------ ------------ ------------ ------------ ------------ -->
 
 
 <!-- PROFILE PICTURE -->
 
+
 <!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-				<div class="img-fluid profile-pic navbar-brand" data-sly-resource="${'profile' @ resourceType='/libs/wcm/foundation/components/image'}"></div>
-<!-- ------------ ------------ ------------ ------------ ------------  -->
+
+<!-- * This is the Result in the Browser that the CSS is Targeting  --- -->
+                <div class="img-fluid profile-pic profile-pic2 navbar-brand">
+                <img class="" src="../assets/img/prof-pic.png">
+                </div>
+<!-- * ------------ ------------ ------------ ------------ ------------ -->
+
             </div>
 
         </div>
 
+        <!-- LARGE SIZES, BEFORE NAVIGATION COLLAPSES -->
 
-<!-- HEADER SECTION: BLUE BACKGROUND: LARGER SIZES ONLY, SHOWN BEFORE THE NAVIGATION COLLAPSES -->
+        <!-- LOGO -->
+        <div class="col-sm-3 d-sm-flex d-none flex-center bg-white" id="acg-logo"> 
 
-        <div class="col-sm-9 bg-aaa-blue max-height-controller d-none d-sm-flex">
+            <div class="img-fluid logo">
+                <img class="" src="../assets/img/ca-logo.png">
+            </div>
+
+        </div>
+
+        <!-- BLUE BACKGROUND -->
+        <div class="col-sm-9 bg-aaa-blue max-height-controller d-none d-sm-flex padding-left-zero padding-right-zero">
             <div class="row align-items-center max-height-controller width-100">
 
+                <!-- TEXT -->
                 <div class="col-xs-12 col-sm-5 title-column"> 
 
                     <h2 class="navbar-text">
-
-<!-- * AEM Component Inserted Here ------------ ------------ --------- -->
-                        <div class="" data-sly-resource="${'title' @ resourceType='/apps/Acgdemo/components/content/title'}"></div>
-<!-- ------------ ------------ ------------ ------------ ------------  -->
-
+                        <div class="">
+                            <p class="">Welcome to the Claims Academy!</p>
+                        </div>
                     </h2>
 
                 </div>
 
-                <div class="col-sm-3 d-none d-sm-flex flex-center">
+                <!-- SEARCH BAR -->
+                <div class="col-sm-4 d-none d-sm-flex flex-center">
 
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-                    <div class="input-group stylish-input-group" data-sly-resource="${'search' @ resourceType='/apps/Acgdemo/components/content/search'}"></div>
-
+                    <div class="input-group stylish-input-group">
+                        
                         <div class="input-group stylish-input-group">
-                                <input type="text" class="form-control"  placeholder="Search" >
-                                <span class="input-group-addon">
-                                    <button type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>  
-                                </span>
+                            <input type="text" class="form-control"  placeholder="Search" >
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>  
+                            </span>
                         </div>
+                    </div>
                     
                 </div>
 
-                <div class="col-sm-4">
+                <!-- PROFILE PIC SECTION -->
+                <div class="col-sm-3">
 
                     <div class="row">
 
-                        <div class="d-none d-sm-flex col-sm-12 flex-center">
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
+                        <div class="d-none d-sm-flex col-sm-12 flex-end">
+
                             <div class="text-username display-inline ml-auto align-vertically">
                                 <p class="">First<br/> Last</p>
                             </div>
 
-<!-- * AEM Component Inserted Here ------------ ------------ ----------- -->
-							<div class="img-fluid profile-pic navbar-brand display-inline ml-auto" data-sly-resource="${'profile1' @ resourceType='/libs/wcm/foundation/components/image'}"></div>
-<!-- ------------ ------------ ------------ ------------ --------------- -->
+                            <div class="img-fluid profile-pic profile-pic2 +navbar-brand display-inline">
+                             <img class="" src="../assets/img/prof-pic.png">
+                            </div>
                         </div>
 
                     </div>
@@ -148,5 +154,16 @@
         </div>
 
     </div>
-
 </div>
+
+</body>
+
+<style>
+
+body {
+    background-color: #fff;
+}
+
+</style>
+
+</html>
