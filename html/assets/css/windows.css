@@ -370,3 +370,8 @@ aside.select-points .points input {
  .window .calendar-input:after { 
   border: 1px solid;
 }
+
+/* radio buttons */
+
+.window  input[type="radio"]::after { color:#fff; }
+.window  input[type="radio"]:checked:after { color:#fff; }
