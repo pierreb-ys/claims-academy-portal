@@ -44,7 +44,7 @@
   .window  .yellow-ribbon { position: relative;}
 
   .window  .strip {  
-      background: #ffa500;
+      background: #f68d35;
       height: 50%;
       width: 100%;
       position: absolute;
@@ -57,6 +57,17 @@
     width: 96%;
     text-align: left;
 }
+.window section.yellow-ribbon h3.title {
+  margin-top: 24%;
+  margin-left: 5%;
+  width: 96%;
+  text-align: left;
+  font-size: 24px;
+}
+.window .description {
+  font-size: 18px;
+}
+
 
 /* video frame */
 
@@ -92,10 +103,22 @@
 
 
  /* resource links list */ 
+ .window  .resource-links-list  { margin-top: 20px; margin-left: 10px;}
  .window  .resource-links-list  li { color:#fff; display: block; position: relative; padding-left: 25px; margin-bottom: 15px; }
  .window  .resource-links-list .delete { left:0; right: inherit; }
  .window  .resource-links-list button { width: 300px; }
+ .window  .resource-links-list ul {
+  margin: 0;
+  padding: 0;
+}
  
+.window  .resource-links-list h4 {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.window .resource-links-list   p {
+  margin: 5px 0 15px 0; 
+}
  
  @media (min-width: 800px) {
     .window  .resource-links-list li { width:50%; float: left; }    

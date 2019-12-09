@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>ACG</title>
+
+    <!-- Bootstrap -->    
+    <link rel="stylesheet" href="../../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Chosen.js   
+    <script src="../../assets/js/chosen-js/chosen.jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../../assets/js/chosen-js/chosen.min.css">
+ --> 
+    <!-- Moment.js 
+    <script type="text/javascript" src="../../assets/js/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+-->
+    <!-- Custom -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <script src="../../assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+<!-- Video Detail View Add Change start  -->
+<section class="window video-details">
+
+        <!-- Top Blue Bar -->
+        <h2><i class="fa fa-video" aria-hidden="true"></i> Video <div class="window-close"></div></h2>
+    
+        <!-- Page Content -->
+        <form> 
+    
+            <div class="container-fluid ">
+               
+                <!-- Select Course -->
+                <section class="row select-course">
+    
+                    <!-- Edit/Use Buttons -->
+                    <div class="col-md-3">
+                        <div class="edit-use">
+                            <button class="btn purple">Edit</button>
+                            <button class="btn white">Use</button>
+                        </div>
+                    </div>  
+    
+                    <!-- Video ID and Version Number -->
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="  col-lg-7">
+                                <label>Video ID </label>
+                                <input type="text" value="Course 1">
+                            </div>
+                            <div class="  col-lg-5">
+                                <label>Version No: </label>
+                                <input type="text" value="1" size="3">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Checkbox ("Active") -->
+                    <div class="col-md-3">
+                        <label>Active <input type="checkbox"></label>
+                    </div>
+    
+                </section>
+        
+                <!-- Orange Ribbon -->
+                <section class="yellow-ribbon">
+    
+                    <div class="strip"></div> 
+                    <div class="row"> 
+                        <div class="col-md-5">
+                            <textarea class="form-control">Title Goes here...</textarea>
+                        </div> 
+                        <div class="col-md-4">
+                            <div class="video-frame"><img class="" src="../../assets/img/video-pic.PNG">
+                                <button class="btn purple">Add / Change Thumbnail Image</button>
+                            </div>
+                        </div> 
+                        <div class="col-md-3">
+                        </div> 
+                    </div>
+    
+                </section> 
+  
+         
+                 <div class="row"> 
+                        <div class="col-md-5">
+                                <textarea class="form-control" rows="6">Description Goes here....
+                                   </textarea> 
+                        </div>
+         
+                        <div class="col-md-4"> 
+                            <div class="video-edit">
+                                <label>Video URL:</label>
+                                <textarea class="form-control" >Paste in URL for video palyback here. Test with 'Launch' button below </textarea>
+                            <div class="row "> 
+                                    <div class="col-md-6"> 
+                                            <label>Video Duration: </label>
+                                            <input type="text" id="videoDuration" name="videoDuration" value="1:06">
+                                        </div>
+                                        <div class="col-md-6"> 
+                                            <label>Version Number: </label>
+                                            <input type="text" id="versionNumber" name="versionNumber"  value="1" >
+                                        </div>
+                            </div>
+                        </div>
+
+                                 <!-- buttons List start -->
+                        <div class="button-list">
+                                <button class="btn blue full"><i class="fa fa-rocket" aria-hidden="true"></i> Launch Video</button>
+                                <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add Diary Entry</button>
+                                <button class="btn blue full"><i class="fa fa-bookmark" aria-hidden="true"></i>Add My Syllabus</button>
+                                <button class="btn lgreen half"><i class="fa fa-commenting-o"></i> Assign to Learners</button>
+                                <button class="btn red half"><i class="fa fa-close"></i> Cancel Assignment</button>
+                               
+                            </div>
+                              <!-- buttons List end -->
+                       
+                        </div>
+         
+                        <div class="col-md-3">
+                              <!-- Badges Section -->
+
+                               <!-- Sekect Badges   Start -->
+                        <aside class="row select-badge">
+                                <div class="col-sm-6">Learning Task Badge </div>
+                                <div class="col-sm-6"><img class="" src="../../assets/img/badge6.png">
+                                    <div>
+                                        <button class="btn orange">select</button>
+                                    </div>
+                                </div>
+                            </aside>
+                             <!-- Sekect Badges   End -->
+        
+                              <!-- Sekect Points   Start -->
+                            <aside class="row select-points">
+                                <div class="col-sm-6">Task Completion Points</div>
+                                <div class="col-sm-6">
+                                    <div class="points">
+                                        <input type="number" value="10">
+                                    </div>
+            
+                                </div>
+                            </aside>
+                             <!-- Select Points   End -->
+            
+                        </div>
+        
+                    </div>
+
+                <!-- Bottom Section -->
+                <div class="row">
+    
+                    <!-- Box, with Purple Outline -->
+                    <div class="col-sm-5">
+                       <!-- Schools List start -->
+                       <section class="row update-schools-list">
+                            <div class="col-lg-4">
+                                    <strong>School(s)</strong>
+                                <label>Cosualty/BI <span class="delete"></span></label>
+                                <label>PIP <span class="delete"></span></label>
+                                <label>APD <span class="delete"></span></label>
+                                <label>Property <span class="delete"></span></label>
+                            </div>
+                            <div class="col-lg-4">
+                                <strong>Sub-School(s) </strong>
+                                <label>Quick Claim <span class="delete"></span></label>
+                                <label> CAT <span class="delete"></span></label>
+                                <label> Desk <span class="delete"></span></label>
+                                <label> Field <span class="delete"></span></label>
+                                <label> Commerical <span class="delete"></span></label>
+                            </div>
+                            <div class="col-lg-4">
+                              <strong>Phase(s)</strong>
+                                <label>Customer Service <span class="delete"></span> </label>
+                                <label> Coverage <span class="delete"></span> </label>
+                                <label>Investigation <span class="delete"></span></label>
+                                <label> Evaluation <span class="delete"></span></label>
+                                <label>Settlement /Negotiation <span class="delete"></span></label>
+                            </div>
+                        </section>
+                        <!-- Schools List end -->
+                    </div>
+    
+                    <!-- Resource Titles -->
+                    <div class="col-sm-6">
+                        
+                          <!--   Resource links List  Start -->
+                        <section class="row resource-links-list">
+                            <h4>Resource links to be added to Dashboard <i class="fa fa-wrench" aria-hidden="true"></i> 'Tools' widget on learning task completion:</h4>
+                            <ul>
+    
+                                  <!--   Resource link  Start -->
+                                <li>
+                                    <span class="delete"></span>
+                                    < Resource Title 1>
+                                </li>
+                                  <!--   Resource link   End -->
+    
+                                  <!--   Resource link  Start -->
+                                <li>
+                                    <span class="delete"></span>
+                                    < Resource Title 2>
+                                </li>
+                                 <!--   Resource link   End -->
+    
+                                  <!--   Resource link  Start -->
+                                <li>
+                                    <span class="delete"></span>
+                                    < Resource Title 3>
+                                </li>
+                                 <!--   Resource link   End -->
+    
+                                  <!--   Resource link  Start -->
+                                <li>
+                                    <span class="delete"></span>
+                                    < Resource Title 4>
+                                </li>
+                                 <!--   Resource link   End -->
+    
+                                  <!--   Resource link  Start -->
+                                <li>
+                                    <span class="delete"></span>
+                                    < Resource Title 5>
+                                </li>
+                                 <!--   Resource link   End -->
+    
+                                  <!--   Resource link  Start -->
+                                <li>
+                                    <span class="delete"></span>
+                                    < Resource Title 6>
+                                </li>
+                                 <!--   Resource link   End -->     
+                               
+                            </ul> 
+                            
+                                  <!--   Add Resource Button  Start -->
+                                  <div class="button-list">
+                            <button class="btn purple">Add Resource Link</button> &nbsp; <button class="btn purple full"> Update Catalog Entry</button>
+                            </div>
+                            <!--   Add Resource Button  End -->
+                        </section>
+                         <!--   Resource links List  End -->
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </form>
+    
+    </section> 
+    
+<!-- Video Detail View Add Change end  -->
+
+ 
+
+
+ 
+</body>
+ 
+
+</html>
