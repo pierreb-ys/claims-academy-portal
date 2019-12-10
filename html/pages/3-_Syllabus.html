@@ -73,10 +73,12 @@
         <button class="btn purple">Back</button>
     </div>
     </div>
-    <div class="col-md-3 search-box inline">   
-            <input class="form-control search-input" type="search" placeholder="Search Course &amp; Curriculum" aria-describedby="button-addon3">
+    <div class="col-md-4 ">   
+           <div class="search-box  wide">
+                <input class="form-control search-input" type="search" placeholder="Search task titles, descriptions" aria-describedby="button-addon3">
+           </div> 
           </div> 
-    <div class="col-sm-6">   
+    <div class="col-sm-5">   
     <!-- ---  BUTTONS  START--- -->
         <div class="button-grp">
                 <button class="badges-btn"><img class="" src="../assets/img/badge-icon.png">BADGES</button>
@@ -119,7 +121,7 @@
                                                                 <th> </th>
                                                             <th>Task Type</th>
                                                             <th>Task Title</th>
-                                                            <th>  Curricullum Percent Completed</th>
+                                                            <th>  Curriculum & Challenge Percent Complete</th>
                                                             <th> <select id="dueDateFilter" name="dueDateFilter" >
                                                                 <option>Due Date </option>
                                                                 <option>Next 2 Days </option>
@@ -131,9 +133,9 @@
                                                             <th>    <!-- Date -->        
                                                             <div class="dateRange">     Completion <br>Date Range   
                                                                <div><label>From</label>   <span class="calendar-input">
-                                                                    <input type="text" class="form-control" value="dd/mm/yyyy"><i class="fa fa-calendar"></i></span> 
+                                                                    <input type="text" class="form-control" value="mm/dd/yyyy"><i class="fa fa-calendar"></i></span> 
                                                                     <label>To</label>      <span class="calendar-input" >
-                                                                        <input type="text" class="form-control" value="dd/mm/yyyy"><i class="fa fa-calendar"></i></span></div>
+                                                                        <input type="text" class="form-control" value="mm/dd/yyyy"><i class="fa fa-calendar"></i></span></div>
                                                                 
                                                                </div> </div>   </th>
                                                             <th> </th> 
@@ -144,7 +146,7 @@
                                                         <!--  Dynamic Data Row -->      
                                                         <tr>
                                                                 <td> <div class="thumbnail">Curriculum Thumbnail</div>  </td>
-                                                                <td><span class="task-type-icon online-icon"><i class="fa fa-desktop"></i> <i class="fa fa-list-ul"></i> </span>Task Type 1</td>
+                                                                <td class="text-center"><span class="task-type-icon online-icon lg-icon"><i class="fa fa-desktop"></i> <i class="fa fa-list-ul"></i> </span> <small>Online Course</small></td>
                                                             <td>Task Title 1   </td>
                                                             
                                                             <td><div class="progress"><div  style="width:25%"></div><span >25%</span><i class="fa fa-bookmark" ></i></div></td>
@@ -157,7 +159,7 @@
                                                         <!--  Table dynamic data row    -->      
                                                         <tr>
                                                                 <td> <div class="thumbnail">Online Course Thumbnail</div>  </td>
-                                                                <td><span class="task-type-icon"><i class="fa fa-list"></i> </span> Task Type 2</td>
+                                                                <td class="text-center"><span class="task-type-icon lg-icon"><i class="fa fa-list"></i> </span> <small>Carriculum</small> </td>
                                                             <td>Task Title 2  </td>
                                                             <td><div class="empty-progress"> <i class="fa fa-commenting-o" ></i></div></td>
                                                           
@@ -170,7 +172,7 @@
                                                         <!--  Table dynamic data row    -->          
                                                         <tr>
                                                                 <td> <div class="thumbnail">Video Thumbnail</div>  </td>
-                                                            <td><span class="task-type-icon"><i class="fa fa-map-o"></i> </span> Task Title 3  </td>
+                                                            <td class="text-center"><span class="task-type-icon lg-icon"><i class="fa fa-map-o"></i> </span> <small>Challenge</small> </td>
                                                             <td>Task Type 3</td>
                                                             <td><div class="progress"><div  style="width:45%"></div><span >45%</span><i class="fa fa-commenting-o" ></i></div></td>
                                                           
@@ -183,7 +185,7 @@
                                                         <!--  Table dynamic data row    -->     
                                                         <tr>
                                                                 <td> <div class="thumbnail">Challenge Thumbnail</div>  </td>
-                                                                <td><span class="task-type-icon"><i class="fa fa-video-camera"></i> </span> Task Type 4</td>
+                                                                <td class="text-center"><span class="task-type-icon lg-icon"><i class="fa fa-video-camera"></i> </span><small>Video</small> </td>
                                                             <td>Task Title 4  </td>
                                                             
                                                             <td><div class="progress"><div  style="width:80%"></div><span >80%</span><i class="fa fa-bookmark" ></i></div></td>
@@ -197,7 +199,7 @@
                                                            <!--  Table dynamic data row    -->     
                                                            <tr>
                                                                 <td> <div class="thumbnail"></div>  </td>
-                                                                <td><span class="task-type-icon"><i class="fa fa-file-text-o"></i> </span> Task Type 4</td>
+                                                                <td class="text-center"><span class="task-type-icon lg-icon"><i class="fa fa-file-text-o"></i> </span><small>Text Task</small></td>
                                                             <td>Task Title 4  </td>
                                                             
                                                             <td><div class="progress"><div  style="width:65%"></div><span >65%</span><i class="fa fa-bookmark" ></i></div></td>

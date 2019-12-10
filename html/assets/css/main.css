@@ -185,6 +185,10 @@ div.orange-text p {
   margin-top: 6px;
   margin-right: 6px;
 } 
+span[class*='-icon'].lg-icon i.fa{ font-size: 40px; color:#0c3859 !important}
+span[class*='-icon'].lg-icon + small { display: block; margin-top: 5px;}
+span[class*='-icon'].lg-icon i.fa-list-ul { font-size: 20px;  top:20%}
+
  .online-icon, .ilt-icon, .vrcr-icon {
   position: relative;
   display: inline-block;
@@ -526,7 +530,7 @@ section.search select  {
       margin-top: 10px;
       margin-bottom: 10px;
   }
-
+  .search-box.wide input { width:100%;}
   .search-box input {
       background-image: url('../../assets/img/search-icon.png');
       background-position: 5px center;
