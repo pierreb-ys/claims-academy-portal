@@ -59,6 +59,10 @@ div.align-right-category p {
   right: 48px;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 
 
 div.icon img {
@@ -95,7 +99,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 2rem;
   border-top: 2px solid rgb(235, 141, 20);
-  width: 50%;
+  width: 100%;
 }
 
 .form-control {
@@ -111,6 +115,10 @@ hr {
   color: #F68C34;
 }
 
+.orange-text {
+  color: #F68C34;
+}
+
 .color-fix {
   color: #F68C34;
 }
@@ -122,6 +130,65 @@ hr {
 .span-width-12 {
   padding-left: 24px;
 }
+
+
+
+@media (max-width: 575px) {
+
+  .hide-column-at-mobile-size {
+    display: none;
+  }
+
+  .button-list {
+    text-align: right;
+  }
+
+  .show-at-mobile-size {
+    display: block;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .show-column-at-mobile-size {
+    display: none;
+  }
+  .show-at-mobile-size {
+    display: none;
+  }
+}
+
+
+@media (min-width: 575px) {
+  .orange-text-1 {
+    margin-left: -48px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .orange-text-column-1-fix-mobile {
+    width: 100%;
+  }
+  
+  .orange-text-1 {
+    
+  }
+  
+}
+
+@media (max-width: 767px) {
+
+.orange-text-1 {
+  width: 50%;
+}
+
+.orange-text-1 {
+  
+}
+
+}
+
 
 
 /* VIEWPORTS */
