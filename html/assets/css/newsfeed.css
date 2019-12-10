@@ -5,7 +5,7 @@ section.newsfeed {
     margin-top: 20px;;
 }  
 
-section.newsfeed .content-wrap.scroller {
+section.newsfeed .scroller {
     overflow: auto;
     height: 500px;
     overflow-x: hidden;
