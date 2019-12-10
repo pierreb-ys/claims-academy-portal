@@ -285,11 +285,11 @@ input[type="checkbox"] {
      font-size:20px;
      -webkit-appearance: none;
      -moz-appearance: none;  
-     width: 40px;
-     height: 21px;
+     width: 25px;
+     height: 25px;
      border-radius: 3px;
-     position: relative;
-     margin-right: 5px;
+     position: relative; 
+     vertical-align: middle;
 }
 input[type="checkbox"]:checked {
    background-color:transparent;
@@ -328,6 +328,7 @@ input[type="radio"] {
      height: 21px;
      border-radius: 3px;
      position: relative;
+     vertical-align: middle;
 }
 input[type="radio"]:checked {
    background-color:transparent;
@@ -690,7 +691,7 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
   margin-left: -10px;
   position: absolute;
   right: 10px;
-  top: 0;
+  top: 10px;
   z-index: 1;
 }
 .calendar-input:after {
