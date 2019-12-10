@@ -657,7 +657,7 @@ section.contentarea .content-wrap {
 button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
 
 .btn-grp {margin:10px 0;  text-align: right;  }
-.btn-grp button{   border:none; color: #fff;     text-align: left;  vertical-align: middle; text-transform: uppercase;    font-size: 18px;  }
+.btn-grp button{   border:none; color: #fff;     text-align: left;  vertical-align: middle;     font-size: 18px;  }
 .btn-grp button img { height: 20px;   }   
 
 @media (min-width:767px){   

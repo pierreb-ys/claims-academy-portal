@@ -328,3 +328,9 @@ div.detail-view-icon img {
   /* video eidt / info */
 
   .window .video-edit,  .window   .video-info   {  margin-bottom: 10px; }
+
+
+  label.lms { color:#ff3fc0; margin-top: 10px; }
+  label.lms strong { background:#ff3fc0; color:#fffcc0;     padding: 1px 5px; }
+  
+  

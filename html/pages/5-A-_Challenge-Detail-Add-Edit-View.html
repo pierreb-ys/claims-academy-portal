@@ -168,7 +168,7 @@
                         <div class="col-sm-6">Additional COmpletion Points</div>
                         <div class="col-sm-6">
                             <div class="points">
-                                <input type="number" value="20">
+                                <input type="text" class="form-control inline number" value="20">
                             </div>
     
                         </div>
@@ -203,7 +203,7 @@
                             <!-- Task Start -->
                             <li>
                                 <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber1" name="taskNumber1" class="number" value="1">
+                                <input type="checkbox"> <input type="text" id="taskNumber1" name="taskNumber1" class="form-control inline number" value="1">
                                 <div class="dsc">
                                         Course: "How to evaluate Frame Damage in Minivans"
                                         <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
@@ -214,7 +214,7 @@
                             <li>
     
                                 <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber2" name="taskNumber2"  class="number" value="2"> 
+                                <input type="checkbox"> <input type="text" id="taskNumber2" name="taskNumber2"  class="form-control inline number" value="2"> 
                                 <div class="dsc"> Video: "How to estimate repair costs: Minivan Frame Damage"
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
                                 </div>
@@ -223,7 +223,7 @@
                              <!-- Task Start -->
                             <li>
                                 <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber3" name="taskNumber3"  class="number" value="3"> 
+                                <input type="checkbox"> <input type="text" id="taskNumber3" name="taskNumber3"  class="form-control inline number" value="3"> 
                                 <div class="dsc">
                                      Course: "Common Pitfalls in Estimating Frame Damage:
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
@@ -234,7 +234,7 @@
                              <!-- Task Start -->
                             <li>
                                 <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber4" name="taskNumber4"  class="number" value="4"> 
+                                <input type="checkbox"> <input type="text" id="taskNumber4" name="taskNumber4"  class="form-control inline number" value="4"> 
                                 <div class="dsc"> Course: "Managing member privacy during the Claims process"
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
                                 </div>
@@ -244,7 +244,7 @@
                              <!-- Task Start -->
                             <li>
                                 <div class="delete"></div>
-                                <input type="checkbox"> <input type="text" id="taskNumber5" name="taskNumber5"  class="number"  value="5"> 
+                                <input type="checkbox"> <input type="text" id="taskNumber5" name="taskNumber5"  class="form-control inline number"  value="5"> 
                                 <div class="dsc">
                                     Course: "Putting it all Together: Minivan Frame damage claims"
                                 <div> <span class="detail"><a href="#">Details...</a></span> <span class="points">Points: <strong>10</strong></span> <a href="#" class="link">Launch</a> </div>
@@ -252,6 +252,28 @@
     
                             </li>
                             <!-- Task End --> 
+                              <!-- Task Start -->
+                              <li>
+                                    <div class="delete"></div>
+                                    <input type="checkbox"> <input type="text" id="taskNumber6" name="taskNumber6"  class="form-control inline number"  value="6"> 
+                                    <div class="dsc">
+                                            <section class="add-task-form">
+                                                    <select class="form-control" id="taskType" name="taskType">
+                                                            <option> Select Task Type </option>
+                                                        </select>
+                                                        <select class="form-control" id="learningTask" name="learningTask">
+                                                            <option> Select Learning Task </option>
+                                                        </select>  
+                                                </section>  
+                                                  <!-- Task Button Start --> 
+                          <button class="btn purple  float-left"> Add Text Task</button>  
+                          <!-- Task Button End -->       
+                                    <div>
+                                         
+                                    </div>
+        
+                                </li>
+                                <!-- Task End --> 
                         </ul> 
                         
                     </section>
@@ -263,22 +285,20 @@
                
             </div>
             <div class="row">
-                    <div class="col-md-6"> 
-                    </div>
-                    <div class="col-md-5">
-                        <section class="add-task-form">
-                            <select class="form-control" id="taskType" name="taskType">
-                                    <option> Select Task Type </option>
-                                </select>
-                                <select class="form-control" id="learningTask" name="learningTask">
-                                    <option> Select Learning Task </option>
-                                </select> 
-                           <!-- Task Button Start --> 
-                          <button class="btn purple  "> Add Text Task</button>   <button class="btn purple  "> Update Catalog Entry</button> 
+                    <div class="col-sm-12">
+        
+                        <!-- Task List -->
+                        <section class="button-list float-right">
+           
+         
+                            <!-- Task Button Start --> 
+                            <button class="btn purple  "> Update Catalog Entry</button>
                             <!-- Task Button End --> 
-                        </section>        
-                    </div> 
-                </div>
+                        </section>
+        
+                        
+                    </div>
+                </div> 
         </div>
 
 </section>

@@ -199,6 +199,15 @@
   padding-left: 25px;
 }
 
+.window section.task-list li .dsc select {
+  margin-left: -20px;
+  width: 400px;
+  max-width: 100%;
+}
+.window section.task-list li .dsc button {
+  margin-left: -20px; 
+}
+
 .window  section.task-list h3 input:after, .window  section.task-list h3 input:checked:after  {
   color: #fff;
   vertical-align: middle;
@@ -240,12 +249,9 @@ position:absolute;
   .window  section.task-list li { width: 48%;  float: left;}
 }
 
-.window  section.task-list button {
-  float: right;
-  margin: 10px;
-}
  
-.window .add-task-form { margin-bottom: 10px; padding: 10px ;}
+ 
+.window .add-task-form { margin-bottom: 10px;  }
 
 
  
@@ -376,4 +382,16 @@ small.note {font-size: 11px; color: #333;
 
   input:focus + small.note, textarea:focus + small.note {
      visibility: hidden;
+}
+
+/* form control */
+
+.form-control.inline.number {
+  width: 45px;
+  margin-right: 5px;
+}
+
+.form-control.inline {
+  width: auto;
+  margin-bottom: 0;
 }
