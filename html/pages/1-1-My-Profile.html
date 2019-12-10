@@ -3,19 +3,41 @@
 
 <head>
 
+<!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
     <meta charset="utf-8">
 
     <title>ACG</title>
 
-<!-- Bootstrap -->    
+<!-- Links -->
 
+<!-- Bootstrap CSS -->
+<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    
+
+<!-- Custom CSS Inserted Here-->
     <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
  
-<!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+     
+    
+<!-- font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
 <!-- * Custom CSS Inserted Here -->
     <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Bootstrap DataTable CSS -->  
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+
+<!-- common CSS Inserted Here-->
+<link rel="stylesheet" href="../assets/css/common.css">
+
+ <!-- learners CSS Inserted Here-->
+ <link rel="stylesheet" href="../assets/css/learners.css">
+
+<!-- JavaScript -->
 
 <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -26,6 +48,10 @@
 <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+ 
+    
+    
+
 <!-- Custom JS -->
     <script src="../assets/js/main.js"></script>
 
@@ -33,242 +59,261 @@
 
 <body>
     
-<div class="container-fluid no-padding cap-content">
-<!-- Top Bar -->
-    <div class="row bg-light-blue">
+<!-- TEMPLATE: MODAL POP-UP -->
+<section class="window learning-diary-entry">
 
-        <div class="col-sm-12 display-inline-flex pt-2">
+    <!-- Blue Bar -->
+    <h2><i class="fa fa-book" aria-hidden="true"></i>My Profile<!--<div class="window-close"></div>--></h2>
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-                <div class="img-fluid icon padding-left-24">
-                    <img src="../assets/img/my-profile-icon.png" />
+    <!-- Content -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- IMAGE -->
+            <div class="col-sm-4">
+                <div class="mt-5 pl-4 img-fluid profile-image pb-4">
+                    <div class="position-relative">      
+                        <a class ="clickable" src=""><i class="camera-icon fa fa-camera fa-4x"><br /><p class="upload-caption">Choose<br /> Profile Image</p>
+                        </i></a>
+                        <img src="../assets/img/profile-image.png" />
+                        <div class="image-caption">
+                            <p class=""><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-                <div class="center-text mission-gothic-regular">
-                    <p>My Profile</p>
-                </div>
-        </div>
+            <!-- FIELDS -->
+            <div class="col-sm-8">
 
-    </div>
+                <form>
+                    <section class="form">
 
-<!--  -->
+                        <!-- NAME -->
+                        <div class="row">
+
+                            <div class="col-xs-1 col-sm-3 mobile-field-width hide-column-at-mobile-size">
+                                
+                            </div>
+
+                            <div class="col-xs-1 col-sm-2 mobile-field-width">
+            
+                                <div class="align-right">
+                                    <p>NAME</p>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-xs-6 col-sm-6 pr-4 mobile-value-width">
+            
+                                <div class="orange-text">
+                                    <p>+ <span name="name-field">Peter Miller</span></p>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+
+                        <!-- "ASSIGNED"         
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="orange-text margin-fix">
+                                    <p>Assigned</p>
+                                </div>
+                            </div>   
+                        </div> --> 
+
+                        <!-- LOB/SCHOOL -->          
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-2 mobile-field-width orange-text margin-fix hide-column-at-mobile-size mission-gothic-regular align-right">
+                                Assigned
+                            </div>
+<!--
+<div class="show-at-mobile-size">
     <div class="row">
-
-<!-- Image -->
-        <div class="col-xs-12 col-offset-xs-2 col-sm-4 bg-aaa-blue">
-
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-<!-- Profile Image -->
-            <div class="bg-aaa-blue mt-4 pl-4 img-fluid profile-image pb-4">
-                <div class="position-relative">
-                        
-                    <a src=""><i class="camera-icon fa fa-camera fa-4x"><br /><p class="upload-caption">Choose<br /> Profile Image</p>
-                    </i></a>
-                    <img src="../assets/img/profile-image.png" />
-                    <!-- <img src="../assets/img/profile-image.png" /> -->
-                  <!--  <p class="image-name"><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p> -->
-                 <!--   <button class="btn btn-continue upload-button" type="submit">Choose Profile Image</button> -->
-                    <div class="image-caption">
-                        <p class=""><span class="font-size-24">Peter Miller</span> <br />School<br />Sub-School</p>
-                    </div>
-                </div>
-            </div>
- 
-<!-- Replace the Following with AEM Component (Delete, but Copy the Classes into the <div> of the AEM COmponent) -->
-<!-- Button -->
-
+        <div class="col-sm-12">
+            Test
         </div>
+    </div>
+</div>
+-->
 
-<!-- Fields -->
-        <div class="col-xs-12 col-sm-8 bg-aaa-blue pt-4">
+                            <div class="col-sm-3 mobile-field-width">
+            
+                                <div class="align-right">
+                                    <p class="">LOB / SCHOOL</p>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-sm-6 pr-5 mobile-value-width">
+            
+                                <div class="display-flex">
+                                    <span class="color-fix" style="margin-right: 12px;"> * </span> 
+                                    <select class="combobox form-control">
+                                        <option class="text-faded"> - Select LOB / School - </option>
+                                        <option value="CBI">Casualty/BI (Bodily Injury)</option>
+                                        <option value="PIP">PIP (Personal Injury Protection)</option>
+                                        <option value="APG">APG (Auto Physical Damage)</option>
+                                        <option value="GL"> - - - Guest Lerners - - - </option>
+                                    </select> 
+                                </div>
+            
+                            </div>
+                        </div>
+                         
+                        <!-- SUB-SCHOOL -->          
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-2 mobile-field-width orange-text margin-fix hide-column-at-mobile-size">
+                               
+                            </div>
+                            <div class="col-sm-3 mobile-field-width">
+            
+                                <div class="align-right">
+                                    <p>SUB-SCHOOL</p>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-sm-6 pr-5 mobile-value-width">
+            
+                            <div>
+                                <span class="span-width-12"></span> 
+                                <select class="combobox form-control span-width-12 sub-school-spacing-fix" style="margin-left: 22px; margin-right: 12px;">
+                                    <option> - Select Sub-School - </option>
+                                    <option value="PA"> - Sub-School list determined by LOB/School selected. See BRD for list. - </option>
+                                    <option value="CT"> - Sub-School A - </option>
+                                    <option value="NY"> - Sub-School B - </option>
+                                    <option value="GL"> - - - Guest Lerners - - - </option>
+                                </select>
+                            </div>
+            
+                            </div>
+            
+                        </div>
+            
+                        <!-- Horizontal Line -->
+                        <div class="row">
+                            <div class="col-sm-11">
+                                <hr class="line">
+                            </div>
+                            <div class="col-sm-1">
 
-            <div class="row">
+                            </div>
+                        </div>
+                        
+                        <!-- LOCATION -->
+                        <div class="row">
+                                <div class="col-xs-1 col-sm-2 mobile-field-width orange-text margin-fix hide-column-at-mobile-size">
+                               
+                                    </div>
+                            <div class="col-sm-3 mobile-field-width">
+            
+                                <div class="align-right">
+                                    <p>LOCATION</p>
+                                </div>
+            
+                            </div>
 
-                <div class="col-xs-1 col-sm-3 mobile-field-width">
+                            <div class="col-sm-3 mobile-value-width">
+            
+                                <div class="orange-text">
+                                    <p>
+                                        + <span name="location-field">Dearborn, MI</span>
+                                    </p>
+                                </div>
+            
+                            </div>
+            
+                        </div>
 
-                    <div class="align-right">
-                        <p>NAME</p>
-                    </div>
-    
-                </div>
+                        <!-- -->          
+                        <div class="row">
+                                <div class="col-xs-1 col-sm-2 mobile-field-width orange-text margin-fix hide-column-at-mobile-size">
+                               
+                                    </div>
+                            <div class="col-sm-3 mobile-field-width">
+            
+                                <div class="align-right">
+                                    <p>JOB TITLE</p>
+                                </div>
+            
+                            </div>
+                    
+                            <div class="col-sm-3 mobile-value-width">
+            
+                                <div class="orange-text">
+                                    <p>
+                                        + <span name="job-title-field">Claims Executive</span>
+                                    </p>
+                                </div>
+            
+                            </div>
+                        </div>
 
-                <div class="col-xs-6 col-sm-6 pr-4 mobile-value-width">
+                        <!-- -->         
+                        <div class="row">
+                                <div class="col-xs-1 hide-column-at-mobile-size col-sm-2 mobile-field-width orange-text margin-fix">
+                               
+                                    </div>
+                            <div class="col-xs-4 col-sm-3 mobile-field-width">
+            
+                                <div class="align-right">
+                                    <p>CLAIMS ACADEMY LEARNER ROLE</p>
+                                </div>
+            
+                            </div>
+                    
+                            <div class="col-sm-3 mobile-value-width">
+            
+                                <div class="orange-text">
+                                    <p>
+                                        + <span name="learner-role--field">Learner</span>
+                                    </p>
+                                </div>
+            
+                            </div>
+            
+                        </div>
 
-                    <div class="orange-text">
-                        <p>* Peter Miller</p>
-                    </div>
-    
-                </div>
+                        <!-- -->         
+                        <div class="row">
+            
+                            <div class="col-xs-6 col-md-6">
+            
+                                <div class="orange-text">
+                                    <p>+ Contact Human Resources for changes to these fields</p>
+                                </div>
+            
+                            </div>
+                    
+                            <div class="col-md-3 mobile-value-width">
+            
+                                <div class="orange-text">
+                                    <p>* Required</p>
+                                </div>
+            
+                            </div>
+                            <div class="col-xs-9 mobile-value-width show-column-at-mobile-size">
 
-            </div>
+                            </div>
+                            <div class="col-xs-3 col-md-3">
 
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="orange-text margin-fix">
-                        <p>Assigned</p>
-                    </div>
-                </div>   
-            </div>
+                                <div class="button-list">
+                                    <button class="btn btn-continue" type="submit" disabled>Continue</button>
+                                </div>
+                            </div>
 
-            <div class="row">
-                <div class="col-sm-3 align-right-category">
-    
-                </div>
-            </div>
-            <div class="row">
-    
-                <div class="col-sm-3 mobile-field-width">
-
-                    <div class="align-right">
-                        <p class="">LOB / SCHOOL</p>
-                    </div>
-    
-                </div>
-    
-                <div class="col-sm-6 pr-5 mobile-value-width">
-
-                    <div class="display-flex">
-                        <span class="color-fix" style="margin-right: 12px;"> + </span> 
-                        <select class="combobox form-control">
-                            <option class="text-faded"> - Select LOB / School - </option>
-                            <option value="CBI">Casualty/BI (Bodily Injury)</option>
-                            <option value="PIP">PIP (Personal Injury Protection)</option>
-                            <option value="APG">APG (Auto Physical Damage)</option>
-                            <option value="GL"> - - - Guest Lerners - - - </option>
-                        </select> 
-                    </div>
-    
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-sm-3 mobile-field-width">
-
-                    <div class="align-right">
-                        <p>SUB-SCHOOL</p>
-                    </div>
-    
-                </div>
-
-                <div class="col-sm-6 pr-5 mobile-value-width">
-
-                <div>
-                    <span class="span-width-12"></span> 
-                    <select class="combobox form-control span-width-12 sub-school-spacing-fix" style="margin-left: 22px; margin-right: 12px;">
-                        <option> - Select Sub-School - </option>
-                        <option value="PA"> - Sub-School list determined by LOB/School selected. See BRD for list. - </option>
-                        <option value="CT"> - Sub-School A - </option>
-                        <option value="NY"> - Sub-School B - </option>
-                        <option value="GL"> - - - Guest Lerners - - - </option>
-                    </select>
-                </div>
-    
-                </div>
-
-            </div>
-
-<!-- This is the White, Horizontal "Separator" Line -->
-            <hr class="line">
-<!-- -->
-            <div class="row">
-
-                <div class="col-sm-3 mobile-field-width">
-
-                    <div class="align-right">
-                        <p>LOCATION</p>
-                    </div>
-    
-                </div>
-
-                <div class="col-sm-3 mobile-value-width">
-
-                    <div class="orange-text">
-                        <p>
-                            * Dearborn, MI
-                        </p>
-                    </div>
-    
-                </div>
-
-            </div>
-
-            <div class="row">
-        
-                <div class="col-sm-3 mobile-field-width">
-
-                    <div class="align-right">
-                        <p>JOB TITLE</p>
-                    </div>
-    
-                </div>
-        
-                <div class="col-sm-3 mobile-value-width">
-
-                    <div class="orange-text">
-                        <p>
-                            * Claims Executive
-                        </p>
-                    </div>
-    
-                </div>
-            </div>
-
-            <div class="row">
-        
-                <div class="col-xs-4 col-sm-3 mobile-field-width">
-
-                    <div class="align-right">
-                        <p>CLAIMS ACADEMY LEARNER ROLE</p>
-                    </div>
-    
-                </div>
-        
-                <div class="col-sm-3 mobile-value-width">
-
-                    <div class="orange-text">
-                        <p>
-                            * Learner
-                        </p>
-                    </div>
-    
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-xs-8 col-sm-8 mobile-field-width">
-
-                    <div class="align-right orange-text">
-                        <p>* Contact Human Resources for changes to these fields</p>
-                    </div>
-    
-                </div>
-        
-                <div class="col-xs-4 col-sm-4 mobile-value-width">
-
-                    <div class="orange-text">
-                        <p>+ Required</p>
-                    </div>
-    
-                </div>
-    
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12 mobile-value-width mb-4 button-padding-right align-right">
-
-                    <button class="btn btn-continue" type="submit">Continue</button>
-                </div>
+                    </section>
+                </form>
             </div>
 
         </div>
 
     </div>
-
-</div>
+    
+</section>
 
 </body>
 
