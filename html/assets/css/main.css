@@ -785,3 +785,27 @@ h3.title.inline {
   display: inline-block;
   margin-left: 10px;
 }
+
+/*  button toggle */
+
+.toggle-group { 
+  border-radius: 5px;
+}
+
+.toggle-group label { 
+  border-radius: 5px;
+}
+.toggle-handle { 
+  background: #fff; 
+}
+label.btn.btn-default.active.toggle-off { background: #ccc;}
+.toggle.btn.btn-default {
+  border: 1px solid #3398cb;
+}
+
+.toggle .btn-primary{
+  background: #95bcf2;
+  color:#000;
+}
+
+

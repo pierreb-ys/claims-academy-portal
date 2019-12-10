@@ -79,16 +79,17 @@
     font-size: 12px;
 }
   #learners  .count ,  #learners .dates  {
-      width: 100px;
+      width: 120px;
       text-align: center;
+      display: inline-block; 
   }
   #learners .count i {
-      float: left;
-      width: 50%;
-      text-align: center;
+    width: 46%;
+    text-align: center;
+    display: inline-block;
   }
   #learners .count span, #learners .dates span {
-      width: 46%; display: inline-block;
+      width: 46%; display: inline-block; vertical-align: top;
   }
   #learners .dates span {
     font-size: 9px;
