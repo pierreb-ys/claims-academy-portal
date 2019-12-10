@@ -250,18 +250,18 @@ position:absolute;
 
 /* window buttons list */
 
-.window .full { width:100%; }
+ .full { width:100%; }
 @media (min-width:600px){
-  .window .button-list button.half  +  button.half  { margin-left: 2%;} 
-  .window .half { width:48%; }
+  .button-list button.half  +  button.half  { margin-left: 2%;} 
+   .half { width:48%; }
 }
 @media (max-width:600px){
-  .window .half { width:100%; }
+    .half { width:100%; }
 }
-
-.window .button-list button {
+ 
+.button-list button {
     position: relative; margin-bottom: 10px; }
-    .window .button-list .fa {
+     .button-list .fa {
     position: absolute;
     left: 10px;
     top: 10px;

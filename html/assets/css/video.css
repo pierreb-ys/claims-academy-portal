@@ -320,6 +320,11 @@ div.detail-view-icon img {
     background-color: #65b1d8;
   }
 
+
+  aside.video-thumb-frame.disabled  img {
+    opacity: .4;
+}
+
   /* video eidt / info */
 
   .window .video-edit,  .window   .video-info   {  margin-bottom: 10px; }

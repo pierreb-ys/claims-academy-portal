@@ -139,47 +139,76 @@
                         <button class="btn search-btn">Search</button>
                     </div>
     
-                    <div class="col-md-9 ">  
-                        <select>
-                            <option>All School</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="NY">New York</option>
-                            <option value="MD">Maryland</option>
-                            <option value="VA">Virginia</option>
-                        </select>
-    
-                      
-    
-                        <select>
-                            <option>All Sub-School</option>
-                            <option value="PL">Pre Litigation</option>
-                            <option value="LC">Litigation (Casualty/BI)</option>
+                    <div class="col-md-7 ">  
+                        <select id="allSchools" name="allSchools"> 
+                            <option value="ALL">All Schools</option>
+                            <option value="CBI">Casualty/BI(Bodily Injury)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+                            <option value="APD">APD (Auto Physical Damage)</option>
+                            <option value="PTY">Property</option>
+                            <option value="SS">Shared Services</option>
                         </select> 
-                        <select>
-                            <option>Phase</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="NY">New York</option>
-                            <option value="MD">Maryland</option>
-                            <option value="VA">Virginia</option>
-                        </select>
-                        <select>
-                            <option>Any Level</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="NY">New York</option>
-                            <option value="MD">Maryland</option>
-                            <option value="VA">Virginia</option>
-                        </select>
-                        <select>
-                            <option>Any Release Date</option>
-                            <option value="PA">Future Release</option>
-                            <option value="CT">Recently Added</option>
-                            <option value="NY">Available Now</option> 
-                        </select>
     
+                        <select id="allSubSchools" name="allSubSchools"> 
+                            <option>All Sub-Schools</option>
+                            <option>Pre Litigation</option>
+                            <option>Litigation(Casualty/BI)</option>
+
+                            <option>Michigan PIP</option>
+                            <option>Regional PIP</option>
+                            <option>Regional MedPay</option>
+                            <option>Insurance Claims 101</option>
+
+                            <option>Quick Claim/APD</option>
+
+                            <option>Quick Claim/Property</option>
+                            <option>CAT(Catastrophe)</option>
+                            <option>Desk</option>
+                            <option>Field</option>
+                            <option>Commercial</option>
+                            <option>Litigation(Property)</option> 
+                        </select> 
+
+                        <select id="phase" name="phase">
+                            <option>Phase</option>
+                            <option>Customer Service</option>
+                            <option>Coverage</option>
+                            <option>Investigation</option>
+                            <option>Evaluation</option>
+                            <option>Settlement/Nagotiatioin</option>
+                            <option>Reserve</option>
+                            <option>File Management</option>
+                            <option>Recovery</option>
+                            <option>Froud</option>
+                            <option>Compliance</option>
+                            <option>Litigation Management</option>
+                            <option>Vendor Management</option> 
+                        </select>
+
+                   
+
+                        <select id="anyReleaseDate" name="anyReleaseDate">
+                            <option>Any Release Date</option>
+                            <option value="">Future Release</option>
+                            <option value="">Recently Added</option>
+                            <option value="">Available Now</option> 
+                        </select>
+
+                        <select id="allVersions" name="allVersions">
+                                <option>Active Versions</option> 
+                                <option>All Versions</option>
+                        </select>
+
+                </div>
+    
+                <div class="col-md-2 ">  
+    <!-- buttons List start -->
+    <div class="button-list">
+                <button class="btn purple full" type="submit"><i class="fa fa-plus-circle"></i> Add Video </button> 
+            </div>
+            <!-- buttons List end -->
                               </div>
+                            
                     
                 </div>
             </div>  
@@ -197,7 +226,7 @@
         <!-- --- School / Sub-School  start --- -->
         <section class="contentarea    ">  
             <h2 class="title">School / Sub-School</h2>  
-            <div class="content-wrap scroller two"> 
+            <div class="content-wrap scroller one"> 
                 <div class="row">
                     <!-- --- Video Thumb Frame start --- -->
                     <div class="col-sm-4">   
@@ -494,6 +523,158 @@
                             </div>
                             <!-- --- Video Thumb Frame end --- --> 
                             
+                </div>
+            </div>
+    
+              <!-- --- pagination start --- -->
+              <div class="pagination-section" >
+                    <div class="row"><div class="col-sm-12 col-md-5">
+                        <div class="dataTables_info" id="school_info" role="status" aria-live="polite">Showing 1 to 4 of 4 entries</div></div><div class="col-sm-12 col-md-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="school_paginate">
+                                <ul class="pagination">
+                                    <li class="paginate_button page-item previous disabled" id="school_previous">
+                                    <a href="#" aria-controls="school" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                                </li>
+                                <li class="paginate_button page-item active">
+                                    <a href="#" aria-controls="school" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                </li>
+                                <li class="paginate_button page-item next disabled" id="schoolnext">
+                                    <a href="#" aria-controls="school" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+                                </li>
+                            </ul></div></div></div>
+            </div>
+            <!-- --- pagination end --- -->
+
+            <h2 class="title">Archived</h2>  
+            <div class="content-wrap scroller one"> 
+                <div class="row">
+                    <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">   
+                        <aside class="video-thumb-frame disabled" >                      
+                            <div class="video-thumb">  <img  src="../assets/img/video-thumbnail.png" ></div>
+                            <div class="video-thumb-content"> 
+                                    <div class="row">
+                                            <div class="col-sm-6">  
+                                                    <h3>Flex Work Program</h3>   
+                                                    <p>Released:06/30/2018</p>
+                                            </div>
+                                            <div class="col-sm-6">  
+                                                    <img  src="../assets/img/video-thumb-icon.png" class="icon" >
+                                                    <h4>Duration:6:03</h4>
+                                                   
+                                                </div>
+                                        </div>  
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Video Thumb Frame end --- -->
+    
+                    <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame disabled" >                      
+                                    <div class="video-thumb">  <img  src="../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+    
+                        <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame disabled" >                      
+                                    <div class="video-thumb">  <img  src="../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+    
+                         <!-- --- Video Thumb Frame start --- -->
+                    <div class="col-sm-4">                      
+                            <aside class="video-thumb-frame disabled" >                      
+                                    <div class="video-thumb">  <img  src="../assets/img/video-thumbnail.png" ></div>
+                                    <div class="video-thumb-content"> 
+                                            <div class="row">
+                                                    <div class="col-sm-6">  
+                                                            <h3>Flex Work Program</h3>   
+                                                            <p>Released:06/30/2018</p>
+                                                    </div>
+                                                    <div class="col-sm-6">  
+                                                            <img  src="../assets/img/video-thumb-icon.png" class="icon" >
+                                                            <h4>Duration:6:03</h4>
+                                                           
+                                                        </div>
+                                                </div>  
+                                         </div>                            
+                                </aside>
+                        </div>
+                        <!-- --- Video Thumb Frame end --- -->
+        
+                        <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame disabled" >                      
+                                        <div class="video-thumb">  <img  src="../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- -->
+        
+                            <!-- --- Video Thumb Frame start --- -->
+                        <div class="col-sm-4">                      
+                                <aside class="video-thumb-frame disabled" >                      
+                                        <div class="video-thumb">  <img  src="../assets/img/video-thumbnail.png" ></div>
+                                        <div class="video-thumb-content"> 
+                                                <div class="row">
+                                                        <div class="col-sm-6">  
+                                                                <h3>Flex Work Program</h3>   
+                                                                <p>Released:06/30/2018</p>
+                                                        </div>
+                                                        <div class="col-sm-6">  
+                                                                <img  src="../assets/img/video-thumb-icon.png" class="icon" >
+                                                                <h4>Duration:6:03</h4>
+                                                               
+                                                            </div>
+                                                    </div>  
+                                             </div>                            
+                                    </aside>
+                            </div>
+                            <!-- --- Video Thumb Frame end --- --> 
+    
+        
                 </div>
             </div>
     
