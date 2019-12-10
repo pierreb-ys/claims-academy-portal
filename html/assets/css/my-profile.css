@@ -115,6 +115,10 @@ hr {
   color: #F68C34;
 }
 
+.orange-text {
+  color: #F68C34;
+}
+
 .color-fix {
   color: #F68C34;
 }
@@ -129,10 +133,35 @@ hr {
 
 
 
+@media (max-width: 575px) {
+
+  .hide-column-at-mobile-size {
+    display: none;
+  }
+
+  .button-list {
+    text-align: right;
+  }
+
+  .show-at-mobile-size {
+    display: block;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .show-column-at-mobile-size {
+    display: none;
+  }
+  .show-at-mobile-size {
+    display: none;
+  }
+}
+
 
 @media (min-width: 575px) {
-  .orange-text-column-1-fix-mobile {
-    margin-left: -36px;
+  .orange-text-1 {
+    margin-left: -48px;
   }
 }
 
@@ -151,7 +180,7 @@ hr {
 @media (max-width: 767px) {
 
 .orange-text-1 {
-  width: 36%;
+  width: 50%;
 }
 
 .orange-text-1 {
