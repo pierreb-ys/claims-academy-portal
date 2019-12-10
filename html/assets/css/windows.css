@@ -101,14 +101,6 @@
   color: #81bff5;
 }
 
- /*   list */ 
- .window  .list  select { width:100%}
- .window  .list   label { color:#fff; display: block; position: relative;  }    
- .window  .list  .delete { position: relative;}
-
- @media (min-width:768px) {
-  .window  .list   label {  width:48%; display: inline-block;  } 
- }
 
  /* resource links list */ 
  .window  .resource-links-list  { margin-top: 20px; margin-left: 10px;}
@@ -376,24 +368,10 @@ aside.select-points .points input {
 
 .window .calendar-input input,
  .window .calendar-input:after { 
-  border: 1px solid #fff;
+  border: 1px solid;
 }
 
 /* radio buttons */
 
 .window  input[type="radio"]::after { color:#fff; }
 .window  input[type="radio"]:checked:after { color:#fff; }
-
-
-/* Note */
-
-small.note {font-size: 11px; color: #333;
-  top: -30px;
-  margin-bottom: 10px;
-  position: relative;
-  float: right;
-  right: 10px;}
-
-  input:focus + small.note, textarea:focus + small.note {
-     visibility: hidden; 
-}
