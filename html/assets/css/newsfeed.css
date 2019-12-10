@@ -71,4 +71,26 @@ section.contentarea.newsfeed article .close {
 }
 
 
+
+
 /* ------------ ------------ ------------ ------------ ADD/EDIT POST ------------ ------------ ------------ ------------ */
+
+
+/*  alert-info icon */
+
+.alerts-info .fa { color:#b8d6ff;     
+    font-size: 20px;
+    margin-right: 5px;
+    vertical-align: middle; }
+
+/*  alert-high icon */
+
+.alerts-high .fa { color:#ff000c;
+    font-size: 20px;
+    margin-right: 5px;
+    vertical-align: middle;}
+
+
+    .newsfeed-post section.content-area{ 
+        padding: 20px;
+    }
