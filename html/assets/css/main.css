@@ -223,7 +223,19 @@ span[class*='-icon'].lg-icon i.fa-list-ul { font-size: 20px;  top:20%}
   right: 22%;
   top: 10%;
 }
-
+ 
+h4.wrench-icon {
+  padding-left: 36px;
+  position: relative;
+} 
+.wrench-icon:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f0ad";
+  font-size: 30px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+}
 /* ------------ CONTENT ------------ */
 
 .sub-school-spacing-fix {
