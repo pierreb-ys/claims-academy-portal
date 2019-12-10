@@ -64,7 +64,7 @@
 }
 
 /* This is the "icon" inside of the search bar. */
-.fa, .fas, .fa-search {
+.cap-header .fa, .cap-header .fas, .cap-header .fa-search {
   color: white;
   margin-top: 10px; /* DONE: The icon was too "high" inside of the search bar. */
 }

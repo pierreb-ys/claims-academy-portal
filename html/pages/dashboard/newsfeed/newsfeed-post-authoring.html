@@ -11,8 +11,8 @@
 
     <link rel="stylesheet" href="../../../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
  
-<!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<!-- font Awesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
 <!-- * Custom CSS Inserted Here -->
     <link rel="stylesheet" href="../../../assets/css/main.css">
@@ -61,164 +61,143 @@
 </head>
 
 <body>
+ 
+<!-- Newsfeed post authoring   start  -->
+<section class="window newsfeed-post">
 
-<div class="container-fluid no-padding cap-content">
-<!-- Top Bar -->
-    <div class="row bg-light-blue">
-
-        <div class="col-sm-12 display-inline-flex pt-2">
-
-                <div class="img-fluid icon padding-left-24">
-                    <img src="../../assets/img/my-profile-icon.png" />
-                </div>
-                
-                <div class="center-text mission-gothic-regular">
-                    <p>Add/Edit Newsfeed Post</p>
-                </div>
-        </div>
-
-    </div>
-
-    <div class="row pl-4 pb-4 pt-4 bg-aaa-blue">
-        <div class="col-sm-1">
-
-            <div class="align-right">
-                <p>Audience: </p>
-            </div>
-
-        </div>
-
-        <div class="col-7">
-
-            <div>
-                <select multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
-                    <option class="text-faded">Select LOB / School</option>
-                    <option value="ALL">All Claims Academy Schools</option>
-                    <option value="CBI">Casualty/BI</option>
-                    <option value="PIP">PIP (Personal Injury Protection)</option>
-                    <option value="APD">APD (Auto Physical Damage</option>
-                    <option value="PTY">Property</option>               
-                </select> 
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="row pl-4 pb-4 bg-aaa-blue">
-
-        <div class="col-sm-1">
-
-            <div class="align-right">
-                <p>Importance: </p>
-            </div>
-        </div>
-
-        <div class="col-sm-2">
-            <div class="display-flex">
-            <i class="fas fa-exclamation-circle color-gray"></i>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">Normal</label>
-            </div>
-            </div>
-            <div class="display-flex">
-            <i class="fas fa-exclamation-circle"></i>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">High</label>
-            </div>
-            </div>
-            <div class="form-check">
-            </div>
-        </div>
-
-        <div class="col-sm-3">
-
-            <div class="display-flex">
-                <p>Visible Until: </p>
-
-
-                    <div class="form-group">
-                        <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-                            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+        <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i> Add/Edit Newsfeed Post <div class="window-close"></div></h2>
+    
+        <div class="container-fluid ">
+    
+            <section class="content-area">
+                <form>
+                    <!-- Audience start-->
+                    <div class="row">
+                        <div class="col-md-2  ">
+                            <label>Audience:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Audience Select dropdown start-->
+                            <select multiple data-placeholder="Choose Audience" class="form-control">
+                                <option class="text-faded">Select LOB / School</option>
+                                <option value="ALL">All Claims Academy Schools</option>
+                                <option value="CBI">Casualty/BI</option>
+                                <option value="PIP">PIP (Personal Injury Protection)</option>
+                                <option value="APD">APD (Auto Physical Damage</option>
+                                <option value="PTY">Property</option>
+                            </select>
+                            <!-- Audience Select dropdown  end-->
+                        </div>
+    
+                        <div class="col-md-4">
+                            <!-- Audience Selected list  start-->
+                            <div class="list">
+                                <label>Cosualty/BI <span class="delete"></span></label>
+                                <label>PIP <span class="delete"></span></label>
+                                <label>APD <span class="delete"></span></label>
+                                <label>Property <span class="delete"></span></label>
                             </div>
+                            <!-- Audience Selected list  end-->
                         </div>
                     </div>
-
-
-            </div>
-
+                    <!-- Audience end-->
+    
+                    <div class="row">
+                        <!-- Importance start-->
+                        <div class="col-md-2  ">
+                            <label>Importance: </label>
+                        </div>
+    
+                        <div class="col-md-2">
+                            <!-- Normal start-->
+                            <div class="alerts-info">
+                                <label><i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    <input id="normal" name="normal" type="radio" name="audience" checked> Normal</label>
+                            </div>
+                            <!-- Normal end-->
+                            <!-- High start-->
+                            <div class="alerts-high">
+                                <label><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                    <input id="high" name="high" type="radio" name="audience"> High</label>
+                            </div>
+                            <!-- High end-->
+                        </div>
+    
+                        <!-- Importance end-->
+    
+                        <!-- Visible Until start-->
+                        <div class="col-md-2  ">
+                            <label>Visible Until:</label>
+                        </div>
+                        <div class="col-md-6 ">
+                            <!-- calendar start-->
+                            <div class="calendar-input">
+                                <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
+                            </div>
+                            <!-- calendar end-->
+    
+                            <div class="row">
+                                <!-- Publish start-->
+                                <div class="col-md-3  ">
+                                    <label>
+                                        <input id="publish" name="publish" type="checkbox">Publish</label>
+                                </div>
+                                <!-- Publish end-->
+    
+                                <!-- Publication start-->
+                                <div class="col-md-9  ">
+                                    <label>Publication Date: mm/dd/yyyy <i class="fa fa-calendar"></i></label>
+                                </div>
+                                <!-- Publication end-->
+                            </div>
+                        </div>
+                        <!-- Visible Until end-->
+                    </div>
+    
+                    <!-- Title Text start-->
+                    <div class="row">
+                        <div class="col-md-2  ">
+                            <label>Title Text:</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input id="title" name="title" type="text" class="form-control">
+                            <small class="note">(title limit: 500 characters)</small>
+                        </div>
+                    </div>
+                    <!-- Title Text end-->
+    
+                    <!-- Newsfeed Article start-->
+                    <div class="row">
+                        <div class="col-md-2  ">
+                            <label> </label>
+                        </div>
+                        <div class="col-md-10"> <img src="../../../assets/img/htmlEditor.PNG">
+                            <textarea id="article" name="article" class="form-control" rows="6"> </textarea>
+                            <small class="note">(article limit: 500 characters)</small>
+                        </div>
+                    </div>
+                    <!-- Newsfeed Article end-->
+    
+                    <div class="row">
+                        <div class="col-md-2  ">
+                        </div>
+                        <div class="col-md-4">
+                            <!-- buttons List start -->
+                            <div class="button-list">
+                                <button class="btn blue half" type="submit"><i class="fa fa-plus-circle"></i> Add/Change</button>
+                                <button class="btn lightGray half" type="reset"><i class="fa fa-times-circle"></i> Clear</button>
+                            </div>
+                            <!-- buttons List end -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </form>
+            </section>
         </div>
-
-        <div class="col-sm-1">
-
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Publish</label>
-                <label class="container">One
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-                </label>
-            </div>
-
-        </div>
-
-        <div class="col-sm-2">
-
-            <div class="align-right">
-                <div class="align-right">
-                    <p>Publication Date: </p>
-                </div>
-                
-            </div>
-
-        </div>
-
-        <div class="col-sm-1">
-
-            <div class="align-right">
-                <div class="align-right">
-                <p>MM/DD/YYYY</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-        
-
-    <div class="row pl-4 pb-4 bg-aaa-blue">
-        <div class="col-sm-1">
-
-            <div class="align-right">
-                <p>Title Text: </p>
-            </div>
-
-        </div>
-
-        <div class="col-sm-10">
-
-            <textarea class="form-control height-36" aria-label="With textarea" style="height: 36px;"></textarea>
-
-        </div>
-
-    </div>
-
-    <div class="row pl-4 pb-4 bg-aaa-blue">
-        <div class="col-sm-1">
-
-        </div>
-        <div class="col-sm-10">
-                <div id="summernote" style="height: 288px;"></div>
-            </div>
-    </div>
-
-</div>
-
-
+    
+    </section>
+    <!-- Newsfeed post authoring  start  -->
 
 <script>
 $(function () {
