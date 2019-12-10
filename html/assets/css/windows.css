@@ -31,8 +31,7 @@
 .window .select-course .course-type label { display: block; }
 .window .select-course .edit-use button { margin-bottom: 10px; }
 .window .select-course  input[type="checkbox"] {
-    display: inline-block;
-    vertical-align: bottom;
+    display: inline-block; 
 }  
 .window .select-course {
     margin-top: 10px;
@@ -247,25 +246,6 @@ position:absolute;
 }
  
 .window .add-task-form { margin-bottom: 10px; padding: 10px ;}
-
-/* window buttons list */
-
- .full { width:100%; }
-@media (min-width:600px){
-  .button-list button.half  +  button.half  { margin-left: 2%;} 
-   .half { width:48%; }
-}
-@media (max-width:600px){
-    .half { width:100%; }
-}
- 
-.button-list button {
-    position: relative; margin-bottom: 10px; }
-     .button-list .fa {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
 
 
  
