@@ -73,7 +73,10 @@
         <button class="btn purple">Back</button>
     </div>
     </div>
-    <div class="col-sm-9">   
+    <div class="col-md-3 search-box inline">   
+            <input class="form-control search-input" type="search" placeholder="Search Course &amp; Curriculum" aria-describedby="button-addon3">
+          </div> 
+    <div class="col-sm-6">   
     <!-- ---  BUTTONS  START--- -->
         <div class="button-grp">
                 <button class="badges-btn"><img class="" src="../assets/img/badge-icon.png">BADGES</button>
@@ -224,6 +227,7 @@
 <script>   
 
     var table = $('#syllabus').DataTable( {  
+        "searching": false
          
     } );
      
