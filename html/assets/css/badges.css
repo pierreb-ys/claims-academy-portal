@@ -13,6 +13,7 @@
 margin: auto;  } 
 
 .badges .badge-box .dsc p { font-size: 10px; margin:0; } 
+.badges .badge-box .dsc * {    display: inline; }
 .badges-list { padding: 0px 20px; height:  220px; overflow-y: auto;  overflow-x: hidden; }
 .badges-btn-grp { text-align: right; margin: 10px 0; }
 .badges-btn-grp button { margin:10px 0;  border:none; color: #fff;  width:195px;  height:50px ; text-align: left;  vertical-align: middle; text-transform: uppercase;  line-height: 44px; font-size: 18px;  }
@@ -28,9 +29,17 @@ margin: auto;  }
 
 section.badges .content-wrap.scroller {
     overflow: auto;
-    height: 220px;
+    height: 240px;
     overflow-x: hidden;
 }  
+
+
+section.badges .content-wrap.scroller.two {
+    overflow: auto;
+    height: 480px;
+    overflow-x: hidden;
+}  
+ 
 
 section.badges.contentarea .content-wrap {
     padding: 5px 20px 0 !important;
