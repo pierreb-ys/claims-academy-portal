@@ -136,8 +136,11 @@
  
  .window section.task-list {
   margin: 20px;
+} 
+.window section.task-list .scroller {
+  overflow: auto;
+  height: 290px;
 }
-
 .window  section.task-list h3 {
   font-size: 18px;
   color: #fff;
