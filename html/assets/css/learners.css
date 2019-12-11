@@ -16,8 +16,22 @@
      margin-left:30px ;
 }
 
+/* Create Assign  Text Task */ 
 
+.create-task-btn {
+    width: 200px;
+}
+.create-task-btn span {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: -7px;
+}
 
+@media (min-width:1100px){  
+  
+}
 
 @media (min-width:767px){ 
     .learner-form .buttons button:last-child {
@@ -27,11 +41,30 @@
     }  
 }
 
+
 @media (max-width:1024px){  
     .learner-form label, .learner-form .calendar-input {
         margin-left: 30px;
+    } 
+}
+
+
+@media (max-width:1000px){  
+ 
+    .create-task-btn {
+        padding: 10px !important ;
+        width: 100%;
+    }
+    .create-task-btn span { 
+        font-size: 15px;
+    }
+    .print-btn img {
+        width: 20px;
+        margin-right: 5px !important;
     }
 }
+ 
+
 @media (max-width:767px){  
     .learner-form  .buttons { text-align: center; }
     .learner-form  .buttons  button {   font-size: 14px; width: 100%; margin:3px;}  
@@ -69,7 +102,7 @@
   #learners th:nth-child(2) small {
     position: absolute;
     left: 0;
-    top: 50%; 
+    top: 60px; 
 }
 #learners td:last-child button {
     display: block;
