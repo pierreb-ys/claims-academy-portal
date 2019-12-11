@@ -56,7 +56,7 @@
                 <section class="row select-course">
     
                     <!-- Edit/Use Buttons -->
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="edit-use">
                             <button class="btn purple">Edit</button>
                             <button class="btn white">Use</button>
@@ -64,17 +64,9 @@
                     </div>  
     
                     <!-- Video ID and Version Number -->
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="  col-lg-7">
-                                <label>Video ID </label>
-                                <input type="text" value="video 1">
-                            </div>
-                            <div class="  col-lg-5">
-                                <label>Version No: </label>
-                                <input type="text" value="1" size="3">
-                            </div>
-                        </div>
+                    <div class="col-md-7 form-inline"> 
+                                <label>Video ID: &nbsp; </label>
+                                <input type="text" class="form-control" value="video 1">    
                     </div>
     
                     <!-- Checkbox ("Active") -->
@@ -111,28 +103,38 @@
                         </div>
          
                         <div class="col-md-4"> 
-                            <div class="video-edit">
-                                <label>Video URL:</label>
-                                <textarea class="form-control" >Paste in URL for video palyback here. Test with 'Launch' button below </textarea>
-                            <div class="row "> 
-                                    <div class="col-md-6"> 
-                                            <label>Video Duration: </label>
-                                            <input type="text" id="videoDuration" name="videoDuration" value="1:06">
-                                        </div>
-                                        <div class="col-md-6"> 
-                                            <label>Version Number: </label>
-                                            <input type="text" id="versionNumber" name="versionNumber"  value="1" >
+                            <div class="video-edit"> 
+                                <div class="row  "> 
+                                    <div class="col-md-2 "> 
+                                            <label>Video  Duration: </label>
+                                         </div>
+                                        <div class="col-md-4">  
+                                                <input type="text" class="form-control" id="videoDuration" name="videoDuration" size="6" value="1:06">
+                                     
+                                            </div>
+                                            <div class="col-md-2">  
+                                                    <label>Version Number: </label>
+                                                </div>
+                                                <div class="col-md-4">  
+                                            
+                                            <input type="text" class="form-control" id="versionNumber" name="versionNumber" size="8"   value="1" >
                                         </div>
                             </div>
+                            <div class="row "> 
+                                    <div class="col-md-12"> 
+                            <label>Video URL:</label>
+                            <textarea class="form-control" >Paste in URL for video palyback here. Test with 'Launch' button below </textarea>
+                            </div>
+                            </div>                                        
                         </div>
 
                                  <!-- buttons List start -->
                         <div class="button-list">
                                 <button class="btn blue full"><i class="fa fa-rocket" aria-hidden="true"></i> Launch Video</button>
-                                <button class="btn blue full"><i class="fa fa-book" aria-hidden="true"></i> Add Diary Entry</button>
-                                <button class="btn blue full"><i class="fa fa-bookmark-o" aria-hidden="true"></i>Cancel Syllabus Self-Assignment</button>
-                                <button class="btn lgreen half"><i class="fa fa-commenting-o"></i> Assign to Learners</button>
-                                <button class="btn red half"><i class="fa fa-close"></i> Cancel Assignment</button>
+                                <button class="btn blue full" disabled><i class="fa fa-book" aria-hidden="true"></i> Add Diary Entry</button>
+                                <button class="btn blue full" disabled><i class="fa fa-bookmark-o" aria-hidden="true"></i>Cancel Syllabus Self-Assignment</button>
+                                <button class="btn lgreen half" disabled><i class="fa fa-commenting-o"></i> Assign to Learners</button>
+                                <button class="btn red half" disabled><i class="fa fa-close"></i> Cancel Assignment</button>
                                
                             </div>
                               <!-- buttons List end -->
@@ -143,25 +145,29 @@
                               <!-- Badges Section -->
 
                                <!-- Sekect Badges   Start -->
-                        <aside class="row select-badge">
-                                <div class="col-sm-6">Learning Task Badge </div>
-                                <div class="col-sm-6"><img class="" src="../assets/img/badge6.png">
+                        <aside class="select-badge">
+                                <div class="row">
+                                <div class="col-4">Learning Task Badge </div>
+                                <div class="col-4"><img class="" src="../assets/img/badge6.png">
                                     <div>
-                                        <button class="btn orange">select</button>
+                                        <button class="btn purple">select</button>
                                     </div>
                                 </div>
+                            </div>
                             </aside>
-                             <!-- Sekect Badges   End -->
+                             <!-- Sekect Badges   End -->   
         
                               <!-- Sekect Points   Start -->
-                            <aside class="row select-points">
-                                <div class="col-sm-6">Task Completion Points</div>
-                                <div class="col-sm-6">
+                            <aside class=" select-points">
+                                <div class="row">
+                                <div class="col-4">Task Completion Points</div>
+                                <div class="col-4">
                                     <div class="points">
-                                        <input type="number" value="10">
+                                        <input type="text"  class="form-control"  value="10">
                                     </div>
             
                                 </div>
+                            </div>
                             </aside>
                              <!-- Select Points   End -->
             
@@ -208,7 +214,7 @@
                         
                           <!--   Resource links List  Start -->
                         <section class="row resource-links-list">
-                            <h4>Resource links to be added to Dashboard <i class="fa fa-wrench" aria-hidden="true"></i> 'Tools' widget on learning task completion:</h4>
+                            <h4 class="wrench-icon">Resource links to be added to Dashboard   'Tools' widget on learning task completion:</h4>
                             <ul>
     
                                   <!--   Resource link  Start -->

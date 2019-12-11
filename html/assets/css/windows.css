@@ -265,12 +265,11 @@ position:absolute;
 .window  .select-badge button { line-height: 30px ; padding: 0px;  }
 .window  .select-badge img  { width:60px } 
   
-.window .select-badge div:last-child {
-    text-align: center;
-}
+ 
 
 .window  aside.select-badge  {
     color: #fff;
+    margin-bottom: 10px;
 }
 
 /* select points */
@@ -288,11 +287,13 @@ aside.select-points .points{
     line-height: 60px;
 }   
 aside.select-points .points input {
-    width: 40px;
+    width: 45px;
     margin: auto;
     display: inline-block;
     margin-top: 10px;
     line-height: normal;
+    padding: .375rem .25rem;
+    text-align: center;
 } 
 .window  aside.select-points {
     color: #fff;
