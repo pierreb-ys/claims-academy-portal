@@ -90,60 +90,56 @@
  
 
 <!-- --- LEARNERS --- -->
+
 <div class="container-fluid">
 
         <!-- --- SEARCH LEARNERS --- -->
-        <section class="search"> 
-         
-        
-                <div class="search-content">
-                    <div class="row"> 
-        
-                            <div class="col-md-3   ">   
-                                    <div class=" search-box   ">  
-                                    <input class="form-control search-input" type="search" placeholder="Search Course & Curriculum" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                                    <button class="btn search-btn">Search</button>
-                                </div>
+        <div class="search-content">
+                <div class="row"> 
+    
+                        <div class="col-md-3   ">   
+                                <div class=" search-box   ">  
+                                <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                                <button class="btn search-btn">Search</button>
                             </div>
-              
-                        <div class="col-md-7 ">  
-                            
-                            <select>
-                                <option>All LOBs/ Schools</option>
-                                <option value="BI">Casualty/BI (Body Injury)</option>
-                                <option value="PIP">PIP (Personal Injury Protection)</option>
-            <option value="APD">APD (Auto Physical Damage)</option>
-                                <option value="PIP">PIP (Personal Injury Protection)</option>
-            <option value="PA">Property</option>
-                                <option value="GL">Guest Learners</option>
-                            </select> 
-        
-                            <select>
-                                <option>All Sub-School</option>
-                                <option value="PL">Pre Litigation</option>
-                                <option value="LC">Litigation (Casualty/BI)</option>
-                            </select>  
-                            <input type="checkbox" checked data-toggle="toggle" data-on="Learners" data-off="Managers">
-                            <select>
-                                <option>All Manages</option>
-                                <option value="JS">John Smith</option>
-                                <option value="HH">Hannah Heart</option>
-                            </select>
-         
-                                
-                           </div>
-                           <div class="col-md-2   ">   
-                                    <!-- ---  BUTTONS  START--- -->
-                <div class="button-grp"> 
-                        <button class="print-btn"><img class="" src="../assets/img/print-icon.png">Print</button>
-                    </div> 
-             <!-- ---  BUTTONS END --- -->    
                         </div>
+          
+                    <div class="col-md-7  filter-box">  
+                        
+                        <select>
+                            <option>All LOBs/ Schools</option>
+                            <option value="BI">Casualty/BI (Body Injury)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+        <option value="APD">APD (Auto Physical Damage)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+        <option value="PA">Property</option>
+                            <option value="GL">Guest Learners</option>
+                        </select> 
+    
+                        <select>
+                            <option>All Sub-School</option>
+                            <option value="PL">Pre Litigation</option>
+                            <option value="LC">Litigation (Casualty/BI)</option>
+                        </select>  
+                        <input type="checkbox" checked data-toggle="toggle" data-on="Learners" data-off="Managers">
+                        <select>
+                            <option>All Manages</option>
+                            <option value="JS">John Smith</option>
+                            <option value="HH">Hannah Heart</option>
+                        </select>
+     
                             
+                       </div>
+                       <div class="col-md-2   ">   
+                                <!-- ---  BUTTONS  START--- -->
+            <div class="button-grp"> 
+                    <button class="print-btn"><i class="fa fa-print"></i> Print</button>
+                </div> 
+         <!-- ---  BUTTONS END --- -->    
                     </div>
-                </div>  
-                 
-            </section>
+                        
+                </div>
+            </div>   
     <section class="contentarea">  
          
             <div class="row">
@@ -156,7 +152,7 @@
                                 <!-- Date -->       
                                 <div class="col-md-9 col-sm-12">
                                     &nbsp;   &nbsp; <label>Completion Due Date:</label>
-                                    <div class="calendar-input"><input type="text" placeholder="DD/MM/YYYY" class="form-control"><i class="fa fa-calendar"></i></div>
+                                    <div class="calendar-input"><input type="text" placeholder="mm/dd/yyyy" class="form-control"><i class="fa fa-calendar"></i></div>
                                 </div>
     
                                 <!-- Back Buttons -->
@@ -192,8 +188,9 @@
                                         <th> <small>Select All </small></th>
                                         <th> </th>
                                          <th><div>Curriculum</div>
-                                            <div class="count"><span>assigned</span><span>completed</span></div>
-                                             <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i</div></th>
+                                             <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square-o"></i></div>
+                                                <div class="count"><span>assigned</span><span>completed</span></div>
+                                            </th>
                                         <th class="text-left">Learning Task Title    </th>
                                           <th> </th>
                                     </tr>
@@ -226,7 +223,7 @@
                                         <td> <input type="checkbox" checked />    </td>
                                         <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                         <td>Angelio Kadenski</td>
-                                        <td> <div class="count"><span> </span> <span> <i class="fa fa-check-square"></i> </span></div>
+                                        <td> <div class="count"><span> </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
                                             <div class="dates"><span> </span> <span>Ver: 2<br>10/12/2018</span></div></td>
                                         <td>Auto Insurance Basics (Carriculum) </td>
                                           <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
@@ -237,7 +234,7 @@
                                         <td> <input type="checkbox"  checked  />    </td>
                                         <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                         <td>Barb Lkent </td>
-                                        <td> <div class="count"><span><i class="fa fa-square-o"></i> </span> <span> <i class="fa fa-check-square"></i> </span></div>
+                                        <td> <div class="count"><span><i class="fa fa-square-o"></i> </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
                                             <div class="dates"><span>Ver: 2 </span> <span>Ver: 1<br>10/12/2017</span></div></td>
                                              
                                         <td>Auto Insurance Basics (Carriculum) </td>

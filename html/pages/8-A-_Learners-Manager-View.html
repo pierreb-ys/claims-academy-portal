@@ -64,171 +64,234 @@
 </head>
 
 <body>
-    
-    <div class="container-fluid">
-        <div class="row"> 
-        
-                <div class="col-sm-6 col-md-3 col-lg-4 create-box">   
+        <div class="container-fluid">
+                <div class="row"> 
+                    <div class="col-sm-3  text-left">
                         <!-- ---  BUTTONS  START--- -->
-                            <div class="button-grp text-left"> 
-                                <button class="btn fill-btn  orange create-task-btn "><i class="fa fa-plus"></i> <i class="fa fa-book"></i><span>Create Assign <br> Text Task</span></button>  
-                                 
-                                </div> 
-                         <!-- ---  BUTTONS END --- -->       
+                        <div class="button-grp text-left inline-block">
+                            <button class="btn fill-btn  orange create-task-btn "><i class="fa fa-plus"></i> <i class="fa fa-book"></i><span>Create & Assign <br> Text Task</span></button>
+            
                         </div>
-       <!-- --- FILTER  start --- -->
-    <div class="col-sm-6 col-md-4 col-lg-3 filter-box">   
-            <select>
-                <option>Select Learning Task</option> 
-            </select>  
-            <br> 
-            <button class="btn orange"><i class="fa fa-close"></i>  Clear Task Filter </button>    
-        </div>
-          <!-- --- FILTER  end --- -->
-            <!-- --- SEARCH  start --- -->
-            <div class="col-sm-6 col-md-3 col-lg-3 search-box ">   
-                    <input class="form-control search-input" type="search" placeholder="Search Course & Curriculum" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                    <button class="btn search-btn">Search</button>
-               
-</div>
-<!-- --- SEARCH  end --- -->
-    <div class="col-sm-6 col-md-2 col-lg-2 print-box">   
-    <!-- ---  BUTTONS  START--- -->
-        <div class="button-grp"> 
-                        <button class="print-btn"><img class="" src="../assets/img/print-icon.png">Print</button>
-            </div> 
-     <!-- ---  BUTTONS END --- -->       
-    </div>
-    </div>
-</div>
-
- 
-
-<!-- --- LEARNERS MANAGER VIEW--- -->
-<div class="container-fluid"> 
-    <section class="contentarea">   
-            <div class="row">
-                <div class="col-sm-12">     
-
-                    <!-- LEARNER FORM -->  
-                    <div class="responsive-table">         
-                        <table id="learners" class="table table-striped table-bordered" style="width:100%">
-                                <colgroup width="2%"> 
-                                    <colgroup width="5%">  
-                                        <colgroup width="18%"> 
-                                            <colgroup width="5%">  
-                                                <colgroup width="5%"> 
-                                                    <colgroup width="5%">  
-                                                        <colgroup width="5%">   
-                                                            <colgroup width="25%">  
-                                                                <colgroup width="10%"></colgroup>
-                                            
-                            <!--Learners Table row Head -->                                    
-                            <thead>
-                                <tr>
-                                    <th class="sorting_disabled"> <input type="checkbox" />  </th>
-                                    <th> <small>Select All </small></th>
-                                    <th> </th>
-                                    <th>Courses <div class="count"><span>assigned</span><span>completed</span></div><div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i></div></th>
-                                    <th>Curriculo
-                                        <div class="count"><span>assigned</span><span>completed</span></div> <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i</div></th>
-                                    <th>Challenges <div class="count"><span>assigned</span><span>completed</span></div> <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i></div></th>
-                                    <th>Text&nbsp;Task <div class="count"><span>assigned</span><span>completed</span></div><div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i></div></th>
-                                    <th>Badges Earned</th>
-                                    <th> </th>
-                                </tr>
-                            </thead>
-
-                            <tbody> 
-                                <!--  Table dynamic data row    -->      
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td> Beth Bower </td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td><img class="" src="../assets/img/badge1.png" width="50" > <img class="" src="../assets/img/badge2.png" width="50" ><img class="" src="../assets/img/badge3.png" width="50" > <img class="" src="../assets/img/badge6.png" width="50" > <img class="" src="../assets/img/badge8.png" width="50" >  </td>
-                                    <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->      
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Richard Free</td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td><img class="" src="../assets/img/badge1.png" width="50" > <img class="" src="../assets/img/badge2.png" width="50" > </td>
-                                    <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->          
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Angelio Kadenski</td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td><img class="" src="../assets/img/badge4.png" width="50" > <img class="" src="../assets/img/badge5.png" width="50" > </td>
-                                    <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->     
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Barb Lkent </td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td><img class="" src="../assets/img/badge9.png" width="50" > <img class="" src="../assets/img/badge8.png" width="50" > </td>
-                                    <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->     
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Peter Miller</td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td><img class="" src="../assets/img/badge3.png" width="50" > <img class="" src="../assets/img/badge6.png" width="50" > </td>
-                                    <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-                            </tbody> 
-                        </table>
-                    </div>    
+                        <!-- ---  BUTTONS END --- -->
+                    </div>
+                    <div class="col-sm-9  text-right">
+                        <!-- --- FILTER  start --- -->
+                        <div class="  filter-box inline-block">
+                            <select>
+                                <option>Select Learning Task</option>
+                            </select>
+                            <br>
+                            <button class="btn orange"><i class="fa fa-close"></i> Clear Task Filter </button>
+                        </div>
+                        <!-- --- FILTER  end --- -->
+                        <!-- --- SEARCH  start --- -->
+                        <div class=" search-box inline-block ">
+                            <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                            <button class="btn search-btn">Search</button>
+            
+                        </div>
+                          <!-- --- SEARCH  end --- -->
+                        <!-- ---  BUTTONS  START--- -->
+                        <div class="button-grp inline-block">
+                            <button class="print-btn"><i class="fa fa-print"></i> Print</button>
+                        </div>
+                        <!-- ---  BUTTONS END --- --> 
+                    </div>
                 </div>
-            </div>
-       
-
-    </section>
-
-</div>
-
-<script>   
-
-    var table = $('#learners').DataTable( { 
-        "searching": false,
-        "lengthChange": false,  
-        "paging": false,
-        "info": false,
-        "aoColumns": [
-                { "bSortable": false } 
-            ]   
-    } );
-     
-</script> 
-
+            
+                <!-- --- LEARNERS MANAGER VIEW--- -->
+                <div class="container-fluid">
+                    <section class="contentarea">
+                        <div class="row">
+                            <div class="col-sm-12">
+            
+                                <!-- LEARNER FORM -->
+                                <div class="responsive-table">
+                                    <table id="learners" class="table table-striped table-bordered" style="width:100%">
+                                        <colgroup width="2%">
+                                            <colgroup width="5%">
+                                                <colgroup width="18%">
+                                                    <colgroup width="5%">
+                                                        <colgroup width="5%">
+                                                            <colgroup width="5%">
+                                                                <colgroup width="5%">
+                                                                    <colgroup width="25%">
+                                                                        <colgroup width="10%"></colgroup>
+            
+                                                                        <!--Learners Table row Head -->
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th class="sorting_disabled">
+                                                                                    <input type="checkbox" /> </th>
+                                                                                <th> <small>Select All </small></th>
+                                                                                <th> </th>
+                                                                                <th>Courses
+                                                                                    <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square"></i></div>
+                                                                                    <div class="count"><span>assigned</span><span>completed</span></div>
+                                                                                </th>
+                                                                                <th>Curricula
+                                                                                    <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square"></i></div>
+                                                                                    <div class="count"><span>assigned</span><span>completed</span></div>
+                                                                                </th>
+                                                                                <th>Challenges
+                                                                                    <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square"></i></div>
+                                                                                    <div class="count"><span>assigned</span><span>completed</span></div>
+                                                                                </th>
+                                                                                <th>Text&nbsp;Tasks
+                                                                                    <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square"></i></div>
+                                                                                    <div class="count"><span>assigned</span><span>completed</span></div>
+                                                                                </th>
+                                                                                <th>Badges Earned</th>
+                                                                                <th> </th>
+                                                                            </tr>
+                                                                        </thead>
+            
+                                                                        <tbody>
+                                                                            <!--  Table dynamic data row    -->
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="checkbox" /> </td>
+                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                                <td> Beth Bower </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td><img class="" src="../assets/img/badge1.png" width="50"> <img class="" src="../assets/img/badge2.png" width="50"><img class="" src="../assets/img/badge3.png" width="50"> <img class="" src="../assets/img/badge6.png" width="50"> <img class="" src="../assets/img/badge8.png" width="50"> </td>
+                                                                                <td>
+                                                                                    <button class="btn blue">Syllabus</button>
+                                                                                    <button class="btn orange">Dairy</button>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!--  Table dynamic data row    -->
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="checkbox" /> </td>
+                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                                <td>Richard Free</td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td><img class="" src="../assets/img/badge1.png" width="50"> <img class="" src="../assets/img/badge2.png" width="50"> </td>
+                                                                                <td>
+                                                                                    <button class="btn blue">Syllabus</button>
+                                                                                    <button class="btn orange">Dairy</button>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!--  Table dynamic data row    -->
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="checkbox" /> </td>
+                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                                <td>Angelio Kadenski</td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td><img class="" src="../assets/img/badge4.png" width="50"> <img class="" src="../assets/img/badge5.png" width="50"> </td>
+                                                                                <td>
+                                                                                    <button class="btn blue">Syllabus</button>
+                                                                                    <button class="btn orange">Dairy</button>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!--  Table dynamic data row    -->
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="checkbox" /> </td>
+                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                                <td>Barb Lkent </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td><img class="" src="../assets/img/badge9.png" width="50"> <img class="" src="../assets/img/badge8.png" width="50"> </td>
+                                                                                <td>
+                                                                                    <button class="btn blue">Syllabus</button>
+                                                                                    <button class="btn orange">Dairy</button>
+                                                                                </td>
+                                                                            </tr>
+            
+                                                                            <!--  Table dynamic data row    -->
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="checkbox" /> </td>
+                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                                <td>Peter Miller</td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td><img class="" src="../assets/img/badge3.png" width="50"> <img class="" src="../assets/img/badge6.png" width="50"> </td>
+                                                                                <td>
+                                                                                    <button class="btn blue">Syllabus</button>
+                                                                                    <button class="btn orange">Dairy</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </section>
+            
+                </div>
+            
+                <script>
+                    var table = $('#learners').DataTable({
+                        "searching": false,
+                        "lengthChange": false,
+                        "paging": false,
+                        "info": false,
+                        "aoColumns": [{
+                            "bSortable": false
+                        }]
+                    });
+                </script>
 </body>
 
 </html>

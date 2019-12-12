@@ -563,6 +563,15 @@ section.search select  {
     padding: 5px 10px;
     vertical-align: middle;
 }
+.filter-box.inline-block,
+.button-grp.inline-block,
+.search-box.inline-block {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+
+}
+.search-box.inline-block { margin-right:10px ;}
 @media (min-width: 767px) {
   .search-box.right {
     float: right;

@@ -55,7 +55,11 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 
-    
+  <!-- Bootstrap Toggle CSS -->  
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>   
+ 
+   
     
 
 <!-- Custom JS -->
@@ -72,7 +76,7 @@
             <div class="col-sm-9">   
             <!-- ---  BUTTONS  START--- -->
                 <div class="button-grp"> 
-                    <button class="btn fill-btn  orange"><i class="fa fa-plus"></i> <i class="fa fa-book"></i>Create Assign Text Task</button>       <button class="print-btn"><img class="" src="../assets/img/print-icon.png">Print</button>
+                        <button class="print-btn"><i class="fa fa-print"></i> Print</button>
                     </div> 
              <!-- ---  BUTTONS END --- -->       
             </div>
@@ -113,29 +117,29 @@
                                 <option value="PL">Pre Litigation</option>
                                 <option value="LC">Litigation (Casualty/BI)</option>
                             </select> 
-        
+                            <input type="checkbox" checked data-toggle="toggle" data-on="Learners" data-off="Managers">
                             <select>
                                 <option>All Manages</option>
                                 <option value="JS">John Smith</option>
                                 <option value="HH">Hannah Heart</option>
                             </select>
-         
+                            <div class="button-grp text-left inline-block no-margin">
+                                    <button class="btn fill-btn  orange create-task-btn "><i class="fa fa-plus"></i> <i class="fa fa-book"></i><span>Create &amp; Assign <br> Text Task</span></button>
+                    
+                                </div>
                                 
                            </div>
-                           <div class="col-md-3 ">  
-                    
+                           <div class="col-md-3 ">   
                                 <select>
                                     <option>Select Learning Task</option> 
                                     <option selected="">Auto Insurance Basics (Curriculum)</option> 
-                                </select> 
-              
-                                <br>
-                                    
+                                </select>  
+                                <br> 
                                 <button class="btn orange"><i class="fa fa-close"></i>  Clear Task Filter </button>    
                             </div>
                         <div class="col-md-3   ">   
                                 <div class=" search-box right ">  
-                                <input class="form-control search-input" type="search" placeholder="Search Course & Curriculum" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                                <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
                                 <button class="btn search-btn">Search</button>
                             </div>
                         </div>
@@ -172,11 +176,11 @@
                                     <th class="sorting_disabled"> <input type="checkbox" />  </th>
                                     <th> <small>Select All </small></th>
                                     <th> </th>
-                                    <th>Courses <div class="count"><span>assigned</span><span>completed</span></div><div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i></div></th>
+                                    <th>Courses  <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square-o"></i></div> <div class="count"><span>assigned</span><span>completed</span></div> </th>
                                     <th>Curriculo
-                                        <div class="count"><span>assigned</span><span>completed</span></div> <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i</div></th>
-                                    <th>Challenges <div class="count"><span>assigned</span><span>completed</span></div> <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i></div></th>
-                                    <th>Text&nbsp;Task <div class="count"><span>assigned</span><span>completed</span></div><div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i></div></th>
+                                        <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square-o"></i></div> <div class="count"><span>assigned</span><span>completed</span></div> </th>
+                                    <th>Challenges  <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square-o"></i></div> <div class="count"><span>assigned</span><span>completed</span></div> </th>
+                                    <th>Text&nbsp;Task  <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square-o"></i></div> <div class="count"><span>assigned</span><span>completed</span></div> </th>
                                     <th>Badges Earned</th>
                                     <th> </th>
                                 </tr>
