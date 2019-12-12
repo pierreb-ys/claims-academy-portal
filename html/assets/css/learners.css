@@ -158,6 +158,14 @@ button.outlook-cal-btn  .fa { margin:2px }
       background-color: rgba(0,0,0,.03);
   } 
 
+
+  div#learners_paginate {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+  div#learners_info {
+    margin-left: 20px;
+}
   /* #learners th:first-child , #learners td:first-child { background: #9fc5f8; } */
  
   

@@ -64,145 +64,172 @@
 </head>
 
 <body>
-    
-    <div class="container-fluid">
-        <div class="row">
-                <div class="col-sm-3">   
-  
-    </div>
-    <div class="col-sm-9">   
-    <!-- ---  BUTTONS  START--- -->
-        <div class="button-grp"> 
-            <button class="btn fill-btn  orange"><i class="fa fa-plus"></i> <i class="fa fa-book"></i>Create Assign Text Task</button>       <button class="print-btn"><img class="" src="../assets/img/print-icon.png">Print</button>
-            </div> 
-     <!-- ---  BUTTONS END --- -->       
-    </div>
-    </div>
-</div>
-<!-- --- SEARCH LEARNERS --- -->
-<div class="container-fluid">
-    
-    <section class="search"> 
-        
-        <h2 class="title">Search Learners</h2>
-
-        <div class="search-content">
-            <div class="row"> 
-
-                <div class="col-md-3 search-box ">   
-                    <input class="form-control search-input" type="search" placeholder="Search Course & Curriculum" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                    <button class="btn search-btn">Search</button>
-                </div>
-
-                <div class="col-md-9 ">  
-                    
-                    <select>
-                        <option>Select Learning Task</option> 
-                        <option selected>Auto Insurance Basics (Curriculum)</option> 
-                    </select> 
-  
-                    <br>
-                        
-                    <button class="btn orange"><i class="fa fa-close"></i>  Clear Task Filter </button>    
-                </div>
+        <div class="container-fluid">
+                <div class="row"> 
+                        <div class="col-sm-3  text-left">
+                            <!-- ---  BUTTONS  START--- -->
+                            <div class="button-grp text-left inline-block">
+                                <button class="btn fill-btn  orange create-task-btn "><i class="fa fa-plus"></i> <i class="fa fa-book"></i><span>Create & Assign <br> Text Task</span></button>
                 
+                            </div>
+                            <!-- ---  BUTTONS END --- -->
+                        </div>
+                        <div class="col-sm-9  text-right">
+                            <!-- --- FILTER  start --- -->
+                            <div class="  filter-box inline-block">
+                                    <select>
+                                            <option>Select Learning Task</option>
+                                            <option selected>Auto Insurance Basics (Curriculum)</option>
+                                        </select>
+                                <br>
+                                <button class="btn orange"><i class="fa fa-close"></i> Clear Task Filter </button>
+                            </div>
+                            <!-- --- FILTER  end --- -->
+                            <!-- --- SEARCH  start --- -->
+                            <div class=" search-box inline-block ">
+                                <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                                <button class="btn search-btn">Search</button>
+                
+                            </div>
+                              <!-- --- SEARCH  end --- -->
+                            <!-- ---  BUTTONS  START--- -->
+                            <div class="button-grp inline-block">
+                                <button class="print-btn"><i class="fa fa-print"></i> Print</button>
+                            </div>
+                            <!-- ---  BUTTONS END --- --> 
+                        </div>
+                    </div> 
+            
             </div>
-        </div>  
-         
-    </section>
-    
-</div>
-
-<!-- --- LEARNERS MANAGER VIEW--- -->
-<div class="container-fluid"> 
-    <section class="contentarea">  
-         
-            <div class="row">
-                <div class="col-sm-12">     
-
-                    <!-- LEARNER FORM -->  
-                    <div class="responsive-table">         
-                        <table id="learners" class="table table-striped table-bordered" style="width:100%">
-                                <colgroup width="2%"> 
-                                    <colgroup width="5%">  
-                                        <colgroup width="18%"> 
-                                            <colgroup width="5%">  
-                                                <colgroup width="45%">  
-                                                                <colgroup width="10%"></colgroup>
-                                            
-                            <!--Learners Table row Head -->                                    
-                            <thead>
-                                <tr>
-                                    <th class="sorting_disabled"> <input type="checkbox" />  </th>
-                                    <th> <small>Select All </small></th>
-                                    <th> </th>
-                                     <th>Curriculum
-                                        <div class="count"><span>assigned</span><span>completed</span></div> <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square"></i</div></th>
-                                    <th class="text-left">Learning Task Title    </th>
-                                     <th> </th>
-                                </tr>
-                            </thead>
-
-                            <tbody> 
-                                <!--  Table dynamic data row    -->      
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td> Beth Bower </td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td>Auto Insurance Basics (Carriculum) </td>
-                                   <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->      
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Richard Free</td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td>Auto Insurance Basics (Carriculum) </td>
-                                     <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->          
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Angelio Kadenski</td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td>Auto Insurance Basics (Carriculum) </td>
-                                     <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->     
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Barb Lkent </td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td>Auto Insurance Basics (Carriculum) </td>
-                                    <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-
-                                <!--  Table dynamic data row    -->     
-                                <tr>
-                                    <td> <input type="checkbox" />    </td>
-                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
-                                    <td>Peter Miller</td>
-                                    <td> <div class="count"><span>8</span> <span>5</span></div></td>
-                                    <td>Auto Insurance Basics (Carriculum) </td>
-                                     <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
-                                </tr>
-                            </tbody> 
-                        </table>
-                    </div>    
-                </div>
-            </div> 
-
-    </section>
-
-</div>
-
+            <!-- --- SEARCH LEARNERS --- -->
+            
+            <!-- --- LEARNERS MANAGER VIEW--- -->
+            <div class="container-fluid">
+                <section class="contentarea">
+            
+                    <div class="row">
+                        <div class="col-sm-12">
+            
+                            <!-- LEARNER FORM -->
+                            <div class="responsive-table">
+                                <table id="learners" class="table table-striped table-bordered" style="width:100%">
+                                    <colgroup width="2%">
+                                        <colgroup width="5%">
+                                            <colgroup width="18%">
+                                                <colgroup width="5%">
+                                                    <colgroup width="45%">
+                                                        <colgroup width="10%"></colgroup>
+            
+                                                        <!--Learners Table row Head -->
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="sorting_disabled">
+                                                                    <input type="checkbox" /> </th>
+                                                                <th> <small>Select All </small></th>
+                                                                <th> </th>
+                                                                <th>Curriculum
+                                                                    <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square-o"></i></div>
+                                                                    <div class="count"><span>assigned</span><span>completed</span></div>
+                                                                </th>
+                                                                <th class="text-left">Learning Task Title </th>
+                                                                <th> </th>
+                                                            </tr>
+                                                        </thead>
+            
+                                                        <tbody>
+                                                            <!--  Table dynamic data row    -->
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" /> </td>
+                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                <td> Beth Bower </td>
+                                                                <td>
+                                                                    <div class="count"><span> <i class="fa fa-square-o"></i> </span> <span> </span></div>
+                                                                    <div class="dates"><span>Version: 3</span><span> </span> </div>
+                                                                </td>
+                                                                <td>Auto Insurance Basics (Carriculum) </td>
+                                                                <td>
+                                                                    <button class="btn blue">Syllabus</button>
+                                                                    <button class="btn orange">Dairy</button>
+                                                                </td>
+                                                            </tr>
+            
+                                                            <!--  Table dynamic data row    -->
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" /> </td>
+                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                <td>Richard Free</td>
+                                                                <td>
+                                                                    <div class="count"><span> </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
+                                                                    <div class="dates"><span> </span> <span>Version: 4<br>9/23/2019</span></div>
+                                                                </td>
+                                                                <td>Auto Insurance Basics (Carriculum) </td>
+                                                                <td>
+                                                                    <button class="btn blue">Syllabus</button>
+                                                                    <button class="btn orange">Dairy</button>
+                                                                </td>
+                                                            </tr>
+            
+                                                            <!--  Table dynamic data row    -->
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" /> </td>
+                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                <td>Angelio Kadenski</td>
+                                                                <td>
+                                                                    <div class="count"><span> <i class="fa fa-square-o"></i> </span> <span> </span></div>
+                                                                    <div class="dates"><span>Version: 3</span><span> </span> </div>
+                                                                </td>
+                                                                <td>Auto Insurance Basics (Carriculum) </td>
+                                                                <td>
+                                                                    <button class="btn blue">Syllabus</button>
+                                                                    <button class="btn orange">Dairy</button>
+                                                                </td>
+                                                            </tr>
+            
+                                                            <!--  Table dynamic data row    -->
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" /> </td>
+                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                <td>Barb Lkent </td>
+                                                                <td>
+                                                                    <div class="count"><span> </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
+                                                                    <div class="dates"><span> </span> <span>Version: 4<br>9/23/2019</span></div>
+                                                                </td>
+                                                                <td>Auto Insurance Basics (Carriculum) </td>
+                                                                <td>
+                                                                    <button class="btn blue">Syllabus</button>
+                                                                    <button class="btn orange">Dairy</button>
+                                                                </td>
+                                                            </tr>
+            
+                                                            <!--  Table dynamic data row    -->
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" /> </td>
+                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
+                                                                <td>Peter Miller</td>
+                                                                <td>
+                                                                    <div class="count"><span> </span> <span>   </span></div>
+                                                                    <div class="dates"><span> </span> <span> </span></div>
+                                                                </td>
+                                                                <td>Auto Insurance Basics (Carriculum) </td>
+                                                                <td>
+                                                                    <button class="btn blue">Syllabus</button>
+                                                                    <button class="btn orange">Dairy</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            
+                </section>
+            
+            </div>    
 <script>   
 
     var table = $('#learners').DataTable( { 
