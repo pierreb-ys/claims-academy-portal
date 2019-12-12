@@ -6,4 +6,9 @@
     display: block;
 }
 
+.challenge-details .edit-use { margin:20px;   }
+
+.flash { position: relative; width:auto; display: inline-block; }
+.challenge-details .flash .edit { top:20px; right:20px; position: absolute; }
+
 .flash button { margin: 20px;}
