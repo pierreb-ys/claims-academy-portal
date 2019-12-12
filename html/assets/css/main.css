@@ -684,7 +684,7 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
 .button-grp { text-align: right; margin: 10px 0; }
 .button-grp button { margin: 0;  border:none; color: #fff;    height:50px ; text-align: left;  vertical-align: middle;   line-height: normal;
     font-size: 16px;
-    padding: 10px 20px;   } 
+    padding: 10px 15px;   } 
 .button-grp button img { margin-left: 0;
     margin-right: 15px;
     margin-top: -4px; }    
@@ -707,6 +707,10 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
     margin-right: 5px;
 }
 
+.print-btn img {
+  width: 25px;
+  margin-right: 0;
+}
         
 
 /* Calendar Input */    

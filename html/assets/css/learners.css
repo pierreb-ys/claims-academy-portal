@@ -16,22 +16,31 @@
      margin-left:30px ;
 }
 
-/* Create Assign  Text Task */ 
+/* Create Assign  Text Task, Add  Text Task , Outlook Calender buttons */ 
 
-.create-task-btn {
-    width: 200px;
-}
-.create-task-btn span {
+button.add-learning-dairy-btn , 
+button.create-task-btn  , 
+button.add-text-task-btn   ,
+button.outlook-cal-btn    {   width:auto; }
+
+button.add-learning-dairy-btn .fa, 
+button.create-task-btn  .fa , 
+button.add-text-task-btn  .fa ,
+button.outlook-cal-btn  .fa { margin:2px }
+
+.add-learning-dairy-btn span,
+.create-task-btn span , 
+.add-text-task-btn span ,
+.outlook-cal-btn span{
     text-align: center;
     position: relative;
     display: inline-block;
     vertical-align: middle;
     top: -7px;
-}
-
-@media (min-width:1100px){  
-  
-}
+    margin-left: 10px;
+} 
+ 
+ 
 
 @media (min-width:767px){ 
     .learner-form .buttons button:last-child {
