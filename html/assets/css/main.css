@@ -734,7 +734,60 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
   width: 25px;
   margin-right: 0;
 }
-        
+
+
+/* Create Assign  Text Task, Add  Text Task , Outlook Calender buttons... */ 
+
+button.view-course-btn ,
+button.reg-act-btn , 
+button.add-learning-dairy-btn , 
+button.create-task-btn  , 
+button.add-text-task-btn   ,
+button.outlook-cal-btn    {   width:auto; }
+
+button.view-course-btn .fa,
+button.reg-act-btn .fa, 
+button.add-learning-dairy-btn .fa, 
+button.create-task-btn  .fa , 
+button.add-text-task-btn  .fa ,
+button.outlook-cal-btn  .fa { margin:2px }
+
+.view-course-btn span,
+.reg-act-btn span, 
+.add-learning-dairy-btn span,
+.create-task-btn span , 
+.add-text-task-btn span ,
+.outlook-cal-btn span{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: -7px;
+    margin-left: 10px;
+} 
+ 
+.reg-act-btn  small {
+  display: block;
+}
+section.task-list button { padding:0px 5px}
+  section.task-list button  span{ top:0; line-height: normal;}
+
+
+@media (max-width:1000px){  
+ 
+    .create-task-btn {
+        padding: 10px !important ;
+        width: 100%;
+    }
+    .create-task-btn span { 
+        font-size: 15px;
+    }
+    .print-btn img {
+        width: 20px;
+        margin-right: 5px !important;
+    }
+}
+ 
 
 /* Calendar Input */    
 .calendar-input {
