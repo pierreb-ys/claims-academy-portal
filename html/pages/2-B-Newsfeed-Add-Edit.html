@@ -26,12 +26,12 @@
 <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!-- Custom JS -->
+    <!-- Custom JS -->
     <script src="../assets/js/main.js"></script>
 
-<!-- Chosen.js -->    
+    <!-- Chosen.js -->  
+    <link rel="stylesheet" href="../assets/js/chosen-js/chosen.min.css">  
     <script src="../assets/js/chosen-js/chosen.jquery.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="../assets/js/chosen-js/chosen.min.css">
 
 
     <script type="text/javascript" src="../assets/js/moment.min.js"></script>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="col-md-4">
                             <!-- Audience Select dropdown start-->
-                            <select multiple data-placeholder="Choose Audience" class="form-control">
+                            <select multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
                                 <option class="text-faded">Select LOB / School</option>
                                 <option value="ALL">All Claims Academy Schools</option>
                                 <option value="CBI">Casualty/BI</option>
@@ -86,19 +86,20 @@
                                 <option value="APD">APD (Auto Physical Damage</option>
                                 <option value="PTY">Property</option>
                             </select>
-                            <!-- Audience Select dropdown  end-->
+                            <br />
+                            <br />
+
                         </div>
-    
+                        <!--
                         <div class="col-md-4">
-                            <!-- Audience Selected list  start-->
                             <div class="list">
                                 <label>Cosualty/BI <span class="delete"></span></label>
                                 <label>PIP <span class="delete"></span></label>
                                 <label>APD <span class="delete"></span></label>
                                 <label>Property <span class="delete"></span></label>
                             </div>
-                            <!-- Audience Selected list  end-->
                         </div>
+                        -->
                     </div>
                     <!-- Audience end-->
     
@@ -125,11 +126,10 @@
     
                         <!-- Importance end-->
     
-                        <!-- Visible Until start-->
-                        <div class="col-md-2  ">
-                            <label>Visible Until:</label>
-                        </div>
                         <div class="col-md-6 ">
+
+                            <label class="margin-right-12">Visible Until:  </label>
+
                             <!-- calendar start-->
                             <div class="calendar-input">
                                 <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
@@ -148,6 +148,8 @@
                                 <div class="col-md-9  ">
                                     <label>Publication Date: mm/dd/yyyy <i class="fa fa-calendar"></i></label>
                                 </div>
+                                <br />
+                                <br />
                                 <!-- Publication end-->
                             </div>
                         </div>
