@@ -91,7 +91,7 @@
 
  /* schools list */ 
  .window  .update-schools-list  select { width:100%}
- .window  .update-schools-list   label { color:#fff; display: block; position: relative; padding-right: 50px; }      
+ .window  .update-schools-list   label { color:#fff; display: block; position: relative; padding-right: 50px; line-height: normal; }      
 
  .window  section.update-schools-list  label {
   color: #d6ecff;
