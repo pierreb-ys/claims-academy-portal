@@ -15,31 +15,6 @@
 .learner-form  button {
      margin-left:30px ;
 }
-
-/* Create Assign  Text Task, Add  Text Task , Outlook Calender buttons */ 
-
-button.add-learning-dairy-btn , 
-button.create-task-btn  , 
-button.add-text-task-btn   ,
-button.outlook-cal-btn    {   width:auto; }
-
-button.add-learning-dairy-btn .fa, 
-button.create-task-btn  .fa , 
-button.add-text-task-btn  .fa ,
-button.outlook-cal-btn  .fa { margin:2px }
-
-.add-learning-dairy-btn span,
-.create-task-btn span , 
-.add-text-task-btn span ,
-.outlook-cal-btn span{
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    top: -7px;
-    margin-left: 10px;
-} 
- 
  
 
 @media (min-width:767px){ 
@@ -58,20 +33,6 @@ button.outlook-cal-btn  .fa { margin:2px }
 }
 
 
-@media (max-width:1000px){  
- 
-    .create-task-btn {
-        padding: 10px !important ;
-        width: 100%;
-    }
-    .create-task-btn span { 
-        font-size: 15px;
-    }
-    .print-btn img {
-        width: 20px;
-        margin-right: 5px !important;
-    }
-}
  
 
 @media (max-width:767px){  
@@ -121,7 +82,8 @@ button.outlook-cal-btn  .fa { margin:2px }
     font-size: 12px;
 }
   #learners  .count ,  #learners .dates  {
-      width: 120px;
+      min-width: 120px;
+      width:100%;
       text-align: center;
       display: inline-block; 
   }
