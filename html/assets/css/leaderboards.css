@@ -1,0 +1,10 @@
+/* ============ Leaderboards  ============ */
+
+.Leaderboards { padding-top: 20px;}
+#Leaderboards th, #Leaderboards td { text-align: center;}
+
+ #Leaderboards td:last-child { text-align: left;}
+
+.dataTable .completed { position: relative; left:-50px; width:100px; font-size:18px; text-align:center; margin-bottom: 5px;  }
+ 
+

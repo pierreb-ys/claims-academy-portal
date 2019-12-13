@@ -16,6 +16,8 @@
 @import url("challenge.css"); 
 @import url("learning-diary.css"); 
 @import url("clubs.css"); 
+@import url("leaderboards.css");  
+@import url("challenge-center.css");  
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -876,7 +878,32 @@ section.task-list button { padding:0px 5px}
   @media (max-width:1024px){ 
     .responsive-table { overflow: auto; } 
 }
-    
+
+div.dataTables_length ,
+div.dataTables_filter {   margin-top: 20px;}
+
+  div.dataTables_info ,
+div.dataTables_paginate {   margin-bottom: 20px;}
+
+  div.dataTables_length ,
+div.dataTables_info  { margin-left: 20px; }
+
+div.dataTables_filter , 
+div.dataTables_paginate  { margin-right: 20px !important; }
+ 
+.dataTables_filter input {
+  border:1px solid #3398cb
+
+}
+
+
+  .dataTable th {
+    font-weight: normal;
+    background: #b0cde6;
+}
+.dataTable th, .dataTable td {
+    border: none;
+}
 .table th { line-height: normal;}
 /* Task type icon */
 
@@ -919,4 +946,16 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 
 /* message */
 
- 
+.rank { 
+  background-image: url('../../assets/img/rank-bg.png'); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: 18px;
+  color: #000;
+  width: 89px;
+  height: 100px;
+  display: block;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+ } 
