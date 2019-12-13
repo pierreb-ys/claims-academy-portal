@@ -82,7 +82,7 @@
     font-size: 12px;
 }
   #learners  .count ,  #learners .dates  {
-      min-width: 120px;
+      min-width: 130px;
       width:100%;
       text-align: center;
       display: inline-block; 
