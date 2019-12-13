@@ -520,6 +520,16 @@ section.search select  {
   }
   
   
+  #width-125-percent {
+    width: 125%;
+  }
+
+  @media (max-width: 767px) {
+    #width-125-percent {
+      width: 100%;
+    }
+  }
+
   .search-box input { 
     display: inline-block;
     border:1px solid #3398cb;
@@ -538,7 +548,7 @@ section.search select  {
       width: 255px; 
       float: none;
       display: block;
-      max-width: 100%;
+      max-width: 150%;
       margin-top: 10px;
       margin-bottom: 10px;
   }
