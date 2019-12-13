@@ -139,7 +139,7 @@
                     <div class="showcase-content"> 
                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
                        <p>
-                                Integer pharetra quam vitae nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est, consectetur et ullamcorper eu, pretium eget odio. Mauris eget odio ex. Curabitur vehicula porta erat, sit amet vehicula massa dictum eget. Nulla at sollicitudin turpis. Curabitur mollis facilisis nisl, lobortis eleifend ante blandit eu. Nunc efficitur sapien sit amet est semper malesuada. Ut lacinia sapien vel mattis suscipit. In sed pretium risus, eget sodales dui.  <a href="#" class="more-link"></a>...more</p>
+                                Integer pharetra quam vitae nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est, consectetur et ullamcorper eu, pretium eget odio. Mauris eget odio ex. Curabitur vehicula porta erat, sit amet vehicula massa dictum eget. Nulla at sollicitudin turpis. Curabitur mollis facilisis nisl, lobortis eleifend ante blandit eu. Nunc efficitur sapien sit amet est semper malesuada. Ut lacinia sapien vel mattis suscipit. In sed pretium risus, eget sodales dui.  <a href="#" class="more-link">...more</a></p>
                          </p>
     
                          </div>
@@ -152,188 +152,224 @@
     </div>
     
     
+    <!-- --- SEARCH Challenge Center --- -->
+    <div class="container-fluid">
+         
+        
+                <div class="search-content">
+                    <div class="row"> 
+        
+                        <div class="col-md-3 search-box ">   
+                            <input class="form-control search-input" type="search" placeholder="Search Challenge title" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                            <button class="btn search-btn">Search</button>
+                        </div>
+        
+                        <div class="col-md-7 filter-box">  
+                            <select id="allSchools" name="allSchools"> 
+                                <option value="ALL">All LOBs/ Schools</option>
+                                <option value="CBI">Casualty/BI(Bodily Injury)</option>
+                                <option value="PIP">PIP (Personal Injury Protection)</option>
+                                <option value="APD">APD (Auto Physical Damage)</option>
+                                <option value="PTY">Property</option>
+                                <option value="SS">Shared Services</option>
+                            </select> 
+        
+                            <select id="allSubSchools" name="allSubSchools"> 
+                                <option>All Sub-Schools</option>
+                                <option>Pre Litigation</option>
+                                <option>Litigation(Casualty/BI)</option>
+    
+                                <option>Michigan PIP</option>
+                                <option>Regional PIP</option>
+                                <option>Regional MedPay</option>
+                                <option>Insurance Claims 101</option>
+    
+                                <option>Quick Claim/APD</option>
+    
+                                <option>Quick Claim/Property</option>
+                                <option>CAT(Catastrophe)</option>
+                                <option>Desk</option>
+                                <option>Field</option>
+                                <option>Commercial</option>
+                                <option>Litigation(Property)</option> 
+                            </select> 
+    
+                            <select id="phase" name="phase">
+                                <option>Phase</option>
+                                <option>Customer Service</option>
+                                <option>Coverage</option>
+                                <option>Investigation</option>
+                                <option>Evaluation</option>
+                                <option>Settlement/Nagotiatioin</option>
+                                <option>Reserve</option>
+                                <option>File Management</option>
+                                <option>Recovery</option>
+                                <option>Fraud</option>
+                                <option>Compliance</option>
+                                <option>Litigation Management</option>
+                                <option>Vendor Management</option> 
+                            </select>
+    
+                            <select id="myManager" name="myManager">
+                                    <option>My Manager</option> 
+                                    <option>All Challenges</option>
+                            </select>
+    
+                            <select id="anyReleaseDate" name="anyReleaseDate">
+                                <option>Any Release Date</option>
+                                <option value="">Future Release</option>
+                                <option value="">Recently Added</option>
+                                <option value="">Available Now</option> 
+                            </select>
+    
+                           
+
+
+    
+                    </div>
+        
+                    <div class="col-md-2  ">  
+        <!-- buttons List start -->
+        <div class="button-grp">
+                    <button class="btn purple full" type="submit"><i class="fa fa-plus-circle"></i> Add Challenge </button> 
+                </div>
+                <!-- buttons List end -->
+                                  </div>
+                                
+                        
+                    </div>
+                </div>  
+                  
+            
+        </div>
+        
     
                 <!-- --- Challenge Center --- -->
                 <div class="container-fluid ChallengeCenter">
                     <section class="contentarea">
                         <div class="row">
                             <div class="col-sm-12">
-             
-                                <div class="responsive-table">
-                                    <table id="ChallengeCenter" class="table table-striped table-bordered" style="width:100%">
-                                        <colgroup width="10%">
-                                            <colgroup width="10%"> 
-                                            <colgroup width="10%">
-                                                <colgroup width="8%" class="text-center">
-                                                    <colgroup width="8%" class="text-center">
-                                                        <colgroup width="8%" class="text-center">
-                                                            <colgroup width="8%" class="text-center">
-                                                                <colgroup width="8%" class="text-center"> 
-                                                                        <colgroup width="30%"></colgroup>
-            
-                                                                        <!--Learners Table row Head -->
-                                                                        <thead>
-                                                                            <tr> 
-                                                                                <th></th>
-                                                                                <th> </th>
-                                                                                <th> </th>
-                                                                                <th   >Courses</th>
-                                                                                <th  >Videos</th>
-                                                                                <th  ><div class="completed">Completed</div> Curricula</th>
-                                                                                <th  >Challenges</th> 
-                                                                                <th >Points<br>Earned </th> 
-                                                                                <th> </th>
-                                                                            </tr>
-                                                                        </thead>
-            
-                                                                        <tbody>
-                                                                            <!--  Table dynamic data row    -->
-                                                                            <tr>
-                                                                                <td> <span class="rank">1</span></td>
-                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
-                                                                                <td> Beth Bower </td>
-                                                                                <td >
-                                                                                    <div class="count">15</div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="count">6</div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="count">2</div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <div class="count">2</div>
-                                                                                </td>
-                                                                                <td> 45</td>
-                                                                                <td>   <img class="" src="../assets/img/badge6.png" width="50"> <img class="" src="../assets/img/badge8.png" width="50"> <img class="" src="../assets/img/badge9.png" width="50"> </td>
-                                                                            </tr>
-            
-                                                                            <!--  Table dynamic data row    -->
-                                                                            <tr>
-                                                                                    <td> <span class="rank">2</span></td>
-                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
-                                                                                <td>Richard Free</td>
-                                                                                <td>
-                                                                                        <div class="count">10</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">8</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">5</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">2</div>
-                                                                                    </td>
-                                                                                    <td> 45</td>
-                                                                                    <td>  <img class="" src="../assets/img/badge6.png" width="50"> <img class="" src="../assets/img/badge8.png" width="50">  </td>
-                                                                            </tr>
-            
-                                                                            <!--  Table dynamic data row    -->
-                                                                            <tr>
-                                                                                    <td> <span class="rank">3</span></td>
-                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
-                                                                                <td>Angelio Kadenski</td>
-                                                                                <td>
-                                                                                        <div class="count">10</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">9</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">5</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">2</div>
-                                                                                    </td>
-                                                                                    <td> 34</td>
-                                                                                    <td>   <img class="" src="../assets/img/badge8.png" width="50">  </td>
-                                                                                </tr>
-            
-                                                                            <!--  Table dynamic data row    -->
-                                                                            <tr>
-                                                                                    <td> <span class="rank">4</span></td>
-                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
-                                                                                <td>Barb Lkent </td>
-                                                                                <td>
-                                                                                        <div class="count">8</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">6</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">7</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">5</div>
-                                                                                    </td>
-                                                                                    <td> 33</td>
-                                                                                    <td>  <img class="" src="../assets/img/badge6.png" width="50"> <img class="" src="../assets/img/badge8.png" width="50"> <img class="" src="../assets/img/badge9.png" width="50"> </td>
-                                                                                </tr>
-            
-                                                                            <!--  Table dynamic data row    -->
-                                                                            <tr>
-                                                                                    <td> <span class="rank">5</span></td>
-                                                                                <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
-                                                                                <td>Peter Miller</td>
-                                                                                <td>
-                                                                                        <div class="count">9</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">6</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">4</div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div class="count">3</div>
-                                                                                    </td>
-                                                                                    <td> 36</td>
-                                                                                    <td>  <img class="" src="../assets/img/badge6.png" width="50">   </td>
-                                                                            </tr>
-                                                                             <!--  Table dynamic data row    -->
-                                                                             <tr>
-                                                                                    <td> <span class="rank">6</span></td>
-                                                                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
-                                                                                    <td>Stephen Becker</td>
-                                                                                    <td>
-                                                                                            <div class="count">9</div>
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <div class="count">6</div>
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <div class="count">4</div>
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <div class="count">6</div>
-                                                                                        </td>
-                                                                                        <td> 25</td>
-                                                                                        <td>  <img class="" src="../assets/img/badge6.png" width="50">   </td>
-                                                                                </tr>
-                                                                                 <!--  Table dynamic data row    -->
-                                                                            <tr>
-                                                                                    <td> <span class="rank">7</span></td>
-                                                                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
-                                                                                    <td>Joy Full</td>
-                                                                                    <td>
-                                                                                            <div class="count">10</div>
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <div class="count">6</div>
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <div class="count">3</div>
-                                                                                        </td>
-                                                                                        <td>
-                                                                                            <div class="count">4</div>
-                                                                                        </td>
-                                                                                        <td> 44</td>
-                                                                                        <td>  <img class="" src="../assets/img/badge9.png" width="50">   </td>
-                                                                                </tr>
-                                                                        </tbody> 
-                                    </table>
-                                </div>
+                                <div class="scrollbar">
+                                        <div class="responsive-table">
+                                                <table id="ChallengeCenter" class="table table-striped table-bordered" style="width:100%">
+                                                    <colgroup width="25%">
+                                                        <colgroup width="25%"> 
+                                                        <colgroup width="30%"> 
+                                                           <colgroup width="20%">
+                                                                                    </colgroup>
+                        
+                                                                                    <!--Learners Table row Head -->
+                                                                                    <thead>
+                                                                                        <tr> 
+                                                                                            <th></th> 
+                                                                                            <th  >Title   <select id="anyReleaseDate" name="anyReleaseDate">
+                                                                                                    <option> Version</option>
+                                                                                                      <option>Active Versions</option>
+                                                                                                    <option value="">All Versions</option>
+                                                                                                       </select></th>
+                                                                                            <th  >Description </th>
+                                                                                            <th  >Release Date</th>   
+                                                                                        </tr>
+                                                                                    </thead>
+                        
+                                                                                    <tbody>
+                                                                                        <!--  Table dynamic data row    -->
+                                                                                        <tr> 
+                                                                                            <td> <img class="" src="../assets/img/flash.png" width="250"> </td> 
+                                                                                            <td >
+                                                                                                    Integer pharetra quam vitae
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                    nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est,
+                                                                                                    <div class="level-phase">
+                                                                                                        <div class="level">
+                                                                                                                <label>Level</label>
+                                                                                                                1
+                                                                                                        </div>
+                                                                                                         <div class="phase">
+                                                                                                                <label>Phase</label>
+                                                                                                                Recovery
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                9/22/2019 
+                                                                                               
+                                                                                                <div class="points-award">
+                                                                                                        <label>Award</label>
+                                                                                                    <div class="points">29</div>
+                                                                                                    <div class="award"><i class="fa fa-anchor"></i></div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                                 </tr>
+                        
+                                                                                        <!--  Table dynamic data row    -->
+                                                                                        <tr> 
+                                                                                                <td> <img class="" src="../assets/img/flash.png" width="250"> </td> 
+                                                                                                <td >
+                                                                                                        Integer pharetra quam vitae
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                        nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est,
+                                                                                                        <div class="level-phase">
+                                                                                                            <div class="level">
+                                                                                                                    <label>Level</label>
+                                                                                                                    2
+                                                                                                            </div>
+                                                                                                             <div class="phase">
+                                                                                                                    <label>Phase</label>
+                                                                                                                    Investigation
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    9/22/2019 
+                                                                                                   
+                                                                                                    <div class="points-award">
+                                                                                                            <label>Award</label>
+                                                                                                        <div class="points">29</div>
+                                                                                                        <div class="award"><i class="fa fa-anchor"></i></div>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                     </tr>
+                        
+                                                                                        <!--  Table dynamic data row    -->
+                                                                                        <tr> 
+                                                                                                <td> <img class="" src="../assets/img/flash.png" width="250"> </td> 
+                                                                                                <td >
+                                                                                                        Integer pharetra quam vitae
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                        nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est,
+                                                                                                        <div class="level-phase">
+                                                                                                            <div class="level">
+                                                                                                                    <label>Level</label>
+                                                                                                                    3
+                                                                                                            </div>
+                                                                                                             <div class="phase">
+                                                                                                                    <label>Phase</label>
+                                                                                                                    Customer Service
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                    9/22/2019 
+                                                                                                   
+                                                                                                    <div class="points-award">
+                                                                                                            <label>Award</label>
+                                                                                                        <div class="points">29</div>
+                                                                                                        <div class="award"><i class="fa fa-anchor"></i></div>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                     </tr>
+                         
+                                                                                    </tbody> 
+                                                </table>
+                                            </div>
+                                </div> 
                             </div>
                         </div>
             
@@ -343,10 +379,10 @@
             
                 <script>
                     var table = $('#ChallengeCenter').DataTable({
-                        "searching": true,
-                        "lengthChange": true,
-                        "paging": true,
-                        "info": true, 
+                        "searching": false,
+                        "lengthChange": false,
+                        "paging": false,
+                        "info": false, 
                     });
                 </script>
 </body>

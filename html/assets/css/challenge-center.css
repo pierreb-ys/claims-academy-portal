@@ -1,4 +1,27 @@
 /* ============ challenge-center  ============ */
 
 .ChallengeCenter { padding-top: 20px;} 
- 
+  .more-link ,  .more-link:hover { color:#f68d35; text-decoration: none;}
+
+  .points-award label, .level-phase  label { display: block; font-weight: bold;}
+  .points-award > div , .level-phase > div{ display: inline-block; vertical-align: middle; width:48%; }
+  .points-award  .points {
+    background: #009e0f;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.award { font-size:36px;  color: #a64e79;}
+
+.ChallengeCenter .scrollbar { overflow: auto;  overflow-x: hidden;  height: 400px;}
+
+
