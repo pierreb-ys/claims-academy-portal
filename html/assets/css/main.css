@@ -738,6 +738,7 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
 
 /* Create Assign  Text Task, Add  Text Task , Outlook Calender buttons... */ 
 
+button.assign-to-btn,
 button.view-course-btn ,
 button.reg-act-btn , 
 button.add-learning-dairy-btn , 
@@ -745,6 +746,7 @@ button.create-task-btn  ,
 button.add-text-task-btn   ,
 button.outlook-cal-btn    {   width:auto; }
 
+button.assign-to-btn .fa,
 button.view-course-btn .fa,
 button.reg-act-btn .fa, 
 button.add-learning-dairy-btn .fa, 
@@ -752,6 +754,7 @@ button.create-task-btn  .fa ,
 button.add-text-task-btn  .fa ,
 button.outlook-cal-btn  .fa { margin:2px }
 
+.assign-to-btn span,
 .view-course-btn span,
 .reg-act-btn span, 
 .add-learning-dairy-btn span,
@@ -764,7 +767,9 @@ button.outlook-cal-btn  .fa { margin:2px }
     vertical-align: middle;
     top: -7px;
     margin-left: 10px;
+    line-height: normal;
 } 
+.assign-to-btn span { top:0;}
  
 .reg-act-btn  small {
   display: block;
@@ -802,6 +807,7 @@ section.task-list button { padding:0px 5px}
   padding-right: 30px;
   width: 150px;
   padding: 5px;
+  margin-bottom: 0;
 }
 .calendar-input i {
   color: #fff;
@@ -816,7 +822,7 @@ section.task-list button { padding:0px 5px}
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 10px;
+  bottom: 0;
   width: 35px;
   content: "";
   z-index: 0;
@@ -824,8 +830,14 @@ section.task-list button { padding:0px 5px}
 }
 /* Date Range */
 
+.dateRange   {
+  padding-top: 5px;
+}
 .dateRange .calendar-input input {font-size: 12px;  width: 100px;  }
 
+.dateRange .calendar-input {
+  margin-bottom: 2px;
+}
 .dateRange {
   min-width: 130px;
 }
@@ -865,7 +877,7 @@ section.task-list button { padding:0px 5px}
     .responsive-table { overflow: auto; } 
 }
     
-
+.table th { line-height: normal;}
 /* Task type icon */
 
 .task-type-icon i.fa { font-size: 30px; display: inline-block; vertical-align: middle; margin-right: 5px; }
