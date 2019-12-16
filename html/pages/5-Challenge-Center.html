@@ -124,18 +124,18 @@
 <!-- --- VIDEO SHOWCASE --- -->
 <div class="container-fluid">
     
-        <section class="videoShowcase"> 
+        <section class="videoShowcase flashShowCase"> 
             
             <h2 class="title">Introduction the challenge center</h2>
     
             <div class="videoShowcase-content">
                 <div class="row"> 
     
-                    <div class="col-md-6  ">   
+                    <div class="col-md-5  ">   
                         <div class="video-frame"><img class="" src="../assets/img/video-placeholder.png"  ></div>
                     </div>
     
-                    <div class="col-md-6 ">  
+                    <div class="col-md-7 ">  
                     <div class="showcase-content"> 
                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
                        <p>
@@ -154,237 +154,324 @@
     
     <!-- --- SEARCH Challenge Center --- -->
     <div class="container-fluid">
-         
         
-                <div class="search-content">
-                    <div class="row"> 
-        
-                        <div class="col-md-3 search-box ">   
-                            <input class="form-control search-input" type="search" placeholder="Search Challenge title" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                            <button class="btn search-btn">Search</button>
-                        </div>
-        
-                        <div class="col-md-7 filter-box">  
-                            <select id="allSchools" name="allSchools"> 
-                                <option value="ALL">All LOBs/ Schools</option>
-                                <option value="CBI">Casualty/BI(Bodily Injury)</option>
-                                <option value="PIP">PIP (Personal Injury Protection)</option>
-                                <option value="APD">APD (Auto Physical Damage)</option>
-                                <option value="PTY">Property</option>
-                                <option value="SS">Shared Services</option>
-                            </select> 
-        
-                            <select id="allSubSchools" name="allSubSchools"> 
-                                <option>All Sub-Schools</option>
-                                <option>Pre Litigation</option>
-                                <option>Litigation(Casualty/BI)</option>
-    
-                                <option>Michigan PIP</option>
-                                <option>Regional PIP</option>
-                                <option>Regional MedPay</option>
-                                <option>Insurance Claims 101</option>
-    
-                                <option>Quick Claim/APD</option>
-    
-                                <option>Quick Claim/Property</option>
-                                <option>CAT(Catastrophe)</option>
-                                <option>Desk</option>
-                                <option>Field</option>
-                                <option>Commercial</option>
-                                <option>Litigation(Property)</option> 
-                            </select> 
-    
-                            <select id="phase" name="phase">
-                                <option>Phase</option>
-                                <option>Customer Service</option>
-                                <option>Coverage</option>
-                                <option>Investigation</option>
-                                <option>Evaluation</option>
-                                <option>Settlement/Nagotiatioin</option>
-                                <option>Reserve</option>
-                                <option>File Management</option>
-                                <option>Recovery</option>
-                                <option>Fraud</option>
-                                <option>Compliance</option>
-                                <option>Litigation Management</option>
-                                <option>Vendor Management</option> 
-                            </select>
-    
-                            <select id="myManager" name="myManager">
-                                    <option>My Manager</option> 
-                                    <option>All Challenges</option>
-                            </select>
-    
-                            <select id="anyReleaseDate" name="anyReleaseDate">
-                                <option>Any Release Date</option>
-                                <option value="">Future Release</option>
-                                <option value="">Recently Added</option>
-                                <option value="">Available Now</option> 
-                            </select>
-    
-                           
-
-
-    
-                    </div>
-        
-                    <div class="col-md-2  ">  
-        <!-- buttons List start -->
-        <div class="button-grp">
-                    <button class="btn purple full" type="submit"><i class="fa fa-plus-circle"></i> Add Challenge </button> 
-                </div>
-                <!-- buttons List end -->
-                                  </div>
-                                
-                        
-                    </div>
-                </div>  
-                  
+        <section class="search"> 
             
-        </div>
+            <h2 class="title">Search Challenge</h2>
+    
+            <div class="search-content">
+                <div class="row"> 
+    
+                    <div class="col-md-3 search-box ">   
+                        <input class="form-control search-input" type="search" placeholder="Search Challenge" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                        <button class="btn search-btn">Search</button>
+                    </div>
+    
+                    <div class="col-md-7 ">  
+                        <select id="allSchools" name="allSchools"> 
+                            <option value="ALL">All Schools</option>
+                            <option value="CBI">Casualty/BI(Bodily Injury)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+                            <option value="APD">APD (Auto Physical Damage)</option>
+                            <option value="PTY">Property</option>
+                            <option value="SS">Shared Services</option>
+                        </select> 
+    
+                        <select id="allSubSchools" name="allSubSchools"> 
+                            <option>All Sub-Schools</option>
+                            <option>Pre Litigation</option>
+                            <option>Litigation(Casualty/BI)</option>
+
+                            <option>Michigan PIP</option>
+                            <option>Regional PIP</option>
+                            <option>Regional MedPay</option>
+                            <option>Insurance Claims 101</option>
+
+                            <option>Quick Claim/APD</option>
+
+                            <option>Quick Claim/Property</option>
+                            <option>CAT(Catastrophe)</option>
+                            <option>Desk</option>
+                            <option>Field</option>
+                            <option>Commercial</option>
+                            <option>Litigation(Property)</option> 
+                        </select> 
+                        
+                        <select id="allVersions" name="allVersions">
+                            <option>All Versions</option>
+                            <option>Active Versions</option> 
+                          
+                    </select>
+
+                        <select id="phase" name="phase">
+                            <option>Phase</option>
+                            <option>Customer Service</option>
+                            <option>Coverage</option>
+                            <option>Investigation</option>
+                            <option>Evaluation</option>
+                            <option>Settlement/Nagotiatioin</option>
+                            <option>Reserve</option>
+                            <option>File Management</option>
+                            <option>Recovery</option>
+                            <option>Fraud</option>
+                            <option>Compliance</option>
+                            <option>Litigation Management</option>
+                            <option>Vendor Management</option> 
+                        </select>
+
+                   
+
+                        <select id="anyReleaseDate" name="anyReleaseDate">
+                            <option>Any Release Date</option>
+                            <option value="">Future Release</option>
+                            <option value="">Recently Added</option>
+                            <option value="">Available Now</option> 
+                        </select>
+
+                        <select id="myManager" name="myManager">
+                            <option>My Manager</option> 
+                            <option>All Challenges</option>
+                    </select>
+
+                </div>
+    
+                <div class="col-md-2 ">  
+    <!-- buttons List start -->
+    <div class="button-list">
+                <button class="btn purple full" type="submit"><i class="fa fa-plus-circle"></i> Add Challenge </button> 
+            </div>
+            <!-- buttons List end -->
+                              </div>
+                            
+                    
+                </div>
+            </div>  
+             
+        </section>
         
+    </div> 
     
                 <!-- --- Challenge Center --- -->
                 <div class="container-fluid ChallengeCenter">
-                    <section class="contentarea">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="scrollbar">
-                                        <div class="responsive-table">
-                                                <table id="ChallengeCenter" class="table table-striped table-bordered" style="width:100%">
-                                                    <colgroup width="25%">
-                                                        <colgroup width="25%"> 
-                                                        <colgroup width="30%"> 
-                                                           <colgroup width="20%">
-                                                                                    </colgroup>
-                        
-                                                                                    <!--Learners Table row Head -->
-                                                                                    <thead>
-                                                                                        <tr> 
-                                                                                            <th></th> 
-                                                                                            <th  >Title   <select id="anyReleaseDate" name="anyReleaseDate">
-                                                                                                    <option> Version</option>
-                                                                                                      <option>Active Versions</option>
-                                                                                                    <option value="">All Versions</option>
-                                                                                                       </select></th>
-                                                                                            <th  >Description </th>
-                                                                                            <th  >Release Date</th>   
-                                                                                        </tr>
-                                                                                    </thead>
-                        
-                                                                                    <tbody>
-                                                                                        <!--  Table dynamic data row    -->
-                                                                                        <tr> 
-                                                                                            <td> <img class="" src="../assets/img/flash.png" width="250"> </td> 
-                                                                                            <td >
-                                                                                                    Integer pharetra quam vitae
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                    nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est,
-                                                                                                    <div class="level-phase">
-                                                                                                        <div class="level">
-                                                                                                                <label>Level</label>
-                                                                                                                1
-                                                                                                        </div>
-                                                                                                         <div class="phase">
-                                                                                                                <label>Phase</label>
-                                                                                                                Recovery
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                9/22/2019 
-                                                                                               
-                                                                                                <div class="points-award">
-                                                                                                        <label>Award</label>
-                                                                                                    <div class="points">29</div>
-                                                                                                    <div class="award"><i class="fa fa-anchor"></i></div>
-                                                                                                </div>
-                                                                                            </td>
-                                                                                                 </tr>
-                        
-                                                                                        <!--  Table dynamic data row    -->
-                                                                                        <tr> 
-                                                                                                <td> <img class="" src="../assets/img/flash.png" width="250"> </td> 
-                                                                                                <td >
-                                                                                                        Integer pharetra quam vitae
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                        nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est,
-                                                                                                        <div class="level-phase">
-                                                                                                            <div class="level">
-                                                                                                                    <label>Level</label>
-                                                                                                                    2
-                                                                                                            </div>
-                                                                                                             <div class="phase">
-                                                                                                                    <label>Phase</label>
-                                                                                                                    Investigation
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                    9/22/2019 
-                                                                                                   
-                                                                                                    <div class="points-award">
-                                                                                                            <label>Award</label>
-                                                                                                        <div class="points">29</div>
-                                                                                                        <div class="award"><i class="fa fa-anchor"></i></div>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                     </tr>
-                        
-                                                                                        <!--  Table dynamic data row    -->
-                                                                                        <tr> 
-                                                                                                <td> <img class="" src="../assets/img/flash.png" width="250"> </td> 
-                                                                                                <td >
-                                                                                                        Integer pharetra quam vitae
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                        nulla ultricies congue. Vivamus quis sodales mi. Vestibulum nibh est,
-                                                                                                        <div class="level-phase">
-                                                                                                            <div class="level">
-                                                                                                                    <label>Level</label>
-                                                                                                                    3
-                                                                                                            </div>
-                                                                                                             <div class="phase">
-                                                                                                                    <label>Phase</label>
-                                                                                                                    Customer Service
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        
-                                                                                                </td>
-                                                                                                <td>
-                                                                                                    9/22/2019 
-                                                                                                   
-                                                                                                    <div class="points-award">
-                                                                                                            <label>Award</label>
-                                                                                                        <div class="points">29</div>
-                                                                                                        <div class="award"><i class="fa fa-anchor"></i></div>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                                     </tr>
-                         
-                                                                                    </tbody> 
-                                                </table>
-                                            </div>
-                                </div> 
-                            </div>
-                        </div>
-            
-                    </section>
-            
+              
                 </div>
             
-                <script>
-                    var table = $('#ChallengeCenter').DataTable({
-                        "searching": false,
-                        "lengthChange": false,
-                        "paging": false,
-                        "info": false, 
-                    });
-                </script>
+                
+    <!-- --- VIDEOS ADMIN --- -->
+    
+     
+    <div class="container-fluid"> 
+        <!-- --- School / Sub-School  start --- -->
+        <section class="contentarea    ">  
+            <h2 class="title">School / Sub-School</h2>  
+            <div class="content-wrap scroller one"> 
+                <div class="row">
+                   <!-- --- Flash Thumb Frame start --- -->
+                   <div class="col-sm-4">   
+                    <aside class="flash-thumb-frame " >                      
+                        <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                        <div class="flash-thumb-content">  
+                            
+                                                <h3>Auto Insurance Basics Challenge</h3>   
+                                                <p>Released:06/30/2018</p> 
+                             </div>                            
+                    </aside>   
+                </div>
+                <!-- --- Flash Thumb Frame end --- -->
+                
+                <!-- --- Flash Thumb Frame start --- -->
+                <div class="col-sm-4">   
+                    <aside class="flash-thumb-frame " >                      
+                        <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                        <div class="flash-thumb-content">  
+                            
+                                                <h3>Client Satisfaction Challenge</h3>   
+                                                <p>Released:12/12/2019</p> 
+                             </div>                            
+                    </aside>   
+                </div>
+                <!-- --- Flash Thumb Frame end --- -->
+
+                 <!-- --- Flash Thumb Frame start --- -->
+                 <div class="col-sm-4">   
+                    <aside class="flash-thumb-frame " >                      
+                        <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                        <div class="flash-thumb-content">  
+                            
+                                                <h3>Another Great Challenge</h3>   
+                                                <p>Released:12/12/2019</p> 
+                             </div>                            
+                    </aside>   
+                </div>
+                <!-- --- Flash Thumb Frame end --- -->
+                 <!-- --- Flash Thumb Frame start --- -->
+                 <div class="col-sm-4">   
+                    <aside class="flash-thumb-frame " >                      
+                        <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                        <div class="flash-thumb-content">  
+                            
+                                                <h3>Auto Insurance Basics Challenge</h3>   
+                                                <p>Released:06/30/2018</p> 
+                             </div>                            
+                    </aside>   
+                </div>
+                <!-- --- Flash Thumb Frame end --- -->
+                
+                <!-- --- Flash Thumb Frame start --- -->
+                <div class="col-sm-4">   
+                    <aside class="flash-thumb-frame " >                      
+                        <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                        <div class="flash-thumb-content">  
+                            
+                                                <h3>Client Satisfaction Challenge</h3>   
+                                                <p>Released:12/12/2019</p> 
+                             </div>                            
+                    </aside>   
+                </div>
+                <!-- --- Flash Thumb Frame end --- -->
+
+                 <!-- --- Flash Thumb Frame start --- -->
+                 <div class="col-sm-4">   
+                    <aside class="flash-thumb-frame " >                      
+                        <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                        <div class="flash-thumb-content">  
+                            
+                                                <h3>Another Great Challenge</h3>   
+                                                <p>Released:12/12/2019</p> 
+                             </div>                            
+                    </aside>   
+                </div>
+                <!-- --- Flash Thumb Frame end --- -->
+                            
+                </div>
+            </div>
+    
+              <!-- --- pagination start --- -->
+              <div class="pagination-section" >
+                    <div class="row"><div class="col-sm-12 col-md-5">
+                        <div class="dataTables_info" id="school_info" role="status" aria-live="polite">Showing 1 to 4 of 4 entries</div></div><div class="col-sm-12 col-md-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="school_paginate">
+                                <ul class="pagination">
+                                    <li class="paginate_button page-item previous disabled" id="school_previous">
+                                    <a href="#" aria-controls="school" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                                </li>
+                                <li class="paginate_button page-item active">
+                                    <a href="#" aria-controls="school" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                </li>
+                                <li class="paginate_button page-item next disabled" id="schoolnext">
+                                    <a href="#" aria-controls="school" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+                                </li>
+                            </ul></div></div></div>
+            </div>
+            <!-- --- pagination end --- -->
+
+            <h2 class="title">Inactive</h2>  
+            <div class="content-wrap scroller one"> 
+                <div class="row">
+                    <!-- --- Flash Thumb Frame start --- -->
+                    <div class="col-sm-4">   
+                        <aside class="flash-thumb-frame disabled" >                      
+                            <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                            <div class="flash-thumb-content">  
+                                
+                                                    <h3>Auto Insurance Basics Challenge</h3>   
+                                                    <p>Released:06/30/2018</p> 
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Flash Thumb Frame end --- -->
+                    
+                    <!-- --- Flash Thumb Frame start --- -->
+                    <div class="col-sm-4">   
+                        <aside class="flash-thumb-frame disabled" >                      
+                            <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                            <div class="flash-thumb-content">  
+                                
+                                                    <h3>Client Satisfaction Challenge</h3>   
+                                                    <p>Released:12/12/2019</p> 
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Flash Thumb Frame end --- -->
+
+                     <!-- --- Flash Thumb Frame start --- -->
+                     <div class="col-sm-4">   
+                        <aside class="flash-thumb-frame disabled" >                      
+                            <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                            <div class="flash-thumb-content">  
+                                
+                                                    <h3>Another Great Challenge</h3>   
+                                                    <p>Released:12/12/2019</p> 
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Flash Thumb Frame end --- -->
+                      <!-- --- Flash Thumb Frame start --- -->
+                      <div class="col-sm-4">   
+                        <aside class="flash-thumb-frame disabled" >                      
+                            <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                            <div class="flash-thumb-content">  
+                                
+                                                    <h3>Auto Insurance Basics Challenge</h3>   
+                                                    <p>Released:06/30/2018</p> 
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Flash Thumb Frame end --- -->
+                    
+                    <!-- --- Flash Thumb Frame start --- -->
+                    <div class="col-sm-4">   
+                        <aside class="flash-thumb-frame disabled" >                      
+                            <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                            <div class="flash-thumb-content">  
+                                
+                                                    <h3>Client Satisfaction Challenge</h3>   
+                                                    <p>Released:12/12/2019</p> 
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Flash Thumb Frame end --- -->
+
+                     <!-- --- Flash Thumb Frame start --- -->
+                     <div class="col-sm-4">   
+                        <aside class="flash-thumb-frame disabled" >                      
+                            <div class="flash-thumb">  <img  src="../assets/img/flash.png" ></div>
+                            <div class="flash-thumb-content">  
+                                
+                                                    <h3>Another Great Challenge</h3>   
+                                                    <p>Released:12/12/2019</p> 
+                                 </div>                            
+                        </aside>   
+                    </div>
+                    <!-- --- Flash Thumb Frame end --- -->
+                </div>
+            </div>
+    
+              <!-- --- pagination start --- -->
+              <div class="pagination-section" >
+                    <div class="row"><div class="col-sm-12 col-md-5">
+                        <div class="dataTables_info" id="school_info" role="status" aria-live="polite">Showing 1 to 4 of 4 entries</div></div><div class="col-sm-12 col-md-7">
+                            <div class="dataTables_paginate paging_simple_numbers" id="school_paginate">
+                                <ul class="pagination">
+                                    <li class="paginate_button page-item previous disabled" id="school_previous">
+                                    <a href="#" aria-controls="school" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                                </li>
+                                <li class="paginate_button page-item active">
+                                    <a href="#" aria-controls="school" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                </li>
+                                <li class="paginate_button page-item next disabled" id="schoolnext">
+                                    <a href="#" aria-controls="school" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+                                </li>
+                            </ul></div></div></div>
+            </div>
+            <!-- --- pagination end --- -->
+            
+        </section>
+        <!-- --- School / Sub-School  end --- -->
+     
+        
+    </div>
+      
 </body>
 
 </html>

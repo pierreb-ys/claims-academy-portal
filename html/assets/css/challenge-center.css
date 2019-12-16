@@ -22,6 +22,72 @@
 }
 .award { font-size:36px;  color: #a64e79;}
 
-.ChallengeCenter .scrollbar { overflow: auto;  overflow-x: hidden;  height: 400px;}
+.ChallengeCenter .scrollbar { overflow: auto;  overflow-x: hidden;  height: 400px;  }
 
 
+
+.flash-frame img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+aside.flash-thumb-frame {
+  background: #0c3859;
+  border-radius: 5px;
+  color: #fff;
+  overflow: hidden;
+  margin: 20px 0;
+  cursor: pointer;
+  
+}  
+aside.flash-thumb-frame:hover h3 { text-decoration: none;}
+aside.flash-thumb-frame:hover .flash-thumb img  { opacity:.6 ;   } 
+
+
+aside.flash-thumb-frame .flash-thumb-content {
+  padding: 10px 20px;
+}
+
+aside.flash-thumb-frame.disabled  .flash-thumb {
+  opacity: .4;
+}
+
+aside.flash-thumb-frame .flash-thumb {
+  background: #fff;
+}
+aside.flash-thumb-frame .flash-thumb   img {
+  width: 100%;
+}
+aside.flash-thumb-frame .flash-thumb-content h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+aside.flash-thumb-frame .flash-thumb-content h4 { 
+  font-size: 16px;
+  color:#f68d35;
+  font-weight: bold; 
+} 
+aside.flash-thumb-frame .flash-thumb-content p { 
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (min-width:767px){ 
+  aside.flash-thumb-frame .flash-thumb-content div[class*='col'] {
+  padding-right: 10px;
+}
+} 
+
+@media (max-width:767px){ 
+  aside.flash-thumb-frame .flash-thumb-content img.icon { 
+      width: 30px;
+  }
+} 
+
+
+section.videoShowcase.flashShowCase .videoShowcase-content .showcase-content{
+  padding: 10px 20px;    
+}
