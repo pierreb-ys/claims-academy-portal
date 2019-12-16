@@ -1,0 +1,15 @@
+ /* ============ TOOLS PAGE ============ */
+
+ .tools-details .resource-links-list h4 { clear: both;}
+
+ .tools-details  .resource-links-list ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.tools-details .scrollbar { overflow-x: hidden; overflow-y: auto; height: 200px; margin-bottom: 20px;}
+
+  
+
+.window.tools-details .resource-links-list .delete {position: relative;}

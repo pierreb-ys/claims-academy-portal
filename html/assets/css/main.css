@@ -18,6 +18,7 @@
 @import url("clubs.css"); 
 @import url("leaderboards.css");  
 @import url("challenge-center.css");  
+@import url("tools.css");  
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -554,7 +555,7 @@ section.search select  {
       width: 255px; 
       float: none;
       display: block;
-      max-width: 150%;
+      max-width: 100%;
       margin-top: 10px;
       margin-bottom: 10px;
   }
