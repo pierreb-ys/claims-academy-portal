@@ -51,20 +51,22 @@
         <form> 
     
             <div class="container-fluid ">
-               
-                <!-- Select Course -->
-                <section class="row select-course  ">
+                <div class="form">
+
+            
+                <div class="row   ">
                     <div class="col-md-4 "> 
                     Select Link Type and School and, optionally, Phase using fields at right:
                     </div>
-                    <div class="col-md-8 "> 
-                        <select id="allSchools" name="allSchools"> 
+                    <div class="col-md-8 "> <span class="req">*</span>
+                        <select id="allSchools" class="" name="allSchools"> 
                             <option value="ALL">All Schools</option>
                             <option value="CBI">Casualty/BI(Bodily Injury)</option>
                             <option value="PIP">PIP (Personal Injury Protection)</option>
                             <option value="APD">APD (Auto Physical Damage)</option>
                             <option value="PTY">Property</option> 
                         </select>
+                        <span class="req">*</span>
                         <select id="resourceType" name="resourceType"> 
                             <option value="ALL">All Resource Types</option> 
                             <option value="RS">Resource Type</option>
@@ -91,185 +93,244 @@
                     </div>
       
     
-                </section>
+                </div>
          
                 <div class="row "> 
                     <div class="col-md-12"> 
-                        <h3>My Reference Links                        </h3>
-                       
-                        
-                           <!--   Resource links List  Start -->
-                           <section class="  resource-links-list">  
-                            <div class="row">
-                                <div class="col-2">Delete</div>
-                                <div class="col-5"><strong>Resource Title/Links</strong>  </div>
-                                <div class="col-5"><strong>Resource Title/Links</strong>  </div>
-                            </div>
-                            <div class="scrollbar">
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 1 Title ></div>
-                                <div class="col-5">< Resource 1 Title ></div>
-                            </div> 
-                             <!--   Resource link   End -->
-                            <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 2 Title ></div>
-                                <div class="col-5">< Resource 2 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 3 Title ></div>
-                                <div class="col-5">< Resource 3 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 4 Title ></div>
-                                <div class="col-5">< Resource 4 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                              <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 5 Title ></div>
-                                <div class="col-5">< Resource 5 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                               <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 6 Title ></div>
-                                <div class="col-5">< Resource 6 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                                <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 7 Title ></div>
-                                <div class="col-5">< Resource 7 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 8 Title ></div>
-                                <div class="col-5">< Resource 8 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 9 Title ></div>
-                                <div class="col-5">< Resource 9 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                              <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><span class="delete"></span></div>
-                                <div class="col-5">< Resource 10 Title ></div>
-                                <div class="col-5">< Resource 10 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                            </div>
-                            <div class="row"> 
-                                <div class="col-6">
-                                    <div class=" search-box  inline ">  
-                                        <input class="form-control search-input" type="search" size="35" placeholder="Search resource titles and links" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                                         
-                                    </div>  </div> 
-                            </div>
-                            <div class="row"> 
-                                <div class="col-6"> <h3>Additional   Available   Reference Links                         </h3>  </div>
-                                <div class="col-6"> <button class="btn purple   "> <i class="fa fa-arrow-up" aria-hidden="true"></i>  Add to My Resource Link</button> </div>
-                            </div>
-                            <h3>                      </h3>  
-                             <div class="row">
-                                <div class="col-2">Select</div>
-                                <div class="col-5"><strong>Resource Title/Links</strong>  </div>
-                                <div class="col-5"><strong>Resource Title/Links</strong>  </div>
-                            </div>
-                            <div class="scrollbar">
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox" checked> </div>
-                                <div class="col-5">< Resource 1 Title ></div>
-                                <div class="col-5">< Resource 1 Title ></div>
-                            </div> 
-                             <!--   Resource link   End -->
-                            <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 2 Title ></div>
-                                <div class="col-5">< Resource 2 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 3 Title ></div>
-                                <div class="col-5">< Resource 3 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 4 Title ></div>
-                                <div class="col-5">< Resource 4 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                              <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 5 Title ></div>
-                                <div class="col-5">< Resource 5 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                               <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 6 Title ></div>
-                                <div class="col-5">< Resource 6 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                                <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 7 Title ></div>
-                                <div class="col-5">< Resource 7 Title ></div>
-                            </div>
-                             <!--   Resource link   End --> 
-                              <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 8 Title ></div>
-                                <div class="col-5">< Resource 8 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                             <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 9 Title ></div>
-                                <div class="col-5">< Resource 9 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                              <!--   Resource link  Start -->
-                            <div class="row">
-                                <div class="col-2"><input type="checkbox"> </div>
-                                <div class="col-5">< Resource 10 Title ></div>
-                                <div class="col-5">< Resource 10 Title ></div>
-                            </div>
-                             <!--   Resource link   End -->
-                            </div> 
-                        </section>
-                         <!--   Resource links List  End -->
+                      Click  <button class="btn purple   ">   Select Resource to Highlight</button> <input type="text" class="form-control inline" size="100" placeholder="(Title associated with the selected resource appears here after selection)">
+                      <br><input type="text" class="form-control inline" placeholder="Type or paste What's New announcement text here (100)"  size="100"> 
                   </div>
-            </div>       
+            </div>   
+            <div class="row "> 
+                <div class="col-md-4"> 
+                    Specify expiration by date  <div class="calendar-input">
+                        <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
+                    </div>
+                </div>
+                    <div class="col-md-8"> 
+                        or duration (days)   <select id="duration" name="duration">
+                            <option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                            <option>30</option>  
+                        </select>
+                    </div>
+              </div>
+
+              
+            <div class="row "> 
+                <div class="col-md-4"> 
+                   Required  <span class="req">*</span>
+                </div>
+                    <div class="col-md-8"> 
+                        <button class="btn blue"><i class="fa fa-angle-left"></i> Back</button> <button class="btn lightGray  "><i class="fa fa-times-circle"></i> Clear</button> <button class="btn purple   "> <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add What's New Link</button> 
+                    </div>
+              </div>
+              <div class="row "> 
+                <div class="col-md-12"> 
+                   &nbsp;
+                </div> 
+              </div>
+              <div class="row "> 
+                <div class="col-md-12"> 
+                    <div class=" search-box inline">   
+                        <input class="form-control search-input" type="search" size="50" placeholder="Search existing What's New announcements and links" aria-describedby="button-addon3">
+                        <button class="btn search-btn">Search</button>
+                </div>
+                </div> 
+              </div>
+
+              <div class="row "> 
+                <div class="col-md-12">   
+                       <!--  Current-  What's New links List  Start -->
+                       <section class="  resource-links-list">  
+                        <div class="row"> 
+                            <div class="col-6"><strong>Currently Active What's News Links</strong>  </div>
+                            <div class="col-3"><strong>School</strong>  </div>
+                            <div class="col-3"><strong>Emd Date</strong>  </div>
+                        </div>
+                        <div class="scrollbar">
+                         <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 02/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 12/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                                     <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                                     <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                                     <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                                     <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                                     <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                        </div>  
+                    </section>
+                     <!-- Current -  What's New links List  End -->
+
+                      <!-- Post -  What's New links List  Start -->
+                      <section class="  resource-links-list">  
+                        <div class="row"> 
+                            <div class="col-6"><strong>Post What's New Links</strong>  </div>
+                            <div class="col-3"><strong>School</strong>  </div>
+                            <div class="col-3"><strong>Emd Date</strong>  </div>
+                        </div>
+                        <div class="scrollbar">
+                         <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 02/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 12/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                                     <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--  Post -  What's New  link   End --> 
+                             <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 12/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                                     <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--  Post -  What's New  link   End --> 
+                                      <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--  Post -  What's New  link   End --> 
+                                      <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> Casualty/BI(Bodily Injury)</div>
+                            <div class="col-3"> 10/12/2019</div>
+                        </div> 
+                         <!--   What's New  link   End --> 
+                           <!--   What's New  link  Start -->
+                        <div class="row"> 
+                            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="col-3"> APD (Auto Physical Damage)</div>
+                            <div class="col-3"> 05/12/2019</div>
+                        </div> 
+                         <!--  Post -  What's New  link   End --> 
+                        </div>  
+                    </section>
+                     <!--   What's New links List  End -->
+              </div>
+        </div>     
+        </div>   
+    </div>
                 
                       
                     </div>

@@ -1,0 +1,17 @@
+ /* ============ What's New Link PAGE ============ */
+
+ .whats-new-details .resource-links-list h4 { clear: both;}
+
+ .whats-new-details  .resource-links-list ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.whats-new-details .resource-links-list .scrollbar { overflow-x: hidden; overflow-y: auto; height: 200px; margin-bottom: 20px;}
+
+.whats-new-details .resource-links-list .scrollbar div[class*='col'] {
+    margin-top: 10px;
+} 
+
+.window.whats-new-details .resource-links-list .delete {position: relative;}

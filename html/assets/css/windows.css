@@ -26,6 +26,11 @@
 .window   .delete { position: absolute; top:0;  right: 0; 
   border: 2px solid #9900ff;    background: #9900ff;    color: #ffffff;}
 
+/* form */
+.window .form { padding: 20px;}
+.window .form input, .window .form select { margin: 10px ; vertical-align: middle;}
+.window .form .calendar-input input {margin:0;}
+
 
 /*  select course */
 .window .select-course .course-type label { display: block; }

@@ -19,6 +19,7 @@
 @import url("leaderboards.css");  
 @import url("challenge-center.css");  
 @import url("tools.css");  
+@import url("whats-new.css");  
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -966,3 +967,9 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
  .guest-user-msg .club h3 { font-size: 18px; font-weight: normal; text-align: center; margin: 50px; }
  
  .guest-user-msg .club { margin: 20px auto;}
+
+ /* form */
+
+ .form-control.inline { display: inline-block;}
+
+ .req { color: #f90 ; font-size: 24px; }

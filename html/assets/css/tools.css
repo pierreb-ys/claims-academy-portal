@@ -10,6 +10,8 @@
 
 .tools-details .scrollbar { overflow-x: hidden; overflow-y: auto; height: 200px; margin-bottom: 20px;}
 
-  
+.tools-details .resource-links-list .scrollbar div[class*='col'] {
+    margin-top: 10px;
+} 
 
 .window.tools-details .resource-links-list .delete {position: relative;}
