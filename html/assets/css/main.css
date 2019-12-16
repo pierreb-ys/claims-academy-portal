@@ -959,3 +959,9 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
   line-height: 32px;
   font-weight: bold;
  } 
+
+ /* guest-user-msg */
+
+ .guest-user-msg .club h3 { font-size: 18px; font-weight: normal; text-align: center; margin: 50px; }
+ 
+ .guest-user-msg .club { margin: 20px auto;}
