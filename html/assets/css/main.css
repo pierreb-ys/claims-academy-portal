@@ -433,9 +433,16 @@ select:focus {
   }
 
   /*  Navigation (Active) */
+  .navbar-nav.nav-pills .active {
+    background-color:   orange;
+    color: white;
+}
   .navbar-nav.nav-pills a.active {
     background-color:   orange;
     color: white;
+}
+.navbar-nav .dropdown-menu { 
+  padding: 0;
 }
 
 /*   button */ 
