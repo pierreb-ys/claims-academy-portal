@@ -100,6 +100,9 @@ div.orange-text p {
   background-color:#93c47d;
 }
 
+
+ 
+
 /* ------------ ------------ LAYOUT ------------ ------------ */
 
 .display-flex {
@@ -696,6 +699,11 @@ section.contentarea .content-wrap {
   background: #87919a !important;
   color:#fff;
 }
+
+.btn.aqua { 
+  background-color:aqua;
+}
+
 
 button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
 
