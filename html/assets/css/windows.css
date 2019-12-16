@@ -188,7 +188,10 @@
   position: absolute;
 }
  
- 
+.window section.task-list section.add-task-form button {
+  position: relative;
+  left: 2px;
+}
  
 .window  section.task-list li {
   padding-left: 55px;
