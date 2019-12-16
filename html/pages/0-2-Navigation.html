@@ -80,7 +80,7 @@
     <!-- Desktop Size and Above -->
     <div class="collapse navbar-collapse justify-content-center centering2" id="navbarNav">
         <ul class="navbar-nav nav nav-pills nav-fill">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="">
                     <span class="navbar-text">
                         <div>
@@ -124,16 +124,21 @@
                         </div>
                     </span>
                 </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">
+            </li> 
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="navbar-text">
                         <div>
                             <p>LEADERBOARDS</p>
                         </div>
                     </span>
                 </a>
-            </li>
+                <ul class="dropdown-menu bg-light-blue" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Learners</a></li>
+                <li><a class="dropdown-item" href="#">Clubs</a></li>
+                <li><a class="dropdown-item" href="#">My Clubs</a></li> 
+                </ul>
+                </li>
             <li class="nav-item">
                 <a class="nav-link" href="">
                     <span class="navbar-text">
@@ -145,7 +150,7 @@
             </li>
         </ul>
     </div>
-    
+
 </nav>
 
 </body>
