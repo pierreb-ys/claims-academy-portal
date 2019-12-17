@@ -468,6 +468,7 @@ select:focus {
 }
 
 
+
 /* close/remove/ window close   button */ 
 
 .close , .delete, .window-close { font-family: "FontAwesome";
@@ -711,6 +712,7 @@ section.contentarea .content-wrap {
   background-color:aqua;
 }
 
+.btn.margin { margin:10px 0 ;}
 
 button[class*='btn'] i { margin-top:0;  margin-left: 2px;}   
 
@@ -847,6 +849,7 @@ section.task-list button { padding:0px 5px}
   z-index: 0;
   border-radius: 0px 5px 5px 0px;
 }
+.calendar-input.margin { margin:10px;}
 /* Date Range */
 
 .dateRange   {

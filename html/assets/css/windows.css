@@ -28,7 +28,7 @@
 
 /* form */
 .window .form { padding: 20px;}
-.window .form input, .window .form select { margin: 10px ; vertical-align: middle;}
+.window .form input, .window .form select { margin: 10px 0 ; vertical-align: middle;}
 .window .form .calendar-input input {margin:0;}
 
 
@@ -420,3 +420,7 @@ small.note {font-size: 11px; color: #333;
   width: auto;
   margin-bottom: 0;
 }
+
+/* Harozental Line */
+
+.window hr { border:none; border-bottom: 1px solid aqua; margin: 30px 0 ; }

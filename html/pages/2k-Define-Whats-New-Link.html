@@ -52,13 +52,17 @@
     
             <div class="container-fluid ">
                 <div class="form">
-
+                    <div class="row "> 
+                        <div class="col-md-12 text-right"> 
+                           Required  <span class="req">*</span>
+                        </div> 
+                      </div>
             
                 <div class="row   ">
-                    <div class="col-md-4 "> 
-                    Select Link Type and School and, optionally, Phase using fields at right:
+                    <div class="col-md-3 "> 
+                  <label><strong> 1. Select Link Type and School and, optionally, Phase using fields at right: </strong></label>
                     </div>
-                    <div class="col-md-8 "> <span class="req">*</span>
+                    <div class="col-md-9 "> <span class="req">*</span>
                         <select id="allSchools" class="" name="allSchools"> 
                             <option value="ALL">All Schools</option>
                             <option value="CBI">Casualty/BI(Bodily Injury)</option>
@@ -96,40 +100,44 @@
                 </div>
          
                 <div class="row "> 
-                    <div class="col-md-12"> 
-                      Click  <button class="btn purple   ">   Select Resource to Highlight</button> <input type="text" class="form-control inline" size="100" placeholder="(Title associated with the selected resource appears here after selection)">
-                      <br><input type="text" class="form-control inline" placeholder="Type or paste What's New announcement text here (100)"  size="100"> 
-                  </div>
+                    <div class="col-md-3 "> 
+                         <button class="btn aqua margin  "> 2. Select Resource to Highlight</button> </div>
+                    
+                    <div class="col-md-9">  
+                         <input type="text" class="form-control inline" size="100" placeholder="(Title associated with the selected resource appears here after selection)">
+                     </div>
             </div>   
+            <div class="row ">  
+                <div class="col-md-12">  
+                       <input type="text" class="form-control inline" placeholder="Type or paste What's New announcement text here (100)"  size="100"> 
+              </div>
+        </div>   
             <div class="row "> 
                 <div class="col-md-4"> 
-                    Specify expiration by date  <div class="calendar-input">
+                    <strong>3. Specify expiration by date </strong> <span class="calendar-input margin">
                         <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
-                    </div>
+                   </span>
                 </div>
-                    <div class="col-md-8"> 
-                        or duration (days)   <select id="duration" name="duration">
-                            <option>5</option>
-                            <option>10</option>
-                            <option>15</option>
-                            <option>20</option>
-                            <option>30</option>  
-                        </select>
-                    </div>
+                <div class="col-md-8"> 
+                     or duration (days)   <select id="duration" name="duration">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>30</option>  
+                    </select>
+                </div> 
               </div>
 
               
-            <div class="row "> 
-                <div class="col-md-4"> 
-                   Required  <span class="req">*</span>
-                </div>
-                    <div class="col-md-8"> 
-                        <button class="btn blue"><i class="fa fa-angle-left"></i> Back</button> <button class="btn lightGray  "><i class="fa fa-times-circle"></i> Clear</button> <button class="btn aqua   "> <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add What's New Link</button> 
+            <div class="row ">  
+                    <div class="col-md-12"> 
+                       <button class="btn aqua   ">4. <i class="fa fa-arrow-down" aria-hidden="true"></i>  Add What's New Link</button>   <button class="btn lightGray  "><i class="fa fa-times-circle"></i> Clear</button> 
                     </div>
               </div>
               <div class="row "> 
                 <div class="col-md-12"> 
-                   &nbsp;
+                <hr>
                 </div> 
               </div>
               <div class="row "> 
