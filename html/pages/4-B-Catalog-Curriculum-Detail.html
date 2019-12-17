@@ -107,8 +107,12 @@
                 <!-- Schools List start -->
                 <section class="row update-schools-list">
                     <div class="col-lg-4">
-                        <select>
-                            <option>School(s) </option>
+                        <select id="schools"> 
+                            <option>LOB/School</option> 
+                            <option>Casualty/BI (Bodily Injury) </option>
+                            <option>PIP (Personal Injury Protection)</option>
+                            <option>APD (Auto Physical Damage)</option>
+                            <option>Property</option>
                         </select>
                         <label>Cosualty/BI <span class="delete"></span></label>
                         <label>PIP <span class="delete"></span></label>
@@ -116,8 +120,16 @@
                         <label>Property <span class="delete"></span></label>
                     </div>
                     <div class="col-lg-4">
-                        <select>
-                            <option>Sub-School(s) </option>
+                        <select id="subSchool">
+                            <option>All Sub-Schools</option> 
+                            <option>Pre Litigation</option>
+                            <option>Litigation (Casualty/BI)</option> 
+                            <option>Michigan PIP</option>
+                            <option>Regional PIP</option>
+                            <option>Regional MedPay</option>
+                            <option>Insurance Claims 101</option>   
+                            <option>Quick Claim/APD</option>        
+                            <option>Quick Claim/Property</option>
                         </select>
                         <label>Quick Claim <span class="delete"></span></label>
                         <label> CAT <span class="delete"></span></label>
@@ -126,8 +138,20 @@
                         <label> Commerical <span class="delete"></span></label>
                     </div>
                     <div class="col-lg-4">
-                        <select>
-                            <option>Phase(s) </option>
+                        <select id="phases">
+                            <option>All Phases</option>
+                            <option>Customer Service</option>
+                            <option>Coverage</option>
+                            <option>Investigation</option>
+                            <option>Evaluation</option>
+                            <option>Settlement/Negotiation</option>
+                            <option>Reserve</option>
+                            <option>File Management</option>
+                            <option>Recovery</option>
+                            <option>Fraud</option>
+                            <option>Compliance</option>
+                            <option>Litigation Management</option>
+                            <option>Vendor Management</option> 
                         </select>
                         <label>Customer Service <span class="delete"></span> </label>
                         <label> Coverage <span class="delete"></span> </label>
