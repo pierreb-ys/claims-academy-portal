@@ -104,5 +104,7 @@
   @media (max-width:1024px){ 
     .responsive-table { overflow: auto; } 
 }
-    
 
+.learning-diary-entry form {padding: 20px;}
+
+.learning-diary-entry .calendar-input {margin-bottom: 10px;}

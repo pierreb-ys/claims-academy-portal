@@ -49,6 +49,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
  
+   <!-- Bootstrap Toggle CSS -->  
+   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>   
+  
     
     
 
@@ -66,7 +70,7 @@
         <!-- Blue Bar -->
         <h2>
             <i class="fa fa-file-text" aria-hidden="true"></i>
-            Text Task Details
+            Text Task  
             <div class="window-close"></div>
         </h2>
     
@@ -77,7 +81,13 @@
                 <section class=" ">
                      <!-- complete start -->
                     <div class="row">
-                        <div class="col-md-12 text-right">
+                        <div class="col-md-3  ">
+                            <label></label>
+                        </div>
+                        <div class="col-md-5  ">
+                            <p> Learner   <input class="btn-sm" type="checkbox" checked data-toggle="toggle" data-on="Can" data-off="Cannot" data-style="ios btn-sm">  mark as complete </p>
+                         </div>
+                        <div class="col-md-4 text-right">
                            <p> <label>Complete
                                 <input type="checkbox"> </label> </p>
                         </div>
@@ -95,17 +105,7 @@
                     </div>
                     <!-- Task Name end -->
 
-                    <!-- Due Date start -->
-                    <div class="row">
-                        <div class="col-md-3  ">
-                            <label>Due Date </label>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="calendar-input">
-                                <input type="text" id="dueDate" name="dueDate" class="form-control" disabled><i class="fa fa-calendar"></i></div>
-                        </div>
-                    </div>
-                    <!-- Due Date end -->
+ 
 
                     <!-- Text Task Description start -->
                     <div class="row">
@@ -113,8 +113,22 @@
                             <label>Text Task Description </label>
                         </div>
                         <div class="col-md-9">
+                            <img src="../assets/img/htmlEditor.PNG" class="float-right">
                             <textarea class="form-control" id="textTaskDsc" name="textTaskDsc" rows="10" disabled> For a Manager-aasigned "text task", the manager descriptin of the assignment goes here in this field which is input-capable only for Managers, (& TCs and Admins). This text can include hyper-text links the same as in the other field used by Learners for Diary entry text
                             </textarea>
+                        </div>
+                    </div>
+                    <!-- Text Task Description end -->
+
+                      <!-- Text Task Description start -->
+                      <div class="row">
+                        <div class="col-md-3  ">
+                          
+                        </div>
+                        <div class="col-md-4">
+                            <div class="button-list">
+                                <button class="btn blue half"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Add</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Text Task Description end -->

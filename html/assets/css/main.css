@@ -988,3 +988,9 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
  .form-control.inline { display: inline-block;}
 
  .req { color: #f90 ; font-size: 24px; }
+
+ /* toggle round style */
+ .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; vertical-align: middle; }
+ .toggle.ios .toggle-handle { border-radius: 20rem; }
+
+ .toggle.btn-sm .btn { padding-top: 0px; padding-bottom: 0px; font-size: 14px; line-height: 24px;}
