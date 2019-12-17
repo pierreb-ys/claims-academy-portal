@@ -53,34 +53,40 @@
             <div class="container-fluid ">
                 <div class="form">
                     <div class="row "> 
-                        <div class="col-md-12 text-right"> 
-                           Required  <span class="req">*</span>
+                        <div class="col-md-12 text-right">  
                         </div> 
                       </div>
             
                 <div class="row   ">
-                    <div class="col-md-3 "> 
-                  <label><strong> 1. Select Link Type and School and, optionally, Phase using fields at right: </strong></label>
+                    <div class="col-md-3 col-lg-2 "> 
+                  <label><strong> 1. Select Link Type and School and, optionally, 
+                      Phase using fields at right: </strong></label><br>
+                    <div class="req text-right">* <small>Required</small>  </div>
                     </div>
-                    <div class="col-md-9 "> <span class="req">*</span>
-                        <select id="allSchools" class="" name="allSchools"> 
-                            <option value="ALL">All Schools</option>
-                            <option value="CBI">Casualty/BI(Bodily Injury)</option>
-                            <option value="PIP">PIP (Personal Injury Protection)</option>
-                            <option value="APD">APD (Auto Physical Damage)</option>
-                            <option value="PTY">Property</option> 
+                    <div class="col-md-9 col-lg-10 "> <span class="req">*</span>
+                        <select id="allSchools" class="" name="allSchools">  
+                            <option>Select Link Type</option>
+                            <option>Course</option>
+                            <option> Curriculum</option>
+                            <option>Video</option>
+                            <option>Challenge</option>
+                            <option disabled>--- Tools Links: -----</option>
+                            <option>Resource Document</option>
+                            <option>Internal ACG Link</option>
+                            <option>External Link</option>
+                            <option>Other</option>
                         </select>
                         <span class="req">*</span>
-                        <select id="resourceType" name="resourceType"> 
-                            <option value="ALL">All Resource Types</option> 
-                            <option value="RS">Resource Type</option>
-                            <option value="D">Document</option>
-                            <option value="IAL">Internal ACG Link</option>
-                            <option value="EL">External Link</option>
-                            <option value="V">Video</option>
+                        <select class="schools"> 
+                            <option>ALl Schools</option> 
+                            <option>Casualty/BI (Bodily Injury) </option>
+                            <option>PIP (Personal Injury Protection)</option>
+                            <option>APD (Auto Physical Damage)</option>
+                            <option>Property</option>
                         </select>
+                        &nbsp;
                         <select id="phase" name="phase">
-                            <option>Phase</option>
+                            <option>All Phases</option>
                             <option>Customer Service</option>
                             <option>Coverage</option>
                             <option>Investigation</option>
@@ -100,10 +106,10 @@
                 </div>
          
                 <div class="row "> 
-                    <div class="col-md-3 "> 
+                    <div class="col-md-3 col-lg-2"> 
                          <button class="btn aqua margin  "> 2. Select Resource to Highlight</button> </div>
                     
-                    <div class="col-md-9">  
+                    <div class="col-md-9 col-lg-10">  
                          <input type="text" class="form-control inline" size="100" placeholder="(Title associated with the selected resource appears here after selection)">
                      </div>
             </div>   
