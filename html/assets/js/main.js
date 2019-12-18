@@ -1,5 +1,5 @@
 $(function () {
-   $('.chosen').chosen();
+ //  $('.chosen').chosen();
 });
 
 $(function () {

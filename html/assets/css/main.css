@@ -294,8 +294,13 @@ h4.wrench-icon {
   margin-bottom: 10px;
 }
 
-select.form-control[multiple] { 
+select[multiple] , select[multiple]:focus{ 
   background-image: none;
+  padding:0;
+
+}
+select[multiple] option:checked{
+  background: transparent );
 }
 
 /* checkbox */
