@@ -98,6 +98,9 @@
  .window  section.update-schools-list {
   margin-top: 20px;
 }
+.window  section.update-schools-list h3 {
+   font-size: 18px;
+}
  .window  .update-schools-list  select { width:100%}
  .window  .update-schools-list label { color:#fff; display: block; position: relative; padding-right: 50px; line-height: normal;     padding-bottom: 10px;}      
 
@@ -107,6 +110,50 @@
 .window  section.update-schools-list strong {
   color: #81bff5;
 }
+div.select-list {
+  height: 135px;
+  overflow: auto;
+  border: 1px solid #778aad;
+  border-radius: 5px;
+  margin-bottom:10px
+}
+.window div.select-list  label {
+  padding: 5px 5px 5px 30px;
+}
+.window .custom-checkbox .custom-control-label::before { 
+  border-color: #073763 !important;
+  background-color: #fff !important;
+}
+
+.window .custom-control-input:checked~.custom-control-label::before {
+  color: #fff !important;  
+ border-color: #fff !important; 
+ background-color: #073763 !important;
+}
+.window .custom-control { 
+  border-bottom: 1px solid #778aad;
+  background: #485f88;
+  padding-left: 0 !important  ;
+}
+
+.window .custom-control:hover , .window .custom-control-input:checked~.custom-control , .window .custom-control-input:checked~.custom-control-label {
+  background: #073763;
+}
+.window .custom-control-label::after { 
+  top: 8px !important;
+  left: 5px !important;
+  display: inline-block !important; 
+} 
+.window .custom-control-label::before { 
+  top: 8px !important;
+  left: 5px !important;
+  display: inline-block !important;   
+  margin-right: 10px;
+}
+input[type="checkbox"].custom-control-input {
+  position: absolute;
+}
+ 
 
  /*   list */ 
  .window  .list  select { width:100%}
@@ -256,8 +303,8 @@ position:absolute;
   height: 21px;
   border-radius: 3px;
 }
-.window input[type="checkbox"]:checked:before { display: none;} 
-.window input[type="checkbox"]:checked:after  { content: "\f046"; color:white;}
+.window input[type="checkbox"]:checked:before { display:  ;} 
+.window input[type="checkbox"]:checked:before  { content: "\f14a"; color:white;}
 .window section.task-list li .dsc {
     display: inline-block;
     vertical-align: top;
