@@ -46,15 +46,13 @@
 <body>
     
     <!-- -->
-    <section class="window learning-diary-entry">
+    <section class="window">
 
         <!-- Top Blue Bar -->
-        <h2>
-            <i class="fa fa-file-text" aria-hidden="true"></i>
-            Text Task Details
-            <div class="window-close"></div>
-        </h2>
-    
+        <div class="bg-red">
+        <h2 class="bg-red"><i class="fa fa-file-text" aria-hidden="true"></i>Task Out of Sequence - Error<div class="window-close"></div></h2>
+        </div>
+
         <!-- Content -->
         <div class="container-fluid">
 
@@ -64,7 +62,7 @@
 
                     <!-- Complete -->
                     <div class="row">
-                        <div class="col-md-12 text-right">
+                        <div class="col-md-12 text-right padding-top-12">
                            <p><label>Complete <input type="checkbox"></label></p>
                         </div>
                     </div>
@@ -77,7 +75,7 @@
                         </div>
 
                         <div class="col-md-9">
-                            <input type="text" id="taskName" name="taskName" class="form-control" value="Cliams team intro" disabled>
+                            <input type="text" id="taskName" name="taskName" class="form-control" value="Claims team intro" disabled>
                         </div>
 
                     </div>
@@ -97,7 +95,7 @@
                     </div>
 
                     <!-- Text Task Description -->
-                    <div class="row">
+                    <div class="row padding-top-12">
 
                         <div class="col-md-3 ">
                             <label>Text Task Description</label>
@@ -115,6 +113,8 @@
             </form>
     
         </div>
+
+        <br />
     
     </section>
 
