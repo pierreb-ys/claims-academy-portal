@@ -15,11 +15,19 @@
 .window  h2 i.fa { margin-right: 10px;; }
 .window  .btn.blue .fa { color:#fff}  
 
+.window h2.bg-red {
+  background: red;
+  color: black;
+}
 
 .window  h2 .close {
     position: absolute;
     right: 10px;
     top: 7px;
+} 
+
+.close-red {
+  color: black;
 } 
 
 

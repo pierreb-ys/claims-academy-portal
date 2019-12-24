@@ -3,158 +3,187 @@
 
 <head>
 
-<!-- Responsive Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
     <meta charset="utf-8">
 
     <title>ACG</title>
 
-<!-- Links -->
-
-<!-- Bootstrap CSS -->
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    
-
-<!-- Custom CSS Inserted Here-->
+    <!-- CSS -->
+    <!-- Bootstrap -->    
     <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
  
-     
-    
-<!-- font Awesome CSS -->
+    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
-<!-- * Custom CSS Inserted Here -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
 
-    <!-- Bootstrap DataTable CSS -->  
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
-
-<!-- common CSS Inserted Here-->
-<link rel="stylesheet" href="../assets/css/common.css">
-
- <!-- learners CSS Inserted Here-->
- <link rel="stylesheet" href="../assets/css/learners.css">
-
-<!-- JavaScript -->
-
-<!-- jQuery -->
+    <!-- JS -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<!-- Popper.js -->
+    <!-- Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-<!-- Bootstrap JS -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
- 
-    
-    
+    <!-- Chosen.js -->  
+    <link rel="stylesheet" href="../assets/js/chosen-js/chosen.min.css">  
+    <script src="../assets/js/chosen-js/chosen.jquery.min.js" type="text/javascript"></script>
 
-<!-- Custom JS -->
+    <!-- Moment.js -->
+    <script type="text/javascript" src="../assets/js/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="../assets/js/main.js"></script>
+
+    <!-- Summernote -->
+    <link href="../assets/css/summernote-bs4.css" rel="stylesheet">
+    <script src="../assets/js/summernote-bs4.js"></script>
+
+    <!-- Datepicker -->
+    <script src="../assets/js/jquery.datetimepicker.js"></script>
 
 </head>
 
 <body>
-    
-  <!-- --- LEARNING DIARY ENTRY - MY LEARNING DIARY   --- -->
+ 
+<!-- Template: Modal Pop-Up -->
+<section class="window newsfeed-post">
 
-<section class="window learning-diary-entry">
+    <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i> Template: Modal Pop-Up <div class="window-close"></div></h2>
 
-        <!-- Blue Bar -->
-        <h2>
-            <i class="fa fa-book" aria-hidden="true"></i>
-            Learning Diary Entry  
-            <div class="window-close"></div>
-        </h2>
-    
-        <!-- Content -->
-        <div class="container-fluid ">
+    <div class="container-fluid ">
+
+        <section class="content-area">
+
             <form>
-                <!-- form -->
-                <section class="form">
-                       <!-- complete start -->
-                    <div class="row">  
-                        <div class="col-md-12 text-right">
-                                <p>     <button class="btn red  "><i class="fa fa-close"></i> Delete Diary Entry</button> &nbsp; <label>Complete
-                                <input type="checkbox"> </label> </p>
-                        </div>
-                        
-                    </div> 
-                    <!-- complete end -->
-                        
 
-                     <!-- Task Name start -->
-                    <div class="row">
-                        <div class="col-md-3  ">
-                            <label>Task Name </label>
-                        </div>
-                        <div class="col-md-9">
-                            <input type="text" id="taskName" name="taskName" class="form-control" value="Cliams team intro"  >
-                        </div>
+                <!-- Drop-Down: Multi-Select -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <label>Drop-Down: Multi-Select</label>
                     </div>
-                     <!-- Task Name end -->
 
-                     <!-- Due Date start -->
-                    <div class="row">
-                        <div class="col-md-3  ">
-                            <label>Due Date </label>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="calendar-input">
-                                <input type="text" id="dueDate" name="dueDate" class="form-control"  ><i class="fa fa-calendar"></i></div>
-                        </div>
+                    <div class="col-md-4">
+
+                        <select multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
+                            <option class="text-faded">Select LOB / School</option>
+                            <option value="ALL">All Claims Academy Schools</option>
+                            <option value="CBI">Casualty/BI</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+                            <option value="APD">APD (Auto Physical Damage</option>
+                            <option value="PTY">Property</option>
+                        </select>
+
+                        <br />
+
                     </div>
-                    <!-- Due Date end -->
 
-                    <!-- Text Task Description start -->
-                    <div class="row">
-                        <div class="col-md-3  ">
-                            <label>Notes </label>
-                        </div>
-                        <div class="col-md-9">
-                            <img src="../assets/img/htmlEditor.PNG" class="float-right" >
-                            <textarea class="form-control" id="notes" name="notes" rows="10"  > Janice say its good to get this done in the first two weeks....
-                            </textarea>
-                        </div>
+                </div>
+
+                <!-- Radio Buttons -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <label>Importance: </label>
                     </div>
-                    <!-- Text Task Description end -->
 
-                    <!-- Add/Back Buttons start -->
-                    <div class="row">
-                            <div class="col-md-3  ">
-                                 
+                    <div class="col-md-2">
+
+                        <div class="alerts-info">
+                            <label><i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <input id="normal" name="normal" type="radio" name="audience" checked> Radio Button 1</label>
+                        </div>
+
+                        <div class="alerts-high">
+                            <label><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                <input id="high" name="high" type="radio" name="audience"> High</label>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="margin-right-12">Date Picker: </label>
+
+                        <!-- Date Picker -->
+                        <div class="calendar-input">
+                            <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <label><input id="publish" name="publish" type="checkbox">Checkbox</label>
                             </div>
-                            <div class="col-md-6">
-                                    <div class="button-list  ">
-                                    <button class="btn blue  half"> Add</button>
-                                    <button class="btn lightGray  half"> Back</button>
-                                    </div>
-                            </div>
-                            <div class="col-md-3  ">
-                                 
-                                </div>
+
+                            <br />
+
+                            <br />
+
                         </div>
-                        <!-- Add/Back Buttons end -->
-                </section>
-    
+
+                    </div>
+
+                </div>
+
+                <!-- Text Input -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <label>Title Text:</label>
+                    </div>
+
+                    <div class="col-md-10">
+                        <input id="title" name="title" type="text" class="form-control">
+                        <small class="note">(Title Limit: 75 Characters)</small>
+                    </div>
+
+                </div>
+
+                <!-- Text Editor -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <label> </label>
+                    </div>
+
+                    <div class="col-md-10"> <img src="../assets/img/htmlEditor.PNG">
+                        <textarea id="article" name="article" class="form-control" rows="6"> </textarea>
+                        <small class="note">(Article Limit: 500 Characters)</small>
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="button-list">
+                            <button class="btn blue half" type="submit"><i class="fa fa-plus-circle"></i> Button (Blue)</button>
+                            <button class="btn lightGray half" type="reset"><i class="fa fa-times-circle"></i> Button (Gray)</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </form>
+            
+        </section>
+
+    </div>
     
-        </div>
-    
-    </section>
-
-
-
-
-
-
-
-
-
-    
+</section>
+ 
 </body>
 
 </html>
