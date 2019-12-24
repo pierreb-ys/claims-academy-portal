@@ -1,0 +1,107 @@
+/* ============ ACCESS  ============ */
+   
+
+  /*  Datatable */      
+  
+  table#access {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+ 
+  #access_wrapper { margin-bottom: 10px; }
+  #access th .count span {    font-size: 10px; }
+  #access .fa { color:#333 ; margin: 0;}
+  #access th {
+      font-weight: normal;
+      background: #b0cde6; 
+      text-align: left;
+  } 
+  #access th  {
+     color:#000;  
+     position: relative;
+  }
+  table#access input[type="checkbox"] {
+    margin-top: 15px;
+}
+  #access th:nth-child(2) small {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+}
+#access td:last-child button {
+    display: block;
+    width: 100px;
+    margin: 2px; 
+    padding: 2px;
+    font-size: 12px;
+}
+  #access  .count {
+      width: 100px;
+      text-align: center;
+  }
+  #access .count i {
+      float: left;
+      width: 50%;
+      text-align: center;
+  }
+  #access .count span {
+      width: 49%;
+      float: left;
+  }
+ 
+  #access, #access th, #access td {
+      border: none;
+  }
+  #access td:nth-child(3) {
+      line-height: 50px;
+  }
+  
+  #access_length select {
+      display: inline-block;
+      width: auto;
+  }
+  #access_filter .form-control {
+      display: inline-block;
+      width: auto;
+      border: 1px solid  #ddd;
+      margin-left: 10px;
+  }
+  table#access.table-striped tbody tr:nth-of-type(2n+1) {
+      background-color: rgba(0,0,0,.03);
+  } 
+ 
+ 
+  .responsive-table { 
+    width: 100%;
+    border:none !important;
+}
+  
+@media (min-width:767px) {  
+    #access_filter ,
+    #access_paginate {
+        float: right;
+    }
+}
+ 
+@media (max-width:767px){ 
+   #access .btn, #access img {
+          margin-bottom: 10px;
+      } 
+    #access td:nth-child(3) {
+        line-height: normal;
+    }
+ 
+}
+
+
+  /* Responsive Datatable */ 
+  .responsive-table {
+    border: 1px solid #9fc5f8;
+    margin-bottom: 20px;
+  }
+
+ /* Datatable auto scrollbar  */ 
+  @media (max-width:1024px){ 
+    .responsive-table { overflow: auto; } 
+}
+ 

@@ -21,6 +21,7 @@
 @import url("tools.css");  
 @import url("whats-new.css");  
 @import url("reports.css");  
+@import url("access.css");  
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -724,6 +725,15 @@ section.contentarea .content-wrap {
 .btn.aqua.bdr { 
    border:1px solid
 }
+
+.btn.pink { 
+  background-color:#ff12d2;
+  color:#fff;
+}
+.btn.pink.bdr { 
+   border:1px solid  #333
+}
+
 
 
 .btn.margin { margin:10px 0 ;}
