@@ -1021,3 +1021,8 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
  .toggle.ios .toggle-handle { border-radius: 20rem; }
 
  .toggle.btn-sm .btn { padding-top: 0px; padding-bottom: 0px; font-size: 14px; line-height: 24px;}
+
+
+ /* Text Color */
+
+ .orange-text { color:#fb9700}
