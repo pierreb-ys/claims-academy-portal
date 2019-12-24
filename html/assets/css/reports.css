@@ -1,0 +1,107 @@
+/* ============ REPORTS  ============ */
+   
+
+  /*  Datatable */      
+  
+  table#reports {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+ 
+  #reports_wrapper { margin-bottom: 10px; }
+  #reports th .count span {    font-size: 10px; }
+  #reports .fa { color:#333 ; margin: 0;}
+  #reports th {
+      font-weight: normal;
+      background: #b0cde6;
+  } 
+  #reports th  {
+     color:#000; 
+     text-align: center;
+     position: relative;
+  }
+  table#reports input[type="checkbox"] {
+    margin-top: 15px;
+}
+  #reports th:nth-child(2) small {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+}
+#reports td:last-child button {
+    display: block;
+    width: 100px;
+    margin: 2px; 
+    padding: 2px;
+    font-size: 12px;
+}
+  #reports  .count {
+      width: 100px;
+      text-align: center;
+  }
+  #reports .count i {
+      float: left;
+      width: 50%;
+      text-align: center;
+  }
+  #reports .count span {
+      width: 49%;
+      float: left;
+  }
+ 
+  #reports, #reports th, #reports td {
+      border: none;
+  }
+  #reports td:nth-child(3) {
+      line-height: 50px;
+  }
+  
+  #reports_length select {
+      display: inline-block;
+      width: auto;
+  }
+  #reports_filter .form-control {
+      display: inline-block;
+      width: auto;
+      border: 1px solid  #ddd;
+      margin-left: 10px;
+  }
+  table#reports.table-striped tbody tr:nth-of-type(2n+1) {
+      background-color: rgba(0,0,0,.03);
+  } 
+ 
+ 
+  .responsive-table { 
+    width: 100%;
+    border:none !important;
+}
+  
+@media (min-width:767px) {  
+    #reports_filter ,
+    #reports_paginate {
+        float: right;
+    }
+}
+ 
+@media (max-width:767px){ 
+   #reports .btn, #reports img {
+          margin-bottom: 10px;
+      } 
+    #reports td:nth-child(3) {
+        line-height: normal;
+    }
+ 
+}
+
+
+  /* Responsive Datatable */ 
+  .responsive-table {
+    border: 1px solid #9fc5f8;
+    margin-bottom: 20px;
+  }
+
+ /* Datatable auto scrollbar  */ 
+  @media (max-width:1024px){ 
+    .responsive-table { overflow: auto; } 
+}
+ 
