@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>ACG</title>
+
+    <!-- Bootstrap -->    
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Chosen.js   
+    <script src="../assets/js/chosen-js/chosen.jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../assets/js/chosen-js/chosen.min.css">
+ --> 
+    <!-- Moment.js 
+    <script type="text/javascript" src="../assets/js/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+-->
+    <!-- Custom -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+<!-- Tools My Reference Links start  -->
+<section class="window add-resources">
+
+        <!-- Top Blue Bar -->
+        <h2><span class="AddResourceLink-icon"><i class="fa fa-plus" aria-hidden="true"></i> <i class="fa fa-link"  aria-hidden="true"></i></span> Add Resource Link to Learning Task<div class="window-close"></div></h2>
+    
+        <!-- Page Content -->
+        <form> 
+    
+            <div class="container-fluid ">
+               
+                <!-- Select Course -->
+                <section class="row select-course ">
+    
+                    <div class="col-md-3 "> 
+                        <div class=" search-box  inline ">  
+                            <input class="form-control search-input no-margin" type="search" size="35" placeholder="Search resource titles and links" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                             
+                        </div> 
+                    </div>
+                    <div class="col-md-9 text-right"> 
+                        <select id="resourceType" name="resourceType"> 
+                            <option value="ALL">All Resource Types</option> 
+                            <option value="RS">Resource Type</option>
+                            <option value="D">Document</option>
+                            <option value="IAL">Internal ACG Link</option>
+                            <option value="EL">External Link</option>
+                            <option value="V">Video</option>
+                        </select>
+                        <select id="allSchools" name="allSchools"> 
+                            <option value="ALL">All Schools</option>
+                            <option value="CBI">Casualty/BI(Bodily Injury)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+                            <option value="APD">APD (Auto Physical Damage)</option>
+                            <option value="PTY">Property</option> 
+                        </select>
+                      
+                        <select id="phase" name="phase">
+                            <option>Phase</option>
+                            <option>Customer Service</option>
+                            <option>Coverage</option>
+                            <option>Investigation</option>
+                            <option>Evaluation</option>
+                            <option>Settlement/Nagotiatioin</option>
+                            <option>Reserve</option>
+                            <option>File Management</option>
+                            <option>Recovery</option>
+                            <option>Fraud</option>
+                            <option>Compliance</option>
+                            <option>Litigation Management</option>
+                            <option>Vendor Management</option> 
+                        </select>
+                    </div>
+      
+    
+                </section>
+         
+                <div class="row "> 
+                    <div class="col-md-12">  
+                       
+                        
+                           <!--   Resource links List  Start -->
+                           <section class="  resource-links-list">  
+                            <div class="row">
+                                <div class="col-2"><strong>Seelct</strong></div>
+                                <div class="col-5"><strong>Resource Title</strong>  </div>
+                                <div class="col-5"><strong>Resource Link (for previewing)</strong>  </div>
+                            </div>
+                            <div class="scrollbar">
+                             <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox" checked> </div>
+                                <div class="col-5">< Resource 1 Title ></div>
+                                <div class="col-5">< Resource 1 Link ></div>
+                            </div> 
+                             <!--   Resource link   End -->
+                            <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 2 Title ></div>
+                                <div class="col-5">< Resource 2 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                             <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 3 Title ></div>
+                                <div class="col-5">< Resource 3 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                             <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 4 Title ></div>
+                                <div class="col-5">< Resource 4 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                              <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 5 Title ></div>
+                                <div class="col-5">< Resource 5 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                               <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 6 Title ></div>
+                                <div class="col-5">< Resource 6 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                                <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 7 Title ></div>
+                                <div class="col-5">< Resource 7 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                             <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 8 Title ></div>
+                                <div class="col-5">< Resource 8 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                             <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 9 Title ></div>
+                                <div class="col-5">< Resource 9 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                              <!--   Resource link  Start -->
+                            <div class="row">
+                                <div class="col-2"><input type="checkbox"></div>
+                                <div class="col-5">< Resource 10 Title ></div>
+                                <div class="col-5">< Resource 10 Link ></div>
+                            </div>
+                             <!--   Resource link   End -->
+                            </div>
+                            <div class="row"> 
+                                <div class="col-6">
+                                   
+                                 </div> 
+                            </div>
+                            <div class="row"> 
+                                <div class="col-6">   <button class="btn aqua   "> <i class="fa fa-check-square-o" aria-hidden="true"></i>  Define New Resource Link</button>   </div>
+                                <div class="col-6"> <button class="btn lightGray  btn-sm  "> <i class="fa fa-angle-left" aria-hidden="true"></i>  Back</button>  <button class="btn blue  btn-sm "> <i class="fa fa-plus" aria-hidden="true"></i>  Add Selected to Learning Task</button> </div>
+                            </div>
+                            
+                            </div> 
+                        </section>
+                         <!--   Resource links List  End -->
+                  </div>
+            </div>       
+                
+                      
+                    </div>
+ 
+            </div>
+    
+        </form>
+    
+    </section> 
+    
+<!-- Tools My Reference Links end  -->
+
+ 
+
+
+ 
+</body>
+ 
+
+</html>

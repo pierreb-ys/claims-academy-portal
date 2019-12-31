@@ -22,6 +22,8 @@
 @import url("whats-new.css");  
 @import url("reports.css");  
 @import url("access.css");  
+@import url("add-resource.css");  
+
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -253,6 +255,8 @@ h4.wrench-icon {
   position: absolute;
   top: 10px;
 }
+.AddResourceLink-icon .fa-plus { margin-right:20px !important;} 
+.AddResourceLink-icon .fa-link { top:10px; left:25px;position:absolute}
 /* ------------ CONTENT ------------ */
 
 .sub-school-spacing-fix {

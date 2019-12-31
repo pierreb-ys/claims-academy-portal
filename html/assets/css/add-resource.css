@@ -1,0 +1,19 @@
+ /* ============ TOOLS PAGE ============ */
+
+
+ .add-resources .resource-links-list h4 { clear: both;}
+
+ .add-resources  .resource-links-list ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.add-resources .resource-links-list { padding-bottom: 20px;   }
+.add-resources .resource-links-list button { width:auto;   }
+.add-resources .scrollbar { overflow-x: hidden; overflow-y: auto; height: 400px; padding-bottom: 20px;}
+
+.add-resources.resource-links-list .scrollbar div[class*='col'] {
+    margin-top: 10px;
+} 
+
+.window.add-resources .resource-links-list .delete {position: relative;}
