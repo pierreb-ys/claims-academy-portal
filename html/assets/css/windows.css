@@ -491,3 +491,11 @@ small.note {font-size: 11px; color: #333;
 @media (min-width:767px) {
   .window  .label-right     {  text-align: right;   } 
  }
+
+
+ /* define-resource-link */
+ @media (min-width:767px) {
+  .window.define-resource-link .form  .form-container  {   min-height: 500px;  } 
+  .window.define-resource-link  { }
+ }
+

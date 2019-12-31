@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>ACG</title>
+
+    <!-- Bootstrap -->    
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Chosen.js   
+    <script src="../assets/js/chosen-js/chosen.jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../assets/js/chosen-js/chosen.min.css">
+ --> 
+    <!-- Moment.js 
+    <script type="text/javascript" src="../assets/js/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+-->
+    <!-- Custom -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/main.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- Define What's New Link -->
+<section class="window  define-resource-link">
+
+    <!-- Top Blue Bar -->
+    <h2><i class="fa fa-link" aria-hidden="true"></i> Define Resource Link <div class="window-close"></div></h2>
+
+    <!-- Page Content -->
+    <form> 
+
+        <div class="container-fluid ">
+
+            <div class="form">
+                
+                <div class="form-container">
+                <div class="row"> 
+                    <div class="col-md-12 text-right">  
+                    </div> 
+                </div>
+        
+                <div class="row">   
+                    <div class="col-md-12"> 
+                      
+                    </div> 
+                    <div class="col-md-3 col-lg-3"> 
+                        <div class=" search-box inline">   
+                            <input class="form-control search-input" type="search" size="30" placeholder="Search existing What's New announcements and links" aria-describedby="button-addon3">
+                           </div>
+                        <label><strong> 1. Select Resource Type and School and, optionally, Phase using fields at right: </strong></label>
+                      
+                    </div>
+
+                    <div class="col-md-9 col-lg-8">
+                        <span class="req">*</span>
+
+                        <select id="allSchools" class="" name="allSchools">  
+                            <option>Select Link Type</option>
+                            <option>Course</option>
+                            <option> Curriculum</option>
+                            <option>Video</option>
+                            <option>Challenge</option>
+                            <option disabled>--- Tools Links: -----</option>
+                            <option>Resource Document</option>
+                            <option>Internal ACG Link</option>
+                            <option>External Link</option>
+                            <option>Other</option>
+                        </select>
+
+                        <span class="req">*</span>
+
+                        <select class="schools"> 
+                            <option>All Schools</option> 
+                            <option>Casualty/BI (Bodily Injury) </option>
+                            <option>PIP (Personal Injury Protection)</option>
+                            <option>APD (Auto Physical Damage)</option>
+                            <option>Property</option>
+                        </select>
+
+                        &nbsp;
+
+                        <select id="phase" name="phase">
+                            <option>All Phases</option>
+                            <option>Customer Service</option>
+                            <option>Coverage</option>
+                            <option>Investigation</option>
+                            <option>Evaluation</option>
+                            <option>Settlement/Nagotiatioin</option>
+                            <option>Reserve</option>
+                            <option>File Management</option>
+                            <option>Recovery</option>
+                            <option>Fraud</option>
+                            <option>Compliance</option>
+                            <option>Litigation Management</option>
+                            <option>Vendor Management</option> 
+                        </select>
+
+                    </div>
+
+                </div>
+        
+                <div class="row"> 
+
+                    <div class="col-md-3 col-lg-2"> <br>
+                        <label><strong>2. Click </strong></label>
+                    </div>
+                    
+                    <div class="col-md-9 col-lg-10"> 
+                        <button class="btn aqua  margin"> <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Resource</button>  
+                  
+                      </div>
+
+                </div>   
+                <div class="row"> 
+
+                    <div class="col-md-12 col-lg-12"> 
+                        <br>
+                        <label><strong>3. Define resource access to CAP </strong> </label>
+                    </div>
+                  
+                </div>   
+                 
+
+                <div class="row">  
+
+                    <div class="col-md-2"> 
+                      
+                        <button class=" btn green margin "> <i class="fa fa-upload" aria-hidden="true"></i> Upload  </button>     
+                       
+                    </div>
+                    <div class="col-md-5"> 
+                        <input class="form-control  green  " type="input"   placeholder="<displays  file name after upload completes>" aria-describedby="button-addon3">
+                        </div>
+                        <div class="col-md-5"> 
+                            <input class="form-control  orange  " type="input"   placeholder="Type or Paste URL here" aria-describedby="button-addon3">
+                 
+                        </div>
+                </div>
+                
+                <div class="row">   
+                    
+                        <div class="col-md-12"> 
+                            <input class="form-control    " type="input"   placeholder="Type or Paste Resource Title here" aria-describedby="button-addon3">
+                 
+                        </div>
+                </div>
+  
+                </div>
+    <div class="row">  
+
+        <div class="col-md-6"> 
+          
+            <div class="req text-center">* <small>Required</small></div>
+      
+        </div>
+        <div class="col-md-6"> 
+            <button class="btn lightGray"> <i class="fa fa-angle-left" aria-hidden="true"></i>  Back </button>  
+            <button class="btn lightGray"> <i class="fa fa-times-circle" aria-hidden="true"></i>  Clear </button>  
+               <button class="btn aqua"> <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Resource</button>  
+                  
+              
+            </div>
+    </div>
+  
+            </div>   
+
+        </div>
+
+    </form>
+    
+</section> 
+ 
+</body> 
+
+</html>

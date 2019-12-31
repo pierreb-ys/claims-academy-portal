@@ -86,9 +86,11 @@ div p {
 
 /* --- ORANGE --- */
 .bg-orange {
-  background-color: #F68C34 !;
+  background-color: #F68C34 ; 
 }
-
+.orange {
+  background-color: #F68C34 ; 
+}
 div.orange-text p {
   color: #F68C34;
 }
@@ -427,14 +429,14 @@ select:focus {
 
 /* Input Placeholder */    
 .form-control::placeholder {
-    color: #666666;
+    color: #333;
     opacity: 1; /* Firefox */
   }
   .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: #666666;
+      color: #333;
   }
   .form-control::-ms-input-placeholder { /* Microsoft Edge */
-      color: #666666;
+      color: #333;
   }
 
   /* Page Background */   
