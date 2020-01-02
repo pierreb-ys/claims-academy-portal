@@ -502,3 +502,13 @@ small.note {font-size: 11px; color: #333;
 /* upload button */
 
 .btn.upload { min-width: 100px;}
+
+
+/*  learner-form */
+
+.window .learner-form { color:#333;    }  
+.window .responsive-table input[type="checkbox"]:checked:after, 
+.window .responsive-table  input[type="checkbox"]:after  ,
+.window .responsive-table  input[type="checkbox"]:checked:before { color:#333 ;  border:none;   } 
+ 
+
