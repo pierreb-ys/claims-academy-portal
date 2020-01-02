@@ -499,3 +499,6 @@ small.note {font-size: 11px; color: #333;
   .window.define-resource-link  { }
  }
 
+/* upload button */
+
+.btn.upload { min-width: 100px;}
