@@ -789,6 +789,7 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
 
 /* Create Assign  Text Task, Add  Text Task , Outlook Calender buttons... */ 
 
+button.wrap-btn,
 button.assign-to-btn,
 button.view-course-btn ,
 button.reg-act-btn , 
@@ -797,6 +798,7 @@ button.create-task-btn  ,
 button.add-text-task-btn   ,
 button.outlook-cal-btn    {   width:auto; }
 
+button.wrap-btn .fa,
 button.assign-to-btn .fa,
 button.view-course-btn .fa,
 button.reg-act-btn .fa, 
@@ -805,6 +807,7 @@ button.create-task-btn  .fa ,
 button.add-text-task-btn  .fa ,
 button.outlook-cal-btn  .fa { margin:2px }
 
+.wrap-btn span,
 .assign-to-btn span,
 .view-course-btn span,
 .reg-act-btn span, 
@@ -820,6 +823,7 @@ button.outlook-cal-btn  .fa { margin:2px }
     margin-left: 10px;
     line-height: normal;
 } 
+.wrap-btn span,
 .assign-to-btn span { top:0;}
  
 .reg-act-btn  small {
