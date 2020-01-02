@@ -76,7 +76,7 @@
     text-align: left;
 }
 .window section.yellow-ribbon h3.title {
-  margin-top: 24%;
+  margin-top: 22%;
   margin-left: 5%;
   width: 96%;
   text-align: left;
@@ -114,6 +114,8 @@
 }
 .window  section.update-schools-list h3 {
    font-size: 18px;
+   border-bottom: 1px solid #2c689e;
+   padding-bottom: 5px;
 }
  .window  .update-schools-list  select { width:100%}
  .window  .update-schools-list label { color:#fff; display: block; position: relative; padding-right: 50px; line-height: normal;     padding-bottom: 10px;}      
@@ -191,6 +193,8 @@ input[type="checkbox"].custom-control-input {
 .window  .resource-links-list h4 {
   font-weight: normal;
   margin-bottom: 15px;
+  font-size: 20px;
+  padding-right: 10%;
 }
 .window .resource-links-list   p {
   margin: 5px 0 15px 0; 
@@ -404,6 +408,10 @@ aside.select-points .points input {
 .window .select-schedules input[type="radio"] {
     display: inline-block;
     vertical-align: middle;
+}
+
+.window .select-schedules input[type="radio"], .window .select-schedules input[type="radio"]:after, .window .select-schedules input[type="radio"]:checked:after {
+  color: #3398cb;
 }
    
 /* FORM */

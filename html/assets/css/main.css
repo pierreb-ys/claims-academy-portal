@@ -223,7 +223,7 @@ span[class*='-icon'].lg-icon i.fa-list-ul { font-size: 20px;  top:20%}
   position: absolute;
   font-size: 52%;
   left: 25%;
-  top: 13%;
+  top: 22%;
 } 
 .task-type-icon.online-icon .fa-list-ul {  left: 35%; top:35%}
 .ilt-icon .fa-list-ul {
@@ -231,6 +231,9 @@ span[class*='-icon'].lg-icon i.fa-list-ul { font-size: 20px;  top:20%}
   font-size: 57%;
   right: 0;
   top: 2%;
+}
+.window h2 .ilt-icon .fa {  
+  margin-right: auto !important;
 }
 .vrcr-icon .fa-user {
   position: absolute;
@@ -244,6 +247,17 @@ span[class*='-icon'].lg-icon i.fa-list-ul { font-size: 20px;  top:20%}
   right: 22%;
   top: 10%;
 }
+
+ 
+.window h2 .vrcr-icon .fa-desktop   {
+  font-size:30px
+}
+.window h2 .vrcr-icon .fa-list-ul ,.window h2 .vrcr-icon .fa-user {
+  top: 25%;
+}
+.window h2 .vrcr-icon .fa-list-ul{
+  right: -15%;
+}
  
 h4.wrench-icon {
   padding-left: 36px;
@@ -252,7 +266,7 @@ h4.wrench-icon {
 .wrench-icon:before {
   font: normal normal normal 14px/1 FontAwesome;
   content: "\f0ad";
-  font-size: 30px;
+  font-size: 20px;
   left: 0;
   position: absolute;
   top: 10px;
@@ -484,7 +498,15 @@ select:focus {
     top: 10px;
 }
 
-
+.button-list button.regnote { line-height: normal; display: inline-block; }
+.button-list button.regnote .fa{ top:30%}
+.button-list button.regnote small {
+  font-size: 11px;
+  line-height: normal;
+  margin-top: 5px; margin: 0 10%;
+  text-align: center;
+  display: block;
+}
 
 /* close/remove/ window close   button */ 
 
