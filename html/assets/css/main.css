@@ -588,6 +588,7 @@ section.search select  {
       margin-top: 10px;
       margin-bottom: 10px;
   }
+  .search-box button.auto-width{ width:auto;} 
   .search-box.wide input { width:100%;}
   .search-box input {
       background-image: url('../../assets/img/search-icon.png');
@@ -780,13 +781,18 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
 .button-grp button .fa {
     margin-right: 5px;
 }
+.button-grp .print-btn   {
+  height: auto;  
+  padding: 6px 8px;
+  min-width: 90px;
+
+}
 
 .print-btn img {
   width: 25px;
   margin-right: 0;
 }
-
-
+ 
 /* Create Assign  Text Task, Add  Text Task , Outlook Calender buttons... */ 
 
 button.wrap-btn,
@@ -1036,3 +1042,24 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
  /* Text Color */
 
  .orange-text { color:#fb9700}
+
+
+ /* select box */
+
+ .box-line   { 
+  display: inline-block; 
+  text-align: left;
+}
+.box-line select , .box-line input {
+  display: block;
+  
+}
+
+@media (min-width:1280px) {
+.sub-select-filter { text-align: right;}
+}
+
+/* learner-toggle-search */
+@media (min-width:767px) {
+.learner-toggle-search { margin-top:-10px;}
+}

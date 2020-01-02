@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <meta charset="utf-8">
+
+    <title>ACG</title>
+
+<!-- Links -->
+
+<!-- Bootstrap CSS -->
+<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    
+
+<!-- Custom CSS Inserted Here-->
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+ 
+     
+    
+<!-- font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<!-- * Custom CSS Inserted Here -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Bootstrap DataTable CSS -->  
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+
+<!-- common CSS Inserted Here-->
+<link rel="stylesheet" href="../assets/css/common.css">
+
+ <!-- learners CSS Inserted Here-->
+ <link rel="stylesheet" href="../assets/css/learners.css">
+
+<!-- JavaScript -->
+
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ 
+ <!-- Bootstrap DataTable JS -->   
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    
+   <!-- Bootstrap Toggle CSS -->  
+   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>   
+     
+
+<!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+
+</head>
+
+<body>
+    
+ 
+ 
+
+<!-- --- LEARNERS MANAGER VIEW--- -->
+<div class="container-fluid">
+        <!-- --- SEARCH LEARNERS --- -->
+        <div class="search-content">
+            <div class="row"> 
+
+                    <div class="col-md-3  col-lg-2 ">   
+                            <div class=" search-box   ">  
+                            <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                            <button class="btn search-btn">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5  col-lg-5 filter-box">   
+                        <select>
+                            <option>All LOBs/ Schools</option>
+                            <option value="BI">Casualty/BI (Body Injury)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+        <option value="APD">APD (Auto Physical Damage)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+        <option value="PA">Property</option>
+                            <option value="GL">Guest Learners</option>
+                        </select> 
+    
+                        <select>
+                            <option>All Sub-School</option>
+                            <option value="PL">Pre Litigation</option>
+                            <option value="LC">Litigation (Casualty/BI)</option>
+                        </select>  
+                        <div class="sub-select-filter"> 
+                            <div class="box-line">
+                             <select>
+                                 <option>Auto Insurance Basics (Carriculum)</option> 
+                             </select>  
+                             <button class="btn orange"> <i class="fa fa-times"></i> Clear Task Filter</button>
+                              </div>  
+                         </div>
+                    </div>
+                    <div class="col-md-3  col-lg-3 filter-box ">   
+                   
+                        <input type="checkbox" checked data-toggle="toggle" data-on="Learners" data-off="Managers">
+                        <select>
+                            <option>All Manages</option>
+                            <option value="JS">John Smith</option>
+                            <option value="HH">Hannah Heart</option>
+                        </select>   
+                       <div class=" search-box learner-toggle-search   ">  
+                        <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                        <button class="btn search-btn auto-width">Search</button>
+                  
+                    </div>
+                </div> 
+       
+                   <div class="col-md-3 col-lg-2 "> 
+                              <!-- ---  BUTTONS  START--- -->
+            <div class="button-grp"> 
+                <button class="print-btn "><i class="fa fa-print"></i> Print</button>
+            </div> 
+     <!-- ---  BUTTONS END --- -->    
+                       </div>
+               
+                    
+            </div>
+            
+        </div>  
+    <section class="contentarea"> 
+ 
+ 
+         
+            <div class="row">
+                <div class="col-sm-12"> 
+                    <!-- LEARNER FORM start -->      
+                        <div class="learner-form"> 
+                                <div class="row">    
+        
+                                    <!-- Date -->       
+                                    <div class="col-md-6 col-sm-12">
+                                        &nbsp;   &nbsp; <label>Completion Due Date:</label>
+                                        <div class="calendar-input"><input type="text" placeholder="mm/dd/yyyy" class="form-control"><i class="fa fa-calendar"></i></div>
+                                     
+                                    <!-- Back Buttons --> 
+                                         <button class="btn blue"><i class="fa fa-angle-left"></i> Back</button>  &nbsp;
+                                    </div>
+                                </div>
+                                <div class="row">  
+                                      <!-- Task Title -->       
+                                      <div class="col-md-12 col-sm-12">
+                                            <br>
+                                            <button class="btn btn-sm blue assign-to-btn "><i class="fa fa-commenting-o"></i> <span>Assign to<br>Selected Leaners</span></button>
+                                            <button class="btn btn-sm blue wrap-btn "><i class="fa fa-close"></i> <span>Cancel Assignment<br>to Selected Learners</span></button>
+                                            <h3 class="title inline">Auto Insurance Basics (Carriculum) <small>Version: 4</small> </h2> 
+                                         </div>
+              
+                                </div> 
+                            </div>
+                    <!-- LEARNER FORM end -->  
+                    <div class="responsive-table">         
+                        <table id="learners" class="table table-striped table-bordered" style="width:100%">
+                                <colgroup width="2%"> 
+                                    <colgroup width="5%">  
+                                        <colgroup width="18%"> 
+                                            <colgroup width="15%">  
+                                                <colgroup width="35%">  
+                                                                <colgroup width="10%"></colgroup>
+                                            
+                            <!--Learners Table row Head -->                                    
+                            <thead>
+                                <tr>
+                                    <th class="sorting_disabled"> <input type="checkbox"     />  </th>
+                                    <th> <small>Select All </small></th>
+                                    <th> </th>
+                                     <th>Curriculum
+                                      <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square-o"></i></div> <div class="count"><span>Assigned</span><span>Completed</span></div> </th>
+                                    <th class="text-left">Learning Task Title    </th>
+                                    <th class="text-left">Due Date   </th>
+                                     <th> </th>
+                                </tr>
+                            </thead>
+
+                            <tbody> 
+                                <!--  Table dynamic data row    -->      
+                                <tr>
+                                    <td> <input type="checkbox"       />    </td>
+                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
+                                    <td> Beth Bower </td>
+                                    <td>
+                                            <div class="count"><span> <i class="fa fa-square-o"></i> </span> <span> </span></div>
+                                            <div class="dates"><span>Version: 4 </span> <span> </span></div>
+                                        </td>
+                                    <td>Auto Insurance Basics (Carriculum) </td>
+                                    <td>  </td>
+                                   <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
+                                </tr>
+
+                                <!--  Table dynamic data row    -->      
+                                <tr>
+                                    <td> <input type="checkbox"   />    </td>
+                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
+                                    <td>Richard Free</td>
+                                    <td>
+                                            <div class="count"><span>  </span>  <span> <i class="fa fa-check-square-o"></i> </span></div>
+                                            <div class="dates"><span> </span>  <span>Version: 3<br>9/23/2019</span></div>
+                                        </td>
+                                    <td>Auto Insurance Basics (Carriculum) </td>
+                                    <td>  </td>
+                                     <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
+                                </tr>
+
+                                <!--  Table dynamic data row    -->          
+                                <tr>
+                                    <td> <input type="checkbox"   />    </td>
+                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
+                                    <td>Angelio Kadenski</td>
+                                    <td>
+                                            <div class="count"><span> <i class="fa fa-square-o"></i> </span> <span> </span></div>
+                                            <div class="dates"><span>Version: 3</span><span> </span> </div>
+                                        </td>
+                                    <td>Auto Insurance Basics (Carriculum) </td>
+                                    <td> 1/23/2019 </td>
+                                     <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
+                                </tr>
+
+                                <!--  Table dynamic data row    -->     
+                                <tr>
+                                    <td> <input type="checkbox"     />    </td>
+                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
+                                    <td>Barb Lkent </td>
+                                    <td>
+                                            <div class="count"><span>  </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
+                                            <div class="dates"><span>  </span> <span>Version: 3<br>9/23/2019</span></div>
+                                        </td>
+                                    <td>Auto Insurance Basics (Carriculum) </td>
+                                    <td>  </td>
+                                    <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
+                                </tr>
+
+                                <!--  Table dynamic data row    -->     
+                                <tr>
+                                    <td> <input type="checkbox" />    </td>
+                                    <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
+                                    <td>Peter Miller</td>
+                                    <td>    </td>
+                                    <td>Auto Insurance Basics (Carriculum) </td>
+                                    <td>  </td>
+                                     <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
+                                </tr>
+                            </tbody> 
+                        </table>
+                    </div>    
+                </div>
+            </div>
+       
+    </section>
+
+</div>
+
+<script>   
+
+    var table = $('#learners').DataTable( { 
+        "searching": false,
+        "lengthChange": false,  
+        "paging": true,
+        "info": true 
+    } );
+     
+</script> 
+
+</body>
+
+</html>
