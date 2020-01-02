@@ -232,6 +232,16 @@ span[class*='-icon'].lg-icon i.fa-list-ul { font-size: 20px;  top:20%}
   right: 0;
   top: 2%;
 }
+.window h2 .online-icon .fa-desktop   {
+  font-size:30px
+}
+.window h2 .online-icon .fa-list-ul {
+  left: 34%;
+}
+
+.window .ilt-icon,  .window  .online-icon, .window   .vrcr-icon{
+  top: 4px;
+}
 .window h2 .ilt-icon .fa {  
   margin-right: auto !important;
 }
@@ -253,10 +263,13 @@ span[class*='-icon'].lg-icon i.fa-list-ul { font-size: 20px;  top:20%}
   font-size:30px
 }
 .window h2 .vrcr-icon .fa-list-ul ,.window h2 .vrcr-icon .fa-user {
-  top: 25%;
+  top: 22%;
+}
+.window h2 .vrcr-icon .fa-user {
+  left: 20%;
 }
 .window h2 .vrcr-icon .fa-list-ul{
-  right: -15%;
+  right: -18%;
 }
  
 h4.wrench-icon {
