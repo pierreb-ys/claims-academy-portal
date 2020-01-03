@@ -1,0 +1,33 @@
+.logo-email {
+    width: 50%;
+    text-align: center;
+}
+
+.email-template-text {
+    margin: 12px;
+    padding: 12px;
+}
+
+.bg-white { 
+    background-color: white;
+    padding: 24px;
+}
+
+.bg-blue-dark {
+    background-color: #0c3859;
+}
+
+.center-element {
+    float: none;
+    margin: 0 auto;
+
+}
+
+.center-text {
+    text-align: center;
+}
+
+.email-template-text {
+    font-family: 'Mission Gothic Regular';
+    color: white;
+}
