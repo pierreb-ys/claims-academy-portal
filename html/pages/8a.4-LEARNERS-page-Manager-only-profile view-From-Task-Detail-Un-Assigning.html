@@ -64,9 +64,11 @@
 </head>
 
 <body>
-    <section class="window  ">
     
-        <h2><i class="fa fa-users" aria-hidden="true"></i> Learners <div class="window-close"></div></h2>
+    
+<section class="window  ">
+    
+    <h2><i class="fa fa-users" aria-hidden="true"></i> Learners <div class="window-close"></div></h2>
     <div class="container-fluid">
         <div class="row">
              
@@ -104,14 +106,14 @@
                                         <div class="calendar-input"><input type="text" placeholder="mm/dd/yyyy" class="form-control"><i class="fa fa-calendar"></i></div>
                                      
                                     <!-- Back Buttons --> 
-                                         <button class="btn darkBlue"><i class="fa fa-angle-left"></i> Back</button>  &nbsp;
+                                         <button class="btn blue"><i class="fa fa-angle-left"></i> Back</button>  &nbsp;
                                     </div>
                                 </div>
                                 <div class="row">  
                                       <!-- Task Title -->       
                                       <div class="col-md-12 col-sm-12">
                                             <br>
-                                            <button class="btn btn-sm darkBlue assign-to-btn "><i class="fa fa-commenting-o"></i> <span>Assign to<br>Selected Leaners</span></button>
+                                            <button class="btn btn-sm blue wrap-btn "><i class="fa fa-close"></i> <span>Cancel Assignment<br>to Selected Learners</span></button>
                                             <h3 class="title inline">Auto Insurance Basics (Carriculum) <small>Version: 4</small> </h2> 
                                          </div>
               
@@ -130,7 +132,7 @@
                             <!--Learners Table row Head -->                                    
                             <thead>
                                 <tr>
-                                    <th class="sorting_disabled"> <input type="checkbox"   />  </th>
+                                    <th class="sorting_disabled"> <input type="checkbox"     />  </th>
                                     <th> <small>Select All </small></th>
                                     <th> </th>
                                      <th>Curriculum
@@ -144,7 +146,7 @@
                             <tbody> 
                                 <!--  Table dynamic data row    -->      
                                 <tr>
-                                    <td> <input type="checkbox"     />    </td>
+                                    <td> <input type="checkbox"  checked    />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td> Beth Bower </td>
                                     <td>
@@ -158,12 +160,12 @@
 
                                 <!--  Table dynamic data row    -->      
                                 <tr>
-                                    <td> <input type="checkbox" />    </td>
+                                    <td> <input type="checkbox" checked />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td>Richard Free</td>
                                     <td>
-                                            <div class="count"><span> </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
-                                            <div class="dates"><span> </span> <span>Version: 3<br>9/23/2019</span></div>
+                                            <div class="count"><span> <i class="fa fa-square-o"></i> </span>  <span> <i class="fa fa-check-square-o"></i> </span></div>
+                                            <div class="dates"><span>Version: 4 </span>  <span>Version: 3<br>9/23/2019</span></div>
                                         </td>
                                     <td>Auto Insurance Basics (Carriculum) </td>
                                     <td>  </td>
@@ -172,7 +174,7 @@
 
                                 <!--  Table dynamic data row    -->          
                                 <tr>
-                                    <td> <input type="checkbox" />    </td>
+                                    <td> <input type="checkbox" checked />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td>Angelio Kadenski</td>
                                     <td>
@@ -203,7 +205,8 @@
                                     <td> <input type="checkbox" />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td>Peter Miller</td>
-                                    <td>  </td>
+                                    <td>   <div class="count"><span> <i class="fa fa-square-o"></i> </span> <span> </span></div>
+                                        <div class="dates"><span>Version: 3</span><span> </span> </div> </td>
                                     <td>Auto Insurance Basics (Carriculum) </td>
                                     <td>  </td>
                                      <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
@@ -216,10 +219,8 @@
        
     </section>
 
-</div>
-<br>
+</div><br>
 </section>
-
 <script>   
 
     var table = $('#learners').DataTable( { 

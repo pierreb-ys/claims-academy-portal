@@ -60,46 +60,36 @@
         
                 <div class="row">   
                     <div class="col-md-12"> 
-                      
-                    </div> 
-                    <div class="col-md-3 col-lg-3"> 
                         <div class=" search-box inline">   
-                            <input class="form-control search-input" type="search" size="30" placeholder="Search existing What's New announcements and links" aria-describedby="button-addon3">
+                            <input class="form-control search-input" type="search" size="50" placeholder="Search resource titles and links" aria-describedby="button-addon3">
                            </div>
-                        <label><strong> 1. Select Resource Type and School and, optionally, Phase using fields at right: </strong></label>
+                    </div> 
+                    <div class="col-md-3 col-lg-2"> 
+                      
+                        <label><strong> 1. Select Resource Type and School and, optionally, Phase using fields at right: </strong>  <div class="req text-center float-right"> * <small>Required</small></div></label>  
                       
                     </div>
 
-                    <div class="col-md-9 col-lg-8">
-                        <span class="req">*</span>
-
+                    <div class="col-md-9 col-lg-10">
+                        <span class="req">*</span> 
                         <select id="allSchools" class="" name="allSchools">  
-                            <option>Select Link Type</option>
-                            <option>Course</option>
-                            <option> Curriculum</option>
-                            <option>Video</option>
-                            <option>Challenge</option>
-                            <option disabled>--- Tools Links: -----</option>
-                            <option>Resource Document</option>
+                            <option>Select Resource Type</option>
+                            <option>Document</option>
                             <option>Internal ACG Link</option>
                             <option>External Link</option>
-                            <option>Other</option>
-                        </select>
-
+                            <option>Video (Vimeo hosted)</option> 
+                        </select> 
                         <span class="req">*</span>
-
                         <select class="schools"> 
+                            <option>Select Schools Tag(s)</option> 
                             <option>All Schools</option> 
                             <option>Casualty/BI (Bodily Injury) </option>
                             <option>PIP (Personal Injury Protection)</option>
                             <option>APD (Auto Physical Damage)</option>
                             <option>Property</option>
-                        </select>
-
-                        &nbsp;
-
+                        </select>  
                         <select id="phase" name="phase">
-                            <option>All Phases</option>
+                            <option>No  Phase Tag</option>
                             <option>Customer Service</option>
                             <option>Coverage</option>
                             <option>Investigation</option>
@@ -118,23 +108,12 @@
 
                 </div>
         
-                <div class="row"> 
-
-                    <div class="col-md-3 col-lg-2"> <br>
-                        <label><strong>2. Click </strong></label>
-                    </div>
-                    
-                    <div class="col-md-9 col-lg-10"> 
-                        <button class="btn aqua  margin"> <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Resource</button>  
-                  
-                      </div>
-
-                </div>   
+            
                 <div class="row"> 
 
                     <div class="col-md-12 col-lg-12"> 
                         <br>
-                        <label><strong>3. Define resource access to CAP </strong> </label>
+                        <label><strong>2. Define resource access to CAP </strong> </label>
                     </div>
                   
                 </div>   
@@ -142,44 +121,43 @@
 
                 <div class="row">  
 
-                    <div class="col-md-2"> 
+                    <div class="col-md-2 col-lg-2 "> 
                       
-                        <button class=" btn green margin "> <i class="fa fa-upload" aria-hidden="true"></i> Upload  </button>     
+                        <button class=" btn green margin upload" disabled> <i class="fa fa-upload" aria-hidden="true"></i> Upload </button>     
                        
                     </div>
-                    <div class="col-md-5"> 
-                        <input class="form-control  green  " type="input"   placeholder="<displays  file name after upload completes>" aria-describedby="button-addon3">
+                    <div class="col-md-5 col-lg-5"> 
+                        <input class="form-control     " type="input"   placeholder="<displays  file name after upload completes>" aria-describedby="button-addon3">
                         </div>
-                        <div class="col-md-5"> 
-                            <input class="form-control  orange  " type="input"   placeholder="Type or Paste URL here" aria-describedby="button-addon3">
-                 
+                        <div class="col-md-5 col-lg-5"> 
+                        <div class="field-inline-10per " >  <label>URL:</label>  
+                            <input class="form-control      " type="input"  size="50"  placeholder="Type or Paste URL here" aria-describedby="button-addon3">
+                        </div>
                         </div>
                 </div>
-                
                 <div class="row">   
-                    
-                        <div class="col-md-12"> 
-                            <input class="form-control    " type="input"   placeholder="Type or Paste Resource Title here" aria-describedby="button-addon3">
-                 
-                        </div>
-                </div>
+                    <div class="col-md-2 col-lg-2"> 
+                        Resource<br>Title Text:
+                    </div>
+                    <div class="col-md-10 col-lg-10"> 
+                        <input class="form-control    " type="input"   placeholder="Type or Paste Resource Title here" aria-describedby="button-addon3">
+             
+                    </div>
+            </div>
+              
   
                 </div>
-    <div class="row">  
+                <div class="row"> 
+ 
+                    
+                    <div class=" col-lg-12"> 
+                        <button class="btn blue   "> 3. Define Resource Link</button> &nbsp;   &nbsp;  
+                       <button class="btn lightGray"> <i class="fa fa-angle-left" aria-hidden="true"></i>  Back </button>  
+                        <button class="btn lightGray"> <i class="fa fa-times-circle" aria-hidden="true"></i>  Clear </button>   
+                      </div>
 
-        <div class="col-md-6"> 
-          
-            <div class="req text-center">* <small>Required</small></div>
-      
-        </div>
-        <div class="col-md-6"> 
-            <button class="btn lightGray"> <i class="fa fa-angle-left" aria-hidden="true"></i>  Back </button>  
-            <button class="btn lightGray"> <i class="fa fa-times-circle" aria-hidden="true"></i>  Clear </button>  
-               <button class="btn aqua"> <i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Resource</button>  
-                  
+                </div>   
               
-            </div>
-    </div>
   
             </div>   
 

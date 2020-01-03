@@ -56,7 +56,10 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 
     
-    
+   <!-- Bootstrap Toggle CSS -->  
+   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>   
+     
 
 <!-- Custom JS -->
     <script src="../assets/js/main.js"></script>
@@ -64,30 +67,74 @@
 </head>
 
 <body>
-    <section class="window  ">
     
-        <h2><i class="fa fa-users" aria-hidden="true"></i> Learners <div class="window-close"></div></h2>
-    <div class="container-fluid">
-        <div class="row">
-             
-    <div class="col-sm-12 text-right">   
-            <div class=" search-box inline-block">   
-                    <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
-                    <button class="btn search-btn">Search</button>
-                </div>
-    <!-- ---  BUTTONS  START--- -->
-        <div class="button-grp inline-block"> 
-                <button class="print-btn"><i class="fa fa-print"></i> Print</button>
-            </div> 
-     <!-- ---  BUTTONS END --- -->       
-    </div>
-    </div>
-</div>
+ 
  
 
 <!-- --- LEARNERS MANAGER VIEW--- -->
 <div class="container-fluid">
+        <!-- --- SEARCH LEARNERS --- -->
+        <div class="search-content">
+            <div class="row"> 
 
+                    <div class="col-md-3  col-lg-2 ">   
+                            <div class=" search-box   ">  
+                            <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                            <button class="btn search-btn">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5  col-lg-5 filter-box">   
+                        <select>
+                            <option>All LOBs/ Schools</option>
+                            <option value="BI">Casualty/BI (Body Injury)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+        <option value="APD">APD (Auto Physical Damage)</option>
+                            <option value="PIP">PIP (Personal Injury Protection)</option>
+        <option value="PA">Property</option>
+                            <option value="GL">Guest Learners</option>
+                        </select> 
+    
+                        <select>
+                            <option>All Sub-School</option>
+                            <option value="PL">Pre Litigation</option>
+                            <option value="LC">Litigation (Casualty/BI)</option>
+                        </select>  
+                        <div class="sub-select-filter"> 
+                            <div class="box-line">
+                             <select>
+                                 <option>Auto Insurance Basics (Carriculum)</option> 
+                             </select>  
+                             <button class="btn orange"> <i class="fa fa-times"></i> Clear Task Filter</button>
+                              </div>  
+                         </div>
+                    </div>
+                    <div class="col-md-3  col-lg-3 filter-box ">   
+                   
+                        <input type="checkbox" checked data-toggle="toggle" data-on="Learners" data-off="Managers">
+                        <select>
+                            <option>All Manages</option>
+                            <option value="JS">John Smith</option>
+                            <option value="HH">Hannah Heart</option>
+                        </select>   
+                       <div class=" search-box learner-toggle-search   ">  
+                        <input class="form-control search-input" type="search" placeholder="Search for Learner" aria-describedby="button-addon3" class="form-control bg-none border-0">
+                        <button class="btn search-btn auto-width">Search</button>
+                  
+                    </div>
+                </div> 
+       
+                   <div class="col-md-3 col-lg-2 "> 
+                              <!-- ---  BUTTONS  START--- -->
+            <div class="button-grp"> 
+                <button class="print-btn "><i class="fa fa-print"></i> Print</button>
+            </div> 
+     <!-- ---  BUTTONS END --- -->    
+                       </div>
+               
+                    
+            </div>
+            
+        </div>  
     <section class="contentarea"> 
  
  
@@ -104,14 +151,15 @@
                                         <div class="calendar-input"><input type="text" placeholder="mm/dd/yyyy" class="form-control"><i class="fa fa-calendar"></i></div>
                                      
                                     <!-- Back Buttons --> 
-                                         <button class="btn darkBlue"><i class="fa fa-angle-left"></i> Back</button>  &nbsp;
+                                         <button class="btn blue"><i class="fa fa-angle-left"></i> Back</button>  &nbsp;
                                     </div>
                                 </div>
                                 <div class="row">  
                                       <!-- Task Title -->       
                                       <div class="col-md-12 col-sm-12">
                                             <br>
-                                            <button class="btn btn-sm darkBlue assign-to-btn "><i class="fa fa-commenting-o"></i> <span>Assign to<br>Selected Leaners</span></button>
+                                            <button class="btn btn-sm blue assign-to-btn "><i class="fa fa-commenting-o"></i> <span>Assign to<br>Selected Leaners</span></button>
+                                            <button class="btn btn-sm blue wrap-btn "><i class="fa fa-close"></i> <span>Cancel Assignment<br>to Selected Learners</span></button>
                                             <h3 class="title inline">Auto Insurance Basics (Carriculum) <small>Version: 4</small> </h2> 
                                          </div>
               
@@ -130,7 +178,7 @@
                             <!--Learners Table row Head -->                                    
                             <thead>
                                 <tr>
-                                    <th class="sorting_disabled"> <input type="checkbox"   />  </th>
+                                    <th class="sorting_disabled"> <input type="checkbox"     />  </th>
                                     <th> <small>Select All </small></th>
                                     <th> </th>
                                      <th>Curriculum
@@ -144,7 +192,7 @@
                             <tbody> 
                                 <!--  Table dynamic data row    -->      
                                 <tr>
-                                    <td> <input type="checkbox"     />    </td>
+                                    <td> <input type="checkbox"       />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td> Beth Bower </td>
                                     <td>
@@ -158,12 +206,12 @@
 
                                 <!--  Table dynamic data row    -->      
                                 <tr>
-                                    <td> <input type="checkbox" />    </td>
+                                    <td> <input type="checkbox"   />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td>Richard Free</td>
                                     <td>
-                                            <div class="count"><span> </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
-                                            <div class="dates"><span> </span> <span>Version: 3<br>9/23/2019</span></div>
+                                            <div class="count"><span>  </span>  <span> <i class="fa fa-check-square-o"></i> </span></div>
+                                            <div class="dates"><span> </span>  <span>Version: 3<br>9/23/2019</span></div>
                                         </td>
                                     <td>Auto Insurance Basics (Carriculum) </td>
                                     <td>  </td>
@@ -172,7 +220,7 @@
 
                                 <!--  Table dynamic data row    -->          
                                 <tr>
-                                    <td> <input type="checkbox" />    </td>
+                                    <td> <input type="checkbox"   />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td>Angelio Kadenski</td>
                                     <td>
@@ -190,8 +238,8 @@
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td>Barb Lkent </td>
                                     <td>
-                                            <div class="count"><span><i class="fa fa-square-o"></i>  </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
-                                            <div class="dates"><span> Version: 4</span> <span>Version: 3<br>9/23/2019</span></div>
+                                            <div class="count"><span>  </span> <span> <i class="fa fa-check-square-o"></i> </span></div>
+                                            <div class="dates"><span>  </span> <span>Version: 3<br>9/23/2019</span></div>
                                         </td>
                                     <td>Auto Insurance Basics (Carriculum) </td>
                                     <td>  </td>
@@ -203,7 +251,7 @@
                                     <td> <input type="checkbox" />    </td>
                                     <td> <img class="" src="../assets/img/prof-pic.png" width="50" > </td>
                                     <td>Peter Miller</td>
-                                    <td>  </td>
+                                    <td>    </td>
                                     <td>Auto Insurance Basics (Carriculum) </td>
                                     <td>  </td>
                                      <td><button class="btn blue">Syllabus</button> <button class="btn orange">Dairy</button>   </td>
@@ -217,8 +265,6 @@
     </section>
 
 </div>
-<br>
-</section>
 
 <script>   
 
