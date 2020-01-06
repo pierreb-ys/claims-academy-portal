@@ -12,3 +12,22 @@
 .challenge-details .flash .edit { top:20px; right:20px; position: absolute; }
 
 .flash button { margin: 20px;}
+
+  /* challenge */
+
+
+  @media (min-width:767px) {
+    .window  .scrollbar-challenge { height: 800px ;   overflow-x: hidden; overflow-y: auto; }
+    }
+    @media (max-width:767px) {
+      .window  .scrollbar-challenge { overflow: auto; height: auto ;}
+      }
+    
+
+  div[class*="-challenge"] .delete { margin-top: 10px;;} 
+  div[class*="-challenge"] table { margin-bottom: 10px;}
+  div[class*="-challenge"] td { vertical-align: top;}
+
+  div[class*="-challenge"] .options { position: absolute; left: 20px; top:20px; }
+
+  div[class*="-challenge"] .flash .options button { width:90px; margin: 2px; border:1px solid }

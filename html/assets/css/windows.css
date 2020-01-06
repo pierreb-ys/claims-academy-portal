@@ -526,14 +526,19 @@ small.note {font-size: 11px; color: #333;
 .window .responsive-table  input[type="checkbox"]:after  ,
 .window .responsive-table  input[type="checkbox"]:checked:before { color:#333 ;  border:none;   } 
  
+
+  /* iltcourse */
 @media (min-width:767px) {
-.window  .scrollbar-iltcourse { height: 500px ;}
+.window  .scrollbar-iltcourse { height: 500px ;  overflow-x: hidden; overflow-y: auto; }
 }
 @media (max-width:767px) {
-  .window  .scrollbar-iltcourse { height: auto ;}
+  .window  .scrollbar-iltcourse { overflow: auto; height: auto ;}
   }
 
   div[class*="iltcourse"] .delete { margin-top: 10px;;}
   div[class*="iltcourse"] .form-control,   div[class*="iltcourse"] .calendar-input  {  width:95%;}
   div[class*="iltcourse"] table { margin-bottom: 10px;;}
   div[class*="iltcourse"] td { vertical-align: top;}
+
+
+
