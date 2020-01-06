@@ -32,6 +32,15 @@
     color: white;
 }
 
-.padding-24 {
+.email-template-content-padding {
     padding: 24px;
+}
+
+.email-subject-padding {
+    padding-bottom: 8px;
+}
+
+.email-subject {
+    padding: 24px;
+    padding-bottom: 8px;
 }
