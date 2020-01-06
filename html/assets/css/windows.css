@@ -544,11 +544,11 @@ small.note {font-size: 11px; color: #333;
   .window  .scrollbar-iltcourse { overflow: auto; height: auto ;}
   }
   div[class*="iltcourse"]  { margin-top: 20px;}
-  div[class*="iltcourse"] .delete { margin-top: 10px;;}
+  div[class*="iltcourse"] .delete { margin-top: 20px;}
   .scrollbar-iltcourse .row:nth-child(even) { background-color: rgba(255,255,255,0.1);}
   .iltcourse-form { margin-top: 20px; padding: 50px 0; border-top:1px solid #fff; }
   .iltcourse-form  .form-control,   div[class*="iltcourse"] .calendar-input  {  width:95%;}
-  div[class*="iltcourse"] table { margin-bottom: 20px;;}
+  div[class*="iltcourse"] table { margin-top: 10px;    margin-bottom: 10px;}
   div[class*="iltcourse"] td { vertical-align: top;}
 
 
