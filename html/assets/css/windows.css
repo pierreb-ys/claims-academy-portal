@@ -420,6 +420,15 @@ aside.select-points .points input {
 .window .select-schedules input[type="radio"], .window .select-schedules input[type="radio"]:after, .window .select-schedules input[type="radio"]:checked:after {
   color: #3398cb;
 }
+
+
+.window  .select-schedules > .row:first-child div[class*="col-"] {
+  padding-top: 0; padding-bottom: 10px; 
+}
+
+.window  .select-schedules div[class*="col-"] {
+  padding-top: 3px; padding-bottom: 3px;
+}
    
 /* FORM */
 
