@@ -289,6 +289,9 @@ h4.wrench-icon {
 }
 .AddResourceLink-icon .fa-plus { margin-right:20px !important;} 
 .AddResourceLink-icon .fa-link { top:10px; left:25px;position:absolute}
+
+.badge-icon { position:relative; line-height: 25px; font-size: 25px; display: inline-block; width:25px; height: 25px;}
+.badge-icon .fa-circle { left: 2px; top: 2px;   position: absolute;}
 /* ------------ CONTENT ------------ */
 
 .sub-school-spacing-fix {
