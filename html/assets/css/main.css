@@ -1110,3 +1110,17 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 
 .field-inline-10per label {display: inline-block; width: 10%:; }
 .field-inline-10per  .form-control { width: 90%; display: inline-block;}
+
+.user-pic  { overflow: hidden;
+  border-radius: 50%;
+  border: 11px solid #f90;
+  margin-bottom: 10px;  }
+
+  .choose-pic {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+}
+.choose-pic .fa-camera {
+  font-size: 30px;
+}
