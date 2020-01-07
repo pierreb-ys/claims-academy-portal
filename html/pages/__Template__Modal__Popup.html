@@ -3,68 +3,126 @@
 
 <head>
 
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
     <meta charset="utf-8">
 
     <title>ACG</title>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- CSS -->
     <!-- Bootstrap -->    
     <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  
+    <!-- Bootstrap Toggle CSS -->  
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>   
+
+    <!-- Bootstrap DataTable CSS -->  
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
-    <!-- Custom CSS -->
+    <!-- Local CSS -->
+    <!-- Custom.css -->
     <link rel="stylesheet" href="../assets/css/main.css">
 
+    <!-- Common.css -->
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <!-- Learners.css -->
+    <link rel="stylesheet" href="../assets/css/learners.css">
+
+
     <!-- JS -->
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 
     <!-- Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Chosen.js -->  
     <link rel="stylesheet" href="../assets/js/chosen-js/chosen.min.css">  
     <script src="../assets/js/chosen-js/chosen.jquery.min.js" type="text/javascript"></script>
 
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+
     <!-- Moment.js -->
     <script type="text/javascript" src="../assets/js/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="../assets/js/main.js"></script>
 
     <!-- Summernote -->
     <link href="../assets/css/summernote-bs4.css" rel="stylesheet">
     <script src="../assets/js/summernote-bs4.js"></script>
 
-    <!-- Datepicker -->
+    <!-- Date/Time Picker -->
     <script src="../assets/js/jquery.datetimepicker.js"></script>
+
+    <!-- Tempus Dominus (Rich Text Editor Library) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js
+"></script>
 
 </head>
 
 <body>
  
-<!-- Template: Modal Pop-Up -->
+<!-- Newsfeed Post Authoring -->
 <section class="window newsfeed-post">
 
-    <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i> Template: Modal Pop-Up <div class="window-close"></div></h2>
+    <!-- Top Bar (Color) -->
+    <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i> Modal Pop-Up Template <div class="window-close"></div></h2>
 
-    <div class="container-fluid ">
+    <!-- Main Content Area -->
+    <div class="container-fluid">
 
         <section class="content-area">
 
             <form>
 
-                <!-- Drop-Down: Multi-Select -->
+                <!-- Toggle Switch -->
                 <div class="row">
 
                     <div class="col-md-2">
-                        <label>Drop-Down: Multi-Select</label>
+                        <p class="align-right">Toggle Switch (A Form of Radio Buttons): </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p><input class="btn-sm" type="checkbox" checked data-toggle="toggle" data-on="On" data-off="Off" data-style="ios btn-sm"></p>
+                    </div>
+
+                </div>
+
+                <!-- Search Bar -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <p class="align-right">Search Bar: </p>
+                    </div>
+
+                    <div class="col-md-4">
+        
+                        <div class="search-box inline">  
+                            <input class="form-control search-input" type="search" placeholder="Search ... " aria-describedby="button-addon3">
+                            <button class="btn search-btn">Search</button>
+                        </div>
+        
+                    </div>
+        
+                </div>
+
+                <br />
+
+                <!-- Drop-Down Menu: Multi-Select -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <p class="align-right">Multi-Select Drop-Down Menu:</p>
                     </div>
 
                     <div class="col-md-4">
@@ -78,102 +136,116 @@
                             <option value="PTY">Property</option>
                         </select>
 
-                        <br />
+                    </div>
+
+                </div>
+
+                <br />
+
+                <!-- Checkbox(es) -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <p class="align-right">Checkbox: </p>
+                    </div>
+
+                    <!-- Publish -->
+                    <div class="col-md-4">
+                        <p><input id="publish" name="publish" type="checkbox">Checkbox</p>
+                    </div>
+
+                </div>
+
+                <br />
+
+                <!-- Date/Time Picker -->
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <p class="align-right">Date/Time Picker: </p>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="calendar-input">
+                            <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
+                        </div>
 
                     </div>
 
                 </div>
+
+                <br />
 
                 <!-- Radio Buttons -->
                 <div class="row">
 
                     <div class="col-md-2">
-                        <label>Importance: </label>
+                        <p class="align-right">Radio Buttons:</p>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-4">
 
                         <div class="alerts-info">
-                            <label><i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <input id="normal" name="normal" type="radio" name="audience" checked> Radio Button 1</label>
+                            <label><i class="fa fa-info-circle" aria-hidden="true"></i> <input id="normal" name="normal" type="radio" name="audience" checked> <span class="modal-label">Option 1</span></label>
                         </div>
 
                         <div class="alerts-high">
-                            <label><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                                <input id="high" name="high" type="radio" name="audience"> High</label>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6">
-
-                        <label class="margin-right-12">Date Picker: </label>
-
-                        <!-- Date Picker -->
-                        <div class="calendar-input">
-                            <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
-                        </div>
-
-                        <!-- Checkbox -->
-                        <div class="row">
-
-                            <div class="col-md-3">
-                                <label><input id="publish" name="publish" type="checkbox">Checkbox</label>
-                            </div>
-
-                            <br />
-
-                            <br />
-
+                            <label><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <input id="high" name="high" type="radio" name="audience"> <span class="modal-label">Option 2</span></label>
                         </div>
 
                     </div>
 
                 </div>
 
-                <!-- Text Input -->
+                <br />
+
+                <!-- Text Input Field -->
                 <div class="row">
 
                     <div class="col-md-2">
-                        <label>Title Text:</label>
+                        <p class="align-right">Text Input Field: </p>
                     </div>
 
                     <div class="col-md-10">
-                        <input id="title" name="title" type="text" class="form-control">
+                        <input id="title" name="title" type="text" class="form-control" placeholder="Please enter text here.">
                         <small class="note">(Title Limit: 75 Characters)</small>
                     </div>
 
                 </div>
 
-                <!-- Text Editor -->
+                <br />
+
+                <!-- Text Area -->
                 <div class="row">
 
                     <div class="col-md-2">
-                        <label> </label>
+                        <p class="align-right">Text Area (Rich Text Editor): </p>
                     </div>
 
                     <div class="col-md-10"> <img src="../assets/img/htmlEditor.PNG">
-                        <textarea id="article" name="article" class="form-control" rows="6"> </textarea>
+                        <textarea id="article" name="article" class="form-control" rows="6">Please enter text here.</textarea>
                         <small class="note">(Article Limit: 500 Characters)</small>
                     </div>
 
                 </div>
 
-                <!-- Buttons -->
+                <!-- Button(s) -->
                 <div class="row">
 
                     <div class="col-md-2">
+                        <label></label>
                     </div>
 
                     <div class="col-md-4">
 
                         <div class="button-list">
-                            <button class="btn blue half" type="submit"><i class="fa fa-plus-circle"></i> Button (Blue)</button>
-                            <button class="btn lightGray half" type="reset"><i class="fa fa-times-circle"></i> Button (Gray)</button>
+                            <button class="btn blue half" type="submit"><i class="fa fa-plus-circle"></i>Button 1</button>
+                            <button class="btn lightGray half" type="reset"><i class="fa fa-times-circle"></i>Button 2</button>
                         </div>
 
                     </div>
-
+                    
                 </div>
 
             </form>

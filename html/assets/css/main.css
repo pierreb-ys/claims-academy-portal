@@ -30,6 +30,8 @@
 
 @import url("email-templates.css");
 
+@import url("modal-popup.css");
+
 /* Nothing can be above @import statements in CSS, not even comments, or they won't work. */
 /* ============ IMPORTED CSS (END) ============ */
 
