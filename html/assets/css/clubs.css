@@ -128,8 +128,7 @@
     margin-right: 10%;
 }
 .dean-profile-pic h2 { 
-    background-color: #f78d35;    
-     line-height: normal;
+    background-color: #f78d35;     
     text-align: center;
     margin-right: 10%;
     margin-left: 10%;
@@ -142,6 +141,7 @@
     margin-bottom: 10px;
     position: relative;
     z-index: 3;
+    line-height: 40px;
  }
 
  .dean-profile-pic h2 span { 
