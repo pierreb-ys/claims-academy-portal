@@ -291,6 +291,9 @@ h4.wrench-icon {
 }
 .AddResourceLink-icon .fa-plus { margin-right:20px !important;} 
 .AddResourceLink-icon .fa-link { top:10px; left:25px;position:absolute}
+
+.badge-icon { position:relative; line-height: 25px; font-size: 25px; display: inline-block; width:25px; height: 25px;}
+.badge-icon .fa-circle { left: 2px; top: 2px;   position: absolute;}
 /* ------------ CONTENT ------------ */
 
 .sub-school-spacing-fix {
@@ -1109,3 +1112,17 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 
 .field-inline-10per label {display: inline-block; width: 10%:; }
 .field-inline-10per  .form-control { width: 90%; display: inline-block;}
+
+.user-pic  { overflow: hidden;
+  border-radius: 50%;
+  border: 11px solid #f90;
+  margin-bottom: 10px;  }
+
+  .choose-pic {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+}
+.choose-pic .fa-camera {
+  font-size: 30px;
+}

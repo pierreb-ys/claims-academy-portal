@@ -9,6 +9,15 @@
     font-size: 18px;
 }
 
+.my-clubs h5 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+.my-clubs p { 
+    font-size: 14px;
+    font-weight: normal;
+}
+
 .my-clubs aside.club , .my-clubs aside.new-club {
     padding: 20px;
     border: 1px solid;
@@ -54,10 +63,13 @@
 /* club details */
 
 .my-clubs .club-details { background:#9fc5f8; color: #073763; padding: 20px; margin-top: 20px; border-radius: 5px;}
-
+.my-clubs .club-details.no-bg { background: transparent; color:#fff} 
 .my-clubs .club-details picture { 
     float: none; 
     border:1px solid ;
+}
+.club-details .form-control {
+    border: 2px solid;
 }
 .my-clubs  .join-club > div  { 
     padding-bottom: 3px;
@@ -67,6 +79,8 @@
     padding-bottom: 3px;
 }
 
+
+
 .cc {     background: #9fc5f8;}
 /* join-club */
 
@@ -75,3 +89,114 @@
 .my-clubs .join-club input[type="radio"]:after:checked { color:#fff !important }
 .my-clubs .join-club  .scrollbar { overflow-x: hidden; height:130px ; margin-bottom: 20px}
 .my-clubs hr {   width:98%;      border-top-color: #fff;} 
+
+
+.dean-profile-pic {
+    border: 1px solid;
+    background: #0d385a; 
+    min-height: 300px; 
+    margin-bottom: 10px;
+}
+.dean-title {
+    background-color: #3399ca;
+    font-size: 18px;
+    text-align: center;
+    line-height: normal;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-image: url(../../assets/img/dean-icon.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    position: relative;
+    margin-bottom: -4px;
+    z-index: 0; 
+    padding-left: 30px;
+}
+.dean-title small {
+    display: block;
+    font-weight: normal;
+}
+.dean-profile-pic picture {
+    z-index: 2;
+    margin-top: -15px;
+    position: relative;
+}
+.dean-profile-pic picture img {
+    width: 80%;
+    height: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.dean-profile-pic h2 { 
+    background-color: #f78d35;     
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    position: relative;
+    margin-top: -40px;
+    height: 55px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    border:2px solid #073763;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 3;
+    line-height: 40px;
+ }
+
+ .dean-profile-pic h2 span { 
+    border: 3px solid #073763;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    z-index: 11;
+    border-bottom: none;
+    border-top: none;
+     }
+.dean-profile-pic h2 small { font-size: 12px; color: #89410e; display: block; font-weight: bold;}
+.dean-profile-pic h2 strong:before {
+    border: 10px solid #073763;
+    position: absolute;
+    content: "";
+    border-width:10px 10px 5px 10px;
+    border-color: transparent #073763 #073763  transparent;
+    top: -15px;
+    left: 0;
+    z-index: 1;
+}
+.dean-profile-pic h2 strong:after {
+    border: 10px solid #073763;
+    position: absolute;
+    content: ""; 
+    border-width:10px 10px 5px 10px;
+    border-color:  transparent transparent #073763 #073763 ;
+    top: -15px;
+    right: 0;
+    z-index: 1;
+}
+.dean-profile-pic h2:before {
+    border: 25px solid #f78d35;
+    position: absolute;
+    content: ""; 
+    border-color: #f78d35 #f78d35  #f78d35 transparent;
+    top: -15px;
+    left: -20px;
+    border-width: 25px 25px 25px 15px;
+}
+.dean-profile-pic h2:after {
+    border: 25px solid #f78d35;
+    position: absolute;
+    content: "";  
+    border-color:   #f78d35 transparent #f78d35  #f78d35  ;
+    top: -15px;
+    right: -20px;
+    border-width: 25px 15px 25px 25px ;
+}
+ 
+ 
