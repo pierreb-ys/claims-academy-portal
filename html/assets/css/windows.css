@@ -484,7 +484,7 @@ aside.select-points .points input {
 /* Note */
 
 small.note {font-size: 11px; color: #333;
-  top: -30px;
+  margin-top: -30px;
   margin-bottom: 10px;
   position: relative;
   float: right;
@@ -553,5 +553,28 @@ small.note {font-size: 11px; color: #333;
 
 
   
+/* carousel-images window */
+.carousel-images section.content-area {
+  padding: 20px;
+}
+ .carousel-images .seq {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.carousel-images .seq  label {
+  vertical-align: middle; line-height: normal;margin: 0 10px 0 0 ;
+  
+}
 
+.carousel-images .seq .form-control {
+  display: inline-block;
+  width: 80px;margin: 0;
+}
+ .carousel-images .seq + .button-list {
+  display: inline-block; 
+}
+ .carousel-images .seq + .button-list button {
+  width: auto; margin: 0px 4px 4px 4px;
+}
 
