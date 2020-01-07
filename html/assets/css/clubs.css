@@ -9,6 +9,15 @@
     font-size: 18px;
 }
 
+.my-clubs h5 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+.my-clubs p { 
+    font-size: 14px;
+    font-weight: normal;
+}
+
 .my-clubs aside.club , .my-clubs aside.new-club {
     padding: 20px;
     border: 1px solid;
