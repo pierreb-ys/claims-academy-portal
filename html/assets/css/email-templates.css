@@ -32,6 +32,31 @@
     color: white;
 }
 
-.padding-24 {
+.email-template-content-padding {
     padding: 24px;
+}
+
+.email-subject-padding {
+    padding-bottom: 8px;
+}
+
+.email-subject {
+    padding: 24px;
+    padding-bottom: 8px;
+}
+
+.email-template-link-color {
+    color: #F68C34;
+}
+
+@media (min-width: 1200px) {
+    .logo-email {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo-email {
+        width: 100%;
+    }
 }
