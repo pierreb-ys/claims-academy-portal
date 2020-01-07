@@ -68,6 +68,9 @@
     float: none; 
     border:1px solid ;
 }
+.club-details .form-control {
+    border: 2px solid;
+}
 .my-clubs  .join-club > div  { 
     padding-bottom: 3px;
 }
