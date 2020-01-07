@@ -54,7 +54,7 @@
 /* club details */
 
 .my-clubs .club-details { background:#9fc5f8; color: #073763; padding: 20px; margin-top: 20px; border-radius: 5px;}
-
+.my-clubs .club-details.no-bg { background: transparent; color:#fff} 
 .my-clubs .club-details picture { 
     float: none; 
     border:1px solid ;
@@ -67,6 +67,8 @@
     padding-bottom: 3px;
 }
 
+
+
 .cc {     background: #9fc5f8;}
 /* join-club */
 
@@ -75,3 +77,5 @@
 .my-clubs .join-club input[type="radio"]:after:checked { color:#fff !important }
 .my-clubs .join-club  .scrollbar { overflow-x: hidden; height:130px ; margin-bottom: 20px}
 .my-clubs hr {   width:98%;      border-top-color: #fff;} 
+
+ 
