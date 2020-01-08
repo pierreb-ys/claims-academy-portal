@@ -1126,3 +1126,7 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 .choose-pic .fa-camera {
   font-size: 30px;
 }
+
+.fas .fa-medal {
+  color: white;
+}
