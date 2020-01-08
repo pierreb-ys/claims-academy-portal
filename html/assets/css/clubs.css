@@ -67,6 +67,7 @@
 .my-clubs .club-details picture { 
     float: none; 
     border:1px solid ;
+    margin-bottom: 10px;
 }
 .club-details .form-control {
     border: 2px solid;
@@ -199,4 +200,16 @@
     border-width: 25px 15px 25px 25px ;
 }
  
+@media(min-width:768px){     
+   .club-details button.btn.abs {
+        position: absolute;
+        margin-top: -59px;
+        width: 90%;
+    }
+}
+@media(max-width:768px){     
+    .club-details button.btn.abs  br{
+          display: none;
+     }
+ }
  
