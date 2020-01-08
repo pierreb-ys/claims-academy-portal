@@ -48,113 +48,119 @@
     <!-- Page Content -->
     <form> 
 
-        <div class="container-fluid ">
+        <div class="container-fluid">
 
             <div class="form">
                 
                 <div class="form-container">
-                <div class="row"> 
-                    <div class="col-md-12 text-right">  
-                    </div> 
-                </div>
+
+                    <div class="row"> 
+
+                        <div class="col-md-12 text-right">  
+                        </div> 
+                        
+                    </div>
         
-                <div class="row">   
-                
-                    <div class="col-md-3 col-lg-2"> 
-                      
-                        <label><strong> 1. Select Resource Type and School and, optionally, Phase using fields at right: </strong>  <div class="req text-center float-right"> * <small>Required</small></div></label>  
-                      
+                    <div class="row">   
+                    
+                        <div class="col-md-3 col-lg-2"> 
+                        
+                            <label><strong> 1. Select Resource Type and School and, optionally, Phase using fields at right: </strong>  <div class="req text-center float-right"> * <small>Required</small></div></label>  
+                        
+                        </div>
+
+                        <div class="col-md-9 col-lg-10">
+                            <span class="req">*</span> 
+                            <select id="allSchools" class="" name="allSchools">  
+                                <option>Select Resource Type</option>
+                                <option>Document</option>
+                                <option>Internal ACG Link</option>
+                                <option>External Link</option>
+                                <option>Video (Vimeo hosted)</option> 
+                            </select> 
+                            <span class="req">*</span>
+                            <select class="schools"> 
+                                <option>Select Schools Tag(s)</option> 
+                                <option>All Schools</option> 
+                                <option>Casualty/BI (Bodily Injury) </option>
+                                <option>PIP (Personal Injury Protection)</option>
+                                <option>APD (Auto Physical Damage)</option>
+                                <option>Property</option>
+                            </select>  
+                            <select id="phase" name="phase">
+                                <option>No  Phase Tag</option>
+                                <option>Customer Service</option>
+                                <option>Coverage</option>
+                                <option>Investigation</option>
+                                <option>Evaluation</option>
+                                <option>Settlement/Nagotiatioin</option>
+                                <option>Reserve</option>
+                                <option>File Management</option>
+                                <option>Recovery</option>
+                                <option>Fraud</option>
+                                <option>Compliance</option>
+                                <option>Litigation Management</option>
+                                <option>Vendor Management</option> 
+                            </select>
+
+                        </div>
+
                     </div>
-
-                    <div class="col-md-9 col-lg-10">
-                        <span class="req">*</span> 
-                        <select id="allSchools" class="" name="allSchools">  
-                            <option>Select Resource Type</option>
-                            <option>Document</option>
-                            <option>Internal ACG Link</option>
-                            <option>External Link</option>
-                            <option>Video (Vimeo hosted)</option> 
-                        </select> 
-                        <span class="req">*</span>
-                        <select class="schools"> 
-                            <option>Select Schools Tag(s)</option> 
-                            <option>All Schools</option> 
-                            <option>Casualty/BI (Bodily Injury) </option>
-                            <option>PIP (Personal Injury Protection)</option>
-                            <option>APD (Auto Physical Damage)</option>
-                            <option>Property</option>
-                        </select>  
-                        <select id="phase" name="phase">
-                            <option>No  Phase Tag</option>
-                            <option>Customer Service</option>
-                            <option>Coverage</option>
-                            <option>Investigation</option>
-                            <option>Evaluation</option>
-                            <option>Settlement/Nagotiatioin</option>
-                            <option>Reserve</option>
-                            <option>File Management</option>
-                            <option>Recovery</option>
-                            <option>Fraud</option>
-                            <option>Compliance</option>
-                            <option>Litigation Management</option>
-                            <option>Vendor Management</option> 
-                        </select>
-
-                    </div>
-
-                </div>
         
-            
-                <div class="row"> 
+                    <div class="row"> 
 
-                    <div class="col-md-12 col-lg-12"> 
-                        <br>
-                        <label><strong>2. Define resource access to CAP </strong> </label>
-                    </div>
-                  
-                </div>   
+                        <div class="col-md-12 col-lg-12"> 
+                            <br>
+                            <label><strong>2. Define resource access to CAP </strong> </label>
+                        </div>
+                    
+                    </div>   
                  
+                    <div class="row">  
 
-                <div class="row">  
-
-                    <div class="col-md-2 col-lg-2 "> 
-                      
-                        <button class=" btn green margin upload" disabled> <i class="fa fa-upload" aria-hidden="true"></i> Upload </button>     
-                       
-                    </div>
-                    <div class="col-md-5 col-lg-5"> 
-                        <input class="form-control     " type="input"   placeholder="<displays  file name after upload completes>" aria-describedby="button-addon3">
+                        <div class="col-md-2 col-lg-2 "> 
+                        
+                            <button class=" btn green margin upload" disabled> <i class="fa fa-upload" aria-hidden="true"></i> Upload </button>     
+                        
                         </div>
                         <div class="col-md-5 col-lg-5"> 
-                        <div class="field-inline-10per " >  <label>URL:</label>  
-                            <input class="form-control      " type="input"  size="50"  placeholder="Type or Paste URL here" aria-describedby="button-addon3">
-                        </div>
-                        </div>
-                </div>
-                <div class="row">   
-                    <div class="col-md-2 col-lg-2"> 
-                        Resource<br>Title Text:
+                            <input class="form-control     " type="input"   placeholder="<displays  file name after upload completes>" aria-describedby="button-addon3">
+                            </div>
+                            <div class="col-md-5 col-lg-5"> 
+                            <div class="field-inline-10per " >  <label>URL:</label>  
+                                <input class="form-control      " type="input"  size="50"  placeholder="Type or Paste URL here" aria-describedby="button-addon3">
+                            </div>
+                            </div>
                     </div>
-                    <div class="col-md-10 col-lg-10"> 
-                        <input class="form-control    " type="input"   placeholder="Type or Paste Resource Title here" aria-describedby="button-addon3">
-             
+
+                    <div class="row"> 
+                        
+                        <div class="col-md-2 col-lg-2"> 
+                            Resource<br>Title Text:
+                        </div>
+
+                        <div class="col-md-10 col-lg-10"> 
+                            
+                            <input class="form-control" type="input" placeholder="Type or Paste Resource Title here" aria-describedby="button-addon3">
+                
+                        </div>
+                
                     </div>
-            </div>
               
-  
                 </div>
+
                 <div class="row"> 
  
-                    
                     <div class=" col-lg-12"> 
-                        <button class="btn blue   "> 3. Define Resource Link</button> &nbsp;   &nbsp;  
-                       <button class="btn lightGray"> <i class="fa fa-angle-left" aria-hidden="true"></i>  Back </button>  
-                        <button class="btn lightGray"> <i class="fa fa-times-circle" aria-hidden="true"></i>  Clear </button>   
-                      </div>
+
+                        <button class="btn blue"> 3. Define Resource Link</button> &nbsp;   &nbsp;  
+                        <button class="btn lightGray"> <i class="fa fa-angle-left" aria-hidden="true"></i>  Back </button>  
+                        <button class="btn lightGray"> <i class="fa fa-times-circle" aria-hidden="true"></i>  Clear </button>  
+
+                    </div>
 
                 </div>   
               
-  
             </div>   
 
         </div>
