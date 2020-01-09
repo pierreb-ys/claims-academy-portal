@@ -119,6 +119,12 @@
  .window  section.update-schools-list {
   margin-top: 20px;
 }
+section.update-schools-list  .heading {
+  background-color: #6fa8dc;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
 .window  section.update-schools-list h3 {
    font-size: 18px;
    border-bottom: 1px solid #2c689e;
@@ -291,6 +297,7 @@ input[type="checkbox"].custom-control-input {
   display: inline-block;
   vertical-align: top;
   padding-left: 25px;
+  width: 80%;
 }
 
 .window section.task-list li .dsc select {
@@ -339,7 +346,7 @@ position:absolute;
 .window  section.task-list input[type="checkbox"]:checked:before { 
   border:none; color:#0c3859;  position:absolute;  z-index: 1; content: "\f14a"; color:#fff; }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .window  section.task-list li { width: 48%;  float: left;}
 }
 
@@ -577,4 +584,18 @@ small.note {font-size: 11px; color: #333;
  .carousel-images .seq + .button-list button {
   width: auto; margin: 0px 4px 4px 4px;
 }
+
+
+@media (min-width:767px) {
+  .window  .formarea { min-height:300px ;}
+  .window  .formarea.edit  .text-right label {
+      margin-top: 15px;
+  }
+ 
+  }
+
+  @media (max-width:768px) {
+    .window  .formarea { min-height:200px ;}
+    .window  .formarea .text-right { text-align: left !important;}
+    }
 

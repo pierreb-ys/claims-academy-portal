@@ -60,6 +60,10 @@ div p {
   width: 100%;
 }
 
+.width-100x {
+  width: 100px;
+}
+
 .font-size-24 {
   font-size: 24px;
 }
@@ -200,6 +204,11 @@ div.orange-text p {
 .margin-right-12 {
   margin-right: 12px;
 }
+
+.margin-right-20 {
+  margin-right: 20px;
+}
+
 
 /* ============ CLEAN-UP ============ */
 
@@ -413,6 +422,7 @@ input[type="radio"]:checked {
    background-color:transparent;
 }
 
+
 input[type="radio"]:checked:after ,
 input[type="radio"]:after {    
   position:absolute; 
@@ -461,6 +471,9 @@ select:focus {
   outline: 0;
 }
 
+.text-middle {
+  vertical-align: middle !important;
+}
 
 /* Input Placeholder */    
 .form-control::placeholder {
@@ -838,6 +851,8 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
  
 /* Create Assign  Text Task, Add  Text Task , Outlook Calender buttons... */ 
 
+.cancel-btn  ,
+.assign-btn ,
 button.wrap-btn,
 button.assign-to-btn,
 button.view-course-btn ,
@@ -846,6 +861,7 @@ button.add-learning-dairy-btn ,
 button.create-task-btn  , 
 button.add-text-task-btn   ,
 button.outlook-cal-btn    {   width:auto; }
+
 
 button.wrap-btn .fa,
 button.assign-to-btn .fa,
@@ -856,6 +872,8 @@ button.create-task-btn  .fa ,
 button.add-text-task-btn  .fa ,
 button.outlook-cal-btn  .fa { margin:2px }
 
+.cancel-btn  span,
+.assign-btn span,
 .wrap-btn span,
 .assign-to-btn span,
 .view-course-btn span,
@@ -872,9 +890,24 @@ button.outlook-cal-btn  .fa { margin:2px }
     margin-left: 10px;
     line-height: normal;
 } 
+
+
 .wrap-btn span,
 .assign-to-btn span { top:0;}
  
+.cancel-btn  ,
+.assign-btn  { vertical-align: middle;}
+
+.cancel-btn .fa ,
+.assign-btn .fa {
+  margin: 0;
+  top: -4px;
+  position: relative;
+}
+.cancel-btn span, .assign-btn span {
+  top: -7px;
+}
+
 .reg-act-btn  small {
   display: block;
 }
@@ -1072,8 +1105,12 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
  /* form */
 
  .form-control.inline { display: inline-block;}
-
+ .form-control.line { display: inline-block;}
  .req { color: #f90 ; font-size: 24px; }
+ .req.inline { display: inline;}
+ .req.block { display:  block;}
+
+ .req small { color: #f90 ; font-size: 14px; }
 
  /* toggle round style */
  .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; vertical-align: middle; }
@@ -1130,3 +1167,13 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 .fas .fa-medal {
   color: white;
 }
+
+/*  alignments */
+
+.inline { display: inline;}
+.inline-block { display: block;}
+
+
+/* width auto */
+
+.w-auto { width:auto; }

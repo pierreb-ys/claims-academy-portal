@@ -48,7 +48,9 @@
 <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
- 
+    <!-- Bootstrap Toggle CSS -->  
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>   
     
     
 
@@ -59,12 +61,15 @@
 
 <body>
     
- <!-- --- window start --- -->
-
-<section class="window  ">
  
-        <h2>  <i class="fa fa-send" aria-hidden="true"></i>
-            Version Update Affects Learning in Progress  - Notify or Skip?
+  <!-- --- Manger Task   - MY LEARNING DIARY   --- -->
+
+<section class="window learning-diary-entry">
+
+        <!-- Blue Bar -->
+        <h2>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            Manager Task  
             <div class="window-close"></div>
         </h2>
     
@@ -72,50 +77,61 @@
         <div class="container-fluid ">
             <form>
                 <!-- form -->
-                <div class="row"> 
-                    <div class="col-md-12"> &nbsp; </div>
-                    </div>
-                <div class="row"> 
-                    <div class="col-md-1">  </div>
-                            <div class="col-md-10"> 
-                    <!--  Description start -->
-                    <div class="row"> 
-                        <div class="col-md-12">
-                            <textarea class="form-control" id="dsc" name="dsc" rows="10"  >You are updating a learning task that some learners are in the middle of completing.
+                <section class="form"> 
+                    <div class="formarea view">
+                             <!-- Learner Can/Cannot start -->
+                             <div class="row">
+                                <div class="col-md-3  ">  
+                                </div>
+                                <div class="col-md-5  ">
+                                 
+                                 </div>
+                                <div class="col-md-4 text-right">
+                                   <label>Manager Must Mark Complete  </label> 
+                                </div>
+                            </div>
+                             <!-- Learner Can/Cannot end --> 
 
-Do you want to email notification to those learners of the version change so that they can be sure to see all of the new content?
-                            </textarea>
+                     <!-- Task Name start -->
+                    <div class="row">
+                        <div class="col-md-3  text-right">
+                            <label>Task Name </label>
+                        </div>
+                        <div class="col-md-9">
+                            <p>   Cliams team intro </p>
                         </div>
                     </div>
-                    <!--  Description end --> 
-
-                       <!-- Buttons start -->
-                       <div class="row button-list"> 
-                        <div class="col-sm-4 text-center"> 
+                     <!-- Task Name end --> 
+                      <!-- Due Date start -->
+                      <div class="row">
+                        <div class="col-md-3  text-right">
+                            <label>Due Date: </label>
                         </div>
-                        <div class="col-sm-4 text-center">
-                            <button class="btn blue full">Notify</button>
+                        <div class="col-md-9">
+                            10/14/2019
                         </div>
-                        <div class="col-sm-4 text-center">
-                            <button class="btn blue full">Skip Notification </button>
-                        </div>
-                        
                     </div>
-                    <!-- Buttons end -->
- 
+                    <!-- Due Date end -->
+                    <!-- Text Task Description start -->
+                    <div class="row">
+                        <div class="col-md-3  text-right">
+                            <label> Manager Task Description </label>
+                        </div>
+                        <div class="col-md-9">
+                            <p>&lt;For a Manager-aasigned "Manager task", the manager description of the assignment goes here in this field which is input-capable only for Managers, (& TCs and Admins). This text can include hyper-text links the same as in the other field used by Learners for Diary entry text><For></p>
+                        </div>
                     </div>
-               
-                    <div class="col-md-1">  </div> 
+                    <!-- Text Task Description end --> 
                 </div>
-                    <div class="row"> 
-                        <div class="col-md-12"> &nbsp; </div>
-                        </div>
+                    
+
+                </section>
+    
             </form>
     
         </div>
     
-    </section> 
-    <!-- --- window end  --- -->
+    </section>
 
 </body>
 

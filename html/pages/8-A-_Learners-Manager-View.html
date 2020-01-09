@@ -69,7 +69,7 @@
                     <div class="col-sm-3  text-left">
                         <!-- ---  BUTTONS  START--- -->
                         <div class="button-grp text-left inline-block">
-                            <button class="btn fill-btn  orange create-task-btn "><i class="fa fa-plus"></i> <i class="fa fa-book"></i><span>Create & Assign <br> Text Task</span></button>
+                            <button class="btn fill-btn  orange create-task-btn "><i class="fa fa-plus"></i> <i class="fa fa-book"></i><span>Create & Assign <br> Manager Task</span></button>
             
                         </div>
                         <!-- ---  BUTTONS END --- -->
@@ -112,6 +112,7 @@
                                                 <colgroup width="15%">
                                                     <colgroup width="10%">
                                                         <colgroup width="10%">
+                                                        <colgroup width="10%">
                                                             <colgroup width="10%">
                                                                 <colgroup width="10%"> 
                                                                         <colgroup width="10%"></colgroup>
@@ -120,11 +121,19 @@
                                                                         <thead>
                                                                             <tr> 
                                                                                 <th>  </th>
-                                                                                <th> </th>
+                                                                                <th class="sorting_disabled">  
+                                                                                    <div class="filters" ><span class="lbl">  Filter  <br>
+                                                                                       by <br>
+                                                                                       Assigner  </span> <span class="fltr-lbl"><input name="fba" type="radio" id="masa" checked >  <label for="masa"> <i class="fa fa-commenting-o"></i>Both management   <br><i class="fa fa-bookmark"></i>and  self-assigned </label>
+                                                                                       <input name="fba" type="radio" id="ma" > <label for="ma"><i class="fa fa-commenting-o"></i>Management-assigned</label>
+                                                                                       <input name="fba" type="radio" id="sa" >  <label for="sa"> <i class="fa fa-bookmark"></i>Self-assigned </span> </label> </div>
+                                               
+                                               </th>
                                                                                 <th>Courses
                                                                                     <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square-o"></i></div>
                                                                                     <div class="count"><span>Assigned</span><span>Completed</span></div>
                                                                                 </th>
+                                                                                <th>Video  <div class="count"> <i class="fa fa-square-o "></i>  <i class="fa fa-check-square-o"></i></div> <div class="count"><span>Assigned</span><span>Completed</span></div> </th>
                                                                                 <th>Curricula
                                                                                     <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square-o"></i></div>
                                                                                     <div class="count"><span>Assigned</span><span>Completed</span></div>
@@ -133,7 +142,7 @@
                                                                                     <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square-o"></i></div>
                                                                                     <div class="count"><span>Assigned</span><span>Completed</span></div>
                                                                                 </th>
-                                                                                <th>Text&nbsp;Tasks
+                                                                                <th>Manager&nbsp;Tasks
                                                                                     <div class="count"> <i class="fa fa-square-o "></i> <i class="fa fa-check-square-o"></i></div>
                                                                                     <div class="count"><span>Assigned</span><span>Completed</span></div>
                                                                                 </th> 
@@ -160,6 +169,9 @@
                                                                                     <div class="count"><span>8</span> <span>5</span></div>
                                                                                 </td>
                                                                                 <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
                                                                                     <button class="btn blue">Syllabus</button>
                                                                                     <button class="btn orange">Dairy</button>
                                                                                 </td>
@@ -169,6 +181,9 @@
                                                                             <tr> 
                                                                                 <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
                                                                                 <td>Richard Free</td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
                                                                                 <td>
                                                                                     <div class="count"><span>8</span> <span>5</span></div>
                                                                                 </td>
@@ -204,6 +219,9 @@
                                                                                     <div class="count"><span>8</span> <span>5</span></div>
                                                                                 </td>
                                                                                 <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
                                                                                     <button class="btn blue">Syllabus</button>
                                                                                     <button class="btn orange">Dairy</button>
                                                                                 </td>
@@ -226,6 +244,9 @@
                                                                                     <div class="count"><span>8</span> <span>5</span></div>
                                                                                 </td>
                                                                                 <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
+                                                                                <td>
                                                                                     <button class="btn blue">Syllabus</button>
                                                                                     <button class="btn orange">Dairy</button>
                                                                                 </td>
@@ -235,6 +256,9 @@
                                                                             <tr> 
                                                                                 <td> <img class="" src="../assets/img/prof-pic.png" width="50"> </td>
                                                                                 <td>Peter Miller</td>
+                                                                                <td>
+                                                                                    <div class="count"><span>8</span> <span>5</span></div>
+                                                                                </td>
                                                                                 <td>
                                                                                     <div class="count"><span>8</span> <span>5</span></div>
                                                                                 </td>
