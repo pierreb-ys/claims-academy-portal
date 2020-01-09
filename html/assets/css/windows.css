@@ -581,7 +581,7 @@ small.note {font-size: 11px; color: #333;
 
 @media (min-width:767px) {
   .window  .formarea { min-height:300px ;}
-  .window  .formarea  .text-right label {
+  .window  .formarea.edit  .text-right label {
       margin-top: 15px;
   }
  
