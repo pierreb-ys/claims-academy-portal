@@ -5,3 +5,21 @@ p .align-right {
 span.modal-label {
     font-family: "mission-gothic-regular";
 }
+
+.vertical-align-parent {
+    position: relative;
+}
+
+.vertical-align-child {
+    position: relative;
+    top: 15%;
+}
+
+.vertical-align-child2 {
+    position: relative;
+    top: 40%;
+}
+
+div#modal-label-align-right > p {
+    text-align: right;
+}
