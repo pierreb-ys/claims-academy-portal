@@ -578,3 +578,13 @@ small.note {font-size: 11px; color: #333;
   width: auto; margin: 0px 4px 4px 4px;
 }
 
+
+@media (min-width:767px) {
+  .window  .formarea { min-height:300px ;}
+ 
+  }
+
+  @media (max-width:768px) {
+    .window  .formarea { min-height:200px ;}
+    .window  .formarea .text-right { text-align: left !important;}
+    }
