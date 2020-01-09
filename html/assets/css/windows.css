@@ -291,6 +291,7 @@ input[type="checkbox"].custom-control-input {
   display: inline-block;
   vertical-align: top;
   padding-left: 25px;
+  width: 80%;
 }
 
 .window section.task-list li .dsc select {
@@ -339,7 +340,7 @@ position:absolute;
 .window  section.task-list input[type="checkbox"]:checked:before { 
   border:none; color:#0c3859;  position:absolute;  z-index: 1; content: "\f14a"; color:#fff; }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .window  section.task-list li { width: 48%;  float: left;}
 }
 
