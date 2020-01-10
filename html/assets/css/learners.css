@@ -167,6 +167,7 @@ z-index: 1;}
         margin-left: -30px;
         font-size: 13px; 
         line-height: 16px;
+        margin-right: 5px;
     }
     .filters .fltr-lbl {
         display: inline-block;
