@@ -48,6 +48,10 @@ span.navbar-text {
 }
 
 
+.nav-item {
+  position: relative;
+}
+
 /* VIEWPORTS */
 @media (max-width: 575.98px) {
 
