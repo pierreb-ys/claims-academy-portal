@@ -1,0 +1,618 @@
+/* windows popup */
+
+.modal-content {
+    background: #073763; 
+    color: #fff;
+}
+
+.modal-content  img  {
+  max-width: 100%;
+}
+     .modal-dialog {
+        width: 96% !important;
+        height: 100% !important;
+        margin: 2% !important;
+        padding: 0 !important;
+        max-width:none !important;
+
+    }
+
+    .modal-content {
+        height: auto !important;
+        min-height: 100% !important;
+        border-radius: 0 !important; 
+    }
+
+/* title */
+
+.modal-content    { 	  border: none;}
+
+.modal-content  .modal-header { background:#6fa8dc; margin: 0;
+    padding: 0;  border: none;}
+.modal-content  .modal-header  .modal-title {   color:#fff; font-size: 18px; line-height: 40px; padding-left: 10px; margin:0; position:relative  }
+.modal-content.alert-window   .modal-header { background:#c00; color:#fff;   }
+.modal-content.confirm-window   .modal-header { background:#93c47d; color:#fff;   }
+
+.modal-content  .modal-header i.fa { margin-right: 10px;; }
+.modal-content  .btn.blue .fa { color:#fff}  
+
+.modal-content .modal-header.bg-red {
+  background: red;
+  color: black;
+}
+
+.modal-content .modal-footer { border:none; } 
+
+.modal-content  .modal-header .close {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+} 
+.modal-content .modal-header .close:before { display:none; }
+.close-red {
+  color: black;
+} 
+
+
+.modal-content   .delete { position: absolute; top:0;  right: 0; 
+  border: 2px solid #9900ff;    background: #9900ff;    color: #ffffff;}
+
+/* form */
+.modal-content .form { padding: 20px;}
+.modal-content .form input, .modal-content .form select { margin: 10px 0 ; vertical-align: middle;}
+.modal-content .form .calendar-input input {margin:0;}
+
+
+/*  select course */
+.modal-content .select-course .course-type label { display: block; }
+.modal-content .select-course .edit-use button { margin-bottom: 10px; }
+.modal-content .select-course  input[type="checkbox"] {
+    display: inline-block; 
+}  
+.modal-content .select-course {
+    margin-top: 10px;
+}
+
+
+  /* yellow ribbon */
+
+  .modal-content  .yellow-ribbon { position: relative;}
+
+  .modal-content .strip {  
+      background: #f68d35;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      bottom: 10%;
+      top: 25%;
+  }
+  .modal-content  .strip-title {
+    background: #f68d35; 
+    padding: 20px;
+    color:#333;
+    margin-top: 20px;
+
+  }
+  .modal-content section.yellow-ribbon textarea {
+    margin-top: 18%;
+    margin-left: 5%;
+    width: 96%;
+    text-align: left;
+}
+.modal-content section.yellow-ribbon h3.title {
+  margin-top: 22%;
+  margin-left: 5%;
+  width: 96%;
+  text-align: left;
+  font-size: 24px;
+}
+.modal-content .description {
+  font-size: 18px;
+}
+
+
+/* video frame */
+
+.modal-content .video-frame {
+    text-align: left;
+    position: relative;
+}
+
+.modal-content .video-frame button {  
+    position: absolute;
+    border: 1px solid #fff; 
+    max-width: 90%;
+    right: 5%;
+    top: 5%;
+}
+
+.modal-content .video-frame { border:5px solid #073763;  margin-bottom: 20px; }
+.modal-content .video-frame img { 
+    width: 100%;
+}
+ 
+
+ /* schools list */ 
+ .modal-content  section.update-schools-list {
+  margin-top: 20px;
+}
+section.update-schools-list  .heading {
+  background-color: #6fa8dc;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.modal-content  section.update-schools-list h3 {
+   font-size: 18px;
+   border-bottom: 1px solid #2c689e;
+   padding-bottom: 5px;
+}
+ .modal-content  .update-schools-list  select { width:100%}
+ .modal-content  .update-schools-list label { color:#fff; display: block; position: relative; padding-right: 50px; line-height: normal;     padding-bottom: 10px;}      
+
+ .modal-content  section.update-schools-list  label {
+  color: #d6ecff;
+}
+.modal-content  section.update-schools-list strong {
+  color: #81bff5;
+}
+div.select-list {
+  height: 135px;
+  overflow: auto;
+  border: 1px solid #778aad;
+  border-radius: 5px;
+  margin-bottom:10px
+}
+.modal-content div.select-list  label {
+  padding: 5px 5px 5px 30px;
+}
+.modal-content .custom-checkbox .custom-control-label::before { 
+  border-color: #073763 !important;
+  background-color: #fff !important;
+}
+
+.modal-content .custom-control-input:checked~.custom-control-label::before {
+  color: #fff !important;  
+ border-color: #fff !important; 
+ background-color: #073763 !important;
+}
+.modal-content .custom-control { 
+  border-bottom: 1px solid #778aad;
+  background: #485f88;
+  padding-left: 0 !important  ;
+}
+
+.modal-content .custom-control:hover , .modal-content .custom-control-input:checked~.custom-control , .modal-content .custom-control-input:checked~.custom-control-label {
+  background: #073763;
+}
+.modal-content .custom-control-label::after { 
+  top: 8px !important;
+  left: 5px !important;
+  display: inline-block !important; 
+} 
+.modal-content .custom-control-label::before { 
+  top: 8px !important;
+  left: 5px !important;
+  display: inline-block !important;   
+  margin-right: 10px;
+}
+input[type="checkbox"].custom-control-input {
+  position: absolute;
+}
+ 
+
+ /*   list */ 
+ .modal-content  .list  select { width:100%}
+ .modal-content  .list   label { color:#fff; display: block; position: relative;  }    
+ .modal-content  .list  .delete { position: relative;}
+
+ @media (min-width:768px) {
+  .modal-content  .list   label {  width:48%; display: inline-block;  } 
+ }
+
+ /* resource links list */ 
+ .modal-content  .resource-links-list  { margin-top: 20px; margin-left: 10px;}
+ .modal-content  .resource-links-list  li { color:#fff; display: block; position: relative; padding-left: 25px; margin-bottom: 15px; }
+ .modal-content  .resource-links-list .delete { left:0; right: inherit; }
+ .modal-content  .resource-links-list button { width: 300px; }
+ .modal-content  .resource-links-list ul {
+  margin: 0;
+  padding: 0;
+}
+ 
+.modal-content  .resource-links-list h4 {
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-size: 20px;
+  padding-right: 10%;
+}
+.modal-content .resource-links-list   p {
+  margin: 5px 0 15px 0; 
+}
+ 
+ @media (min-width: 800px) {
+    .modal-content  .resource-links-list li { width:50%; float: left; }    
+}
+
+ /* task list */
+
+ 
+ .modal-content section.task-list {
+  margin: 20px;
+} 
+.modal-content section.task-list .scroller {
+  overflow: auto;
+  height: 290px;
+}
+.modal-content  section.task-list h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.modal-content  section.task-list h3 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.modal-content  section.task-list h3 span * {
+  margin-bottom: 0;
+}
+.modal-content  section.task-list  a { color:#00f5ce; text-decoration: underline; font-weight: bold; }
+.modal-content  section.task-list   input, .modal-content  section.task-list   input:checked  { 
+  vertical-align: middle;
+  display: inline-block;
+}
+.modal-content  section.task-list .detail, .modal-content  section.task-list .points { padding: 2px 5px;} 
+.modal-content  section.task-list .detail a { color:#fff; text-decoration: none; }
+.modal-content  section.task-list ul, .modal-content  section.task-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-indent: -25px;
+}
+.modal-content section.task-list.view li {
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 20px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.modal-content section.task-list.view li div {
+  margin-left: 15px;
+}
+.modal-content  section.task-list.view input[type="checkbox"] {
+  left: 0px;
+  margin-top: 5px;;
+  width: 20px;
+  height: 20px;  
+  position: absolute;
+}
+ 
+.modal-content section.task-list section.add-task-form button {
+  position: relative;
+  left: 2px;
+}
+ 
+.modal-content  section.task-list li {
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.modal-content  section.task-list .delete {
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.modal-content section.task-list a.link ,
+.modal-content section.task-list button { position: absolute; right:10%; }
+.modal-content  section.task-list .delete { left:0;  margin-top: 5px;}
+.modal-content  section.task-list .delete:before {
+  margin-left: 26px;
+  top: 0;
+}
+.modal-content section.task-list li .dsc {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 25px;
+  width: 80%;
+}
+
+.modal-content section.task-list li .dsc select {
+  margin-left: -20px;
+  width: 400px;
+  max-width: 100%;
+}
+.modal-content section.task-list li .dsc button {
+  margin-left: -20px; 
+}
+
+.modal-content  section.task-list h3 input:after, .modal-content  section.task-list h3 input:checked:after  {
+  color: #fff;
+  vertical-align: middle;
+}
+.modal-content  section.task-list input[class="number"] { width:30px; margin-right: 5px;}
+.modal-content  section.task-list input[type="checkbox"]:after , .modal-content  section.task-list input[type="checkbox"]:checked:after { display: none;}
+.modal-content  section.task-list input[type="checkbox"]:before {    
+position:absolute; 
+    content: "\f096";
+    color:#fff; 
+    border:  none;
+    width: 22px;
+    height: 21px;
+    border-radius: 3px;
+
+}
+.modal-content input[type="checkbox"]:checked:after,
+ .modal-content input[type="checkbox"]:after {
+  position: absolute;
+  content: "\f096";
+  color: #fff;
+  border: 1px solid #0c3859;
+  width: 22px;
+  height: 21px;
+  border-radius: 3px;
+}
+.modal-content input[type="checkbox"]:checked:before { display:  ;} 
+.modal-content input[type="checkbox"]:checked:before  { content: "\f14a"; color:white;}
+.modal-content section.task-list li .dsc {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px;
+}
+
+.modal-content  section.task-list input[type="checkbox"]:checked:before { 
+  border:none; color:#0c3859;  position:absolute;  z-index: 1; content: "\f14a"; color:#fff; }
+
+@media (min-width: 900px) {
+  .modal-content  section.task-list li { width: 48%;  float: left;}
+}
+
+ 
+ 
+.modal-content .add-task-form { margin-bottom: 10px;  }
+
+
+ 
+/* select badge */
+
+.modal-content  .select-badge img ,
+.modal-content  .select-badge button{   display: block;
+    width: 80px;
+    margin: 10px auto;
+} 
+.modal-content  .select-badge button { line-height: 30px ; padding: 0px;  }
+.modal-content  .select-badge img  { width:60px } 
+  
+ 
+
+.modal-content  aside.select-badge  {
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: normal;
+}
+
+/* select points */
+
+
+aside.select-points .points{
+    background: #009e0f;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60px;
+}   
+aside.select-points .points input {
+    width: 45px;
+    margin: auto;
+    display: inline-block;
+    margin-top: 10px;
+    line-height: normal;
+    padding: .375rem .25rem;
+    text-align: center;
+} 
+.modal-content  aside.select-points {
+    color: #fff;
+}
+.modal-content aside.select-points {
+    margin-bottom: 30px;
+    line-height: normal;
+} 
+
+/* select schedules */ 
+
+.modal-content .select-schedules { background-color: #fff ; border:5px solid #9900ff; padding:10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.modal-content section.select-schedules {
+    font-size: 13px;
+    color:#000;
+}
+.modal-content .select-schedules button {
+    margin-top: 10px;
+}
+.modal-content .select-schedules .scroller { height: 90px ; overflow-x:  hidden; overflow-y:  auto;}
+.modal-content .select-schedules input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal-content .select-schedules input[type="radio"], .modal-content .select-schedules input[type="radio"]:after, .modal-content .select-schedules input[type="radio"]:checked:after {
+  color: #3398cb;
+}
+
+
+.modal-content  .select-schedules > .row:first-child div[class*="col-"] {
+  padding-top: 0; padding-bottom: 10px; 
+}
+
+.modal-content  .select-schedules div[class*="col-"] {
+  padding-top: 3px; padding-bottom: 3px;
+}
+   
+/* FORM */
+
+.modal-content  section.form {
+  padding: 10px ; 
+}
+
+@media (min-width:767px){
+  .modal-content  section.form {
+      margin: 20px;
+      padding: 20px;
+  }
+
+}
+
+
+.modal-content section.form input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+.modal-content  .ques {   }
+.modal-content  .ques h3 { font-size: 16px; margin-bottom: 20px;  }
+.modal-content  .ques h3 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin: 0 10px;
+}
+.modal-content .ques label  {
+  margin-bottom: 0;
+}
+.modal-content .ques input, .modal-content .ques input:checked {
+  vertical-align: middle;
+  display: inline-block; 
+}
+.modal-content .ques input:after, .modal-content .ques input:checked:after { 
+  color:#fff
+}
+.modal-content  .button-list.mb { margin-bottom: 20px;   }
+
+/* calendar */
+
+.modal-content .calendar-input input,
+ .modal-content .calendar-input:after { 
+  border: 1px solid #fff;
+}
+
+/* radio buttons */
+
+.modal-content  input[type="radio"]::after { color:#fff; }
+.modal-content  input[type="radio"]:checked:after { color:#fff; }
+
+
+/* Note */
+
+small.note {font-size: 11px; color: #333;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  position: relative;
+  float: right;
+  right: 10px;}
+
+  input:focus + small.note, textarea:focus + small.note {
+     visibility: hidden;
+}
+
+/* form control */
+
+.form-control.inline.number {
+  width: 45px;
+  margin-right: 5px;
+}
+
+.form-control.inline {
+  width: auto;
+  margin-bottom: 0;
+}
+
+/* Harozental Line */
+
+.modal-content hr { border:none; border-bottom: 1px solid aqua; margin: 30px 0 ; }
+
+/*  */
+
+@media (min-width:767px) {
+  .modal-content  .label-right     {  text-align: right;   } 
+ }
+
+
+ /* define-resource-link */
+ @media (min-width:767px) {
+  .modal-content.define-resource-link .form  .form-container  {   min-height: 500px;  } 
+  .modal-content.define-resource-link  { }
+ }
+
+/* upload button */
+
+.btn.upload { min-width: 100px;}
+
+
+/*  learner-form */
+
+.modal-content .learner-form { color:#333;    }  
+.modal-content .responsive-table input[type="checkbox"]:checked:after, 
+.modal-content .responsive-table  input[type="checkbox"]:after  ,
+.modal-content .responsive-table  input[type="checkbox"]:checked:before { color:#333 ;  border:none;   } 
+ 
+
+  /* iltcourse */
+@media (min-width:767px) {
+.modal-content  .scrollbar-iltcourse { height: 300px ;  overflow-x: hidden; overflow-y: auto; }
+}
+@media (max-width:767px) {
+  .modal-content  .scrollbar-iltcourse { overflow: auto; height: auto ;}
+  }
+  div[class*="iltcourse"]  { margin-top: 20px;}
+  div[class*="iltcourse"] .delete { margin-top: 20px;}
+  .scrollbar-iltcourse .row:nth-child(even) { background-color: rgba(255,255,255,0.1);}
+  .iltcourse-form { margin-top: 20px; padding: 50px 0; border-top:1px solid #fff; }
+  .iltcourse-form  .form-control,   div[class*="iltcourse"] .calendar-input  {  width:95%;}
+  div[class*="iltcourse"] table { margin-top: 10px;    margin-bottom: 10px;}
+  div[class*="iltcourse"] td { vertical-align: top;}
+
+
+  
+/* carousel-images window */
+.carousel-images section.content-area {
+  padding: 20px;
+}
+ .carousel-images .seq {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.carousel-images .seq  label {
+  vertical-align: middle; line-height: normal;margin: 0 10px 0 0 ;
+  
+}
+
+.carousel-images .seq .form-control {
+  display: inline-block;
+  width: 80px;margin: 0;
+}
+ .carousel-images .seq + .button-list {
+  display: inline-block; 
+}
+ .carousel-images .seq + .button-list button {
+  width: auto; margin: 0px 4px 4px 4px;
+}
+
+
+@media (min-width:767px) {
+  .modal-content  .formarea { min-height:300px ;}
+  .modal-content  .formarea.edit  .text-right label {
+      margin-top: 15px;
+  }
+ 
+  }
+
+  @media (max-width:768px) {
+    .modal-content  .formarea { min-height:200px ;}
+    .modal-content  .formarea .text-right { text-align: left !important;}
+    }
+
