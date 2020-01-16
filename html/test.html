@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>ACG</title>
+
+<!-- Bootstrap -->    
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+ 
+<!-- font Awesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<!-- * Custom CSS Inserted Here -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+
+<!-- Chosen.js -->    
+    <script src="../assets/js/chosen-js/chosen.jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../assets/js/chosen-js/chosen.min.css">
+
+
+    <script type="text/javascript" src="../assets/js/moment.min.js"></script>
+
+<!-- include libraries(jQuery, bootstrap)
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>  -->
+
+<!-- include summernote css/js -->
+<link href="../assets/css/summernote-bs4.css" rel="stylesheet">
+<script src="../assets/js/summernote-bs4.js"></script>
+
+<script src="../assets/js/jquery.datetimepicker.js"></script>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js
+"></script>
+
+
+</head>
+
+<body>
+ 
+<!-- Newsfeed post authoring   start  -->
+<section class="window newsfeed-post">
+
+        <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i> Add/Edit Newsfeed Post <div class="window-close"></div></h2>
+    
+        <div class="container-fluid ">
+    
+            <section class="content-area">
+                <form>
+                    <!-- Audience start-->
+                    <div class="row">
+                        <div class="col-md-2  ">
+                            <label>Audience:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Audience Select dropdown start-->
+                            <select multiple data-placeholder="Choose Audience" class="form-control">
+                                <option class="text-faded">Select LOB / School</option>
+                                <option value="ALL">All Claims Academy Schools</option>
+                                <option value="CBI">Casualty/BI</option>
+                                <option value="PIP">PIP (Personal Injury Protection)</option>
+                                <option value="APD">APD (Auto Physical Damage</option>
+                                <option value="PTY">Property</option>
+                            </select>
+                            <!-- Audience Select dropdown  end-->
+                        </div>
+    
+                        <div class="col-md-4">
+                            <!-- Audience Selected list  start-->
+                            <div class="list">
+                                <label>Cosualty/BI <span class="delete"></span></label>
+                                <label>PIP <span class="delete"></span></label>
+                                <label>APD <span class="delete"></span></label>
+                                <label>Property <span class="delete"></span></label>
+                            </div>
+                            <!-- Audience Selected list  end-->
+                        </div>
+                    </div>
+                    <!-- Audience end-->
+    
+                    <div class="row">
+                        <!-- Importance start-->
+                        <div class="col-md-2  ">
+                            <label>Importance: </label>
+                        </div>
+    
+                        <div class="col-md-2">
+                            <!-- Normal start-->
+                            <div class="alerts-info">
+                                <label><i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    <input id="normal" name="normal" type="radio" name="audience" checked> Normal</label>
+                            </div>
+                            <!-- Normal end-->
+                            <!-- High start-->
+                            <div class="alerts-high">
+                                <label><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                    <input id="high" name="high" type="radio" name="audience"> High</label>
+                            </div>
+                            <!-- High end-->
+                        </div>
+    
+                        <!-- Importance end-->
+    
+                        <!-- Visible Until start-->
+                        <div class="col-md-2  ">
+                            <label>Visible Until:</label>
+                        </div>
+                        <div class="col-md-6 ">
+                            <!-- calendar start-->
+                            <div class="calendar-input">
+                                <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
+                            </div>
+                            <!-- calendar end-->
+    
+                            <div class="row">
+                                <!-- Publish start-->
+                                <div class="col-md-3  ">
+                                    <label>
+                                        <input id="publish" name="publish" type="checkbox">Publish</label>
+                                </div>
+                                <!-- Publish end-->
+    
+                                <!-- Publication start-->
+                                <div class="col-md-9  ">
+                                    <label>Publication Date: mm/dd/yyyy <i class="fa fa-calendar"></i></label>
+                                </div>
+                                <!-- Publication end-->
+                            </div>
+                        </div>
+                        <!-- Visible Until end-->
+                    </div>
+    
+                    <!-- Title Text start-->
+                    <div class="row">
+                        <div class="col-md-2  ">
+                            <label>Title Text:</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input id="title" name="title" type="text" class="form-control">
+                            <small class="note">(title limit: 500 characters)</small>
+                        </div>
+                    </div>
+                    <!-- Title Text end-->
+    
+                    <!-- Newsfeed Article start-->
+                    <div class="row">
+                        <div class="col-md-2  ">
+                            <label> </label>
+                        </div>
+                        <div class="col-md-10"> <img src="../assets/img/htmlEditor.PNG">
+                            <textarea id="article" name="article" class="form-control" rows="6"> </textarea>
+                            <small class="note">(article limit: 500 characters)</small>
+                        </div>
+                    </div>
+                    <!-- Newsfeed Article end-->
+    
+                    <div class="row">
+                        <div class="col-md-2  ">
+                        </div>
+                        <div class="col-md-4">
+                            <!-- buttons List start -->
+                            <div class="button-list">
+                                <button class="btn blue half" type="submit"><i class="fa fa-plus-circle"></i> Add/Change</button>
+                                <button class="btn lightGray half" type="reset"><i class="fa fa-times-circle"></i> Clear</button>
+                            </div>
+                            <!-- buttons List end -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </form>
+            </section>
+            
+        </div>
+    
+</section>
+<!-- Newsfeed post authoring  start  -->
+ 
+
+</body>
+
+</html>
