@@ -124,12 +124,12 @@
                         <div class="row">
                             <!-- Publish -->
                             <div class="col-md-3">
-                                <label><input id="publish" name="publish" type="checkbox">Publish</label>
+                                <label><input id="publish-checkbox" name="publish" type="checkbox" onclick="setPublishDate()">Publish</label>
                             </div>
 
                             <!-- Publication -->
                             <div class="col-md-9">
-                                <label>Publication Date: mm/dd/yyyy <i class="fa fa-calendar"></i></label>
+                                <label class="margin-left-neg-36">Publication Date: <span id="publish-date-text">mm/dd/yyyy</span> <i class="fa fa-calendar"></i></label>
                             </div>
                             <br />
                             <br />

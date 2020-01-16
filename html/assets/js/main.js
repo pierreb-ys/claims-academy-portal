@@ -23,3 +23,14 @@ $(function () {
 //$(document).ready(function() {
 //    $("#summernote").summernote();
 //});
+
+function setPublishDate() {
+
+   if (document.getElementById("publish-checkbox").checked == true) {
+     document.getElementById("publish-date-text").innerHTML = new Date().toLocaleDateString();
+   }
+ 
+   else {
+       document.getElementById("publish-date-text").innerHTML = "dd/mm/yyyy";
+   }
+ }
