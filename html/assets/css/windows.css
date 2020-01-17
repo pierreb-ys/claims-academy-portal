@@ -270,6 +270,19 @@ input[type="checkbox"].custom-control-input {
   height: 20px;  
   position: absolute;
 }
+.window section.task-list.unorder .fa-circle {
+  font-size: 11px;
+  position: absolute;
+  top: 6px;
+  left: 56px;
+}
+.window section.task-list.unorder li {
+  padding-left: 30px;
+}
+
+.window section.task-list.unorder li .dsc { 
+  padding-left: 40px;
+}
  
 .window section.task-list section.add-task-form button {
   position: relative;
