@@ -57,9 +57,17 @@
 <!-- Newsfeed Post Authoring -->
 <section class="window newsfeed-post">
 
-    <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i> Add/Edit Newsfeed Post - for Training Consultants and Administrators <div class="window-close"></div></h2>
+    <h2>
 
-    <div class="container-fluid ">
+        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+        Add/Edit Newsfeed Post - for Training Consultants and Administrators
+
+        <div class="window-close">
+        </div>
+
+    </h2>
+
+    <div class="container-fluid">
 
         <section class="content-area">
 
@@ -90,6 +98,7 @@
 
                 </div>
 
+                <!--  -->
                 <div class="row">
 
                     <!-- Importance -->
@@ -97,13 +106,13 @@
                         <p class="align-right">Importance: </p>
                     </div>
 
+                    <!-- Radio -->
                     <div class="col-md-2">
-                        <!-- Normal -->
+
                         <div class="alerts-info">
                             <label><i class="fa fa-info-circle" aria-hidden="true"></i><input id="normal" name="normal" type="radio" name="audience" checked> Normal</label>
                         </div>
 
-                        <!-- High -->
                         <div class="alerts-high">
                             <label><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                                 <input id="high" name="high" type="radio" name="audience"> High</label>
@@ -111,17 +120,30 @@
 
                     </div>
 
-                    <div class="col-md-6">
-
-                        <label class="margin-right-12">Visible Until: </label>
-
-                        <!-- Calendar -->
-                        <div class="calendar-input">
-                            <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
-                        </div>
-
+                    <!-- Publish Date -->
+                    <div class="col-md-4">
 
                         <div class="row">
+
+                            <div class="col-sm-3">
+
+                                <label class="margin-right-12">Visible Until: </label>
+
+                            </div>
+
+                            <div class="col-sm-9">
+
+                                <!-- Calendar -->
+                                <div class="calendar-input">
+                                    <input id="visibleUntil" name="visibleUntil" type="text" class="form-control"><i class="fa fa-calendar"></i>
+                                </div>
+                        
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
                             <!-- Publish -->
                             <div class="col-md-3">
                                 <label><input id="publish-checkbox" name="publish" type="checkbox" onclick="setPublishDate()">Publish</label>
@@ -129,8 +151,9 @@
 
                             <!-- Publication -->
                             <div class="col-md-9">
-                                <label class="margin-left-neg-36">Publication Date: <span id="publish-date-text">mm/dd/yyyy</span> <i class="fa fa-calendar"></i></label>
+                                <label class="">Publication Date: <span id="publish-date-text">mm/dd/yyyy</span> <i class="fa fa-calendar"></i></label>
                             </div>
+
                             <br />
                             <br />
 
@@ -168,14 +191,13 @@
 
                 </div>
 
-
                 <div class="row">
 
                     <div class="col-md-2">
                     </div>
 
                     <div class="col-md-4">
-                        <!-- buttons List start -->
+
                         <div class="button-list">
                             <button class="btn blue half" type="submit"><i class="fa fa-plus-circle"></i> Add/Change</button>
                             <button class="btn lightGray half" type="reset"><i class="fa fa-times-circle"></i> Clear</button>
@@ -186,6 +208,7 @@
                 </div>
 
                 <div class="col-md-6">
+
                 </div>
 
             </form>
