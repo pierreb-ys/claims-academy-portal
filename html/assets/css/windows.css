@@ -491,7 +491,7 @@ aside.select-points .points input {
 /* Note */
 
 small.note {font-size: 11px; color: #333;
-  margin-top: -30px;
+  margin-top: 0px;
   margin-bottom: 10px;
   position: relative;
   float: right;
