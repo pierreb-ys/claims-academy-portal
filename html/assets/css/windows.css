@@ -424,15 +424,34 @@ aside.select-points .points input {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.window .select-schedules-orange { background-color: #fff ; border:5px solid #f68d35; padding:10px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .window section.select-schedules {
     font-size: 13px;
     color:#000;
 }
+
+.window section.select-schedules-orange {
+  font-size: 13px;
+  color:#000;
+}
+
 .window .select-schedules button {
     margin-top: 10px;
 }
+
 .window .select-schedules .scroller { height: 90px ; overflow-x:  hidden; overflow-y:  auto;}
 .window .select-schedules input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.window .select-schedules-orange .scroller { height: 90px ; overflow-x:  hidden; overflow-y:  auto;}
+.window .select-schedules-orange input[type="radio"] {
     display: inline-block;
     vertical-align: middle;
 }
@@ -441,12 +460,23 @@ aside.select-points .points input {
   color: #3398cb;
 }
 
+.window .select-schedules-orange input[type="radio"], .window .select-schedules-orange input[type="radio"]:after, .window .select-schedules-orange input[type="radio"]:checked:after {
+  color: #3398cb;
+}
 
 .window  .select-schedules > .row:first-child div[class*="col-"] {
   padding-top: 0; padding-bottom: 10px; 
 }
 
+.window  .select-schedules-orange > .row:first-child div[class*="col-"] {
+  padding-top: 0; padding-bottom: 10px; 
+}
+
 .window  .select-schedules div[class*="col-"] {
+  padding-top: 3px; padding-bottom: 3px;
+}
+
+.window  .select-schedules-orange div[class*="col-"] {
   padding-top: 3px; padding-bottom: 3px;
 }
    
@@ -464,10 +494,10 @@ aside.select-points .points input {
 
 }
 
-
 .window section.form input[type="checkbox"] {
   vertical-align: text-bottom;
 }
+
 .window  .ques {   }
 .window  .ques h3 { font-size: 16px; margin-bottom: 20px;  }
 .window  .ques h3 span {
@@ -476,16 +506,20 @@ aside.select-points .points input {
   line-height: normal;
   margin: 0 10px;
 }
+
 .window .ques label  {
   margin-bottom: 0;
 }
+
 .window .ques input, .window .ques input:checked {
   vertical-align: middle;
   display: inline-block; 
 }
+
 .window .ques input:after, .window .ques input:checked:after { 
   color:#fff
 }
+
 .window  .button-list.mb { margin-bottom: 20px;   }
 
 /* calendar */
