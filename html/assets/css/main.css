@@ -1187,3 +1187,40 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
   .margin-left-neg-36 {
     margin-left: -36px;
   }
+
+  .font-size-2em {
+    font-size: 2em;
+  }
+
+  .button-text-large {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 36px;
+    padding-top: 20px;
+  }
+
+  .button-text-align-left {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .display-inline {
+    display: inline;
+  }
+
+  #register-button {
+    display: flex;
+  }
+
+  .display-block {
+    display: block;
+  }
+
+  #register-button-icon {
+    display: block;
+  }
+
+  #register-button-text {
+    display: block;
+  }
