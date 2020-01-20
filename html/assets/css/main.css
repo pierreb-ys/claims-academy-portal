@@ -1256,3 +1256,15 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 .padding-right-12 {
     padding-right: 12px;
 }
+
+.margin-left-neg-18 {
+  margin-left: -18px;
+}
+
+.padding-left-72 {
+  padding-left: 72px;
+}
+
+.min-width-60 {
+  min-width: 60px;
+}
