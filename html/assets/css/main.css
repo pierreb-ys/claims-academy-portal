@@ -419,6 +419,7 @@ input[type="radio"] {
      position: relative;
      vertical-align: middle;
 }
+
 input[type="radio"]:checked {
    background-color:transparent;
 }
@@ -436,9 +437,13 @@ input[type="radio"]:after {
 }
 
  input[type="radio"]:checked:after {  color:#3398cb;  position:absolute;  z-index: 1; content: "\f192"; }
+
 /* Arrows */
+
 select {
+
   border: 1px solid #3398cb;
+
   background-image:
     linear-gradient(45deg, transparent 50%, #333 50%),
     linear-gradient(135deg, #333 50%, transparent 50%),
@@ -1246,4 +1251,8 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 }
 .button-note ul {
   margin: 0;
+}
+
+.padding-right-12 {
+    padding-right: 12px;
 }
