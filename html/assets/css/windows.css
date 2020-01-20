@@ -387,6 +387,13 @@ position:absolute;
     line-height: normal;
 }
 
+
+
+@media (min-width:767px){
+  .window  aside.select-badge > div:first-child { text-align: right ;}
+}
+
+
 /* select points */
 
 
@@ -417,6 +424,14 @@ aside.select-points .points input {
     margin-bottom: 30px;
     line-height: normal;
 } 
+
+@media (min-width:767px){
+  .window  aside.select-points > div:first-child { text-align: right ;}
+
+}
+
+
+ 
 
 /* select schedules */ 
 
