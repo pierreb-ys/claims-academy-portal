@@ -383,16 +383,24 @@ position:absolute;
 
 .window  aside.select-badge  {
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: normal;
+    text-align: center; 
+    min-height: 90px;
 }
 
 
 
-@media (min-width:767px){
-  .window  aside.select-badge > div:first-child { text-align: right ;}
+ 
+.window  aside.select-badge > div:first-child { text-align: right ; margin-right: 10px; min-width: 100px; }
+.window  .select-badge > div {
+  display: inline-block;
+  vertical-align: middle;
 }
-
+.window .select-badge img { 
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /* select points */
 
@@ -421,16 +429,23 @@ aside.select-points .points input {
     color: #fff;
 }
 .window aside.select-points {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: normal;
+    text-align: center;
+    min-height: 90px;
+    
 } 
 
-@media (min-width:767px){
-  .window  aside.select-points > div:first-child { text-align: right ;}
-
+ 
+.window  aside.select-points > div:first-child { text-align: right ; margin-right: 10px; min-width: 100px;}
+.window  .select-points > div {
+  display: inline-block;
+  vertical-align: middle;
 }
-
-
+.window .select-points img { 
+  display: inline-block;
+  vertical-align: middle;
+}
  
 
 /* select schedules */ 
