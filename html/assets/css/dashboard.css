@@ -214,11 +214,12 @@
        color: #fff;
      }  
       
-     .achievements-area aside { padding: 10px; min-height: 250px; } 
+     .achievements-area aside { padding: 10px; min-height: 250px; text-align: center; } 
      
         .achievements .achievements-area aside h3 {
             font-size: 18px;
             padding: 10px;
+            text-align: left;
         }  
         
         .achievements .achievements-area aside .rank {
@@ -246,11 +247,14 @@
             color: #fff;
             font-size: 40px;
             text-align: center;
-            line-height: 120px;
-            float: left;
+            line-height: 120px; 
+            display: inline-block;
+            vertical-align: top;
         }
         .achievements  .achievements-area aside .badges-list {
             padding: 0px 10px;     height: auto;
+            display: inline-block;
+            vertical-align: top;
         }
         .achievements  .achievements-area aside  .badges-list img {
             float: left;
@@ -260,6 +264,7 @@
         .achievements  .achievements-area aside  .badges-list   .badges-disc {
             overflow: hidden;     padding-top: 10px;
             font-size: 13px;
+            text-align: left ;
         }
         .achievements   .achievements-area aside .badges-list ul {
             margin: 0;
@@ -281,6 +286,7 @@
             overflow: visible; 
             padding-top: 10px;
             font-size: 13px; 
+           
         }
         .achievements  .achievements-area aside .badges-list img { 
             margin-right: 10px;
@@ -451,8 +457,9 @@
         .deanlist  .deanlist-area  .dean-profile-pic picture img {
             width: 70%;
             height: 70%;
-            margin-left: 15%;
-            margin-right: 15%;
+            max-width: 200px;
+            margin: auto;
+            display: block;
         }
 
 
