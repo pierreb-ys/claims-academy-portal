@@ -591,7 +591,9 @@
 }
 .dashboard-profile-info  .profile-pic { position: relative; display: inline-block;   
     margin: auto;
-    padding: 0;  width: auto;}
+    padding: 0;  width: 220px;
+    height: 207px;
+}
 .dashboard-profile-info .disc {
     position: absolute;
     bottom: 5%;
@@ -600,8 +602,8 @@
     color: #fff;
     text-align: left;
     padding: 2px 10px 2px 0;
-    height: 60px;
-    width: 70%;
+    min-height: 60px;
+    min-width: 70%;
 }
 .dashboard-profile-info  .disc:after {
     width: 0;
