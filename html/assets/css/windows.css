@@ -392,7 +392,7 @@ position:absolute;
 
 
  
-.window  aside.select-badge > div:first-child { text-align: right ; margin-right: 10px; min-width: 100px;      margin-top: 5px;}
+.window  aside.select-badge > div:first-child { text-align: right ; margin-right: 10px; min-width: 100px;  }
 .window  .select-badge > div {
   display: inline-block;
   vertical-align: top;
@@ -437,7 +437,7 @@ aside.select-points .points input {
 } 
 
  
-.window  aside.select-points > div:first-child { text-align: right ; margin-right: 10px; min-width: 100px;     margin-top: 5px;}
+.window  aside.select-points > div:first-child { text-align: right ; margin-right: 10px; min-width: 100px;}
 .window  .select-points > div {
   display: inline-block;
   vertical-align: top;
