@@ -522,6 +522,8 @@ select:focus {
 /*   buttons list */
 
 .full { width:100%; }
+.button-list button.w100 { width: 100px;}
+.button-list button.w150 { width: 150px;}
 @media (min-width:600px){
   .button-list button.half  +  button.half  { margin-left: 2%;} 
    .half { width:48%; }
