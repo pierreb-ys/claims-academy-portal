@@ -1274,3 +1274,45 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 .justify-content-center {
   justify-content: center;
 }
+
+
+
+
+     /*   Alerts Widget  */
+     .alerts-widget  {  margin-bottom: 20px;  background-color: #fff; padding-top: 10px; min-height: 100px;  color:#b82025; }
+     .alerts-widget h2 {
+       background-color: #b82025; 
+       background-position: 10px center;
+       background-repeat: no-repeat; 
+       background-size: 30px;
+       font-size: 18px;
+       text-transform: uppercase;
+       line-height: 40px;
+       padding-top: 0;
+       padding-bottom: 0;
+       margin-bottom: 0;
+       color: #fff;
+       padding-left: 10px;
+     } 
+      
+     .alerts-widget .alerts-area {
+      height: 100px;
+      overflow: auto;
+  }
+     .alerts-widget .alerts-area ul {
+      margin: 0;
+      padding: 10px;
+  }
+     .alerts-widget  .alerts-area li:before{   
+       width: 8px;
+       height: 8px; 
+       margin-left: -18px;
+       margin-top: 10px;
+        content: "";  background-color:#0c3859; position: absolute;   border-radius: 50%; }
+        .alerts-widget .alerts-area li {
+          padding: 5px 0 5px 26px;
+          list-style: none;
+          position: relative;
+          display: inline;
+          width: auto;
+      }
