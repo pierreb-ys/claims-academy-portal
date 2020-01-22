@@ -1270,3 +1270,7 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 .min-width-60 {
   min-width: 60px;
 }
+
+.justify-content-center {
+  justify-content: center;
+}
