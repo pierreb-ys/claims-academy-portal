@@ -23,7 +23,7 @@
 @import url("reports.css");  
 @import url("access.css");  
 @import url("add-resource.css");  
-
+@import url("contact.css");
 
 @import url("typography.css");
 @import url("viewports.css");
@@ -1275,7 +1275,10 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
   justify-content: center;
 }
 
-
+ 
+.display-inline-flex {
+  display: inline-flex;
+} 
 
 
      /*   Alerts Widget  */
