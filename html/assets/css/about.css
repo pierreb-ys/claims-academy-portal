@@ -1,0 +1,18 @@
+.about-page {
+    font-family: "mission-gothic-regular";
+    color: white;
+    background-color: #5B7FA9;
+    padding: 10px; 
+    min-height: 500px;
+}
+ 
+.about-page a {
+    color: #003777;
+    text-decoration: underline;
+}
+ 
+.about-page p {
+     padding: 10px;
+}
+ 
+ 
