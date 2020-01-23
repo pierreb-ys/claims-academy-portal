@@ -3,6 +3,7 @@
     color: white;
     background-color: #5B7FA9;
     padding: 10px;
+    min-height: 500px;
 }
 
 .send-btn {
