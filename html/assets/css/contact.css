@@ -2,4 +2,25 @@
     font-family: "mission-gothic-regular";
     color: white;
     background-color: #5B7FA9;
+    padding: 10px;
+}
+
+.send-btn {
+    background-color: #2b78e4;
+    color: #fff;
+    border: 2px solid #074296;
+    margin-bottom: 20px;
+    width: 100px;
+}
+ 
+
+@media (min-width:767px){
+    .contact-page .f-left { float: left;}
+    .contact-page  .f-right { float: right;}
+}
+
+@media (max-width:768px){
+    .contact-page .text-right { text-align: left !important;}
+    .contact-page label   { margin-top: 10px;}
+    .contact-page p   { margin-bottom: 5px;}
 }
