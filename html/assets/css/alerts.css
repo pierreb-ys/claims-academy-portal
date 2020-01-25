@@ -1,1 +1,12 @@
 /* ------------ ------------ ------------ ------------ ALERTS ------------ ------------ ------------ ------------ */
+
+.padding-left-36 {
+    padding-left: 36px;
+}
+
+@media (min-width: 1200px) {
+    .alerts-widget .alerts-area {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
