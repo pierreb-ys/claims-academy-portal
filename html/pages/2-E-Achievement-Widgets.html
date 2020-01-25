@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <meta charset="utf-8">
+
+    <title>ACG</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    <!-- Bootstrap (CDN) -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Bootstrap DataTable CSS -->  
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap DataTable JS -->   
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- CAROUSEL -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <!-- Carousel Repeating List START - Needs to match count of items -->
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <!-- Carousel Repeating List -->
+  
+          <!-- List Item 1 -->
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../assets/img/carousel/new-courses-notice.png" alt="First Slide">
+          </div>
+          
+          <!-- List Item 2 -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../assets/img/carousel/img_snow_wide.png" alt="Second Slide">
+          </div>
+          
+          <!-- List Item 3 -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../assets/img/carousel/img_mountains_wide.png" alt="Third Slide">
+          </div>
+          
+          <!-- List Item 4 -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../assets/img/carousel/img_nature_wide.png" alt="Fourth Slide">
+          </div>
+          
+          <!-- List Item 5 -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../assets/img/carousel/img_lights_wide.png" alt="Fifth Slide">
+          </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">  
+            <div class="dashboard-profile-info">
+                <div class="profile-pic">
+            <img src="../assets/img/dashboard/user-default.png">
+            <div class="disc"><h3>Peter Miller</h3>
+                <p>Clams LOB<br>
+                <em>Sub LOB</em></p></div>
+            </div>
+        </div>
+	</div>
+
+
+	<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">  
+	        <!-- --- Newsfeed start --- -->
+        <section class="dashboard-newsfeed">  
+            <h2 class="title">NEWSFEED</h2>
+            <div class="dashboard-newsfeed-area"> 
+			<!-- --- Newsfeed news start --- -->
+                <article>
+                  <aside class="newsfeed-date"> 
+				            3<br>
+                            NOV
+				    </aside> 
+					<div class="news-content">
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing... <a href="#">more</a> 
+					</p></div>
+					</article>
+					  <!-- --- Newsfeed news end --- -->
+					  <!-- --- Newsfeed news start --- -->
+                <article>
+                  <aside class="newsfeed-date"> 
+				            3<br>
+                            NOV
+				    </aside> 
+					<div class="news-content">
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing... <a href="#">more</a> 
+					</p></div>
+					</article>
+					  <!-- --- Newsfeed news end --- -->
+					<!-- --- Newsfeed news start --- -->
+                <article>
+                  <aside class="newsfeed-date"> 
+				            3<br>
+                            NOV
+				    </aside> 
+					<div class="news-content">
+                    <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">more</a> 
+					</p></div>
+					</article>
+					  <!-- --- Newsfeed news end --- -->
+<!-- --- Newsfeed news start --- -->
+<article>
+    <aside class="newsfeed-date"> 
+              3<br>
+              NOV
+      </aside> 
+      <div class="news-content">
+      <h6>Lorem ipsum dolor sit amet</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">more</a> 
+      </p></div>
+      </article>
+        <!-- --- Newsfeed news end --- -->
+
+					</div>
+        </section>
+	</div>
+
+	</div>
+ 
+    
+ 
+<!-- NOTIFICATIONS AND ALERTS -->
+<section>
+    <div class="row"> 
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  ">
+
+            <!-- IMPORTANT NOTIFICATIONS-->
+            <!--
+            <aside class="notifications">
+                <h2>Important Notifications</h2>
+                <div class="notifications-area">
+                    <ul>
+                        <li>System Maintenance this weekend</li>
+                        <li>Latest Claim Policy</li> 
+                    </ul>
+                </div>
+            </aside>
+        -->
+    
+        <aside class="alerts-widget notifications">
+            <h2><i class="fa fa-bell-o" aria-hidden="true"></i> <span class="padding-left-36">Important Notifications</span></h2>
+            
+            <div class="alerts-area"> 
+                <ul>
+                    <li>
+                        This is a longer notice that is exactly 150 characters long so that one can see what a maximum length notice looks like. Thirty more characters here!!
+                    </li>
+                    <li>
+                        System Mainenance this weekend.
+                    </li>
+                    <li>
+                        Latest Claim Policy.
+                    </li>
+                    <li>
+                        Notification Example.
+                    </li>         
+                </ul> 
+            </div>
+    
+        </aside> 
+        
+        </div>
+
+
+        <!-- ALERTS-->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <!--
+            <aside class="alerts">
+                <h2>Alerts</h2>
+                <div class="alerts-area">
+                    <ul>
+                        <li>Training Overdue on Sept 1st</li>
+                        <li>Training Approaching Oct 13th</li> 
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        -->
+        <aside class="alerts alerts-widget">
+
+            <h2><i class="fa fa-bell-o" aria-hidden="true"></i> <span class="padding-left-36">Alerts</span></h2>
+            
+            <div class="alerts-area"> 
+                <ul>
+                    <li>
+                        This is a longer notice that is exactly 150 characters long so that one can see what a maximum length notice looks like. Thirty more characters here!!
+                    </li>
+                    <li>
+                        The system will be down this weekend. Contact IT at this if you have concerns. 
+                    </li>
+                    <li>
+                        When there are a lot of notification links and no Alerts, the IMPORTANT NOTIFICATIONS area can expand to the right all the way across the page.
+                    </li>
+                    <li>
+                        As you can see, line wrap is supported. I hope it is in AEM.
+                    </li>         
+                </ul> 
+            </div>
+    
+        </aside> 
+
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS AND DEAN'S LIST -->  
+    <section>
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12  ">
+                <aside class="achievements">
+                    <h2>Achievements</h2> 
+                    <div class="achievements-area">
+                        <div class="row">
+
+                        <!--
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
+                              <aside> <h3>BADGES EARNED</h3>
+                                <div class="badges"><strong>13</strong></div>
+                                <div class="badges-list"> 
+                                    <ul>
+                                        <li><img src="../assets/img/dashboard/badge1.jpg">
+                                        <div class="badges-disc">Best <br>Beginner </div></li>
+                                        <li><img src="../assets/img/dashboard/badge2.jpg">
+                                        <div class="badges-disc">Standout  <br>Bage </div></li>
+                                        </ul>
+                                </div>
+                            </aside> 
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bdr  ">
+                                <aside><h3>RANK</h3> 
+                                <div class="rank"><strong>2</strong></div>
+                            </aside> 
+                            </div>
+
+                        -->
+
+
+
+                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 bdr  ">
+                                            <section class="window my-clubs">
+                                            <div class="guest-user-msg"> 
+                                                <aside id="not-available-message-fix" class="club">
+                                                    <h3 id="text-align-center">This section is only available for Claims Learners. <br>Contact Claims Academy to find out more with an email inbox <a href="#">hyperlink</a>.</h3>
+                                                </aside> 
+                                            </div> 
+                                            <section class="window my-clubs">
+                                        </div>
+
+
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
+                                <aside>  <h3>AVAILABLE BADGES</h3>  
+                                    <div class="badges"><strong>248</strong></div>
+                                    <div class="badges-list"> 
+                                        <ul>
+                                            <li><img src="../assets/img/dashboard/badge3.jpg">
+                                            <div class="badges-disc">Best <br>Beginner </div></li>
+                                            <li><img src="../assets/img/dashboard/badge4.jpg">
+                                            <div class="badges-disc">Standout  <br>Bage </div></li>
+                                            </ul>
+                                    </div>
+                                </aside>  
+                            </div>
+                          </div>
+                    </div> 
+                </aside>
+            </div>
+     
+    
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12  ">
+                <aside class="deanlist">
+                    <button class="edit-btn">Edit</button>
+                    <h2 class="title"><strong> Dean's List</strong>
+                        <small>Congrats to This Week's Achiever</small>
+                    </h2>
+                    <div class="deanlist-area">
+                        <div class="dean-profile-pic">  
+                            <picture><img src="../assets/img/prof-pic-nobdr.png"></picture> 
+                            <h2><span></span> <strong>Peter Miller  </strong> <small>View Dean's List</small></h2>    
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+
+<!-- SYLLABUS - UPCOMING TASKS --> 
+         
+    <section class="syllabus">
+        <h2>SYLLABUS - UPCOMING TASKS</h2>
+        <div class="syllabus-area">
+            <!-- ---   start --- -->
+            <article>
+                <aside class="video">
+                    <img src="../assets/img/dashboard/video.jpg">
+                </aside>
+                <div class="video-content"><span class="avatar"><img src="../assets/img/dashboard/profile-1.png"></span>
+                    <h3>Member Basics Curriculum: <i>Engaging the Member</i></h3>
+                    <a href="#">Details of curriculum</a>
+                </div>
+            </article>
+            <!-- ---   end --- -->
+            <!-- ---   start --- -->
+            <article>
+                <aside class="video">
+                    <img src="../assets/img/dashboard/video.jpg">
+                </aside>
+                <div class="video-content"><span class="avatar"><img src="../assets/img/dashboard/profile-2.png"></span>
+                    <h3>Member Basics Curriculum: <i>Engaging the Member</i></h3>
+                    <a href="#">Details of curriculum</a>
+                </div>
+            </article>
+            <!-- ---   end --- -->
+            <!-- ---   start --- -->
+            <article>
+                <aside class="video">
+                    <img src="../assets/img/dashboard/video.jpg">
+                </aside>
+                <div class="video-content"><span class="avatar"><img src="../assets/img/dashboard/profile-3.png"></span>
+                    <h3>Member Basics Curriculum: <i>Engaging the Member</i></h3>
+                    <a href="#">Details of curriculum</a>
+                </div>
+            </article>
+            <!-- ---   end --- -->
+             <!-- ---   start --- -->
+             <article>
+                <aside class="video">
+                    <img src="../assets/img/dashboard/video.jpg">
+                </aside>
+                <div class="video-content"><span class="avatar"><img src="../assets/img/dashboard/profile-1.png"></span>
+                    <h3>Member Basics Curriculum: <i>Engaging the Member</i></h3>
+                    <a href="#">Details of curriculum</a>
+                </div>
+            </article>
+            <!-- ---   end --- -->
+            <!-- ---   start --- -->
+            <article>
+                <aside class="video">
+                    <img src="../assets/img/dashboard/video.jpg">
+                </aside>
+                <div class="video-content"><span class="avatar"><img src="../assets/img/dashboard/profile-2.png"></span>
+                    <h3>Member Basics Curriculum: <i>Engaging the Member</i></h3>
+                    <a href="#">Details of curriculum</a>
+                </div>
+            </article>
+            <!-- ---   end --- -->
+            <!-- ---   start --- -->
+            <article>
+                <aside class="video">
+                    <img src="../assets/img/dashboard/video.jpg">
+                </aside>
+                <div class="video-content"><span class="avatar"><img src="../assets/img/dashboard/profile-3.png"></span>
+                    <h3>Member Basics Curriculum: <i>Engaging the Member</i></h3>
+                    <a href="#">Details of curriculum</a>
+                </div>
+            </article>
+            <!-- ---   end --- -->
+        </div>
+    </section>
+
+
+
+<!-- BOTTOM ROW (4 COLUMNS) --> 
+<section>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  ">
+            <aside class="lob-progress">
+                <h2>ALL LOB PROGRESS</h2> 
+                <div class="progress-area">
+                    <ul>  
+                        <li><label> APD</label> 
+                            <div class="progress">
+                                <span>20%</span>
+                                <div class="bar" style="width:20%; background-color: #6ac187;"></div> 
+                            </div>
+                        </li> 
+                        <li><label>Casually/BI </label> 
+                            <div class="progress">
+                                <span>30%</span>
+                                <div class="bar" style="width:30%; background-color: #f06061;"></div> 
+                            </div>
+                        </li> 
+                        <li><label>PIP</label> 
+                            <div class="progress">
+                                <span>80%</span>
+                                <div class="bar" style="width:80%; background-color: #d3a8ce;"></div> 
+                            </div>
+                        </li> 
+                        <li><label>Property</label> 
+                            <div class="progress">
+                                <span>73%</span>
+                                <div class="bar" style="width:73%; background-color: #f58838;"></div> 
+                            </div>
+                        </li> 
+                    </ul>
+                </div> 
+            </aside>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  ">
+            <aside class="learning-dairy">
+                <h2>LEARNING DIARY</h2>
+                <div class="learning-dairy-area">
+                    <ul>
+                        <li>Attention Item - 1</li>
+                        <li>Attention Item - 2</li>
+                        <li>Attention Item - 3</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  ">
+            <aside class="tools">
+                <h2>TOOLS</h2>
+                <div class="tools-area">
+                    <ul>
+                        <li>Quick Reference Guide 1</li>
+                        <li>Quick Reference Guide 2</li>
+                        <li>Quick Reference Guide 3</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  ">
+            <aside class="whatsnew">
+                <h2>WHAT'S NEW?</h2>
+                <div class="whatsnew-area">
+                    <ul>
+                        <li>Claims Process</li>
+                        <li>Insurance Safety</li>
+                        <li>Job Market</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+</div>
+ 
+
+
+
+
+
+
+</body>
+
+<style>
+  
+</style>
+
+</html>

@@ -4,6 +4,16 @@
     padding-left: 36px;
 }
 
+#not-available-message-fix {
+    min-height: 0px;
+    margin-left: 12px;
+    max-height: 224px;
+}
+
+#text-align-center {
+    text-align: center;
+}
+
 @media (min-width: 1800px) {
     .alerts-widget .alerts-area {
         padding-left: 60px;
