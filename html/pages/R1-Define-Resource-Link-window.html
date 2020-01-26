@@ -65,12 +65,19 @@
                     
                         <div class="col-md-3 col-lg-2"> 
                         
-                            <label><strong> 1. Select Resource Type and School and, optionally, Phase using fields at right: </strong>  <div class="req text-center float-right"> * <small>Required</small></div></label>  
+                            <label>
+                                <strong> 1. Select Resource Type and School and, optionally, Phase using fields at right: </strong>
+                                <br />
+                                <br />
+                                <div class="req text-center float-left"> * <small>Required</small></div>
+                            </label>  
                         
                         </div>
 
                         <div class="col-md-9 col-lg-10">
-                            <span class="req">*</span> 
+
+                            <span class="req">* </span> 
+
                             <select id="allSchools" class="" name="allSchools">  
                                 <option>Select Resource Type</option>
                                 <option>Document</option>
@@ -78,7 +85,9 @@
                                 <option>External Link</option>
                                 <option>Video (Vimeo hosted)</option> 
                             </select> 
-                            <span class="req">*</span>
+
+                            <span class="req req margin-left-20">* </span>
+
                             <select class="schools"> 
                                 <option>Select Schools Tag(s)</option> 
                                 <option>All Schools</option> 
@@ -87,8 +96,26 @@
                                 <option>APD (Auto Physical Damage)</option>
                                 <option>Property</option>
                             </select>  
+                            <!--
                             <select id="phase" name="phase">
                                 <option>No  Phase Tag</option>
+                                <option>Customer Service</option>
+                                <option>Coverage</option>
+                                <option>Investigation</option>
+                                <option>Evaluation</option>
+                                <option>Settlement/Nagotiatioin</option>
+                                <option>Reserve</option>
+                                <option>File Management</option>
+                                <option>Recovery</option>
+                                <option>Fraud</option>
+                                <option>Compliance</option>
+                                <option>Litigation Management</option>
+                                <option>Vendor Management</option> 
+                            </select>
+                            -->
+                            <!-- <p>(Cmd or Windows Key to Select Tags that Are not adjacent to each other)</p> -->
+                            <select id="phase" name="phase" multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
+                                <option selected>No  Phase Tag</option>
                                 <option>Customer Service</option>
                                 <option>Coverage</option>
                                 <option>Investigation</option>
@@ -127,7 +154,7 @@
                             <input class="form-control     " type="input"   placeholder="<displays  file name after upload completes>" aria-describedby="button-addon3">
                             </div>
                             <div class="col-md-5 col-lg-5"> 
-                            <div class="field-inline-10per " >  <label>URL:</label>  
+                            <div class="field-inline-10per " >  <label>URL: </label>  
                                 <input class="form-control      " type="input"  size="50"  placeholder="Type or Paste URL here" aria-describedby="button-addon3">
                             </div>
                             </div>

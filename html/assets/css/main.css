@@ -1336,3 +1336,35 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
           display: inline;
           width: auto;
       }
+
+.margin-right-36 {
+  margin-right: 36px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+#phase {
+  max-width: 25%;
+  margin-right: 0px;
+  margin-left: 24px;
+  display: inline-flex;
+}
+
+.align-left {
+  text-align: left;
+}
+
+#align-left-fix {
+  text-align: left;
+  margin-top: 24px;
+}
+
+@media (max-width: 1000) {
+
+  #align-left-fix {
+    margin: 0px;
+  }
+
+}

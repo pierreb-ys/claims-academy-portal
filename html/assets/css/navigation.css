@@ -47,9 +47,12 @@ span.navbar-text {
   padding-bottom: 0;
 }
 
-
 .nav-item {
   position: relative;
+}
+
+.link-selected {
+  background-color: orange;
 }
 
 /* VIEWPORTS */
