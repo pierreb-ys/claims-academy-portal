@@ -22,9 +22,9 @@
 
 <!-- JavaScript -->
 
-<!-- jQuery 
+<!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
--->
+
 <!-- Popper.js 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 -->
@@ -48,44 +48,56 @@
     <form> 
 
         <div class="container-fluid ">
-           
+            
             <!-- Select Course -->
             <section class="row select-course">
 
                 <!-- Edit/Use Buttons -->
-                <div class="col-md-2">
-                    <div class="edit-use">
-                        <button class="btn purple">Edit</button>
-                        <button class="btn white">Use</button>
-                    </div>
-                </div>
+                <div class="edit-use absolute">
+                    <button class="btn purple">Edit</button>
+                    <button class="btn white">Use</button>
+                </div> 
 
                 <!-- Drop-Down Menu ("Select Course Type") -->
-                <div class="col-md-3 course-type">
- 
+                <div class="col-md-5 course-type">
+                       <div class="row dkp-mt60">
+                    <div class="  col-lg-5  ">  
+                        <label>ACG U Course Number   </label>  
+                        <input type="text" class="form-control  " value="CLM-00124">
+                    </div>
+                    <div class="  col-lg-7"> 
+                        <label class="vb">Content ID for Deep Link Construction </label> 
+                        <input type="text" class="form-control    " value="12345678901234567890123456789012"  >
+                    </div>
+                </div>
+             
                      </div>
 
                 <!-- Course ID and Version Number -->
-                <div class="col-md-4">
+            
+
+                <div class="col-md-4 rs">
                     <div class="row">
-                        <div class="  col-lg-7">
-                            <label>Course ID </label>
-                            <input type="text" class="form-control" value="Course 1">
-                            <label class="lms">ACG U <br>Course ID <strong>CLM-00124</strong></label> 
-                        </div>
-                        <div class="  col-lg-5">
-                            <label>Version No: </label>
-                            <input type="text" class="form-control" value="1" size="3">
+                        <div class="  col-lg-4 text-right">  
+                            <label>Claims Academy <br>Course ID:   </label> 
+                           </div>
+                           <div class="  col-lg-3"> 
+                            <input type="text" class="form-control w100" value="Course 1">
+                           </div>
+                        <div class="  col-lg-5"> 
+                            <label class="vb">Version No:  </label> 
+                            <input type="text" class="form-control w50 vb"  value="1" size="3">
                         </div>
                     </div>
                 </div>
-
                 <!-- Checkbox ("Active") -->
-                <div class="col-md-3">
-                    <label>Active <input type="checkbox"></label>
+                <div class="col-md-3">  
+                   <label class="line2">Active  <input type="checkbox" checked > </label>
+                   
                 </div>
 
             </section>
+          
     
             <!-- Orange Ribbon -->
             <section class="yellow-ribbon">
@@ -118,56 +130,159 @@
                     <textarea class="form-control" rows="6"> This presentation is an introduction to the Claims Academy Team. We will cover the Cycle of Continuous Improvement, classroom vs. eLearning and the structure of our team. We are excited to partner with ACG to create and deliver effective training. Audience: ACG Claims Staff
                     </textarea>
                     <!-- Schools List start -->
-                    <section class="row update-schools-list">
-                        <div class="col-lg-4">
-                                <select id="School" name="School">
-                                <option>School(s) </option>
-                            </select>
-                            <label>Cosualty/BI <span class="delete"></span></label>
-                            <label>PIP <span class="delete"></span></label>
-                            <label>APD <span class="delete"></span></label>
-                            <label>Property <span class="delete"></span></label>
+                <section class="row update-schools-list">
+                    <div class="col-lg-4">
+                
+                        <h3>Schools</h3>
+                        <div  id="schools" class="select-list" >
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="school0"   >
+                            <label class="custom-control-label" for="school0">LOB/School</label>
                         </div>
-                        <div class="col-lg-4">
-                            <select id="Sub-School" name="Sub-School">
-                                <option>Sub-School(s) </option>
-                            </select>
-                            <label>Quick Claim <span class="delete"></span></label>
-                            <label> CAT <span class="delete"></span></label>
-                            <label> Desk <span class="delete"></span></label>
-                            <label> Field <span class="delete"></span></label>
-                            <label> Commerical <span class="delete"></span></label>
+                         <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="school1"  checked  >
+                            <label class="custom-control-label" for="school1">Casualty/BI  </label>
+                         </div>
+                         <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="school2"   >
+                            <label class="custom-control-label" for="school2">PIP (Personal Injury Protection)</label>
                         </div>
-                        <div class="col-lg-4">
-                                <select id="Phase" name="Phase">
-                                <option>Phase(s) </option>
-                            </select>
-                            <label>Customer Service <span class="delete"></span> </label>
-                            <label> Coverage <span class="delete"></span> </label>
-                            <label>Investigation <span class="delete"></span></label>
-                            <label> Evaluation <span class="delete"></span></label>
-                            <label>Settlement /Negotiation <span class="delete"></span></label>
+                        <div class="custom-control custom-checkbox">   
+                            <input type="checkbox" class="custom-control-input" id="school3" >
+                            <label class="custom-control-label" for="school3">APD (Auto Physical Damage)</label>
                         </div>
-                    </section>
-                    <!-- Schools List end -->
+                        <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="school4" >
+                            <label class="custom-control-label" for="school4">Property</label>
+                        </div> 
+                        </div>
+                        <div id="select-schools">  
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4"> 
+                        <h3>Sub-Schools</h3>
+                        <div id="subSchools"  class="select-list" >
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="subSchool0"   >
+                            <label class="custom-control-label" for="subSchool0">All Sub-Schools</label>
+                        </div>
+                         <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="subSchool1"   >
+                            <label class="custom-control-label" for="subSchool1">Pre Litigation</label>
+                         </div>
+                         <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="subSchool2"   >
+                            <label class="custom-control-label" for="subSchool2">Litigation (Casualty/BI)</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">   
+                            <input type="checkbox" class="custom-control-input" id="subSchool3" >
+                            <label class="custom-control-label" for="subSchool3">Michigan PIP</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="subSchool4" >
+                            <label class="custom-control-label" for="subSchool4">Regional PIP</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="subSchool5" >
+                            <label class="custom-control-label" for="subSchool5">Regional MedPay</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="subSchool6" >
+                            <label class="custom-control-label" for="subSchool6">Insurance Claims 101</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="subSchool7" >
+                            <label class="custom-control-label" for="subSchool7">Quick Claim/APD</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="subSchool8" >
+                            <label class="custom-control-label" for="subSchool8">Quick Claim/Property</label> 
+                          </div> 
+                        </div>
+                        <div id="select-subSchools"   ></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Phases  </h3>
+                        <div id="phases"  class="select-list" >
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase0"   >
+                            <label class="custom-control-label" for="phase0">All Phases</label>
+                        </div>
+                         <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase1"  checked  >
+                            <label class="custom-control-label" for="phase1">Customer Service</label>
+                         </div>
+                         <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase2"   >
+                            <label class="custom-control-label" for="phase2">Coverage</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">   
+                            <input type="checkbox" class="custom-control-input" id="phase3" >
+                            <label class="custom-control-label" for="phase3">Investigation</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">  
+                            <input type="checkbox" class="custom-control-input" id="phase4" >
+                            <label class="custom-control-label" for="phase4">Evaluation</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase5" >
+                            <label class="custom-control-label" for="phase5">Settlement /Negotiation</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase6" >
+                            <label class="custom-control-label" for="phase6">Reserve</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase7" >
+                            <label class="custom-control-label" for="phase7">File Management</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase8" >
+                            <label class="custom-control-label" for="phase8">Recovery</label> 
+                          </div> 
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase9" >
+                            <label class="custom-control-label" for="phase9">Fraud</label> 
+                          </div> 
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase10" >
+                            <label class="custom-control-label" for="phase10">Compliance</label> 
+                          </div> 
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase11" >
+                            <label class="custom-control-label" for="phase11">Litigation Management</label> 
+                          </div> 
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="phase12" >
+                            <label class="custom-control-label" for="phase12">Vendor Management</label> 
+                          </div> 
+                        </div>
+                      
+                        <div id="select-phases"> 
+                        </div> 
+                    </div>
+                </section>
+                <!-- Schools List end -->
                 </div>
 
                 <!-- Buttons Underneath Thumnail Image -->
                 <div class="col-md-4">
                      <!-- buttons List start -->
                     <div class="button-list">
-                        <button class="btn blue full"  ><i class="fa fa-rocket" aria-hidden="true"></i> Launch</button>
+                        <button class="btn blue full"  ><i class="fa fa-info-circle" aria-hidden="true"></i> View Course Details</button>
+
                         
                     </div>
                       <!-- buttons List end -->
                 </div>
 
                 <!-- Badges Section -->
-                <div class="col-md-3">
-                     <!-- Sekect Badges   Start -->
-                    <aside class="row select-badge">
-                        <div class="col-sm-6">Learning Task Badge </div>
-                        <div class="col-sm-6"><img class="" src="../assets/img/badge6.png">
+                <div class="col-md-3"> 
+                        <!-- Sekect Badges   Start -->
+                    <aside class="  select-badge">
+                        <div class="text">Learning<br> Task <br>Badge </div>
+                        <div class="picture"><img class="" src="../assets/img/badge6.png">
                             <div>
                                 <button class="btn purple">select</button>
                             </div>
@@ -176,11 +291,11 @@
                      <!-- Sekect Badges   End -->
 
                       <!-- Sekect Points   Start -->
-                    <aside class="row select-points">
-                        <div class="col-sm-6">Task Completion Points</div>
-                        <div class="col-sm-6">
+                    <aside class="  select-points"> 
+                        <div class="text">Task <br>Completion <br>Points</div>
+                        <div class="picture">
                             <div class="points">
-                                <input type="number" value="10">
+                                <input type="text" class="form-control" value="10">
                             </div>
     
                         </div>
@@ -197,7 +312,7 @@
                 <!-- Box, with Purple Outline -->
                 <div class="col-sm-6">
                      <!-- Sekect Schedules   Start -->
-                    <section class="select-schedules"> 
+                    <section class="select-schedules-orange"> 
 
                        
 
@@ -292,34 +407,7 @@
                                 < Resource Title 2>
                             </li>
                              <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
-                            <li>
-                                <span class="delete"></span>
-                                < Resource Title 3>
-                            </li>
-                             <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
-                            <li>
-                                <span class="delete"></span>
-                                < Resource Title 4>
-                            </li>
-                             <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
-                            <li>
-                                <span class="delete"></span>
-                                < Resource Title 5>
-                            </li>
-                             <!--   Resource link   End -->
-
-                              <!--   Resource link  Start -->
-                            <li>
-                                <span class="delete"></span>
-                                < Resource Title 6>
-                            </li>
-                             <!--   Resource link   End -->     
+ 
                            
                         </ul> 
 
@@ -343,7 +431,46 @@
     </form>
 
 </section> 
-
+<script>
+    selectList = function(id){
+          var str = " ";
+          $("#"+id+" input:checked").each(function() {
+                      var val = $(this).next('label').text();   
+                  console.log(val); 
+                  str += "<label><span>" + val + "</span><i class='delete'></i></label>";
+              })
+          $( "#select-"+id+"" ).html( str );
+      } 
+          selectList('schools');
+          selectList('subSchools');
+          selectList('phases');
+  
+      $('#schools input ').click(function(){
+          selectList('schools');
+      }) 
+      $(' #subSchools input ').click(function(){
+          selectList('subSchools');
+      }) 
+      $('#phases input').click(function(){
+          selectList('phases');
+      }) 
+  
+     deleteSelectedList = function(id){
+      $('#select-'+id+'  label .delete').click(function() {  
+              $(this).closest('label').remove();  
+              txt = $(this).closest('label').find('span').text()  
+             $( "#"+id+"   label:contains('"+txt+"')").prev('input').prop('checked',false)
+          });
+     }
+   
+  
+     $("html").mouseover(function(){
+      deleteSelectedList('schools');
+     deleteSelectedList('subSchools');
+      deleteSelectedList('phases');
+  });
+    
+  </script>
 </body>
 
 </html>
