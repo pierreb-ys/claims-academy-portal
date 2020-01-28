@@ -49,6 +49,7 @@
 /*  select course */
 .window .select-course .course-type label { display: block; }
 .window .select-course .edit-use button { margin-bottom: 10px; }
+.window .select-course .edit-use.absolute   {  position:  absolute; left: 10px;  }
 .window .select-course  input[type="checkbox"] {
     display: inline-block; 
 }  
@@ -195,7 +196,8 @@ input[type="checkbox"].custom-control-input {
  }
 
  /* resource links list */ 
- .window  .resource-links-list  { margin-top: 20px; margin-left: 10px;}
+ .window  .resource-links-list  { margin-top: 20px; margin-left: 10px;      min-height: 200px;
+  display: block;}
  .window  .resource-links-list  li { color:#fff; display: block; position: relative; padding-left: 25px; margin-bottom: 15px; }
  .window  .resource-links-list .delete { left:0; right: inherit; }
  .window  .resource-links-list button { width: 300px; }
@@ -588,7 +590,13 @@ small.note {font-size: 11px; color: #333;
 
 .form-control.inline {
   width: auto;
+  margin-bottom: 0; 
+}
+
+.form-control.inline-block {
+  width: auto;
   margin-bottom: 0;
+  display: inline-block;
 }
 
 /* Harozental Line */
