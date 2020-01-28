@@ -1425,4 +1425,12 @@ label { line-height: normal;}
 @media (min-width:1024px) {
   .dkp-mt60 label {     margin: 0; }
 .dkp-mt60 { position: relative; top: 60px; margin-top: -15px; }
+
 }
+
+
+@media (min-width:768px) {
+  .publishDate { margin-left: 30px;}
+
+}
+
