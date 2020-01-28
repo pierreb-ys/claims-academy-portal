@@ -78,7 +78,7 @@
 
                             <span class="req">* </span> 
 
-                            <select id="allSchools" class="" name="allSchools">  
+                            <select id="resource-type" class="" name="allSchools">  
                                 <option>Select Resource Type</option>
                                 <option>Document</option>
                                 <option>Internal ACG Link</option>
@@ -86,9 +86,10 @@
                                 <option>Video (Vimeo hosted)</option> 
                             </select> 
 
-                            <span class="req req margin-left-20">* </span>
+                            <span class="req req margin-left-20">*</span>
 
-                            <select class="schools"> 
+                            <!--
+                            <select class="schools-tag"> 
                                 <option>Select Schools Tag(s)</option> 
                                 <option>All Schools</option> 
                                 <option>Casualty/BI (Bodily Injury) </option>
@@ -96,6 +97,17 @@
                                 <option>APD (Auto Physical Damage)</option>
                                 <option>Property</option>
                             </select>  
+                            -->
+
+                            <select id="schools-tag" name="phase" multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
+                                <option selected>Select Schools Tag(s)</option> 
+                                <option>All Schools</option> 
+                                <option>Casualty/BI (Bodily Injury) </option>
+                                <option>PIP (Personal Injury Protection)</option>
+                                <option>APD (Auto Physical Damage)</option>
+                                <option>Property</option>
+                            </select>
+
                             <!--
                             <select id="phase" name="phase">
                                 <option>No  Phase Tag</option>
@@ -113,9 +125,11 @@
                                 <option>Vendor Management</option> 
                             </select>
                             -->
+
                             <!-- <p>(Cmd or Windows Key to Select Tags that Are not adjacent to each other)</p> -->
-                            <select id="phase" name="phase" multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
-                                <option selected>No  Phase Tag</option>
+
+                            <select id="phase-tag" name="phase" multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
+                                <option selected>No Phase Tag</option>
                                 <option>Customer Service</option>
                                 <option>Coverage</option>
                                 <option>Investigation</option>

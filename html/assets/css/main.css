@@ -1356,7 +1356,14 @@ label { line-height: normal;}
   margin-left: 20px;
 }
 
-#phase {
+#schools-tag {
+  max-width: 25%;
+  margin-right: 0px;
+  margin-left: 24px;
+  display: inline-flex;
+}
+
+#phase-tag {
   max-width: 25%;
   margin-right: 0px;
   margin-left: 24px;
@@ -1371,8 +1378,23 @@ label { line-height: normal;}
   text-align: left;
   margin-top: 24px;
 }
+ 
+@media (max-width: 1000px) { 
+#xl-padding {
+  padding-left: 108px;
+  padding-right: 108px;
+}
 
-@media (max-width: 1000px) {
+@media all and (min-width : 100px) and (max-width : 1400px) {
+
+  #xl-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+
+@media (max-width: 1000px) { 
 
   #align-left-fix {
     margin: 0px;
