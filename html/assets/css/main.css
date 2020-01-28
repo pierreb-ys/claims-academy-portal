@@ -1361,6 +1361,20 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
   margin-top: 24px;
 }
 
+#xl-padding {
+  padding-left: 108px;
+  padding-right: 108px;
+}
+
+@media all and (min-width : 100px) and (max-width : 1400px) {
+
+  #xl-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+
 @media (max-width: 1000) {
 
   #align-left-fix {
