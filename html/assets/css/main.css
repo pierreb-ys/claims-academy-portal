@@ -391,8 +391,8 @@ input[type="checkbox"] {
      font-size:20px;
      -webkit-appearance: none;
      -moz-appearance: none;  
-     width: 25px;
-     height: 25px;
+     width: 22px;
+     height: 22px;
      border-radius: 3px;
      position: relative; 
      vertical-align: middle;
@@ -1137,6 +1137,8 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
 
  .req small { color: #f90 ; font-size: 14px; }
 
+label { line-height: normal;}
+
  /* toggle round style */
  .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; vertical-align: middle; }
  .toggle.ios .toggle-handle { border-radius: 20rem; }
@@ -1288,6 +1290,15 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
   min-width: 60px;
 }
 
+.form-control.w50 {
+  width: 50px;
+  display: inline-block;
+}
+.form-control.w100 {
+  width: 100px;
+  display: inline-block;
+}
+
 .justify-content-center {
   justify-content: center;
 }
@@ -1361,10 +1372,33 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
   margin-top: 24px;
 }
 
-@media (max-width: 1000) {
+@media (max-width: 1000px) {
 
   #align-left-fix {
     margin: 0px;
   }
 
+}
+
+
+/* nested colmn padding reset */
+.rs   div[class*='col'] {
+  padding: 0 5px;
+}
+
+/* form */
+
+.vbot td { vertical-align: bottom;     padding: 3px;}
+
+.vbot td * {   display: inline-block;     vertical-align: text-bottom;}
+
+.ml20 { margin-left: 20px !important;}
+
+.vb { vertical-align: text-bottom;}
+
+.line2 { margin-top: 18px;}
+
+
+@media (min-width:1024px) {
+.dkp-mt60 { position: relative; top: 60px;}
 }
