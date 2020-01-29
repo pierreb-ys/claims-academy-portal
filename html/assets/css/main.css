@@ -866,7 +866,8 @@ button[class*='btn'] i { margin-top:0;  margin-left: 2px;}
   height: auto;  
   padding: 6px 8px;
   min-width: 90px;
-
+  min-height: 48px;
+  text-align: center;
 }
 
 .print-btn img {
@@ -1434,3 +1435,18 @@ label { line-height: normal;}
 
 }
 
+/* labels two lines vertical align bottom */
+
+ .lbl2line {
+  height: 40px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.lbl3line {
+  height: 60px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.valignbottom { vertical-align: bottom; }
+
+.mw70 { min-width: 70px;}

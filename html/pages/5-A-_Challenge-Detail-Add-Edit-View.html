@@ -115,42 +115,141 @@
                 <textarea class="form-control" rows="6"> The Course is on introduction to Auto Insurance. We will cover the Cycle of Continuous Improvement, classroom vs eLearning an the structure of our team. We are excited to partnr with ACG to created and deliver effective training Audience ACG Claims Staff.
                 </textarea>
 
-                <!-- Schools List-->
-                <section class="row update-schools-list">
-
-                    <div class="col-lg-4">
-                        <select>
-                            <option>School(s) </option>
-                        </select>
-                        <label>Cosualty/BI <span class="delete"></span></label>
-                        <label>PIP <span class="delete"></span></label>
-                        <label>APD <span class="delete"></span></label>
-                        <label>Property <span class="delete"></span></label>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <select>
-                            <option>Sub-School(s) </option>
-                        </select>
-                        <label>Quick Claim <span class="delete"></span></label>
-                        <label> CAT <span class="delete"></span></label>
-                        <label> Desk <span class="delete"></span></label>
-                        <label> Field <span class="delete"></span></label>
-                        <label> Commerical <span class="delete"></span></label>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <select>
-                            <option>Phase(s) </option>
-                        </select>
-                        <label>Customer Service <span class="delete"></span> </label>
-                        <label> Coverage <span class="delete"></span> </label>
-                        <label>Investigation <span class="delete"></span></label>
-                        <label> Evaluation <span class="delete"></span></label>
-                        <label>Settlement /Negotiation <span class="delete"></span></label>
-                    </div>
-
-                </section>
+                    <!-- Schools List start -->
+                    <section class="row update-schools-list">
+                        <div class="col-lg-4">
+                    
+                            <h3>Schools</h3>
+                            <div  id="schools" class="select-list" >
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="school0"   >
+                                <label class="custom-control-label" for="school0">All Schools</label>
+                            </div>
+                             <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="school1"  checked  >
+                                <label class="custom-control-label" for="school1">Casualty/BI  </label>
+                             </div>
+                             <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="school2"  checked  >
+                                <label class="custom-control-label" for="school2">PIP (Personal Injury Protection)</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">   
+                                <input type="checkbox" class="custom-control-input" id="school3" checked >
+                                <label class="custom-control-label" for="school3">APD (Auto Physical Damage)</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">  
+                                <input type="checkbox" class="custom-control-input" id="school4" >
+                                <label class="custom-control-label" for="school4">Property</label>
+                            </div> 
+                            </div>
+                            <div id="select-schools">  
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4"> 
+                            <h3>Sub-Schools</h3>
+                            <div id="subSchools"  class="select-list" >
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="subSchool0"   >
+                                <label class="custom-control-label" for="subSchool0">All Sub-Schools</label>
+                            </div>
+                             <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="subSchool1" checked  >
+                                <label class="custom-control-label" for="subSchool1">Pre Litigation</label>
+                             </div>
+                             <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="subSchool2" checked  >
+                                <label class="custom-control-label" for="subSchool2">Litigation (Casualty/BI)</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">   
+                                <input type="checkbox" class="custom-control-input" id="subSchool3" checked >
+                                <label class="custom-control-label" for="subSchool3">Michigan PIP</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">  
+                                <input type="checkbox" class="custom-control-input" id="subSchool4" >
+                                <label class="custom-control-label" for="subSchool4">Regional PIP</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="subSchool5" >
+                                <label class="custom-control-label" for="subSchool5">Regional MedPay</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="subSchool6" >
+                                <label class="custom-control-label" for="subSchool6">Insurance Claims 101</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="subSchool7" >
+                                <label class="custom-control-label" for="subSchool7">Quick Claim/APD</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="subSchool8" >
+                                <label class="custom-control-label" for="subSchool8">Quick Claim/Property</label> 
+                              </div> 
+                            </div>
+                            <div id="select-subSchools"   ></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Phases  </h3>
+                            <div id="phases"  class="select-list" >
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase0"   >
+                                <label class="custom-control-label" for="phase0">All Phases</label>
+                            </div>
+                             <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase1"  checked  >
+                                <label class="custom-control-label" for="phase1">Customer Service</label>
+                             </div>
+                             <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase2"  checked >
+                                <label class="custom-control-label" for="phase2">Coverage</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">   
+                                <input type="checkbox" class="custom-control-input" id="phase3" checked >
+                                <label class="custom-control-label" for="phase3">Investigation</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">  
+                                <input type="checkbox" class="custom-control-input" id="phase4" >
+                                <label class="custom-control-label" for="phase4">Evaluation</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase5" >
+                                <label class="custom-control-label" for="phase5">Settlement /Negotiation</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase6" >
+                                <label class="custom-control-label" for="phase6">Reserve</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase7" >
+                                <label class="custom-control-label" for="phase7">File Management</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase8" >
+                                <label class="custom-control-label" for="phase8">Recovery</label> 
+                              </div> 
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase9" >
+                                <label class="custom-control-label" for="phase9">Fraud</label> 
+                              </div> 
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase10" >
+                                <label class="custom-control-label" for="phase10">Compliance</label> 
+                              </div> 
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase11" >
+                                <label class="custom-control-label" for="phase11">Litigation Management</label> 
+                              </div> 
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="phase12" >
+                                <label class="custom-control-label" for="phase12">Vendor Management</label> 
+                              </div> 
+                            </div>
+                          
+                            <div id="select-phases"> 
+                            </div> 
+                        </div>
+                    </section>
+                    <!-- Schools List end -->
 
             </div>
 
@@ -179,7 +278,7 @@
 
                 <!-- Select Points   Start -->
                 <aside class=" select-points"> 
-                        <div class="text"> Contained <br>Courses and<br> Video Points</div>
+                        <div class="text"> Contained <br>Course and<br> Video Points</div>
                         <div class="picture">
                             <div class="points">
                                 45
@@ -331,6 +430,47 @@
 
 </section>
 <!-- Challenge Details Add/Edit start  -->
+
+<script>
+    selectList = function(id){
+          var str = " ";
+          $("#"+id+" input:checked").each(function() {
+                      var val = $(this).next('label').text();   
+                  console.log(val); 
+                  str += "<label><span>" + val + "</span><i class='delete'></i></label>";
+              })
+          $( "#select-"+id+"" ).html( str );
+      } 
+          selectList('schools');
+          selectList('subSchools');
+          selectList('phases');
+  
+      $('#schools input ').click(function(){
+          selectList('schools');
+      }) 
+      $(' #subSchools input ').click(function(){
+          selectList('subSchools');
+      }) 
+      $('#phases input').click(function(){
+          selectList('phases');
+      }) 
+  
+     deleteSelectedList = function(id){
+      $('#select-'+id+'  label .delete').click(function() {  
+              $(this).closest('label').remove();  
+              txt = $(this).closest('label').find('span').text()  
+             $( "#"+id+"   label:contains('"+txt+"')").prev('input').prop('checked',false)
+          });
+     }
+   
+  
+     $("html").mouseover(function(){
+      deleteSelectedList('schools');
+     deleteSelectedList('subSchools');
+      deleteSelectedList('phases');
+  });
+    
+  </script>
 </body>
 
 </html>
