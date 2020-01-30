@@ -44,3 +44,14 @@ a .nav-item {
 p.margin-bottom-10 {
   margin-bottom: 10px;
 }
+
+.copyright {
+  background-color: #091726;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 12px;
+  color: #fff;
+  font-family: 'mission-gothic-regular';
+}
