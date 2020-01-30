@@ -2,29 +2,10 @@
     font-family: "mission-gothic-regular";  
     margin-top: 20px;
     
-}
-
-.send-btn {
-    background-color: #2b78e4;
-    color: #fff;
-    border: 2px solid #074296;
-    margin-bottom: 20px;
-    width: 100px;
-}
+} 
  
-
-@media (min-width:767px){
-    .faq-page .f-left { float: left;}
-    .faq-page  .f-right { float: right;}
-}
-
-@media (min-width:769px){ 
-    .faq-page label   { margin-top: 10px;} 
-}
-
 @media (max-width:768px){
-    .faq-page .text-right { text-align: left !important;}
-    .faq-page label   { margin-top: 10px;}
+    .faq-page .text-right { text-align: left !important;} 
     .faq-page p   { margin-bottom: 5px;}
 }
 
