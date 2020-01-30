@@ -1,0 +1,67 @@
+.faq-page {
+    font-family: "mission-gothic-regular";  
+    margin-top: 20px;
+    
+}
+
+.send-btn {
+    background-color: #2b78e4;
+    color: #fff;
+    border: 2px solid #074296;
+    margin-bottom: 20px;
+    width: 100px;
+}
+ 
+
+@media (min-width:767px){
+    .faq-page .f-left { float: left;}
+    .faq-page  .f-right { float: right;}
+}
+
+@media (min-width:769px){ 
+    .faq-page label   { margin-top: 10px;} 
+}
+
+@media (max-width:768px){
+    .faq-page .text-right { text-align: left !important;}
+    .faq-page label   { margin-top: 10px;}
+    .faq-page p   { margin-bottom: 5px;}
+}
+
+
+
+     /* contact-pageUpcoming Task   */
+     .faq-page  { background-color: #fff; padding-top: 10px; min-height: 200px; margin-bottom: 20px;    }
+     .faq-page h2 {
+        background-color: #3868aa;
+        background-image: url(../../assets/img/faq_icon.png);
+        background-position: 25px center;
+        background-repeat: no-repeat;
+        padding-left: 70px;
+        background-size: 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        color:#fff;
+    }  
+
+    
+    .faq-page .faq-area {
+    overflow: auto; 
+    padding: 30px  ;
+    min-height: 500px;
+}
+
+.faq-page .faq-area  h3{
+     font-size: 24px;
+     font-weight: bold;
+}
+ 
+@media (max-width:768px){
+    .faq-page .faq-area { 
+        padding: 20px 10%  ;
+    }
+}
