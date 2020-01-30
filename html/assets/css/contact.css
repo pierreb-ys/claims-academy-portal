@@ -1,8 +1,6 @@
 .contact-page {
-    font-family: "mission-gothic-regular";
-    color: white;
-    background-color: #5B7FA9;
-    padding: 10px;
+    font-family: "mission-gothic-regular";  
+    margin-top: 20px;
     min-height: 500px;
 }
 
@@ -20,8 +18,58 @@
     .contact-page  .f-right { float: right;}
 }
 
+@media (min-width:769px){ 
+    .contact-page label   { margin-top: 10px;} 
+}
+
 @media (max-width:768px){
     .contact-page .text-right { text-align: left !important;}
     .contact-page label   { margin-top: 10px;}
     .contact-page p   { margin-bottom: 5px;}
+}
+
+
+
+     /* contact-pageUpcoming Task   */
+     .contact-page  { background-color: #fff; padding-top: 10px; min-height: 200px; margin-bottom: 20px;    }
+     .contact-page h2 {
+        background-color: #3868aa;
+        background-image: url(../../assets/img/contact_icon.png);
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        background-size: 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        color:#fff;
+    }  
+
+    
+    .contact-page .contact-area {
+    overflow: auto; 
+    padding: 20px 10% 20px 0;
+}
+.contact-area input, .contact-area textarea {
+    margin-bottom: 20px;
+}
+.contact-page .contact-area  textarea, 
+.contact-page .contact-area  input[type=text] {
+    background-color: #e6e7e8;
+    } 
+    .contact-page .contact-area  .send-btn {
+        width: 150px;
+    }
+
+    .contact-page .contact-area      small.note { 
+        margin-top: -40px;
+     }
+ 
+@media (max-width:768px){
+    .contact-page .contact-area { 
+        padding: 20px 10%  ;
+    }
 }
