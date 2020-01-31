@@ -134,11 +134,12 @@
             
                                 <div class="display-flex">
                                     <span class="color-fix" style="margin-right: 12px;"> * </span> 
-                                    <select class="combobox form-control">
-                                        <option class="text-faded"> - Select LOB / School - </option>
+                                    <select id="my-profile-drop-down-school" class="combobox form-control" onchange="enableSubSchool()">
+                                        <option id="option-apg" class="text-faded"> - Select LOB / School - </option>
+                                        <option value="APG" hidden>APD (Auto Physical Damage)</option>
                                         <option value="CBI">Casualty/BI (Bodily Injury)</option>
                                         <option value="PIP">PIP (Personal Injury Protection)</option>
-                                        <option value="APG">APD (Auto Physical Damage)</option>
+                                        <option value="PIP">Property</option>
                                         <option value="GL"> - - - Guest Learners - - - </option>
                                     </select> 
                                 </div>
@@ -165,7 +166,7 @@
             
                             <div>
                                 <span class="span-width-12"></span> 
-                                <select class="combobox form-control span-width-12 sub-school-spacing-fix" style="margin-left: 22px; margin-right: 12px;">
+                                <select id="my-profile-drop-down-subschool" class="combobox form-control span-width-12 sub-school-spacing-fix" style="margin-left: 22px; margin-right: 12px;" disabled="disabled">
                                     <option> - Select Sub-School - </option>
                                     <option value="PA"> - Sub-School list determined by LOB/School selected. See BRD for list. - </option>
                                     <option value="CT"> - Sub-School A - </option>
@@ -290,7 +291,7 @@
                             <div class="col-md-3">
 
                                 <div class="button-list">
-                                    <button class="btn btn-continue" type="submit" disabled>Continue</button>
+                                    <button class="btn btn-continue" type="submit" disabled>Save</button>
                                 </div>
 
                             </div>
