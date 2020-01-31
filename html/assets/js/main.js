@@ -1,41 +1,23 @@
-$(function () {
- //  $('.chosen').chosen();
-});
-
-$(function () {
-//    $('#summernote').summernote();
-});
-
-$(function () {
-
-
- //   jQuery('#datetimepicker').datetimepicker({
- //       format:'d.m.Y H:i',
- //       lang:'ru'
- //   });
-
-    jQuery('#image_button').click(function(){
- //       jQuery('#datetimepicker').datetimepicker('show'); //support hide,show and destroy command
-    });
-
-});
-
-//$(document).ready(function() {
-//    $("#summernote").summernote();
-//});
 
 //
 function setPublishDate() {
 
+   //If the "Publish" checkbox is checked ... 
    if (document.getElementById("publish-checkbox").checked == true) {
-     document.getElementById("publish-date-text").innerHTML = new Date().toLocaleDateString();
+
+   // ... then the "Publish Date" field needs to be the current Date.
+       document.getElementById("publish-date-text").innerHTML = new Date().toLocaleDateString();
    }
  
+   // If the "Publish" checkbox is not checked, then the "Publish Date" field needs to look like this:
    else {
        document.getElementById("publish-date-text").innerHTML = "dd/mm/yyyy";
    }
+
  }
 
+ // 
+ //
 function enableSubSchool() {
 
    document.getElementById("my-profile-drop-down-subschool").disabled = false;
@@ -45,16 +27,14 @@ function enableSubSchool() {
 
 }
 
-
+$("#schools input").on("click", function() {
+   alert($(this.attr("id")));
+})
 
 // 4-B-Catalog-Curriculum-Detail
-function disableSubSchools() {
-
-  // var schools = document.getElementById("schools");
-
+/* function disableSubSchools() {
 
    if (document.getElementById("school0").checked == true) {
- //  if (document.getElementById("school0").checked == true || $("#schools input:checkbox:checked").length > 1) {
    
       document.getElementById("subSchool0").disabled = true;
       document.getElementById("subSchool1").disabled = true;
@@ -99,3 +79,5 @@ function disableSubSchools() {
    }
 
 }
+
+*/

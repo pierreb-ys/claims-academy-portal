@@ -1458,3 +1458,7 @@ label { line-height: normal;}
 .valignbottom { vertical-align: bottom; }
 
 .mw70 { min-width: 70px;}
+
+.hidden {
+  display: none;
+}
