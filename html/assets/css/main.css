@@ -777,6 +777,7 @@ section.contentarea .content-wrap {
  .btn.blue {
   background: #3098cc !important;
   color:#fff;
+  max-width: 600px;
 }
 .btn.purple {
   background: #9900ff !important;
@@ -1446,19 +1447,27 @@ label { line-height: normal;}
 /* labels two lines vertical align bottom */
 
  .lbl2line {
+
   height: 40px;
   display: table-cell;
   vertical-align: bottom;
+
 }
+
 .lbl3line {
+
   height: 60px;
   display: table-cell;
   vertical-align: bottom;
+
 }
+
 .valignbottom { vertical-align: bottom; }
 
 .mw70 { min-width: 70px;}
 
 .hidden {
+
   display: none;
+
 }
