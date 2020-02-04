@@ -49,7 +49,14 @@
 /*  select course */
 .window .select-course .course-type label { display: block; }
 .window .select-course .edit-use button { margin-bottom: 10px; }
+.window .select-course .edit-use   { width: 120px; }
+.window .select-course .edit-use.absolute   {  position:  relative  ; left: 10px;  }
+@media (min-width: 1100px) { 
 .window .select-course .edit-use.absolute   {  position:  absolute; left: 10px;  }
+}
+@media (max-width: 1100px) { 
+  .window .select-course .edit-use.absolute   {  width: 100%;  }
+  }
 .window .select-course  input[type="checkbox"] {
     display: inline-block; 
 }  
@@ -60,7 +67,12 @@
 
   /* yellow ribbon */
 
-  .window  .yellow-ribbon { position: relative;}
+  .window .yellow-ribbon {
+    position: relative;
+    background: #f1c232;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
   .window .strip {  
       background: #f1c232;
@@ -76,20 +88,26 @@
     color:#333;
     margin-top: 20px;
 
-  }
-  .window section.yellow-ribbon textarea {
-    margin-top: 18%;
-    margin-left: 5%;
-    width: 96%;
+  } 
+  .window section.yellow-ribbon textarea {  
     text-align: left;
+    min-height: 100px;
+}
+.window section.yellow-ribbon .textarea {
+  position: relative;
+  padding: 20px;
 }
 .window section.yellow-ribbon h3.title {
-  margin-top: 22%;
+  margin-top: 9%;
   margin-left: 5%;
   width: 96%;
   text-align: left;
   font-size: 24px;
   color: #003761;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  padding-left: 20px;
 }
 .window .description {
   font-size: 18px;
@@ -103,6 +121,8 @@
     position: relative;
 }
 
+
+
 .window .video-frame button {  
     position: absolute;
     border: 1px solid #fff; 
@@ -112,6 +132,30 @@
 }
 
 .window .video-frame { border:5px solid #073763;  margin-bottom: 20px; }
+
+.window  .yellow-ribbon .video-frame { 
+  position: relative;  
+  margin: 10px auto; 
+}
+@media (min-width: 1000px) { 
+.window  .yellow-ribbon .video-frame {  
+  margin-bottom: -70px;
+  margin-top: -70px;
+}
+
+.window .yellow-ribbon { 
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.window   .reqact { 
+  position: absolute;
+}
+}
+@media (max-width: 1000px) { 
+.window  .yellow-ribbon .video-frame {  
+  width: 96%;
+}
+}
 .window .video-frame img { 
     width: 100%;
 }
@@ -314,6 +358,7 @@ input[type="checkbox"].custom-control-input {
   vertical-align: top;
   padding-left: 25px;
   width: 80%;
+  position: relative;
 }
 
 .window section.task-list li .dsc select {

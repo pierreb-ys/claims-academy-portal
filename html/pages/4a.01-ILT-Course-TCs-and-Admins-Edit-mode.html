@@ -62,11 +62,11 @@
                 <div class="col-md-5 course-type">
                        <div class="row dkp-mt60">
                     <div class="  col-lg-5  ">  
-                        <label>ACG U Course Number   </label>  
+                        <label><span class="req abs ">*</span> ACG U Course Number   </label>  
                         <input type="text" class="form-control  " value="CLM-00124">
                     </div>
                     <div class="  col-lg-7"> 
-                        <label class="vb">Content ID for Deep Link Construction </label> 
+                        <label class="vb"><span class="req abs ">*</span> Content ID for Deep Link Construction </label> 
                         <input type="text" class="form-control    " value="12345678901234567890123456789012"  >
                     </div>
                 </div>
@@ -78,17 +78,17 @@
 
                 <div class="col-md-4 rs">
                     <div class="row">
-                        <div class="  col-lg-4 text-right">  
-                           <label class="lbl2line">Claims Academy <br>Course ID:   </label> 
+                        <div class="  col-sm-4 text-right">  
+                           <label class="lbl2line min-width-120"><span class="req abs ">*</span> Claims Academy <br>Course ID:   </label> 
                            </div>
-                           <div class="  col-lg-3"> 
+                           <div class="  col-sm-3"> 
 						   <div class="lbl2line">
                             <input type="text" class="form-control w100" value="Course 1">
                            </div>
                            </div>
-                        <div class="  col-lg-5"> 
+                        <div class="  col-sm-5"> 
 						<div class="lbl2line">
-                            <label class="vb">Version No:  </label> 
+                            <label class="vb"><span class="req abs ">*</span> Version No:  </label> 
                             <input type="text" class="form-control w50 vb"  value="1" size="3">
                         </div>
                         </div>
@@ -97,7 +97,7 @@
                 <!-- Checkbox ("Active") -->
                 <div class="col-md-3">  
                    <label class="lbl2line">Active  <input type="checkbox" checked > </label>
-                   
+                   <div class="reqact">   <span class="req   "> * <small> Required for Activation </small> </span></div> 
                 </div>
 
             </section>
@@ -105,13 +105,12 @@
     
             <!-- Orange Ribbon -->
             <section class="yellow-ribbon">
-
-                <div class="strip"></div>
+ 
 
                 <div class="row">
 
                     <div class="col-md-5">
-                        <textarea class="form-control">ACG Introduction to the Claims Academy Team</textarea>
+                       <div class="textarea"><span class="req absin ">*</span> <textarea class="form-control">ACG Introduction to the Claims Academy Team</textarea></div> 
                     </div>
 
                     <div class="col-md-4">
@@ -121,6 +120,7 @@
                     </div>
 
                     <div class="col-md-3">
+                     
                     </div>
 
                 </div>
@@ -131,13 +131,13 @@
             <div class="row">
 
                 <div class="col-md-5">
-                    <textarea class="form-control" rows="6"> This presentation is an introduction to the Claims Academy Team. We will cover the Cycle of Continuous Improvement, classroom vs. eLearning and the structure of our team. We are excited to partner with ACG to create and deliver effective training. Audience: ACG Claims Staff
+                  <textarea class="form-control" rows="6"> This presentation is an introduction to the Claims Academy Team. We will cover the Cycle of Continuous Improvement, classroom vs. eLearning and the structure of our team. We are excited to partner with ACG to create and deliver effective training. Audience: ACG Claims Staff
                     </textarea>
                     <!-- Schools List start -->
                 <section class="row update-schools-list">
                     <div class="col-lg-4">
                 
-                        <h3>Schools</h3>
+                        <h3><span class="req abs ">*</span>Schools</h3>
                         <div  id="schools" class="select-list" >
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="school0"  onclick="disableSubSchools()"  >
@@ -384,8 +384,7 @@
                          <!-- Sekect Schedules List Scrollbar  End -->
 
                         <button class="btn blue"><i class="fa fa-calendar" aria-hidden="true"></i> Add to My Calendar</button>
-                        <button class="btn purple">Add/Edit Section information</button>
-                        
+                        <button class="btn purple"><span class="req">*</span> Add/Edit Section information</button>                        
                     </section>
                        <!-- Sekect Schedules   End -->
                 </div>

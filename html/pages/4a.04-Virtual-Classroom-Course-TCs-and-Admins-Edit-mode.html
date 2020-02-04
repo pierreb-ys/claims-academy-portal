@@ -62,11 +62,11 @@
                 <div class="col-md-5 course-type">
                        <div class="row dkp-mt60">
                     <div class="  col-lg-5  ">  
-                        <label>ACG U Course Number   </label>  
+                        <label><span class="req abs ">*</span> ACG U Course Number   </label>  
                         <input type="text" class="form-control  " value="CLM-00124">
                     </div>
                     <div class="  col-lg-7"> 
-                        <label class="vb">Content ID for Deep Link Construction </label> 
+                        <label class="vb"><span class="req abs ">*</span> Content ID for Deep Link Construction </label> 
                         <input type="text" class="form-control    " value="12345678901234567890123456789012"  >
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                 <div class="col-md-4 rs">
                     <div class="row">
                         <div class="  col-lg-4 text-right">  
-                            <label class="lbl2line">Claims Academy <br>Course ID:   </label> 
+                            <label class="lbl2line min-width-120"><span class="req abs ">*</span> Claims Academy <br>Course ID:   </label> 
                            </div>
                            <div class="  col-lg-3"> 
 						   <div class="lbl2line">
@@ -88,7 +88,7 @@
                            </div>
                         <div class="  col-lg-5"> 
 						<div class="lbl2line">
-                            <label class="vb">Version No:  </label> 
+                            <label class="vb"><span class="req abs ">*</span> Version No:  </label> 
                             <input type="text" class="form-control w50 vb"  value="1" size="3">
 							</div>
                         </div>
@@ -97,7 +97,7 @@
                 <!-- Checkbox ("Active") -->
                 <div class="col-md-3">  
                    <label class="lbl2line">Active  <input type="checkbox" checked > </label>
-                   
+                   <div class="reqact">   <span class="req   "> * <small> Required for Activation </small> </span></div> 
                 </div>
 
             </section>
@@ -109,12 +109,12 @@
 
                 <div class="row">
 
-                    <div class="col-md-5">
+                    <div class="col-md-6 col-lg-5">
                         
-                        <textarea class="form-control">ACG Introduction to the Claims Academy Team</textarea>
+                        <div class="textarea"><span class="req absin ">*</span> <textarea class="form-control">ACG Introduction to the Claims Academy Team</textarea></div> 
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="video-frame"><img class="" src="../assets/img/video-thumbnail.png">
                             <button class="btn purple">Add / Change Thumbnail Image</button>
                         </div>
@@ -137,7 +137,7 @@
                 <section class="row update-schools-list">
                     <div class="col-lg-4">
                 
-                        <h3>Schools</h3>
+                        <h3><span class="req abs ">*</span>Schools</h3>
                         <div  id="schools" class="select-list" >
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="school0"  onclick="disableSubSchools()"  >
@@ -383,7 +383,7 @@
                          <!-- Sekect Schedules List Scrollbar  End -->
 
                         <button class="btn blue"><i class="fa fa-calendar" aria-hidden="true"></i> Add to My Calendar</button>
-                        <button class="btn purple">Add/Edit Section information</button>
+                         <button class="btn purple"><span class="req">*</span> Add/Edit Section information</button>
                         
                     </section>
                        <!-- Sekect Schedules   End -->
@@ -474,6 +474,30 @@
     deleteSelectedList('phases');
 });
   
+disableSubSchools = function(){
+      
+      if($('#school0').prop('checked')){    
+        $('#phases input[type="checkbox"], #subSchools input[type="checkbox"]').prop('disabled',true).prop('checked',false)
+         $("#select-subSchools, #select-phases").html('') 
+         $("#schools input").each(function(e){ 
+            if($('#school0').prop('checked')){
+                if(e == 0){ 
+                    $(this).prop('checked',true)
+                    }else{ 
+                        $(this).prop('checked',false).prop('disabled',true)
+                }
+            }  
+        })
+        $('#select-schools').html('<label><span>All Schools</span><i class="delete"></i></label>') 
+      }else{ 
+        $("#schools input").each(function(e){    
+                        $(this).prop('checked',false).prop('disabled',false)  
+        })
+        $('#phases input[type="checkbox"]').prop('disabled',false)
+        $('#subSchools input[type="checkbox"]').prop('disabled',false)
+      }
+   
+  }
 </script>
 </body>
 
