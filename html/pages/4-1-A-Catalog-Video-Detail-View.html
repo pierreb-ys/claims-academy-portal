@@ -72,7 +72,7 @@
                         <div class="  col-lg-4 text-right">  
                             <label>
                                 <br />
-                                Video ID: </label> 
+                                <span class="req abs ">*</span>  Video ID: </label> 
                            </div>
                            <div class="  col-lg-3">
                              <input type="text" class="form-control  margin-top-7 " value="Video 1" disabled="disabled">  
@@ -88,6 +88,7 @@
                     <div class="col-md-3">
                         <br />
                         <label>Active <input type="checkbox"></label>
+                        <div class="reqact">   <span class="req   "> * <small> Required for Activation </small> </span></div> 
                     </div>
     
                 </section>
@@ -98,7 +99,9 @@
                     <div class="strip"></div> 
                     <div class="row"> 
                         <div class="col-md-5">
-                            <textarea class="form-control">Title Goes here...</textarea>
+                            <div class="textarea">
+                                <span class="req absin ">*</span> <textarea class="form-control">Title Goes here....</textarea></div> 
+                         
                         </div> 
                         <div class="col-md-4">
                             <div class="video-frame"><img class="" src="../assets/img/video-pic.PNG">
@@ -122,14 +125,14 @@
                             <div class="video-edit"> 
                                 <div class="row  "> 
                                     <div class="col-md-2 "> 
-                                            <label>Video  Duration: </label>
+                                            <label><span class="req abs ">*</span>  Video  Duration: </label>
                                          </div>
                                         <div class="col-md-4">  
                                                 <input type="text" class="form-control" id="videoDuration" name="videoDuration" size="6" value="1:06">
                                      
                                             </div>
                                             <div class="col-md-2">  
-                                                    <label>Version Number: </label>
+                                                    <label><span class="req abs ">*</span>  Version Number: </label>
                                                 </div>
                                                 <div class="col-md-4">  
                                             
@@ -138,7 +141,7 @@
                             </div>
                             <div class="row "> 
                                     <div class="col-md-12"> 
-                            <label>Video URL:</label>
+                            <label><span class="req abs ">*</span>  Video URL:</label>
                             <textarea class="form-control" >Paste in URL for video palyback here. Test with 'Launch' button below </textarea>
                             </div>
                             </div>                                        
@@ -193,14 +196,14 @@
                        <!-- Schools List start -->
                        <section class="row update-schools-list">
                             <div class="col-lg-4">
-                                    <strong>School(s)</strong>
+                                <h3><span class="req abs ">*</span>  School(s)</h3> 
                                 <label>Casualty/BI <span class="delete"></span></label>
                                 <label>PIP <span class="delete"></span></label>
                                 <label>APD <span class="delete"></span></label>
                                 <label>Property <span class="delete"></span></label>
                             </div>
                             <div class="col-lg-4">
-                                <strong>Sub-School(s) </strong>
+                                <h3> Sub-School(s)</h3>  
                                 <label>Quick Claim <span class="delete"></span></label>
                                 <label> CAT <span class="delete"></span></label>
                                 <label> Desk <span class="delete"></span></label>
@@ -208,7 +211,7 @@
                                 <label> Commerical <span class="delete"></span></label>
                             </div>
                             <div class="col-lg-4">
-                              <strong>Phase(s)</strong>
+                                <h3>   Phase(s)</h3>  
                                 <label>Customer Service <span class="delete"></span> </label>
                                 <label> Coverage <span class="delete"></span> </label>
                                 <label>Investigation <span class="delete"></span></label>

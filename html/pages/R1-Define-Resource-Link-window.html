@@ -88,17 +88,6 @@
 
                             <span class="req req margin-left-20">*</span>
 
-                            <!--
-                            <select class="schools-tag"> 
-                                <option>Select Schools Tag(s)</option> 
-                                <option>All Schools</option> 
-                                <option>Casualty/BI (Bodily Injury) </option>
-                                <option>PIP (Personal Injury Protection)</option>
-                                <option>APD (Auto Physical Damage)</option>
-                                <option>Property</option>
-                            </select>  
-                            -->
-
                             <select id="schools-tag" name="phase" multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
                                 <option selected>Select Schools Tag(s)</option> 
                                 <option>All Schools</option> 
@@ -107,26 +96,6 @@
                                 <option>APD (Auto Physical Damage)</option>
                                 <option>Property</option>
                             </select>
-
-                            <!--
-                            <select id="phase" name="phase">
-                                <option>No  Phase Tag</option>
-                                <option>Customer Service</option>
-                                <option>Coverage</option>
-                                <option>Investigation</option>
-                                <option>Evaluation</option>
-                                <option>Settlement/Nagotiatioin</option>
-                                <option>Reserve</option>
-                                <option>File Management</option>
-                                <option>Recovery</option>
-                                <option>Fraud</option>
-                                <option>Compliance</option>
-                                <option>Litigation Management</option>
-                                <option>Vendor Management</option> 
-                            </select>
-                            -->
-
-                            <!-- <p>(Cmd or Windows Key to Select Tags that Are not adjacent to each other)</p> -->
 
                             <select id="phase-tag" name="phase" multiple data-placeholder="Choose Audience" class="chosen combobox form-control">
                                 <option selected>No Phase Tag</option>
@@ -159,24 +128,30 @@
                  
                     <div class="row">  
 
-                        <div class="col-md-2 col-lg-2 "> 
+                        <div class="col-md-2 col-lg-2 align-right"> 
                         
                             <button class=" btn green margin upload" disabled> <i class="fa fa-upload" aria-hidden="true"></i> Upload </button>     
                         
                         </div>
+
                         <div class="col-md-5 col-lg-5"> 
-                            <input class="form-control     " type="input"   placeholder="<displays  file name after upload completes>" aria-describedby="button-addon3">
+                            <input class="form-control" type="input" placeholder="<displays file name after upload completes>" aria-describedby="button-addon3">
+
+                        </div>
+
+                        <div class="col-md-5 col-lg-5"> 
+
+                            <div class="field-inline-10per"> <label>URL: </label>  
+                                <input class="form-control" type="input"  size="50"  placeholder="Type or Paste URL here" aria-describedby="button-addon3">
                             </div>
-                            <div class="col-md-5 col-lg-5"> 
-                            <div class="field-inline-10per " >  <label>URL: </label>  
-                                <input class="form-control      " type="input"  size="50"  placeholder="Type or Paste URL here" aria-describedby="button-addon3">
-                            </div>
-                            </div>
+
+                        </div>
+
                     </div>
 
                     <div class="row"> 
                         
-                        <div class="col-md-2 col-lg-2"> 
+                        <div class="col-md-2 col-lg-2 align-right"> 
                             Resource<br>Title Text:
                         </div>
 

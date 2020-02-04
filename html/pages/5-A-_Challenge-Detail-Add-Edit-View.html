@@ -58,7 +58,7 @@
         <div class="col-md-12 text-center">
             <div class="flash">   
                 <div class="edit">
-                    <button class="btn purple">Edit</button> 
+                    <button class="btn purple"><span class="req ">*</span> Edit</button> 
                 </div> 
                 <img class="" src="../assets/img/flash.png">
             </div>
@@ -83,6 +83,7 @@
                 <div class="calendar-input">
                     <input type="text" class="form-control"><i class="fa fa-calendar"></i>
                 </div>
+                 <div class="reqact">   <span class="req   "> * <small> Required for Activation </small> </span></div> 
             </div>
 
         </section>
@@ -93,7 +94,7 @@
             <div class="strip"></div>
             <div class="row">
                 <div class="col-md-5">
-                    <textarea class="form-control"> Auto Insurance Basics </textarea>
+                    <div class="textarea"><span class="req absin ">*</span> <textarea class="form-control">Auto Insurance Basics </textarea></div>  
                 </div>
                 <div class="col-md-4">
                     <div class="video-frame"><img class="" src="../assets/img/video-thumbnail.png">
@@ -121,7 +122,7 @@
                         <!-- Schools -->
                         <div class="col-lg-4">
                     
-                            <h3>Schools</h3>
+                            <h3><span class="req abs "> *  </span>  Schools</h3>
                             <div  id="schools" class="select-list" >
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="school0" onclick="disableSubSchools()"  >
@@ -162,37 +163,37 @@
                                  </div>
 
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="subSchool2"  >
+                                    <input type="checkbox" class="custom-control-input" id="subSchool1"  >
                                     <label class="custom-control-label" for="subSchool1">Litigation (Casualty/BI)</label>
                                 </div>
 
                                 <div class="custom-control custom-checkbox">   
-                                    <input type="checkbox" class="custom-control-input" id="subSchool3" >
+                                    <input type="checkbox" class="custom-control-input" id="subSchool2" >
                                     <label class="custom-control-label" for="subSchool2">Michigan PIP</label>
                                 </div>
 
                                 <div class="custom-control custom-checkbox">  
-                                    <input type="checkbox" class="custom-control-input" id="subSchool4" >
+                                    <input type="checkbox" class="custom-control-input" id="subSchool3" >
                                     <label class="custom-control-label" for="subSchool3">Regional PIP</label>
                                 </div>
 
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="subSchool5" >
+                                    <input type="checkbox" class="custom-control-input" id="subSchool4" >
                                     <label class="custom-control-label" for="subSchool4">Regional MedPay</label>
                                 </div>
 
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="subSchool6" >
+                                    <input type="checkbox" class="custom-control-input" id="subSchool5" >
                                     <label class="custom-control-label" for="subSchool5">Insurance Claims 101</label>
                                 </div>
 
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="subSchool7" >
+                                    <input type="checkbox" class="custom-control-input" id="subSchool6" >
                                     <label class="custom-control-label" for="subSchool6">Quick Claim/APD</label>
                                 </div>
 
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="subSchool8" >
+                                    <input type="checkbox" class="custom-control-input" id="subSchool7" >
                                     <label class="custom-control-label" for="subSchool7">Quick Claim/Property</label> 
                                 </div> 
 
@@ -390,6 +391,7 @@
 
                                             <div class="dsc">
                                                 <section class="add-task-form">
+                                                    <div class="selectreq"><span class="req ">*</span> 
                                                     <select class="form-control" id="taskType" name="taskType">
                                                         <option>To Add, 1. Select Task Type </option>
                                                         <option>Online Course</option>
@@ -398,6 +400,7 @@
                                                         <option>Video</option>
                                                         <option >Manager Task</option>
                                                     </select>
+                                                    </div>
                                                     <select class="form-control" id="learningTask" name="learningTask">
                                                         <option>2. Select Learning Task </option>
                                                     </select>   
@@ -446,10 +449,9 @@
 
         var str = " ";
 
-        $("#"+id+" input:checked").each(function() {
+        $("#"+id+" input:checked").each(function(e) {
 
-            var val = $(this).next('label').text(); 
-
+            var val = $(this).next('label').text();  
             console.log(val); 
 
             str += "<label><span>" + val + "</span><i class='delete'></i></label>";
@@ -477,8 +479,7 @@
   
      deleteSelectedList = function(id) {
 
-      $('#select-'+id+'  label .delete').click(function() {  
-
+      $('#select-'+id+'  label .delete').click(function() {   
               $(this).closest('label').remove();  
               txt = $(this).closest('label').find('span').text()  
              $( "#"+id+"   label:contains('"+txt+"')").prev('input').prop('checked',false)
@@ -491,6 +492,32 @@
      deleteSelectedList('subSchools');
       deleteSelectedList('phases');
   });
+
+  disableSubSchools = function(){
+      
+      if($('#school0').prop('checked')){    
+        $('#phases input[type="checkbox"], #subSchools input[type="checkbox"]').prop('disabled',true).prop('checked',false)
+         $("#select-subSchools, #select-phases").html('') 
+         $("#schools input").each(function(e){ 
+            if($('#school0').prop('checked')){
+                if(e == 0){ 
+                    $(this).prop('checked',true)
+                    }else{ 
+                        $(this).prop('checked',false).prop('disabled',true)
+                }
+            }  
+        })
+        $('#select-schools').html('<label><span>All Schools</span><i class="delete"></i></label>') 
+      }else{ 
+        $("#schools input").each(function(e){    
+                        $(this).prop('checked',false).prop('disabled',false)  
+        })
+        $('#phases input[type="checkbox"]').prop('disabled',false)
+        $('#subSchools input[type="checkbox"]').prop('disabled',false)
+      }
+   
+  }
+
     
   </script>
 </body>

@@ -30,54 +30,67 @@ function enableSubSchool() {
 $("#schools input").on("click", function() {
    alert($(this.attr("id")));
 })
+ 
 
-// 4-B-Catalog-Curriculum-Detail
-/* function disableSubSchools() {
+selectList = function(id){
+   var str = " ";
+   $("#"+id+" input:checked").each(function() {
+               var val = $(this).next('label').text();   
+           console.log(val); 
+           str += "<label><span>" + val + "</span><i class='delete'></i></label>";
+       })
+   $( "#select-"+id+"" ).html( str );
+} 
+   selectList('schools');
+   selectList('subSchools');
+   selectList('phases');
 
-   if (document.getElementById("school0").checked == true) {
-   
-      document.getElementById("subSchool0").disabled = true;
-      document.getElementById("subSchool1").disabled = true;
-      document.getElementById("subSchool2").disabled = true;
-      document.getElementById("subSchool3").disabled = true;
-      document.getElementById("subSchool4").disabled = true;
-      document.getElementById("subSchool5").disabled = true;
-      document.getElementById("subSchool6").disabled = true;
-      document.getElementById("subSchool7").disabled = true;
-      document.getElementById("subSchool8").disabled = true;
+$('#schools input ').click(function(){
+   selectList('schools');
+}) 
+$(' #subSchools input ').click(function(){
+   selectList('subSchools');
+}) 
+$('#phases input').click(function(){
+   selectList('phases');
+}) 
 
-   }
-
-   else if (document.getElementById("school0").checked == false) {
-
-      document.getElementById("subSchool0").disabled = false;
-      document.getElementById("subSchool1").disabled = false;
-      document.getElementById("subSchool2").disabled = false;
-      document.getElementById("subSchool3").disabled = false;
-      document.getElementById("subSchool4").disabled = false;
-      document.getElementById("subSchool5").disabled = false;
-      document.getElementById("subSchool6").disabled = false;
-      document.getElementById("subSchool7").disabled = false;
-      document.getElementById("subSchool8").disabled = false;
-
-    //  if ($("#schools input:checkbox:checked").length > 1) 
-
-   }
-
-   else if ($("#schools input:checkbox:checked").length > 1) {
-
-      document.getElementById("subSchool0").disabled = false;
-      document.getElementById("subSchool1").disabled = false;
-      document.getElementById("subSchool2").disabled = false;
-      document.getElementById("subSchool3").disabled = false;
-      document.getElementById("subSchool4").disabled = false;
-      document.getElementById("subSchool5").disabled = false;
-      document.getElementById("subSchool6").disabled = false;
-      document.getElementById("subSchool7").disabled = false;
-      document.getElementById("subSchool8").disabled = false;
-   
-   }
-
+deleteSelectedList = function(id){
+$('#select-'+id+'  label .delete').click(function() {  
+       $(this).closest('label').remove();  
+       txt = $(this).closest('label').find('span').text()  
+      $( "#"+id+"   label:contains('"+txt+"')").prev('input').prop('checked',false)
+   });
 }
 
-*/
+
+$("html").mouseover(function(){
+deleteSelectedList('schools');
+deleteSelectedList('subSchools');
+deleteSelectedList('phases');
+});
+
+disableSubSchools = function(){
+ 
+ if($('#school0').prop('checked')){    
+   $('#phases input[type="checkbox"], #subSchools input[type="checkbox"]').prop('disabled',true).prop('checked',false)
+    $("#select-subSchools, #select-phases").html('') 
+    $("#schools input").each(function(e){ 
+       if($('#school0').prop('checked')){
+           if(e == 0){ 
+               $(this).prop('checked',true)
+               }else{ 
+                   $(this).prop('checked',false).prop('disabled',true)
+           }
+       }  
+   })
+   $('#select-schools').html('<label><span>All Schools</span><i class="delete"></i></label>') 
+ }else{ 
+   $("#schools input").each(function(e){    
+                   $(this).prop('checked',false).prop('disabled',false)  
+   })
+   $('#phases input[type="checkbox"]').prop('disabled',false)
+   $('#subSchools input[type="checkbox"]').prop('disabled',false)
+ }
+
+}

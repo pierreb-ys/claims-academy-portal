@@ -423,7 +423,10 @@ input[type="checkbox"]:after {
 
  input[type="checkbox"]:checked:before { border:none; color:#0c3859;  position:absolute;  z-index: 1; content: "\f00c"; }
 
- 
+ input:disabled + label:before {
+  opacity: .3;
+}
+
 /* radiobutton */
  
 input[type="radio"] { 
@@ -777,6 +780,7 @@ section.contentarea .content-wrap {
  .btn.blue {
   background: #3098cc !important;
   color:#fff;
+  max-width: 600px;
 }
 .btn.purple {
   background: #9900ff !important;
@@ -1143,7 +1147,21 @@ label.btn.btn-default.active.toggle-off { background: #ccc;}
  .req { color: #f90 ; font-size: 24px; }
  .req.inline { display: inline;}
  .req.block { display:  block;}
-
+ .req.abs { position: absolute; margin-left: -10px;   margin-top: -10px;}
+ .req.absin { position: absolute;    left: 25px;  top: 15px;}
+ .selectreq   {  position: relative;
+}
+ .selectreq .req   { 
+  position: absolute;
+  left: 8px;
+  top: -6px;
+}
+ button.btn.purple .req {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  line-height: 10px;
+}
  .req small { color: #f90 ; font-size: 14px; }
 
 label { line-height: normal;}
@@ -1298,6 +1316,10 @@ label { line-height: normal;}
 .min-width-60 {
   min-width: 60px;
 }
+.min-width-120 {
+  min-width: 120px;
+}
+
 
 .form-control.w50 {
   width: 50px;
@@ -1413,11 +1435,13 @@ label { line-height: normal;}
 }
 
 
+
 /* nested colmn padding reset */
+@media (min-width: 1000px) { 
 .rs   div[class*='col'] {
   padding: 0 5px;
 }
-
+}
 /* form */
 
 .vbot td { vertical-align: bottom;     padding: 3px;}
@@ -1446,19 +1470,27 @@ label { line-height: normal;}
 /* labels two lines vertical align bottom */
 
  .lbl2line {
+
   height: 40px;
   display: table-cell;
   vertical-align: bottom;
+
 }
+
 .lbl3line {
+
   height: 60px;
   display: table-cell;
   vertical-align: bottom;
+
 }
+
 .valignbottom { vertical-align: bottom; }
 
 .mw70 { min-width: 70px;}
 
 .hidden {
+
   display: none;
+
 }
