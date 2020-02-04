@@ -105,6 +105,22 @@
 }
 
 
+#search-text::-webkit-input-placeholder {
+  color:#fff !important;
+}
+
+#search-text::-moz-placeholder {
+  color:#fff !important;
+}
+
+#search-text::-ms-placeholder {
+  color:#fff !important;
+}
+
+#search-text::placeholder {
+  color:#fff !important;
+}
+
 /* ------------ ------------ VIEWPORTS ------------ ------------ */
 
 /* Size Small */
